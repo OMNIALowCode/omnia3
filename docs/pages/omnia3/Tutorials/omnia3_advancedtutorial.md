@@ -25,7 +25,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](http://d
 
 ### Native API
  
-1. Go to the **Modeler** and edit the previously modeled document *PurchaseOrder*. Create a new  **Attribute**  by clicking the button  ***Add new / Primitive***  on the top right side, and setting its  **Name** and **Type**  to  **SupplierName** and ***Text***, respectively. Set the attribute as **Read Only**.
+1. Go to the **Modeler** and edit the previously modeled document *PurchaseOrder*. Create a new  **Attribute**  by clicking the button  ***Add new / Primitive***  on the top right side, and setting its  **Name** and **Type**  to  **SupplierName**, and ***Text***, respectively. Set the attribute as **Read Only**.
 
     ![Modeler_Create_Document_Attribute](/images/tutorials/advanced/Modeler-Create-Attribute-SupplierName.PNG)
 

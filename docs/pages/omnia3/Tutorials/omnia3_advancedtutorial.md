@@ -55,7 +55,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](http://d
 
     ![Modeler Add_Namespace](/images/tutorials/advanced/Modeler-Add-Behaviour-Namespace.PNG)
 
-4. Create a new **Action Behaviour**  to fill the new attribute (on the PurchaseOrder document, go to tab ***Entity Behaviours*** and click on ***Add new / Action***). Set ***GetRecordData*** as **Name**, ***_code*** as the attribute that triggers the behaviour, and paste the following code:
+4. Create a new **Action Behaviour**  to fill the new attribute (on the PurchaseOrder document, go to tab ***Entity Behaviours*** and click on ***Add new / Action***). Set ***GetRecordData***, as **Name**, ***_code*** as the attribute that triggers the behaviour, and paste the following code:
 
     ```C#
     var client = new HttpClient() {DefaultRequestHeaders = {}};

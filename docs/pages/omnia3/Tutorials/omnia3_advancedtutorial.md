@@ -49,7 +49,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](http://d
 
     ![Modeler Add_Dependency](/images/tutorials/advanced/Modeler-Add-Behaviour-Dependency.PNG)
 
-2. Edit the previously modeled resource *Product*. Create a new  **Attribute**  by clicking the button  **Add new / Primitive**  on the top right side, and setting its  **Name** and **Type**  to  **Artist** and ***Text***, respectively. Set the attribute as **Read Only**.
+2. Edit the previously modeled resource *Product*. Create a new  **Attribute**  by clicking the button  **Add new / Primitive**  on the top right side, and setting its  **Name** and **Type**  to  **Artist**, and ***Text***, respectively. Set the attribute as **Read Only**.
 
 3. Navigate to tab **Behaviour Namespaces** and add namespace System.Net.Http
 

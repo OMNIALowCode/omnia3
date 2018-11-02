@@ -77,7 +77,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 19. Add ***Attribute / Add new / Reference***. Set its *Name* as **Supplier**, *Type* as ***Agent / Supplier***, and as required by checking option *Is required?*. 
 
-20. Navigate to tab *Entity Behaviours* and click the button ***Add new / After Change*** to add a new **After Change** Behaviour to fill **_provider** and **_receiver** attributes. Define ***SetCommitmentAgents*** as Name and paste the following code:
+20. Navigate to tab **Entity Behaviours* and click the button ***Add new / After Change*** to add a new **After Change** Behaviour to fill **_provider** and **_receiver** attributes. Define ***SetCommitmentAgents*** as Name and paste the following code:
 
     ```C#
         OrderLines.ForEach(line => {

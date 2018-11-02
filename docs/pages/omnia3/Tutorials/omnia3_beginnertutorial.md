@@ -73,7 +73,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 17. Create a new **PurchaseOrder** by selecting the option ***Documents / PurchaseOrder***.
 
-18. Go back to modeling area (by accessing top bar menu option ***Modeler***) and edit the **PurchaseOrder** document to simplify its interface. Add a new attribute by clicking on button **Add new**. Set its *Name* as **Company**, *Type* as ***Agent / Company***, and as required by checking option *Is required?*.
+18. Go back to modeling area (by accessing top bar menu option ***Modeler***) and edit the **PurchaseOrder** document to simplify its interface. Add a new attribute by clicking on button **Add new / Reference**. Set its *Name* as **Company**, *Type* as ***Agent / Company***, and as required by checking option *Is required?*.
 
 19. Add ***Attribute / Add new / Reference***. Set its *Name* as **Supplier**, *Type* as ***Agent / Supplier***, and as required by checking option *Is required?*. 
 

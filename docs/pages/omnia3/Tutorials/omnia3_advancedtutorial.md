@@ -107,7 +107,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](http://d
 
 ### Dashboards
 
-1. On **Modeler**, go to ***Data Analytics / Dashboards*** and click on button **Add New** to create a new dashboard. Set **Home** as Name, so that the dashboard is visible on application's homepage.
+1. On **Modeler**, go to ***Data Analytics / Dashboards*** and click on button **Add New** to create a new dashboard. Set **Home**, as Name, so that the dashboard is visible on application's homepage.
 
     ![Modeler_Create_Dashboard](/images/tutorials/advanced/Modeler-Create-Dashboard.PNG)
 

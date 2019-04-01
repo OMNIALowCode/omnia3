@@ -39,7 +39,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. "Build & Deploy" your model (top right corner of the modeling area).
 
-6. On the right side of the top bar, click first button and select option ***Application***. You will now be redirected to the application area. 
+6. On the right side of the top bar, click the first button and select the option ***Application***. You will now be redirected to the application area. 
 
     ![Modeler_Navigate_Application](/images/tutorials/beginner/Modeler-Navigate-Application.PNG)
     
@@ -49,7 +49,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 8.  Follow the same process of the previous step to create a new **Supplier** and **Product**.
 
-9. Go back to modeling area (***Modeler***) and create a new **Commitment** with *Name* set as ***GoodsPurchaseRequest***, **Product** as the resource to be exchanged, **Supplier** as provider agent and **Company** as receiver agent.
+9. Go back to the modeling area (***Modeler***) and create a new **Commitment** with *Name* set as ***GoodsPurchaseRequest***, **Product** as the resource to be exchanged, **Supplier** as provider agent and **Company** as receiver agent.
 
     ![Modeler_Create_Commitment](/images/tutorials/beginner/Modeler-Create-Commitment.PNG)
 
@@ -69,13 +69,13 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 15. Build & Deploy model
 
-16. Navigate to ***Application*** through the top bar menu, and create a **Serie** for the document you just created, by selecting the option **Series / PurchaseOrderSeries**.
+16. Navigate to ***Application*** through the top bar menu, and create a **Serie** for the document you just created, by selecting the option **Series / PurchaseOrderSeries -> Create New**.
 
-17. Create a new **PurchaseOrder** by selecting the option ***Documents / PurchaseOrder***.
+17. Create a new **PurchaseOrder** by selecting the option ***Documents / PurchaseOrder -> Create New*** and fill the needed fields.
 
-18. Go back to modeling area (by accessing top bar menu option ***Modeler***) and edit the **PurchaseOrder** document to simplify its interface. Add a new attribute by clicking on button **Add new**. Set its *Name* as **Company**, *Type* as ***Agent / Company***, and as required by checking option *Is required?*.
+18. After saving your new document, go back to modeling area (by accessing top bar menu option ***Modeler***) and edit the **PurchaseOrder** document to simplify its interface. Add a new attribute by clicking the button **Add new / Reference**. Set its *Name* as **Company**, *Type* as ***Agent / Company***, and as required by checking option *Is required?*.
 
-19. Add ***Attribute / Add new / Reference***. Set its *Name* as **Supplier**, *Type* as ***Agent / Supplier***, and as required by checking option *Is required?*. 
+19. Add ***Attribute / Add new / Reference***. Set its *Name* as **Supplier**, *Type* as ***Agent / Supplier***, and as required by checking option "*Is required?*". 
 
 20. Navigate to tab *Entity Behaviours* and click the button ***Add new / After Change*** to add a new **After Change** Behaviour to fill **_provider** and **_receiver** attributes. Define ***SetCommitmentAgents*** as Name and paste the following code:
 
@@ -86,7 +86,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
         });
     ```
 
-21. Go to your ***PurchaseOrder*** **Document** User Interface by accessing the respective tab, and reorganize them to simplify the interface. Remove the elements **Provider**, **Receiver**  and **Code** from **OrderLines** element. At last, remove **Code** attribute from Document.
+21. Go to your ***PurchaseOrder*** **Document** User Interface by accessing the respective tab, and reorganize them to simplify the interface. Remove the elements **Provider**, **Receiver**  and **Code** from **OrderLines** element. At last, remove **Code** element UI from Document.
 
 22. Reorganize Rows and Columns, re-establishing the **size** and **position** of their elements:
   * ***Serie***: Row 1, Column 1 and Size 4; 
@@ -100,4 +100,4 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     ![Application_Final_Interface](/images/tutorials/beginner/Application-View-PurchaseOrder.PNG)
 
 
-    **Congratulations** on your very **first insight** into OMNIA Platform's true **development agility**! Now, it's time to **move** to our next challenge: [**OMNIA's Platform Advanced Tutorial**](omnia3_advancedtutorial.html). 
+    **Congratulations** on your very **first insight** into OMNIA Low-Code Platform's true **development agility**! Now, it's time to **move** to our next challenge: [**OMNIA's Platform Advanced Tutorial**](omnia3_advancedtutorial.html). 

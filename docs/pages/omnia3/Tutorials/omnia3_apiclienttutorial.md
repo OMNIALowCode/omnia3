@@ -1,7 +1,7 @@
 ---
-title: OMNIA API Client Tutorial
+title: API Client Tutorial
 keywords: omnia3
-summary: "OMNIA Platform 3.0 api clients management"
+summary: "OMNIA Low-Code Development Platform - API Clients Management"
 sidebar: omnia3_sidebar
 permalink: omnia3_apiclienttutorial.html
 folder: omnia3
@@ -9,7 +9,7 @@ folder: omnia3
 
 ## 1. Introduction
 
-Based on a simple Order Management sample application, this tutorial shows how easily Omnia Platform models can be used through our API, by external applications.
+Based on a simple Order Management sample application, this tutorial shows how easily OMNIA Platform models can be used through our API, by external applications.
 
 On the first tutorial area (Define an API Client), we are going to evaluate how an API client is defined on Omnia Platform, and how it is configured on Omnia's security system. On the second area (Consume Omnia API), we are going to see a simple example of how Omnia API can be consumed.
 
@@ -20,7 +20,7 @@ As a tool to consume Omnia API, we are going to use [Postman](https://www.getpos
 
 This tutorial assumes that you have created a OMNIA tenant, and have completed the beginner tutorial. You must also have access to a user with privileges to Modeling and Management areas
 
-If you do not have a tenant yet, please follow the steps of the [Tenant Creation tutorial](http://docs.numbersbelieve.com/omnia3_tenantcreation.html). If you have a tenant, but have not completed the beginner tutorial, follow the steps on [Beginner tutorial](http://docs.numbersbelieve.com/omnia3_beginnertutorial.html)
+If you do not have a tenant yet, please follow the steps of the [Tenant Creation tutorial](omnia3_tenantcreation.html). If you have a tenant, but have not completed the beginner tutorial, follow the steps on [Beginner tutorial](omnia3_beginnertutorial.html)
 
 
 ## 3. Define an API Client
@@ -45,7 +45,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 3. We are going to start with a POST request, to create a new Company. Set the request type as "POST" and the request url as the base url used to access Omnia (i.e. https://omnia.example.com/), adding "api/v1/[TenantCode]/prd/Application/Company/default" at the end (in this URL, replace "[TenantCode]" with your actual tenant code that shows up in the platform's URLs, i.e. Tenant001).
 
-2. Before creating a request to Omnia API, configure OAuth 2.0 as the authentication type to be used on requests, and fill the required parameters, as in the following image
+2. Before creating a request to OMNIA API, configure OAuth 2.0 as the authentication type to be used on requests, and fill the required parameters, as in the following image
 
     ![Postman_Configure_AccessToken](https://raw.githubusercontent.com/numbersbelieve/omnia3/master/docs/tutorialPics/modelingTutorial/Postman-Configure-AccessToken.PNG)
 

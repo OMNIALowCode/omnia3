@@ -15,13 +15,13 @@ This tutorial is an advanced implementation of the [data sources tutorial](omnia
 
 On the CRUD Operations tutorial area, we are going to evaluate how to interact with an external data source, by reading and manipulating its data.
 
-As our custom data source, we are going to use the [PRIMAVERA ERP V10](https://pt.primaverabss.com).
+As our custom data source, we are going to use the [PRIMAVERA ERP V9](https://pt.primaverabss.com).
 
 ## 2. Prerequisites
 
 This tutorial assumes that you have created a OMNIA tenant ([click here to see how](omnia3_tenantcreation.html)), and are logged in as a user with modeling privileges to this tenant. You must also have access to the management area to manage the connectors.
 
-This tutorial also requires an access to [Primavera ERP](https://pt.primaverabss.com), on version 10. 
+This tutorial also requires an access to [Primavera ERP](https://pt.primaverabss.com), on version 9. 
 
 ## 3. Create a new connector
 

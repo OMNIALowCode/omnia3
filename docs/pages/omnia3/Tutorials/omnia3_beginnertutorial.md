@@ -15,7 +15,7 @@ We do understand all your difficulties on how to build a **business management a
 
 It's now time to judge our premises. To that end, we've just created a simple and intuitive tutorial based on an Order Management's example, guiding you throughout the **short-time period** of deploying all your inputs into a **business application**.
 
-**Start your 20-minute exercise on OMNIA Platform V.3.0!**
+**Start your 20-minute exercise on OMNIA Low-Code Development Platform!**
 
 ## 2. Prerequisites
 
@@ -37,7 +37,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 4. Through the left side menu, access the option ***Resources / Add new*** on the top right side, and setting its *Name* as **Product**.
 
-5. Access the option ***Versioning / Builds*** and build the tenant by clicking the button ***Create new***.
+5. "Build & Deploy" your model (top right corner of the modeling area).
 
 6. On the right side of the top bar, click first button and select option ***Application***. You will now be redirected to the application area. 
 
@@ -67,7 +67,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
     ![Modeler_Create_Composite_Attribute](/images/tutorials/beginner/Modeler-Create-OrderLines-Attribute.PNG)
 
-15. Perform a new Build (by accessing the option **Versioning / Builds** and clicking on button **Create new**).
+15. Build & Deploy model
 
 16. Navigate to ***Application*** through the top bar menu, and create a **Serie** for the document you just created, by selecting the option **Series / PurchaseOrderSeries**.
 

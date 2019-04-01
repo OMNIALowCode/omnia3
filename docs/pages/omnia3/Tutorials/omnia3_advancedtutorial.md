@@ -39,7 +39,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     
     ```
 
-3. Build the model.
+3. Build & Deploy model
 
 4. Go to **Application** area, and create a new **PurchaseOrder** document. Observe that, when **Supplier** is identified, the **SupplierName** is automatically retrieved.
 
@@ -55,7 +55,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
     ![Modeler Add_Namespace](/images/tutorials/advanced/Modeler-Add-Behaviour-Namespace.PNG)
 
-4. Create a new **Action Behaviour**  to fill the new attribute (on the PurchaseOrder document, go to tab ***Entity Behaviours*** and click on ***Add new / Action***). Set ***GetRecordData*** as **Name**, ***_code*** as the attribute that triggers the behaviour, and paste the following code:
+4. Create a new **Action Behaviour** to fill the new attribute (go to tab ***Entity Behaviours*** and click on ***Add new / Action***). Set ***GetRecordData*** as **Name**, ***_code*** as the attribute that triggers the behaviour, and paste the following code:
 
     ```C#
     var client = new HttpClient() {DefaultRequestHeaders = {}};
@@ -82,7 +82,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     }
     ```
 
-5. Build & Deploy.
+5. Build & Deploy model
 
 6. Go to **Application** area, and create a new **Product** resource. Observe that, when **Code** is identified (e.g. try with value 8540), the **Name** and **Artist** is automatically retrieved.
 
@@ -92,7 +92,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
 ### Queries and Lists
 
-1. On **Modeler**, go to ***Data analytics / Queries*** and click on button ***Add New*** to create a new query. Set **ProductsArtists_Query** as *Name* and ***Resource / Product*** as *Type*.
+1. On your **Modeler** area, go to ***Data analytics / Queries*** and click on button ***Add New*** to create a new query. Set **ProductsArtists_Query** as *Name* and ***Resource / Product*** as *Type*.
 
     ![Modeler_Create_Query](/images/tutorials/advanced/Modeler-Create-Query.PNG)
 
@@ -107,11 +107,11 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
 ### Dashboards
 
-1. On **Modeler**, go to ***Data Analytics / Dashboards*** and click on button **Add New** to create a new dashboard. Set **Home** as Name, so that the dashboard is visible on application's homepage.
+1. On your **Modeler** area, go to ***Data Analytics / Dashboards*** and click on button **Add New** to create a new dashboard. Set **Home** as Name, so that the dashboard is visible on application's homepage.
 
     ![Modeler_Create_Dashboard](/images/tutorials/advanced/Modeler-Create-Dashboard.PNG)
 
-2. Click on button **Add New** to add lists to Dashboard. Set **ProductsList** as Code, select **ProductsArtists_QueryList** (created previously) and position it in the first **Row** and **Column**, with **Size** six.
+2. Click on button **Add List** to add lists to Dashboard. Set **ProductsList** as Name, **Products List** as Label, select **ProductsArtists_QueryList** (created previously) and position it in the first **Row** and **Column**, with **Size** six.
 
     ![Modeler_Add_List_Dashboard](/images/tutorials/advanced/Modeler-Add-List-Dashboard.PNG)
 

@@ -95,7 +95,9 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
   * ***Company***: Row 2, Column 1 and Size 4;
   * ***Supplier***: Row 2, Column 5 and Size 4.
 
-23. Go to application and validate interface changes by creating a new **PurchaseOrder** document. The interface should be equal to the one below:
+23. Build & Deploy model
+
+24. Go to application and validate interface changes by creating a new **PurchaseOrder** document. The interface should be equal to the one below:
 
     ![Application_Final_Interface](/images/tutorials/beginner/Application-View-PurchaseOrder.PNG)
 

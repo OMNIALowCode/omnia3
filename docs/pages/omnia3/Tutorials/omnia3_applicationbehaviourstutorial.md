@@ -41,7 +41,7 @@ A connector and an access to [Primavera ERP](https://pt.primaverabss.com), on ve
 
 4. Through the left side menu, navigate to PurchaseOrder Document, by accessing the option ***Documents / PurchaseOrder***. Add a new attribute by clicking on option **Add new / Reference** and setting its *Name* and *Type* as *Primavera* and *Data Source / Primavera*, respectively.
 
-5. Through the left side menu, create a new application behaviour by accessing the option ***Extensibility / Application Behaviours / Add new***. Set its *Name* as "IntegratePurchaseOrder", "Primavera" as *Data Source* and "External" as *Execution Location*.
+5. Through the left side menu, create a new application behaviour by accessing the option ***Extensibility / Application Behaviours / Add new***. Set its *Name* as "IntegratePurchaseOrder", "Primavera" as *Data Source*.
 
     Copy and paste the following code (Remember to change the "USER" and "PASS" fields to your actual username and password.):
 

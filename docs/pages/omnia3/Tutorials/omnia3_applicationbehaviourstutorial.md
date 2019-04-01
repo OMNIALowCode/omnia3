@@ -11,7 +11,7 @@ folder: omnia3
 
 After you have completed the [Beginner Tutorial](omnia3_beginnertutorial.html), whose result is a functional order management application, OMNIA Application Behaviours Tutorial focus on the execution of behaviours on external data sources.
 
-As our custom data source, we are going to use the [PRIMAVERA ERP V10](https://pt.primaverabss.com).
+As our custom data source, we are going to use the [PRIMAVERA ERP V9](https://pt.primaverabss.com).
 
 
 ## 2. Prerequisites
@@ -20,7 +20,7 @@ This tutorial assumes that you have created a OMNIA tenant, and are logged in as
 
 It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_beginnertutorial.html), as this tutorial builds upon it.
 
-A connector and an access to [Primavera ERP](https://pt.primaverabss.com), on version 10 are also required to complete this tutorial.
+A connector and an access to [Primavera ERP](https://pt.primaverabss.com), on version 9 are also required to complete this tutorial.
 
 ## 3. Application Behaviours
 

@@ -16,13 +16,13 @@ This tutorial is an advanced implementation of the [data sources tutorial](omnia
 The tutorial is divided in 4 different areas. On the first area, Create a new connector, we are going to check how a new connector is created and associated to a tenant. Next, on Modeling entities area, we are going to evaluate how to model the core entities for this solution from scratch.
 On the third area, we are going to focus on Purchase Order modeling, combining all previously modeled entities and integrating information on ERP Primavera. To end, we will evaluate how to communicate with an external API. 
 
-As our custom data source, we are going to use the [PRIMAVERA ERP V10](https://pt.primaverabss.com). The chosen external API is [Last FM](https://www.last.fm/api), which provides data related to music.
+As our custom data source, we are going to use the [PRIMAVERA ERP V9](https://pt.primaverabss.com). The chosen external API is [Last FM](https://www.last.fm/api), which provides data related to music.
 
 ## 2. Prerequisites
 
 This tutorial assumes that you have created a OMNIA tenant ([click here to see how](omnia3_tenantcreation.html)), and are logged in as a user with modeling privileges to this tenant. You must also have access to the management area to manage the connectors.
 
-This tutorial also requires an access to [Primavera ERP](https://pt.primaverabss.com), on version 10. 
+This tutorial also requires an access to [Primavera ERP](https://pt.primaverabss.com), on version 9. 
 
 ## 3. Create a new connector
 

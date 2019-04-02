@@ -45,7 +45,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 3. We are going to start with a POST request, to create a new Company. Set the request type as "POST" and the request url as the base url used to access Omnia (i.e. https://omnia.example.com/), adding "api/v1/[TenantCode]/prd/Application/Company/default" at the end (in this URL, replace "[TenantCode]" with your actual tenant code that shows up in the platform's URLs, i.e. Tenant001).
 
-![Postman POST Request](/images/tutorials/apiclient/POSTrequest.jpg)
+    ![Postman POST Request](/images/tutorials/apiclient/POSTrequest.jpg)
 
 2. Before creating a request to OMNIA API, configure OAuth 2.0 as the authentication type to be used on requests, and fill the required parameters, as in the following image
 

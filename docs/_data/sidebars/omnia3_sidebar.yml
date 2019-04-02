@@ -97,7 +97,7 @@ entries:
       url: /omnia3_uiextensibilitytutorial.html
       output: web, pdf
       
-    - title: Tutorials
+    - title: ERP Integration
         output: web, pdf
         folderitems:
     

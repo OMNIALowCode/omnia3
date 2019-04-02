@@ -1,7 +1,7 @@
 ---
-title: Primavera (ERP) Connector Tutorial
+title: Primavera (v9) Tutorial
 keywords: omnia3
-summary: "OMNIA Low-Code Development Platform - ERP (Primavera) as Data Source"
+summary: "OMNIA Low-Code Development Platform - ERP Primavera v9 Integration"
 sidebar: omnia3_sidebar
 permalink: omnia3_primaveraconnectortutorial.html
 folder: omnia3

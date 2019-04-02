@@ -97,7 +97,10 @@ entries:
       url: /omnia3_uiextensibilitytutorial.html
       output: web, pdf
     
-    - title: PRIMAVERA Connector Tutorial
+  - title: ERP Integrations
+    output: web, pdf
+    folderitems:
+    - title: PRIMAVERA v9
       url: /omnia3_primaveraconnectortutorial.html
       output: web, pdf
       

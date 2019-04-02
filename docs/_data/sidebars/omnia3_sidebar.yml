@@ -84,10 +84,6 @@ entries:
     - title: Connector Tutorial
       url: /omnia3_connectortutorial.html
       output: web, pdf
-
-    - title: PRIMAVERA Connector Tutorial
-      url: /omnia3_primaveraconnectortutorial.html
-      output: web, pdf
       
     - title: Advanced Connector Tutorial
       url: /omnia3_multisystemconnectortutorial.html
@@ -100,6 +96,14 @@ entries:
     - title: UI Extensibility Tutorial
       url: /omnia3_uiextensibilitytutorial.html
       output: web, pdf
+      
+    - title: Tutorials
+        output: web, pdf
+        folderitems:
+    
+        - title: PRIMAVERA Connector Tutorial
+          url: /omnia3_primaveraconnectortutorial.html
+          output: web, pdf
       
   - title: Management
     output: web, pdf

@@ -216,7 +216,7 @@ This tutorial assumes that you have created a OMNIA tenant ([click here to see h
 
 11. Go to the Application area.
 
-12. Create a new instance of the CSVSource data source, with code *"LOCAL"* and with the Code of the Connector that you have created.
+12. Create a new instance of the CSVSource data source, with code *"LOCAL"* and with the Code of the Connector (CSVConnector) that you have created.
 
 13. On left side menu, navigate to *Configurations / Contact*, identify the CSVSource data source instance (LOCAL) and check that the list is filled with data retrieved from CSVSource.
 

@@ -43,13 +43,15 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 1. To consume the Omnia API, open the previously installed Postman application.
 
-3. We are going to start with a POST request, to create a new Company. Set the request type as "POST" and the request url as the base url used to access Omnia (i.e. https://omnia.example.com/), adding "api/v1/[TenantCode]/prd/Application/Company/default" at the end (in this URL, replace "[TenantCode]" with your actual tenant code that shows up in the platform's URLs, i.e. Tenant001).
+2. We are going to start with a POST request, to create a new Company. Set the request type as "POST" and the request url as the base url used to access Omnia (i.e. https://omnia.example.com/), adding "api/v1/[TenantCode]/prd/Application/Company/default" at the end (in this URL, replace "[TenantCode]" with your actual tenant code that shows up in the platform's URLs).
 
     ![Postman POST Request](/images/tutorials/apiclient/POSTrequest.jpg)
 
-2. Before creating a request to OMNIA API, configure OAuth 2.0 as the authentication type to be used on requests, and fill the required parameters, as in the following image
+3. Before creating a request to OMNIA API, configure OAuth 2.0 as the authentication type to be used on requests, and fill the required parameters, as in the following images:
 
-    ![Postman_Configure_AccessToken](https://raw.githubusercontent.com/numbersbelieve/omnia3/master/docs/tutorialPics/modelingTutorial/Postman-Configure-AccessToken.PNG)
+    ![Postman oAuth Config](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/apiclient/oauth-config.png)
+
+    ![Postman_Configure_AccessToken](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/apiclient/newAccessToken.jpg)
 
     * Grant Type: Set as "Client Credentials"
     * Access token URL: The base url used to access Omnia, adding "/identity/connect/token" at the end
@@ -62,7 +64,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
     ![Postman_Post_Configuration](https://raw.githubusercontent.com/numbersbelieve/omnia3/master/docs/tutorialPics/modelingTutorial/Postman-Post-Config.PNG)
 
-4. Copy the following Json as the request body:
+5. Copy the following Json as the request body:
 
     ````
 {% raw %}

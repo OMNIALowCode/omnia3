@@ -1,15 +1,15 @@
-repository: numbersbelieve/omnia3
+repository: omnialowcode/omnia3
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: OMNIA Platform Documentation
+topnav_title: OMNIA Low-Code Platform Documentation
 # this appears on the top navigation bar next to the home button
 
-site_title: OMNIA Platform Documentation
+site_title: OMNIA Low-Code Platform Documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: NumbersBelieve
+company_name: OMNIA Low-Code
 # this appears in the footer
 
 github_editme_path:
@@ -21,7 +21,7 @@ github_editme_path:
 disqus_shortname: 
 # if you're using disqus for comments, add the shortname here. if not, leave this value blank.
 
-google_analytics: 
+google_analytics: 130931808
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 host: 127.0.0.1

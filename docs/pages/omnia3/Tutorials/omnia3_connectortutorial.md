@@ -21,6 +21,8 @@ As our custom data source, we are going to use a CSV file with a list of Contact
 
 This tutorial assumes that you have created a OMNIA tenant ([click here to see how](omnia3_tenantcreation.html)), and are logged in as a user with modeling privileges to this tenant. You must also have access to the management area to manage the connectors.
 
+Please download this [Contacts.csv](omnia3/docs/tutorialPics/modelingTutorial/Contacts.csv), we'll be using it as a data source in this tutorial. 
+
 
 ## 3. Create a new connector
 
@@ -40,7 +42,7 @@ This tutorial assumes that you have created a OMNIA tenant ([click here to see h
 
 ## 4. CRUD operations
 
-1. Access Omnia homepage, select the tenant where you are going to model and you will be redirected to the modeling area.
+1. Access OMNIA homepage, select the tenant where you are going to model and you will be redirected to the modeling area.
 
 2. Through the left side menu, create a new Data Source by accessing the option ***Data Sources / Add new*** on the top right side. Set its Name as "*CSVSource*", Behaviour Runtime and Data Access Runtime as *"External"*.
 

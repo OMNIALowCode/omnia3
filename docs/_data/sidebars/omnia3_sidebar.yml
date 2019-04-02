@@ -100,7 +100,7 @@ entries:
   - title: ERP Integrations
     output: web, pdf
     folderitems:
-    - title: PRIMAVERA v9
+    - title: PRIMAVERA (v9)
       url: /omnia3_primaveraconnectortutorial.html
       output: web, pdf
       

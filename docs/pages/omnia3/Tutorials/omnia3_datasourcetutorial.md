@@ -15,7 +15,7 @@ On the first tutorial area (CRUD Operations), we are going to evaluate how to in
 
 As our custom data source, we are going to use a free API named [ReqRes](https://reqres.in/), that simulates real time CRUD operations, based on a user management scenario.
 
-Please notice that, since this is only a simulation, no actual data is manipulated (written, updated or removed) on REQRES's system. However, the code shown will be easily convertable to real-world scenarios. 
+Please notice that, since this is only a simulation, no actual data is manipulated (written, updated or removed) on REQRES's system. However, the code shown will be easily convertible to real-world scenarios. 
 
 
 ## 2. Prerequisites

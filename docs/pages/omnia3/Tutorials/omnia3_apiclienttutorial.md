@@ -60,11 +60,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     * Scope: set as "api"
     * Client Authentication: set as "Send as Basic Auth header"
 
-4. Check that the request is configured as in the following image
-
-    ![Postman_Post_Configuration](https://raw.githubusercontent.com/numbersbelieve/omnia3/master/docs/tutorialPics/modelingTutorial/Postman-Post-Config.PNG)
-
-5. Copy the following Json as the request body:
+4. Copy the following Json as the request body:
 
     ````
 {% raw %}
@@ -76,6 +72,8 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     ````
 
 5. Click on send and check the Omnia API response. If request was made successfully, a 201 Created status code is the expected result. Validate the response - it should return a JSON object showing what was created.
+
+    ![Postman POST Response](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/apiclient/POSTresponse.jpg)
 
 6. Now change the request type to GET, and retrieve the Company record saved on the last step by setting the request url as the base url, with "api/v1/[TenantCode]/prd/Application/Company/default/AnalogSound" at the end. Replace "[TenantCode]" with yout actual tenant code.
 

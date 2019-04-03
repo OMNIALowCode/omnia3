@@ -39,11 +39,11 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. Edit the role, and on tab "Users", click on button "Add new". Paste the Client Username copied on step 3 and click on Save
 
-## 4. Consume Omnia API 
+## 4. Consume OMNIA API 
 
-1. To consume the Omnia API, open the previously installed Postman application.
+1. To consume the OMNIA API, open the previously installed Postman application. We are going to start with a POST request, to create a new Company.
 
-2. We are going to start with a POST request, to create a new Company. Set the request type as "POST" and the request url as the base url used to access Omnia (i.e. https://omnia.example.com/), adding "api/v1/[TenantCode]/prd/Application/Company/default" at the end (in this URL, replace "[TenantCode]" with your actual tenant code that shows up in the platform's URLs).
+2. Set the request type as "POST" and the request url as the base url used to access OMNIA (i.e. https://omnia.example.com/), then add "api/v1/[TenantCode]/prd/Application/Company/default" at the end (in this URL, replace "[TenantCode]" with your actual tenant code that shows up in the platform's URLs).
 
     ![Postman POST Request](/images/tutorials/apiclient/POSTrequest.jpg)
 
@@ -71,9 +71,11 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 {% endraw %}
     ````
 
-5. Click on send and check the Omnia API response. If request was made successfully, a 201 Created status code is the expected result. Validate the response - it should return a JSON object showing what was created.
 
     ![Postman POST Response](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/apiclient/POSTresponse.jpg)
+
+5. Click on send and check the OMNIA API's response. If request was made successfully, a 201 Created status code is the expected result. Validate the response - it should return a JSON object showing what was created.
+
 
 6. Now change the request type to GET, and retrieve the Company record saved on the last step by setting the request url as the base url, with "api/v1/[TenantCode]/prd/Application/Company/default/AnalogSound" at the end. Replace "[TenantCode]" with yout actual tenant code.
 

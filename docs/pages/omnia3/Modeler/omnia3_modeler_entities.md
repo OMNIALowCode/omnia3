@@ -128,6 +128,26 @@ By selecting the option _Add new container_ you will be able to add new containe
 * _Is the element hidden?_: the visibility of the element (hidden or visible);
 * _Minimal visible screen size_: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
 
+### How to add a new calendar element?
+By selecting the option _Add new calendar_ you will be able to add new calendars to your layout, after filling the following information:
+
+* _Name_: the element's unique identifier attribute;
+* _Mapping_: the element, of type colection, that will be used as a data source; 
+(In case of a single date event, use the Date Mapping option, if you require a date interval, use Start and Finish Date Mapping instead)
+* _Date Mapping_: the coleciton element that will represent the calendar's event date;
+* _Start Date Mapping_: start date of the date mapping;
+* _Finish Date Mapping_: end date of the date mapping;
+* _Title Mapping_: the element that will be used to define the title property;
+* _Category Mapping_: the element that will be used to define the category property;
+* _Label_: the caption of the element;
+* _Help text_: the detailed description of the element;
+* _Row_: the layout row in which the element will be placed;
+* _Column_: the layout column in which the element will be placed;
+* _Size_: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
+* _Is the element hidden?_: the visibility of the element (hidden or visible);
+* _Minimal visible screen size_: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
+
+
 ### How to change the positioning of an element?
 In the User Interface tab, select the element you want to change and, in the _Row_ and/or _Column_ fields, set the new positioning values.
 

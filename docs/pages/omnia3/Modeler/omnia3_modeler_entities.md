@@ -132,7 +132,7 @@ By selecting the option _Add new container_ you will be able to add new containe
 By selecting the option _Add new calendar_ you will be able to add new calendars to your layout, after filling the following information:
 
 * _Name_: the element's unique identifier attribute;
-* _Mapping_: the element, of type colection, that will be used as a data source; 
+* _Mapping_: the element, of type colection, that will be used as a data source;
 (In case of a single date event, use the Date Mapping option, if you require a date interval, use Start and Finish Date Mapping instead)
 * _Date Mapping_: the coleciton element that will represent the calendar's event date;
 * _Start Date Mapping_: start date of the date mapping;

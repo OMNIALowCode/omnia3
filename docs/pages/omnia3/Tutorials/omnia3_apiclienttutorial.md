@@ -82,8 +82,8 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 7. Check that the response body has the data previously inserted on the POST request:
 
-    ![Postman_Configure_AccessToken](https://raw.githubusercontent.com/numbersbelieve/omnia3/master/docs/tutorialPics/modelingTutorial/Postman-Get-Request.PNG)
+    ![Postman_Configure_AccessToken](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/apiclient/postman_GETresponse.jpg)
 
-Now that you have completed our API Client tutorial, feel free to explore the Omnia API, by testing other requests. Remember that the Modeling area is also available via API, so that you can create and change your models programatically.
+Now that you have completed our API Client tutorial, feel free to explore our API by testing other requests. Remember that the Modeling area is also available via API, so that you can create and change your models programatically.
 
 Also remember that the platform's API is automatically documented directly on your installation of it. For more information on this, check [this page](omnia3_api_swagger.html).

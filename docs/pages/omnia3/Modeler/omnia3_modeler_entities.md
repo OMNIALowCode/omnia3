@@ -210,3 +210,16 @@ In this sample, the user will be redirected to another page of the application, 
     // The application will be redirected to the dashboard of the entity Employee
     this._context.redirectToApplicationAddress('Employee');
 ```
+
+### How to have asynchronous behaviours?
+
+In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), that will allow the behaviour to execute asynchronously:
+
+```JavaScript
+    return new Promise(
+        (resolve) => {
+            // your code here
+            resolve();
+        }
+    );
+```

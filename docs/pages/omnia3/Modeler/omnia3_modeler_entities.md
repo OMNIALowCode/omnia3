@@ -200,3 +200,12 @@ In this sample, the element *notes* (which is an inner element of *collection*) 
 ```JavaScript
     this._metadata.elements.collection.elements.notes.attributes.isDetails = true;
 ```
+
+### How to redirect to another application page?
+
+In this sample, the user will be redirected to another page of the application, using an existing function of the Form/Dashboard *context*:
+
+```JavaScript
+    // The application will be redirected to the dashboard of the entity Employee
+    this._context.redirectToApplicationAddress('Employee');
+```

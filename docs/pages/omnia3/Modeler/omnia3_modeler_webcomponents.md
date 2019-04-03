@@ -33,15 +33,14 @@ class MyComponent extends HTMLElement {
   constructor() {
    super();
    
-   // Using regular Javascript, create the content of the Web Component
-   this.wrapper = document.createElement('div');
-   this.wrapper.innerHTML = 'My first Web Component in OMNIA Platform!';
+    // Using regular Javascript, create the content of the Web Component
+    this.wrapper = document.createElement('div');
+    this.wrapper.innerHTML = 'My first Web Component in OMNIA Platform!';
   }
 
   connectedCallback() {
-    // Append the elements to the Web Component
+    // Append the elements to the Web Component
     this.appendChild(this.wrapper);
-
   }
 }
 

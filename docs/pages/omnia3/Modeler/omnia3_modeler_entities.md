@@ -257,3 +257,25 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
         }
     );
 ```
+
+### How to set the categories of a calendar?
+To each category is possible to define the name (used as the unique identifier), a title and a color. Is also possible to set the category as inactive by default.
+
+In this sample, the categories of the element *calendar* are setted:
+
+```JavaScript
+    this._metadata.elements.calendar.attributes.categories = [
+        { name: 'Category01', title: 'Le 1st category', color: '#d90dea', startAsInactive: true },
+        { name: 'A', title: 'Le "A" category', color: '#259fb4', startAsInactive: false }
+    ]
+```
+
+### How to execute an action when a category is toggled?
+
+In this sample, a function is added to the calendar metadata, in order to be executed every time a category is activated or deactivated:
+
+```JavaScript
+    this._metadata.elements.calendar.onCategoryToggle = (category, isActive) => {
+        // your code here
+    }
+```

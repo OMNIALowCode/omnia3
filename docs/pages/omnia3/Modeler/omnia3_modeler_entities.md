@@ -191,3 +191,12 @@ In this sample, the options to remove or add records of custom element *collecti
     this._metadata.elements.collection.attributes.addEntry = "enabled";
     this._metadata.elements.collection.attributes.removeEntry = "enabled";
 ```
+
+### How to move an element to the details area of a grid?
+
+This feature only applies to the inner elements of a collection element.
+In this sample, the element *notes* (which is an inner element of *collection*) is placed in the details area:
+
+```JavaScript
+    this._metadata.elements.collection.elements.notes.attributes.isDetails = true;
+```

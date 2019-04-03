@@ -235,7 +235,6 @@ In this sample, the element *notes* (which is an inner element of *collection*) 
     this._metadata.elements.collection.elements.notes.attributes.isDetails = true;
 ```
 
-
 ### How to redirect to another application page?
 
 In this sample, the user will be redirected to another page of the application, using an existing function of the Form/Dashboard *context*:
@@ -256,6 +255,24 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
             resolve();
         }
     );
+```
+### **Shared Attributes**
+### How to change the shared attribute's lookup list?
+
+In this sample, the lookup list of the attribute *employee* is changed to a custom list:
+
+```JavaScript
+    this._metadata.elements.employee.attributes.list = 'MyCustomEmployeeList';
+```
+
+### How to filter a shared attribute's lookup list?
+
+In this sample, the lookup list of the attribute *employee* is filtered using the data (in the case, the value of *company*) of the current entity:
+
+```JavaScript
+    this._metadata.elements.employee.attributes.listParameters = {
+        company: this.company
+    };
 ```
 
 ### **Calendar**

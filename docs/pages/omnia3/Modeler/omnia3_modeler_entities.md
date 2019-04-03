@@ -179,14 +179,15 @@ In this sample, is removed and added (based on a condition) a message to the bas
 In this sample, the options to remove or add records of custom element *collection* are changed based on a condition:
 
 ```JavaScript
-    if(this._code === ''){
-        // Disable the add option and hides the remove options
-        this._metadata.elements.collection.attributes.addEntry = "disabled";
-        this._metadata.elements.collection.attributes.removeEntry = "hidden";
-    }
-    else{
-        // Turns add and remove options enabled
-        this._metadata.elements.collection.attributes.addEntry = "enabled";
-        this._metadata.elements.collection.attributes.removeEntry = "enabled";
-    }
+    // Disable options
+    this._metadata.elements.collection.attributes.addEntry = "disabled";
+    this._metadata.elements.collection.attributes.removeEntry = "disabled";
+    
+    // Hide options
+    this._metadata.elements.collection.attributes.addEntry = "hidden";
+    this._metadata.elements.collection.attributes.removeEntry = "hidden";
+        
+    // Enable and show options
+    this._metadata.elements.collection.attributes.addEntry = "enabled";
+    this._metadata.elements.collection.attributes.removeEntry = "enabled";
 ```

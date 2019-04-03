@@ -114,7 +114,7 @@ Selecting the option _Add new element_ you will be able to add new elements to t
 * _Column_: the layout column in which the element will be placed;
 * _Size_: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
 * _Is the element hidden?_: the visibility of the element (hidden or visible);
-* _Minimal visible screen size_: the visibility of the element, related to the user's device screen size (sizes smaller than the one selected will hide the element);
+* _Minimal visible screen size_: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
 
 
 ### How to change the positioning of an element?

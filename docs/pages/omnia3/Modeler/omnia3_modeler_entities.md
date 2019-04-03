@@ -258,6 +258,17 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
     );
 ```
 
+### **Calendar**
+### How to execute an action when the view is changed?
+
+In this sample, a function is added to the calendar metadata, in order to be executed every time the calendar's view is changed:
+
+```JavaScript
+    this._metadata.elements.calendar.onDataRangeChange = (startDate, finishDate, view) => {
+        // your code here
+    }
+```
+
 ### How to set the categories of a calendar?
 To each category is possible to define the name (used as the unique identifier), a title and a color. Is also possible to set the category as inactive by default.
 

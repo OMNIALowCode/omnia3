@@ -107,7 +107,7 @@ The form layout is organized with _Rows_ and _Columns_. Each row is divided hori
 ### How to add a new element?
 Selecting the option _Add new element_ you will be able to add new elements to the layout, after filling the following information:
 
-* _Attribute_: the entity attribute this element will represent in the layout (will allow you to read and write in this attribute);
+* _Name_: the entity attribute this element will represent in the layout (will allow you to read and write in this attribute);
 * _Label_: the caption of the element;
 * _Help text_: the detailed description of the element;
 * _Row_: the layout row in which the element will be placed;
@@ -200,6 +200,7 @@ In this sample, the element *notes* (which is an inner element of *collection*) 
 ```JavaScript
     this._metadata.elements.collection.elements.notes.attributes.isDetails = true;
 ```
+
 
 ### How to redirect to another application page?
 

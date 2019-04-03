@@ -76,8 +76,9 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. Click on send and check the OMNIA API's response. If request was made successfully, a 201 Created status code is the expected result. Validate the response - it should return a JSON object showing what was created.
 
+    ![Postman 200 Response](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/apiclient/postman-response200.jpg)
 
-6. Now change the request type to GET, and retrieve the Company record saved on the last step by setting the request url as the base url, with "api/v1/[TenantCode]/prd/Application/Company/default/AnalogSound" at the end. Replace "[TenantCode]" with yout actual tenant code.
+6. Now change the request type to GET, and retrieve the Company record saved on the last step by setting the request url as the base url, with "api/v1/[TenantCode]/prd/Application/Company/default/AnalogSound" at the end. Replace "[TenantCode]" with your actual tenant code.
 
 7. Check that the response body has the data previously inserted on the POST request:
 

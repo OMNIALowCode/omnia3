@@ -105,7 +105,7 @@ Automatically, the platform adds and removes user interface elements when a new 
 The form layout is organized with _Rows_ and _Columns_. Each row is divided horizontally in 12 columns.
 
 ### How to add a new element?
-Selecting the option _Add new element_ you will be able to add new elements to the layout, after filling the following information:
+By selecting the option _Add new element_ you will be able to add new elements to the layout, after filling the following information:
 
 * _Name_: the entity attribute this element will represent in the layout (will allow you to read and write in this attribute);
 * _Label_: the caption of the element;
@@ -116,6 +116,17 @@ Selecting the option _Add new element_ you will be able to add new elements to t
 * _Is the element hidden?_: the visibility of the element (hidden or visible);
 * _Minimal visible screen size_: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
 
+### How to add a new container element?
+By selecting the option _Add new container_ you will be able to add new containers to your layout, after filling the following information:
+
+* _Name_: the element's identifier attribute;
+* _Label_: the caption of the element;
+* _Help text_: the detailed description of the element;
+* _Row_: the layout row in which the element will be placed;
+* _Column_: the layout column in which the element will be placed;
+* _Size_: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
+* _Is the element hidden?_: the visibility of the element (hidden or visible);
+* _Minimal visible screen size_: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
 
 ### How to change the positioning of an element?
 In the User Interface tab, select the element you want to change and, in the _Row_ and/or _Column_ fields, set the new positioning values.

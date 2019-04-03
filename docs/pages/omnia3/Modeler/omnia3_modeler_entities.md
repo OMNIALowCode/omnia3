@@ -119,7 +119,7 @@ By selecting the option _Add new element_ you will be able to add new elements t
 ### How to add a new container element?
 By selecting the option _Add new container_ you will be able to add new containers to your layout, after filling the following information:
 
-* _Name_: the element's identifier attribute;
+* _Name_: the element's unique identifier attribute;
 * _Label_: the caption of the element;
 * _Help text_: the detailed description of the element;
 * _Row_: the layout row in which the element will be placed;

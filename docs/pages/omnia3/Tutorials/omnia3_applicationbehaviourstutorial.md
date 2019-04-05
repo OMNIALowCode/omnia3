@@ -102,9 +102,11 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
         this.CompanyCurrency = entity.CompanyCurrency; 
     ```
     
+    
     - **Name**: *OnChange_Supplier*
     - **Action to attribute**: *Supplier*
     - **Code**:    
+    
     
     ```C#
        

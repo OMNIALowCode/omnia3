@@ -48,6 +48,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     
 6. Still on Agent Employee, navigate to tab "Data Behaviours", and define a behaviour to be executed on "Create". This behaviour will be used to perform a POST request to the external Application when we create an instance of the Employee on the OMNIA platform. Copy and paste the following code:
 
+
 ```C#
 	
 var client = new System.Net.Http.HttpClient();
@@ -79,6 +80,7 @@ return employeeResponse;
 
 ```
 
+
 7. On "Data Behaviours" of Agent Employee, define a behaviour, to be executed on "Delete" (when a Employee is deleted on OMNIA). Copy and paste the following code:
 
 
@@ -99,7 +101,9 @@ return true;
 
 ```
 
+
 8. Create a new Data Behaviour for the operation "Read", so that data is retrieved when a Employee is edited on OMNIA. Copy and paste the following code:
+
 
 ```C#
       
@@ -123,7 +127,9 @@ return employeeResponse;
     
 ```
 
+
 9. Create a new Data Behaviour for the operation "ReadList", so that data is retrieved when a list of Employees is requested. Copy and paste the following code:
+
 
 ```C#
 
@@ -153,10 +159,11 @@ return (responseData.Count, employeesList);
 
 ```
 
+
 NOTE: in this scenario, we are ignoring the query sent by the user when obtaining the list. In real world scenarios, you will want to change the query to the external system and/or the returned response, according to the parameters sent by the user.
 	
-
 10. Create a new Data Behaviour for the operation "Update", so that data is retrieved when an Employee is updated on OMNIA (i.e., edited and saved). Copy and paste the following code:
+
 
 ```C#
     
@@ -187,6 +194,7 @@ if (!requestResult.IsSuccessStatusCode)
 	return employeeResponse;
 
 ```
+
 
 11. Build & Deploy model
 

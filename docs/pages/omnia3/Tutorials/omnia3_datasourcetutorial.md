@@ -79,9 +79,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
       	
 	```
 
-
-2. On "Data Behaviours" of Agent Employee, define a behaviour, to be executed on "Delete" (when a Employee is deleted on OMNIA). Copy and paste the following code:
-
+7. On "Data Behaviours" of Agent Employee, define a behaviour, to be executed on "Delete" (when a Employee is deleted on OMNIA). Copy and paste the following code:
 
 
 	```C#
@@ -101,9 +99,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     	
 	```
 
-
 8. Create a new Data Behaviour for the operation "Read", so that data is retrieved when a Employee is edited on OMNIA. Copy and paste the following code:
-
 
 	```C#
       
@@ -156,8 +152,9 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     
     ```
 
-	NOTE: in this scenario, we are ignoring the query sent by the user when obtaining the list. In real world scenarios, you will want to change the query to the external system and/or the returned response, according to the parameters sent by the user.
+NOTE: in this scenario, we are ignoring the query sent by the user when obtaining the list. In real world scenarios, you will want to change the query to the external system and/or the returned response, according to the parameters sent by the user.
 	
+
 10. Create a new Data Behaviour for the operation "Update", so that data is retrieved when an Employee is updated on OMNIA (i.e., edited and saved). Copy and paste the following code:
 
     ```C#

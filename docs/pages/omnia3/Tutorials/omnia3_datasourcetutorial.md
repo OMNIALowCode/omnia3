@@ -80,7 +80,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 	```
 
 
-7. On "Data Behaviours" of Agent Employee, define a behaviour, to be executed on "Delete" (when a Employee is deleted on OMNIA). Copy and paste the following code:
+2. On "Data Behaviours" of Agent Employee, define a behaviour, to be executed on "Delete" (when a Employee is deleted on OMNIA). Copy and paste the following code:
 
 
 

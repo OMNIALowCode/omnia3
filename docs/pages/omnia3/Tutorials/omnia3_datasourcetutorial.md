@@ -209,17 +209,17 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 
 1. To add an Employee to our Purchase Document, and assign a user responsible for it, we'll need to add three new attributes to our Purchase Order Document. Access the document and create the following attributes:
 	
-	Reference Attribute for External API
+	*Reference Attribute* for External API
 	- **Name**: *ExternalAPI*
 	- **Type**: *Data Source > External API*
 	
 	
-	Reference Attribute for "Employee"
+	*Reference Attribute* for "Employee"
 	- **Name**: *Employee*
 	- **Data Source**: *ExternalAPI*
 	
 	
-	Primitive Attribute for Employee Name
+	*Primitive Attribute* for Employee Name
 	- **Name**: *EmployeeName*
 	- **Type**: *Text*
 	- **Label**: *Ordered by employee:*

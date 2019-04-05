@@ -9,9 +9,9 @@ folder: omnia3
 
 ## 1. Introduction
 
-Based on a simple Employee management scenario, this tutorial shows how easily OMNIA can use and combine information from different data sources. In order to understand how this works, please read [this section of the documentation](omnia3_modeler_datasources.html).
+As a continuation of our [Application Behaviours Tutorial](omnia3_applicationbehaviourstutorial.html), this tutorial shows how easily OMNIA can use and combine information from different data sources. In order to understand how this works, please read [this section of the documentation](omnia3_modeler_datasources.html).
 
-On the first tutorial area (CRUD Operations), we are going to evaluate how to interact with an external data source, by reading and manipulating its data. On the second area (External data sources data on OMNIA), we are going to focus on the use of data source information on OMNIA's entities. 
+On the first tutorial area (CRUD Operations), we are going to evaluate how to interact with an external data source, by reading and manipulating its data. On the second area (Add Employee Selection to Purchase Document), we are going to focus on the application of the new developed elements to our existing document, to mimic a real world scenario of attribution of a document to an employee. 
 
 As our custom data source, we are going to use a free API named [ReqRes](https://reqres.in/), that simulates real time CRUD operations, based on a user management scenario.
 
@@ -208,23 +208,23 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 ## 4. Add Employee Selection to Purchase Document
 
 1. To add an Employee to our Purchase Document, and assign a user responsible for it, we'll need to add three new attributes to our Purchase Order Document. Access the document and create the following attributes:
-	Reference Attribute for external api
-	- Name: ExternalAPI
-	- Type: Data Source > External API
+	**Reference Attribute** for external api
+	- **Name**: *ExternalAPI*
+	- **Type**: *Data Source > External API*
 	
-	Reference attribute for "Employee"
-	- Name: Employee
-	- Data Source: ExternalAPI
+	**Reference Attribute** for "Employee"
+	- **Name**: *Employee*
+	- **Data Source**: *ExternalAPI*
 	
-	Primitive attribute
-	- Name: EmployeeName
-	- Type: Text
-	- Label: Ordered by:
-	- is read only?: Yes
+	**Primitive Attribute**
+	- **Name**: *EmployeeName*
+	- **Type**: *Text*
+	- **Label**: *Ordered by:*
+	- **is read only?**: *Yes*
 
 2. Now let's add an entity behaviour to our document, so that our employee selection fill the "EmployeeName" field automatically:
-	- Entity Behaviour Name: OnChange_Employee
-	- Code:
+	- **Entity Behaviour Name**: *"OnChange_Employee"*
+	- **Code**:
 	
 	```C#
 	

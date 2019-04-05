@@ -125,32 +125,32 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 9. Create a new Data Behaviour for the operation "ReadList", so that data is retrieved when a list of Employees is requested. Copy and paste the following code:
 
-    ```C#
-    
-    var client = new System.Net.Http.HttpClient();
-    string apiEndpoint = $"https://reqres.in/api/users?page={page}";
+	    ```C#
 
-    var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
+	    var client = new System.Net.Http.HttpClient();
+	    string apiEndpoint = $"https://reqres.in/api/users?page={page}";
 
-    string responseBody = requestResult.Content.ReadAsStringAsync().Result;
-    if (!requestResult.IsSuccessStatusCode)
-      throw new Exception("Error on creating contact: " + responseBody);
-      
-    var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
-    var responseData = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(response["data"].ToString());
+	    var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
 
-    List<IDictionary<string, object>> employeesList = new List<IDictionary<string, object>>();
+	    string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+	    if (!requestResult.IsSuccessStatusCode)
+	      throw new Exception("Error on creating contact: " + responseBody);
 
-    foreach (var employee in responseData)
-    {
-      var line = new Dictionary<string, object>()
-      {{"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}};
-      employeesList.Add(line);
-    }
+	    var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+	    var responseData = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(response["data"].ToString());
 
-    return (responseData.Count, employeesList);
-    
-    ```
+	    List<IDictionary<string, object>> employeesList = new List<IDictionary<string, object>>();
+
+	    foreach (var employee in responseData)
+	    {
+	      var line = new Dictionary<string, object>()
+	      {{"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}};
+	      employeesList.Add(line);
+	    }
+
+	    return (responseData.Count, employeesList);
+
+	    ```
 
 NOTE: in this scenario, we are ignoring the query sent by the user when obtaining the list. In real world scenarios, you will want to change the query to the external system and/or the returned response, according to the parameters sent by the user.
 	

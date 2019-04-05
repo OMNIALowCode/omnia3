@@ -1,4 +1,3 @@
-
 ---
 title: Data Source Tutorial
 keywords: omnia3
@@ -133,7 +132,6 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 
 	```C#
-	{% raw %}
 
 		var client = new System.Net.Http.HttpClient();
 		string apiEndpoint = $"https://reqres.in/api/users?page={page}";
@@ -152,13 +150,13 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 		foreach (var employee in responseData)
 		{
-		  var line = new Dictionary<string, object>()
-		  {{"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}};
+		  var line = new Dictionary<string, object>(){
+			  {"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}
+		  };
 		  employeesList.Add(line);
 		}
 
 		return (responseData.Count, employeesList);
-	{% endraw %}
 	```
 
 

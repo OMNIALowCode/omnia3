@@ -107,23 +107,23 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 	```C#
 
-	var client = new System.Net.Http.HttpClient();
-	string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
+		var client = new System.Net.Http.HttpClient();
+		string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
 
-	var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
+		var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
 
-	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
-	if (!requestResult.IsSuccessStatusCode)
-		throw new Exception("Error on creating contact: " + responseBody);
+		string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+		if (!requestResult.IsSuccessStatusCode)
+			throw new Exception("Error on creating contact: " + responseBody);
 
-	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
-	var responseData = JsonConvert.DeserializeObject<Dictionary<string, object>>(response["data"].ToString());
+		var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+		var responseData = JsonConvert.DeserializeObject<Dictionary<string, object>>(response["data"].ToString());
 
-	EmployeeDto employeeResponse = new EmployeeDto();
-	employeeResponse._code = responseData["id"].ToString();
-	employeeResponse._name = $"{responseData["first_name"].ToString()} {responseData["last_name"].ToString()}";
+		EmployeeDto employeeResponse = new EmployeeDto();
+		employeeResponse._code = responseData["id"].ToString();
+		employeeResponse._name = $"{responseData["first_name"].ToString()} {responseData["last_name"].ToString()}";
 
-	return employeeResponse;
+		return employeeResponse;
 
 	```
 
@@ -133,29 +133,29 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 	```C#
 
-	var client = new System.Net.Http.HttpClient();
-	string apiEndpoint = $"https://reqres.in/api/users?page={page}";
+		var client = new System.Net.Http.HttpClient();
+		string apiEndpoint = $"https://reqres.in/api/users?page={page}";
 
-	var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
+		var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
 
-	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+		string responseBody = requestResult.Content.ReadAsStringAsync().Result;
 
-	if (!requestResult.IsSuccessStatusCode)
-		throw new Exception("Error on creating contact: " + responseBody);
+		if (!requestResult.IsSuccessStatusCode)
+			throw new Exception("Error on creating contact: " + responseBody);
 
-	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
-	var responseData = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(response["data"].ToString());
+		var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+		var responseData = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(response["data"].ToString());
 
-	List<IDictionary<string, object>> employeesList = new List<IDictionary<string, object>>();
+		List<IDictionary<string, object>> employeesList = new List<IDictionary<string, object>>();
 
-	foreach (var employee in responseData)
-	{
-	  var line = new Dictionary<string, object>()
-	  {{"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}};
-	  employeesList.Add(line);
-	}
+		foreach (var employee in responseData)
+		{
+		  var line = new Dictionary<string, object>()
+		  {{"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}};
+		  employeesList.Add(line);
+		}
 
-	return (responseData.Count, employeesList);
+		return (responseData.Count, employeesList);
 
 	```
 
@@ -167,31 +167,31 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 
 	```C#
 
-	var client = new System.Net.Http.HttpClient();
-	string apiEndpoint = $"https://reqres.in/api/users/{dto._code}";
+		var client = new System.Net.Http.HttpClient();
+		string apiEndpoint = $"https://reqres.in/api/users/{dto._code}";
 
-	var body = new
-	{
-	code = dto._code,
-	name = dto._name
-	};
+		var body = new
+		{
+		code = dto._code,
+		name = dto._name
+		};
 
-	var jsonBody = JsonConvert.SerializeObject(body);
+		var jsonBody = JsonConvert.SerializeObject(body);
 
-	var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
+		var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
 
-	var requestResult = client.PutAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
-	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+		var requestResult = client.PutAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
+		string responseBody = requestResult.Content.ReadAsStringAsync().Result;
 
-	if (!requestResult.IsSuccessStatusCode)
-		throw new Exception("Error on creating contact: " + responseBody);
-		var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+		if (!requestResult.IsSuccessStatusCode)
+			throw new Exception("Error on creating contact: " + responseBody);
+			var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
 
-		EmployeeDto employeeResponse = new EmployeeDto();
-		employeeResponse._code = response["code"].ToString();
-		employeeResponse._name = response["name"].ToString();
+			EmployeeDto employeeResponse = new EmployeeDto();
+			employeeResponse._code = response["code"].ToString();
+			employeeResponse._name = response["name"].ToString();
 
-		return employeeResponse;
+			return employeeResponse;
 
 	```
 

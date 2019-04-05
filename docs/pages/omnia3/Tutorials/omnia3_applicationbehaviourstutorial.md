@@ -9,9 +9,11 @@ folder: omnia3
 
 ## 1. Introduction
 
-After you have completed the [Beginner Tutorial](omnia3_beginnertutorial.html), whose result is a functional order management application, OMNIA Application Behaviours Tutorial focus on the execution of behaviours on external data sources.
+After you have completed the [Beginner Tutorial](omnia3_beginnertutorial.html), whose result is a functional order management application, this tutorial focus on the usage of application behaviours on the existing Purchase Order Document.
 
-As our custom data source, we are going to use the [PRIMAVERA ERP V9](https://pt.primaverabss.com).
+In this example, we'll be adding an external API that will fetch the current currency values and exchange rates, and we'll add that valuable decision making information directly into the purchase order process.
+
+As our external API, to get exchange rate and currency values, we are going to use the [Exchange Rate API](https://exchangeratesapi.io/).
 
 
 ## 2. Prerequisites
@@ -20,98 +22,176 @@ This tutorial assumes that you have created a OMNIA tenant, and are logged in as
 
 It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_beginnertutorial.html), as this tutorial builds upon it.
 
-A connector and an access to [Primavera ERP](https://pt.primaverabss.com), on version 9 are also required to complete this tutorial.
 
 ## 3. Application Behaviours
 
-1. Access OMNIA's homepage, select the tenant where you have developed the beginner tutorial, and access the modeling area.
+1. Access your modeling area and create a new *Generic Entity*, by accessing the "Generic Entities" tab, and clicking "***Add New***". Set it's name as "***Currency***", and define it as a ***root entity***
 
-2. Through the left side menu, create a new Data Source by accessing the option ***Data Sources / Add new*** on the top right side. Set its Name as "*Primavera*", Behaviour Runtime and Data Access Runtime as *"External"*.
+    ![Create_New_GenEntity_Currency](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/add_generic_entity_currency.jpg)
 
-    ![Modeler create DataSource](/images/tutorials/applicationbehaviours/Modeler-Create-DataSource.PNG)
+2. Now let's create references to your newly created *Generic Entity*. Go to "**Agents**" and select "**Company**", and add a new **reference attribute**:
+    - Name: "**CompanyCurrency**"
+    - Type: "**Generic Entity**" > "**Currency**" 
     
-3. Still on Data Source *Primavera*, navigate to tab **Behaviour Dependencies**, and define a reference for Primavera assemblies
+    2.1 Repeat the process for the agent "**Supplier**":
+        
+      - Name: "**SupplierCurrency**"
+      - Type: "**Generic Entity**" > "**Currency**" 
 
-    - Interop.ErpBS900.dll
-    - Interop.StdBE900.dll
-    - Interop.GcpBE900.dll
-    - Interop.IGcpBS900.dll
+3. Now go to your **Purchase Order Document**, and add three new attributes:
+    - **CompanyCurrency**:
+        - *Type*: *Reference* 
+        - Attribute Type: *Generic Entity* > "**Currency**" 
+        - *Is read only?*: Yes
+        
+    - **SupplierCurrency** 
+        - *Type*: *Reference*
+        - Attribute type: *Generic Entity* > "**Currency**"
+        - *Is read only?*: Yes
+        
+    - **ExchangeRate** 
+        - *Type*: **Primitive** 
+        - Attribute Type: *Decimal* 
+        - *Is read only?*: Yes
+        
+    3.1. Go to the "*User Interface Tab*" and change the layout of your newly created elements:
+    - *CompanyCurrency*: 
+        - **Row**: 4; 
+        - **Column**: 1; 
+        - **Size**: 2;
     
-    ![Modeler add Reference](/images/tutorials/applicationbehaviours/Modeler-Primavera-Add-Dependency.PNG)
-
-4. Through the left side menu, navigate to PurchaseOrder Document, by accessing the option ***Documents / PurchaseOrder***. Add a new attribute by clicking on option **Add new / Reference** and setting its *Name* and *Type* as *Primavera* and *Data Source / Primavera*, respectively.
-
-5. Through the left side menu, create a new application behaviour by accessing the option ***Extensibility / Application Behaviours / Add new***. Set its *Name* as "IntegratePurchaseOrder", "Primavera" as *Data Source*.
-
-    Copy and paste the following code (Remember to change the "USER" and "PASS" fields to your actual username and password.):
-
-    ```C#
-    PurchaseOrderDto dto = JsonConvert.DeserializeObject<PurchaseOrderDto>(JsonConvert.SerializeObject(args));
-    Interop.ErpBS900.ErpBS bsERP = new Interop.ErpBS900.ErpBS();
-
-    bsERP.AbreEmpresaTrabalho(Interop.StdBE900.EnumTipoPlataforma.tpEmpresarial, dto.Primavera, "USER", "PASS");
-
-    Interop.GcpBE900.GcpBEDocumentoCompra purchaseOrder = new Interop.GcpBE900.GcpBEDocumentoCompra();
-
-    purchaseOrder.set_Tipodoc("ECF");
-    purchaseOrder.set_Serie("A");
-    purchaseOrder.set_TipoEntidade("F");
-    purchaseOrder.set_Entidade(dto.Supplier);
-    purchaseOrder.set_NumDocExterno("0");
-    purchaseOrder.set_Observacoes($"Document generated by OMNIA Low-Code Platform: Purchase Order: {dto._serie} / {dto._number}");
-    purchaseOrder.set_DataCarga(DateTime.Now.ToShortDateString());
-    purchaseOrder.set_DataDescarga(DateTime.Now.ToShortDateString());
-
-    bsERP.Comercial.Compras.PreencheDadosRelacionados(purchaseOrder);
-    foreach (var line in dto.OrderLines)
-    {
-        bsERP.Comercial.Compras.AdicionaLinha(purchaseOrder, line._resource, Convert.ToDouble(line._quantity));
-    }
-
-    bsERP.Comercial.Compras.Actualiza(purchaseOrder);
-
-    bsERP.FechaEmpresaTrabalho();
-
-    return new Dictionary<string, object>();
-    ```
-
-6. Edit Application Behaviour *IntegratePurchaseOrder* and click on button *Edit Namespaces* to add the following namespaces:
-
-    - Interop.ErpBS900
-    - Interop.StdBE900
-    - Interop.GcpBE900
-    - Interop.IGcpBS900
-
-    ![Modeler ApplicationBehaviour Add_Namespace](/images/tutorials/applicationbehaviours/Modeler-IntegratePurchaseOrder-Add-Namespace.PNG)
-
-7. Through the left side menu, navigate to PurchaseOrder Document, by accessing the option ***Documents / PurchaseOrder / Entity Behaviours***. Add a new entity behaviour by clicking on ***Add new / After Save***, setting its name as "IntegrateOnSave".
-
-    Copy and paste the following code (Remember to change the "CONNECTORUSER" field to your actual connector user.):
-
-    ```C#   
-    var context = new ConnectorContext(_Context);   
-    var client = new ConnectorClient(context);
+    - *SupplierCurrency*: 
+        - **Row**: 4; 
+        - **Column**: 2; 
+        - **Size**: 2;
     
-    var message = new ConnectorMessage(MessageType.Application, "IntegratePurchaseOrder", OperationType.Execute);
-    message.Data = new Dictionary<string, object>(){
-        {"dataSource", Primavera}, {"dataSourceType", "Primavera"}, {"data", ToDto()}
-    };
+    - *ExchangeRate*: 
+        - **Row**: 4; 
+        - **Column**: 3; 
+        - **Size**: 2;
     
-    var connectorUsername = "CONNECTORUSER";
+    ![PurchaseOrderDocumentLayout](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/document-layout.jpg)
+
+4. Now that have all the elements created, let's add two **Action/Change Entity Behaviours** that will fetch the currency value, and add the rate calculation code at the end:
     
-    var response = await client.ExecuteAsync(connectorUsername, message);
-    if (response.ContainsKey("isSuccess") && (bool)response["isSuccess"] == false)
-     throw new Exception(response.ContainsKey("message") ? response["message"].ToString() : "An error has occurred");
+    - **Name**: *OnChange_Company*
+    - **Action to attribute**: *Company*
+    - **Code**:
+    
+       ```C#
+       
+        // Code generated by an accelerator (you can change it if you need)
+        // The following code invokes the API to retrieve the data of an entity and set the values in the current entity
+        if(string.IsNullOrEmpty(this.Company?.ToString()))
+            return;
 
-    return await Task.FromResult(new AfterSaveMessage("Integration with Primavera successful.", AfterSaveMessageType.Success));
-    ```
+        // In order to prevent to invoke the API if the values were sent by the user
+        if(
+            this._Dto.HasPropertyChanged(nameof(this.CompanyCurrency))  
+        )
+            return;
 
-8. Build & Deploy model.
+        var httpClient = this._Context.CreateApplicationHttpClient();
+        var requestResult = httpClient.GetAsync($"Company/Default/{this.Company}").GetAwaiter().GetResult();
 
-9. Go to application area, and create new instance of Primavera. The Connector value is the code defined earlier when the connector was created
+        if (!requestResult.IsSuccessStatusCode)
+            throw new Exception($"Can't retrieve the entity '{this.Company}'");
 
-10. Create a new Purchase Order.
+        var entity = requestResult.Content.ReadAsAsync<CompanyDto>().GetAwaiter().GetResult();
 
-11. After creating the purchase order, click on the first option of the top bar, and check the operation result is now visible.
+        this.CompanyCurrency = entity.CompanyCurrency; 
 
-    ![Modeler view Notifications](/images/tutorials/applicationbehaviours/Application-NotificationCenter.PNG)
+    
+    - **Name**: *OnChange_Supplier*
+    - **Action to attribute**: *Supplier*
+    - **Code**:    
+    
+       ```C#
+       
+        // Code generated by an accelerator (you can change it if you need)
+        // The following code invokes the API to retrieve the data of an entity and set the values in the current entity
+        if(string.IsNullOrEmpty(this.Supplier?.ToString()))
+            return;
+
+        // In order to prevent to invoke the API if the values were sent by the user
+        if(
+            this._Dto.HasPropertyChanged(nameof(this.SupplierCurrency))  
+        )
+            return;
+
+        var httpClient = this._Context.CreateApplicationHttpClient();
+        var requestResult = httpClient.GetAsync($"Supplier/Default/{this.Supplier}").GetAwaiter().GetResult();
+
+        if (!requestResult.IsSuccessStatusCode)
+            throw new Exception($"Can't retrieve the entity '{this.Supplier}'");
+
+        var entity = requestResult.Content.ReadAsAsync<SupplierDto>().GetAwaiter().GetResult();
+
+        this.SupplierCurrency = entity.SupplierCurrency; 
+        
+        //Rate Calculation Code:
+        
+        var rateArgs = new Dictionary<string, object>() {
+
+        { "from", this.CompanyCurrency }, { "to", this.SupplierCurrency }
+
+        };
+
+        var result = SystemApplicationBehaviours.GetCurrencyRate(rateArgs);
+
+        this.Rate = (decimal)result["Rate"];
+
+       
+5. Let's add our *Application Behaviour* that will fetch our currency rates from an external API. Go to "*Extensibility > Application Behaviours*" and "**Add new**", name it "GetExchangeRate", select **System** as *Data Source* and then add the following code:
+
+       
+       ```C#
+       var fromCurrency = (args.ContainsKey("from") ? args["from"].ToString() : "").ToUpperInvariant();
+       var toCurrency = (args.ContainsKey("to") ? args["to"].ToString() : "").ToUpperInvariant(); 
+
+       if(string.IsNullOrEmpty(fromCurrency) || string.IsNullOrEmpty(toCurrency))
+        throw new Exception($"Both currencies must be sended to calculate the rate."); 
+
+       HttpClient httpClient = new HttpClient();
+       
+       var response = httpClient.GetAsync($"https://api.exchangeratesapi.io/latest?base={fromCurrency}&symbols={toCurrency}")
+        .GetAwaiter()
+        .GetResult();
+
+       if (!response.IsSuccessStatusCode)
+        throw new Exception($"Can't retrieve the rate between {fromCurrency} and {toCurrency}");
+
+        var responseData = response.Content.ReadAsAsync<Dictionary<string, object>>().GetAwaiter().GetResult();
+        if(!responseData.ContainsKey("rates"))
+            throw new Exception($"Can't retrieve the rate between {fromCurrency} and {toCurrency}");
+ 
+        var rate = (responseData["rates"] as JObject)[toCurrency].ToObject<decimal>();
+
+        return new Dictionary<string, object>() { { "Rate", rate } };
+   
+
+6. Now open your Application Behaviour, go to "Edit Namespaces" (bottom-left corner), and add two new Namespaces, as follows:
+
+    Namespace 1:
+    - **Name**: NetHttp;
+    - **Fully Qualified Name**: System.Net.Http;
+    
+    Namespace 2:
+    - **Name**: NewtonsoftLinq;
+    - **Fully Qualified Name**: Newtonsoft.Json.Linq
+    
+    ![App_Behaviour_Namespaces](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/app_behaviour_namespaces.jpg)
+
+7. Build & Deploy model
+
+8. Before we check our results, we just need to create two currency instances, that will fetch it's value automatically. On your application area, access "Currency" (Configurations > Currency) and add two new instances:
+    - *Code*: **EUR**; *Name*: **Euro**;
+    - *Code*: **USD**; *Name*: **US Dollar**;
+
+9. Now access the "**AnalogSound**" *Company* (Configurations > Company), and select one "***Company Currency***" from the list. Now repeat the process for your "**SupplierA**" *Supplier* (Configurations > Supplier).
+
+10. Create a new Purchase Order and select a "*Company*" and a "*Supplier*" to verify that the "*Rate*" is automatically calculated when you **change the "Supplier"**, and that's it, your first Application Behaviour is complete!
+
+![AppBehaviourFinalResult](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/app_behaviours_final.jpg)
+
+Our next tutorial is about Data Sources, [click here](omnia3_datasourcetutorial.md) to get started right away

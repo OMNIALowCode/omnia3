@@ -161,7 +161,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 
 NOTE: in this scenario, we are ignoring the query sent by the user when obtaining the list. In real world scenarios, you will want to change the query to the external system and/or the returned response, according to the parameters sent by the user.
-	
+
 10. Create a new Data Behaviour for the operation "Update", so that data is retrieved when an Employee is updated on OMNIA (i.e., edited and saved). Copy and paste the following code:
 
 

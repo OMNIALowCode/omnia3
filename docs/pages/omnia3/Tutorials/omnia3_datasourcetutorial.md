@@ -36,7 +36,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 3. Navigate to tab **Behaviour Dependencies** and add a reference to .NET assembly System.Net.Http
 
-    ![Modeler_Add_Dependency](/images/tutorials/datasource/Modeler-ExternalAPI-Add-Dependency.PNG)
+    ![Modeler_Add_Dependency](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/behaviour-dependencies-netAssembly.jpg)
 
 4. Create a new Agent with *Name* "Employee", and set it as using the external data source "ExternalAPI" that you created earlier.
 
@@ -44,12 +44,12 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. Navigate to tab **Behaviour Namespaces** and add a reference to namespace System.Net.Http
 
-    ![Modeler_Add_Namespace](/images/tutorials/datasource/Modeler-Employee-Add-Namespace.PNG)
+    ![Modeler_Add_Namespace](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/behaviour-namespaces-net.jpg)
     
 6. Still on Agent Employee, navigate to tab "Data Behaviours", and define a behaviour to be executed on "Create". This behaviour will be used to perform a POST request to the external Application when we create an instance of the Employee on the OMNIA platform. Copy and paste the following code:
 
 	```C#
-    	{% raw %}
+	
     	var client = new System.Net.Http.HttpClient();
     
     	string apiEndpoint = $"https://reqres.in/api/users/";
@@ -76,10 +76,12 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     	employeeResponse._code = response["code"].ToString();
     	employeeResponse._name = response["name"].ToString();
     	return employeeResponse;
-      	{% endraw %}
+      	
 	```
 
+
 7. On "Data Behaviours" of Agent Employee, define a behaviour, to be executed on "Delete" (when a Employee is deleted on OMNIA). Copy and paste the following code:
+
 
 
 	```C#
@@ -99,29 +101,31 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     	
 	```
 
+
 8. Create a new Data Behaviour for the operation "Read", so that data is retrieved when a Employee is edited on OMNIA. Copy and paste the following code:
 
-```C#
+
+	```C#
       
-    var client = new System.Net.Http.HttpClient();
-    string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
+    	var client = new System.Net.Http.HttpClient();
+    	string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
 
-    var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
+    	var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
 
-    string responseBody = requestResult.Content.ReadAsStringAsync().Result;
-    if (!requestResult.IsSuccessStatusCode)
-      throw new Exception("Error on creating contact: " + responseBody);
+    	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+    	if (!requestResult.IsSuccessStatusCode)
+      	throw new Exception("Error on creating contact: " + responseBody);
       
-    var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
-    var responseData = JsonConvert.DeserializeObject<Dictionary<string, object>>(response["data"].ToString());
+    	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+    	var responseData = JsonConvert.DeserializeObject<Dictionary<string, object>>(response["data"].ToString());
 
-    EmployeeDto employeeResponse = new EmployeeDto();
-    employeeResponse._code = responseData["id"].ToString();
-    employeeResponse._name = $"{responseData["first_name"].ToString()} {responseData["last_name"].ToString()}";
+    	EmployeeDto employeeResponse = new EmployeeDto();
+    	employeeResponse._code = responseData["id"].ToString();
+    	employeeResponse._name = $"{responseData["first_name"].ToString()} {responseData["last_name"].ToString()}";
 
-    return employeeResponse;
+    	return employeeResponse;
     
-```
+	```
 
 9. Create a new Data Behaviour for the operation "ReadList", so that data is retrieved when a list of Employees is requested. Copy and paste the following code:
 

@@ -205,7 +205,7 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
     ![Application_List_DataSource](https://raw.githubusercontent.com/numbersbelieve/omnia3/master/docs/tutorialPics/modelingTutorial/Application-List-External-DataSource.PNG)
     
     
-## 4. Add Employee Selection to Purchase Document
+## 4. Add Employee to Purchase Document
 
 1. To add an Employee to our Purchase Document, and assign a user responsible for it, we'll need to add three new attributes to our Purchase Order Document. Access the document and create the following attributes:
 	

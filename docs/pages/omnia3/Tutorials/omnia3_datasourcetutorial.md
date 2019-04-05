@@ -49,115 +49,115 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 6. Still on Agent Employee, navigate to tab "Data Behaviours", and define a behaviour to be executed on "Create". This behaviour will be used to perform a POST request to the external Application when we create an instance of the Employee on the OMNIA platform. Copy and paste the following code:
 
 
-```C#
-	
-var client = new System.Net.Http.HttpClient();
-    
-string apiEndpoint = $"https://reqres.in/api/users/";
+	```C#
 
-var body = new
-{
-code = dto._code,
-name = dto._name
-};
+	var client = new System.Net.Http.HttpClient();
 
-var jsonBody = JsonConvert.SerializeObject(body);
-var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
+	string apiEndpoint = $"https://reqres.in/api/users/";
 
-var requestResult = client.PostAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
+	var body = new
+	{
+	code = dto._code,
+	name = dto._name
+	};
 
-string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+	var jsonBody = JsonConvert.SerializeObject(body);
+	var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
 
-if (!requestResult.IsSuccessStatusCode)
-throw new Exception("Error on creating contact: " + responseBody);
+	var requestResult = client.PostAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
 
-var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
 
-EmployeeDto employeeResponse = new EmployeeDto();
-employeeResponse._code = response["code"].ToString();
-employeeResponse._name = response["name"].ToString();
-return employeeResponse;
+	if (!requestResult.IsSuccessStatusCode)
+	throw new Exception("Error on creating contact: " + responseBody);
 
-```
+	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+
+	EmployeeDto employeeResponse = new EmployeeDto();
+	employeeResponse._code = response["code"].ToString();
+	employeeResponse._name = response["name"].ToString();
+	return employeeResponse;
+
+	```
 
 
 7. On "Data Behaviours" of Agent Employee, define a behaviour, to be executed on "Delete" (when a Employee is deleted on OMNIA). Copy and paste the following code:
 
 
-```C#
-    	
-var client = new System.Net.Http.HttpClient();
-    
-string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
-    
-var requestResult = client.DeleteAsync(apiEndpoint).GetAwaiter().GetResult();
-    
-string responseBody = requestResult.Content.ReadAsStringAsync().Result;
-    
-if (!requestResult.IsSuccessStatusCode)
-	throw new Exception("Error on removing Employee: " + responseBody);
+	```C#
 
-return true;
+	var client = new System.Net.Http.HttpClient();
 
-```
+	string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
+
+	var requestResult = client.DeleteAsync(apiEndpoint).GetAwaiter().GetResult();
+
+	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+
+	if (!requestResult.IsSuccessStatusCode)
+		throw new Exception("Error on removing Employee: " + responseBody);
+
+	return true;
+
+	```
 
 
 8. Create a new Data Behaviour for the operation "Read", so that data is retrieved when a Employee is edited on OMNIA. Copy and paste the following code:
 
 
-```C#
-      
-var client = new System.Net.Http.HttpClient();
-string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
+	```C#
 
-var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
+	var client = new System.Net.Http.HttpClient();
+	string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
 
-string responseBody = requestResult.Content.ReadAsStringAsync().Result;
-if (!requestResult.IsSuccessStatusCode)
-	throw new Exception("Error on creating contact: " + responseBody);
-      
-var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
-var responseData = JsonConvert.DeserializeObject<Dictionary<string, object>>(response["data"].ToString());
+	var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
 
-EmployeeDto employeeResponse = new EmployeeDto();
-employeeResponse._code = responseData["id"].ToString();
-employeeResponse._name = $"{responseData["first_name"].ToString()} {responseData["last_name"].ToString()}";
+	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+	if (!requestResult.IsSuccessStatusCode)
+		throw new Exception("Error on creating contact: " + responseBody);
 
-return employeeResponse;
-    
-```
+	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+	var responseData = JsonConvert.DeserializeObject<Dictionary<string, object>>(response["data"].ToString());
+
+	EmployeeDto employeeResponse = new EmployeeDto();
+	employeeResponse._code = responseData["id"].ToString();
+	employeeResponse._name = $"{responseData["first_name"].ToString()} {responseData["last_name"].ToString()}";
+
+	return employeeResponse;
+
+	```
 
 
 9. Create a new Data Behaviour for the operation "ReadList", so that data is retrieved when a list of Employees is requested. Copy and paste the following code:
 
 
-```C#
+	```C#
 
-var client = new System.Net.Http.HttpClient();
-string apiEndpoint = $"https://reqres.in/api/users?page={page}";
+	var client = new System.Net.Http.HttpClient();
+	string apiEndpoint = $"https://reqres.in/api/users?page={page}";
 
-var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
+	var requestResult = client.GetAsync(apiEndpoint).GetAwaiter().GetResult();
 
-string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
 
-if (!requestResult.IsSuccessStatusCode)
-	throw new Exception("Error on creating contact: " + responseBody);
+	if (!requestResult.IsSuccessStatusCode)
+		throw new Exception("Error on creating contact: " + responseBody);
 
-var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
-var responseData = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(response["data"].ToString());
+	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+	var responseData = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(response["data"].ToString());
 
-List<IDictionary<string, object>> employeesList = new List<IDictionary<string, object>>();
+	List<IDictionary<string, object>> employeesList = new List<IDictionary<string, object>>();
 
-foreach (var employee in responseData)
-{
-  var line = new Dictionary<string, object>()
-  {{"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}};
-  employeesList.Add(line);
-}
+	foreach (var employee in responseData)
+	{
+	  var line = new Dictionary<string, object>()
+	  {{"_code", employee["id"]}, {"_name", employee["first_name"] + " " + employee["last_name"]}};
+	  employeesList.Add(line);
+	}
 
-return (responseData.Count, employeesList);
+	return (responseData.Count, employeesList);
 
-```
+	```
 
 
 NOTE: in this scenario, we are ignoring the query sent by the user when obtaining the list. In real world scenarios, you will want to change the query to the external system and/or the returned response, according to the parameters sent by the user.
@@ -165,35 +165,35 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 10. Create a new Data Behaviour for the operation "Update", so that data is retrieved when an Employee is updated on OMNIA (i.e., edited and saved). Copy and paste the following code:
 
 
-```C#
-    
-var client = new System.Net.Http.HttpClient();
-string apiEndpoint = $"https://reqres.in/api/users/{dto._code}";
+	```C#
 
-var body = new
-{
-code = dto._code,
-name = dto._name
-};
+	var client = new System.Net.Http.HttpClient();
+	string apiEndpoint = $"https://reqres.in/api/users/{dto._code}";
 
-var jsonBody = JsonConvert.SerializeObject(body);
+	var body = new
+	{
+	code = dto._code,
+	name = dto._name
+	};
 
-var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
+	var jsonBody = JsonConvert.SerializeObject(body);
 
-var requestResult = client.PutAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
-string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+	var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
 
-if (!requestResult.IsSuccessStatusCode)
-	throw new Exception("Error on creating contact: " + responseBody);
-	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
-	
-	EmployeeDto employeeResponse = new EmployeeDto();
-	employeeResponse._code = response["code"].ToString();
-	employeeResponse._name = response["name"].ToString();
+	var requestResult = client.PutAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
+	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
 
-	return employeeResponse;
+	if (!requestResult.IsSuccessStatusCode)
+		throw new Exception("Error on creating contact: " + responseBody);
+		var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
 
-```
+		EmployeeDto employeeResponse = new EmployeeDto();
+		employeeResponse._code = response["code"].ToString();
+		employeeResponse._name = response["name"].ToString();
+
+		return employeeResponse;
+
+	```
 
 
 11. Build & Deploy model

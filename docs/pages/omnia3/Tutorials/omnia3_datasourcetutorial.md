@@ -213,15 +213,18 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 	- **Name**: *ExternalAPI*
 	- **Type**: *Data Source > External API*
 	
+	
 	Reference Attribute for "Employee"
 	- **Name**: *Employee*
 	- **Data Source**: *ExternalAPI*
+	
 	
 	Primitive Attribute for Employee Name
 	- **Name**: *EmployeeName*
 	- **Type**: *Text*
 	- **Label**: *Ordered by:*
 	- **is read only?**: *Yes*
+
 
 2. Now let's add an entity behaviour to our document, so that our employee selection fill the "EmployeeName" field automatically:
 	- **Entity Behaviour Name**: *"OnChange_Employee"*

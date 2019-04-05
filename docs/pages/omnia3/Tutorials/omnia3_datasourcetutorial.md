@@ -51,32 +51,32 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 	```C#
 
-	var client = new System.Net.Http.HttpClient();
+		var client = new System.Net.Http.HttpClient();
 
-	string apiEndpoint = $"https://reqres.in/api/users/";
+		string apiEndpoint = $"https://reqres.in/api/users/";
 
-	var body = new
-	{
-	code = dto._code,
-	name = dto._name
-	};
+		var body = new
+		{
+		code = dto._code,
+		name = dto._name
+		};
 
-	var jsonBody = JsonConvert.SerializeObject(body);
-	var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
+		var jsonBody = JsonConvert.SerializeObject(body);
+		var httpContent = new System.Net.Http.StringContent(jsonBody, System.Text.Encoding.UTF8, "application/json");
 
-	var requestResult = client.PostAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
+		var requestResult = client.PostAsync(apiEndpoint, httpContent).GetAwaiter().GetResult();
 
-	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+		string responseBody = requestResult.Content.ReadAsStringAsync().Result;
 
-	if (!requestResult.IsSuccessStatusCode)
-	throw new Exception("Error on creating contact: " + responseBody);
+		if (!requestResult.IsSuccessStatusCode)
+		throw new Exception("Error on creating contact: " + responseBody);
 
-	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
+		var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
 
-	EmployeeDto employeeResponse = new EmployeeDto();
-	employeeResponse._code = response["code"].ToString();
-	employeeResponse._name = response["name"].ToString();
-	return employeeResponse;
+		EmployeeDto employeeResponse = new EmployeeDto();
+		employeeResponse._code = response["code"].ToString();
+		employeeResponse._name = response["name"].ToString();
+		return employeeResponse;
 
 	```
 
@@ -86,18 +86,18 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 	```C#
 
-	var client = new System.Net.Http.HttpClient();
+		var client = new System.Net.Http.HttpClient();
 
-	string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
+		string apiEndpoint = $"https://reqres.in/api/users/{identifier}";
 
-	var requestResult = client.DeleteAsync(apiEndpoint).GetAwaiter().GetResult();
+		var requestResult = client.DeleteAsync(apiEndpoint).GetAwaiter().GetResult();
 
-	string responseBody = requestResult.Content.ReadAsStringAsync().Result;
+		string responseBody = requestResult.Content.ReadAsStringAsync().Result;
 
-	if (!requestResult.IsSuccessStatusCode)
-		throw new Exception("Error on removing Employee: " + responseBody);
+		if (!requestResult.IsSuccessStatusCode)
+			throw new Exception("Error on removing Employee: " + responseBody);
 
-	return true;
+		return true;
 
 	```
 

@@ -226,9 +226,11 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 	- **is read only?**: *Yes*
 
 
-2. Now let's add an entity behaviour to our document, so that our employee selection fill the "EmployeeName" field automatically:
+2. Now let's add an entity behaviour to our document, so that our employee selection fill the "EmployeeName" field automatically. Select the "Get Entity" acelerator, and make sure you have the following configuration:
+
+	![Acelerator_GetEntity_ChangeEmployee](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/getEntity_dataSource_onChangeEmployee.jpg)
 	- **Entity Behaviour Name**: *"OnChange_Employee"*
-	- **Code**:
+	- **Output Acelerator Code**:
 	
 	```C#
 	

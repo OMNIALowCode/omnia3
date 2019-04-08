@@ -1,7 +1,7 @@
 ---
 title: Connector Tutorial
 keywords: omnia3
-summary: "OMNIA Low-Code Development Platform - CSV File as Data Source"
+summary: "CSV File as Data Source"
 sidebar: omnia3_sidebar
 permalink: omnia3_connectortutorial.html
 folder: omnia3

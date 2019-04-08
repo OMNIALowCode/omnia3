@@ -29,11 +29,12 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
     ![Modeler_Create_Document_Attribute](/images/tutorials/advanced/Modeler-Create-Attribute-SupplierName.PNG)
 
-2. Create a new ***Action Behaviour***  to fill the new attribute (on the *PurchaseOrder* document, go to tab **Entity Behaviours** and click on ***Add new / (Action / Change)***). Now let's one of our development "Acelerators" to get our ***SupplierName*** from the **Agent**s attribute "**_name**". Set its name **GetSupplierName**, and **Supplier** as the attribute that triggers the behaviour:
+2. Create a new ***Action Behaviour***  to fill the new attribute (on the *PurchaseOrder* document, go to tab **Entity Behaviours** and click on ***Add new / (Action / Change)***). Now let's use one of our development "Acelerators" to get our ***SupplierName*** from the **Agent**s attribute "**_name**". 
+Set its name **GetSupplierName**, and **Supplier** as the attribute that triggers the behaviour:
 
- ![Acelerator_SelectionScreen](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/advanced/acelerators-selection.jpg)
+     ![Acelerator_SelectionScreen](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/advanced/acelerators-selection.jpg)
 
- ![Acelerator_FilledFields](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/advanced/acelerators-getEntity-example.jpg)
+     ![Acelerator_FilledFields](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/advanced/acelerators-getEntity-example.jpg)
  
  The output of the ***Get Entity C#*** acelerator should be as follow:
 

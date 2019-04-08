@@ -1,7 +1,7 @@
 ---
 title: Application Behaviours Tutorial
 keywords: omnia3
-summary: "OMNIA Low-Code Development Platform - Application Behaviours"
+summary: "Application Behaviour for external API call"
 sidebar: omnia3_sidebar
 permalink: omnia3_applicationbehaviourstutorial.html
 folder: omnia3

@@ -219,16 +219,16 @@ Please download this [TransportationServices.csv](https://github.com/OMNIALowCod
 
 **2.** Go to your Purchase Document and add two new ***Reference*** attributes:
 	
-	**2.1.** One reference to which (transportation) list we are going to read from:
+   **2.1.** One reference to which (transportation) list we are going to read from:
 		
-	- Name: "**TransportationList**"
-	- Type: *Data Source > CSVSource*
+   - Name: "**TransportationList**"
+   - Type: *Data Source > CSVSource*
 	
-	**2.2.** One reference to the elements of the selected list:
+   **2.2.** One reference to the elements of the selected list:
 		
-	- Name: "**Transportation**"
-	- Type: "*Agent > Transportation*"
-	- *Uses data source from attribute*: TransportationList
+   - Name: "**Transportation**"
+   - Type: "*Agent > Transportation*"
+   - *Uses data source from attribute*: TransportationList
 
 **3.** Let's ajust the UI of our newly created elements, so that they fit visually in our Purchase Document. Visit the "User Interface" tab, select the element and change it's UI values to:
 	

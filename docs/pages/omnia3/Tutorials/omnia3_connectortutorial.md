@@ -48,7 +48,7 @@ Please download this [TransportationServices.csv](https://github.com/OMNIALowCod
 
 **1.** Access OMNIA homepage, select the tenant where you are going to model and you will be redirected to the modeling area.
 
-**2.** Through the left side menu, create a new Data Source by accessing the option ***Data Sources** then, **Add new*** (blue button, top right side). Set its Name as "*CSVSource*", Behaviour Runtime and Data Access Runtime as *"External"*.
+**2.** Through the left side menu, create a new Data Source by accessing the option ***Data Sources*** then, ***Add new*** (blue button, top right side). Set its Name as "*CSVSource*", Behaviour Runtime and Data Access Runtime as *"External"*.
 
    ![Modeler create DataSource](/images/tutorials/connector/Modeler-Create-DataSource.PNG)
 

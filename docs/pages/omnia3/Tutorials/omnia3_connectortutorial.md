@@ -52,7 +52,7 @@ Please download this [TransportationServices.csv](https://github.com/OMNIALowCod
 
    ![Modeler create DataSource](/images/tutorials/connector/Modeler-Create-DataSource.PNG)
 
-**3.** Create a new Agent with name *"Transportation"*, and set it as using the external data source *"CSVSource"* that you created earlier.
+**3.** Create a new **Agent** with name ***Transportation***, and set it as using the external data source ***CSVSource***, created on the previous.
 
    ![Modeler create Agent](/images/tutorials/connector/Modeler-Create-Agent.PNG)
 

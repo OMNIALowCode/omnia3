@@ -1,7 +1,7 @@
 ---
 title: Data Source Tutorial
 keywords: omnia3
-summary: "OMNIA Low-Code Development Platform - Data Source Management"
+summary: "External API as a Data Source"
 sidebar: omnia3_sidebar
 permalink: omnia3_datasourcetutorial.html
 folder: omnia3

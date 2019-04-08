@@ -1,7 +1,7 @@
 ---
 title: Connector Tutorial
 keywords: omnia3
-summary: "CSV File as Data Source"
+summary: "Create and configure a new connector to use an on-premise CSV File as a data source"
 sidebar: omnia3_sidebar
 permalink: omnia3_connectortutorial.html
 folder: omnia3

@@ -61,39 +61,39 @@ entries:
   - title: Tutorials
     output: web, pdf
     folderitems:      
-    - title: Tenant Creation
+    - title: 1. Tenant Creation
       url: /omnia3_tenantcreation.html
       output: web, pdf
 
-    - title: Beginner Tutorial
+    - title: 2. Beginner Tutorial
       url: /omnia3_beginnertutorial.html
       output: web, pdf
 
-    - title: Advanced Tutorial
+    - title: 3.1. Advanced Tutorial
       url: /omnia3_advancedtutorial.html
       output: web, pdf
       
-    - title: Application Behaviours Tutorial
+    - title: 3.2. Application Behaviours Tutorial
       url: /omnia3_applicationbehaviourstutorial.html
       output: web, pdf
            
-    - title: Data Sources Tutorial
+    - title: 3.3. Data Sources Tutorial
       url: /omnia3_datasourcetutorial.html
       output: web, pdf
       
-    - title: Connector Tutorial
+    - title: 3.4. Connector Tutorial
       url: /omnia3_connectortutorial.html
       output: web, pdf
       
-    - title: Advanced Connector Tutorial
+    - title: 3.5. Advanced Connector Tutorial
       url: /omnia3_multisystemconnectortutorial.html
       output: web, pdf
       
-    - title: API Clients Tutorial
+    - title: 3.6. API Clients Tutorial
       url: /omnia3_apiclienttutorial.html
       output: web, pdf
       
-    - title: UI Extensibility Tutorial
+    - title: 3.7. UI Extensibility Tutorial
       url: /omnia3_uiextensibilitytutorial.html
       output: web, pdf
     

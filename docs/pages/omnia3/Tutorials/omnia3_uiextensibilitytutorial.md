@@ -1,7 +1,7 @@
 ---
-title: User Interface (UI) Extensibility Tutorial
+title: User Interface (UI) Behaviours Tutorial
 keywords: omnia3
-summary: "OMNIA Low-Code Development Platform - UI Extensibility Tutorial"
+summary: "A tutorial exemplifying how you can use UI Behaviours"
 sidebar: omnia3_sidebar
 permalink: omnia3_uiextensibilitytutorial.html
 folder: omnia3
@@ -12,6 +12,10 @@ folder: omnia3
 
 Now that you have completed the [Beginner Tutorial](https://docs.omnialowcode.com/omnia3_beginnertutorial.html), whose result is a functional order management application, this UI Extensibility Tutorial will focus on the execution of behaviours on the user interface (client browser).
 
+In this example, we'll add a new boolean attribute to our document, so that we can give the user the option to "Close" a document when its order is fullfilled. After the user declares the order as fullfilled, the entire document becomes "read only" and cannot be changed again.
+
+To know more about how User Interface (UI) Behaviours work, see our [User Inteface Behaviour page](omnia3_modeler_uibehaviours.html).
+
 ## 2. Prerequisites
 
 This tutorial assumes that you have created a OMNIA tenant, and are logged in as a user with modeling privileges to this tenant.
@@ -20,71 +24,41 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 
 ## 3. UI Extensibility
 
-1. Access OMNIA homepage, select the tenant where you have developed the beginner tutorial, and go to the modeling area.
+1. Go to the modeling area and edit your *PurchaseOrder* document by accessing the option ***Documents / PurchaseOrder***
 
-2. Through the left side menu, edit *PurchaseOrder* document by accessing the option ***Documents / PurchaseOrder***
+2. Add the following attribute, that will allow the user to identify when an Order is fullfilled, by clicking on button **Add new / Primitive**: 
 
-3. To Add the following attributes by clicking on button **Add new / Primitive**: 
-
-    - *Name*: **PaymentTerm**, *Type*: ***Integer***
-    - *Name*: **IsDelivered**, *Type*: ***Boolean***
-    - *Name*: **Received**, *Type*: ***Boolean***
-    - *Name*: **DeliveryAddress**, *Type*: ***Text***
+    - *Name*: **OrderReceived**
+    - *Type*: ***Boolean***
+    - *Row*: 6
+    - *Column*: 11
+    - *Size*: 2
     
-    These attributes allow the user to identify, when inserting a new *PurchaseOrder*, the *Payment Term* agreed with the Supplier, and if the goods are going to be delivered to a Company Address. At last, the *Received* attribute allows the user to control the reception of the requested goods.
     
-4. Navigate to tab **User Interface**, and set attribute *DeliveryAddress* as *Hidden*
-    
-5. Build the model. Go to application and check the new attributes
-    
-6. Go back to modeling area. Navigate to option **Documents / PurchaseOrder / User Interface Behaviours**  and click on top right button *Add new* to add a new behaviour. This behaviour will control *DeliveryAddress* and *Received* attributes visibility and value, depending on *IsDelivered* value. Set its *Name* as **IsDeliveredChange**, *Behaviour Type* as **On change**, element as **IsDelivered** and copy the following JavaScript code as the *Expression*
+3. Now let's navigate to tab **User Interface Behaviours** and create a new *Initializer* behaviour called *CloseDocument*, label it "Oder fullfilled?" and paste the following code:
 
     ```JavaScript
-        if(this.isDelivered === true){
-            this._metadata.elements.received.isHidden = false;
-            this._metadata.elements.deliveryAddress.isHidden = false;
-        }else{
-            this._metadata.elements.received.isHidden = true;
-            this._metadata.elements.deliveryAddress.isHidden = true;
-            this.deliveryAddress = "";
-            this.received = false;
-        }    
+       function setAllElementsAsReadOnly(elements, data) {
+	    for (const element of Object.values(elements)) {
+		    element.attributes.isReadOnly = true;
+
+		    if (element.type.toUpperCase() === 'LIST') {
+		    element.attributes.addEntry = "hidden";
+		    element.attributes.removeEntry = "hidden";
+		    }
+	    }
+    }
+
+    function setReadonlyState(metadata, data) {
+    setAllElementsAsReadOnly(metadata.elements, data);
+
+    for (const entry of data.orderLines) {
+	    setAllElementsAsReadOnly(entry._metadata.elements, entry);
+    }
+    }
+
+    if(this.orderReceived === true)
+    setReadonlyState(this._metadata, this);    
     ```
-
-7. Add another **User Interface Behaviour** by clicking on top right button *Add new*. This behaviour will control *DeliveryAddress* attribute availability and size, depending on *Received* value. Set its *Name* as **ReceivedChange**, *Behaviour Type* as **On change**, *Element* as **Received** and copy the following JavaScript code as the *Expression*
-
-    ```JavaScript
-        if(this.received === true){
-            this._metadata.elements.deliveryAddress.attributes.isReadOnly = true;
-            this._metadata.elements.deliveryAddress.size = 4;
-        }else{
-            this._metadata.elements.deliveryAddress.attributes.isReadOnly = false;
-            this._metadata.elements.deliveryAddress.size = 6;
-        }    
-    ```
-
-8. Add a **User Interface Behaviour** that will validate if *PaymentTerm* attribute value is bigger than zero. Set its *Name* as **PaymentTermChange**, *Behaviour Type* as **On change**, *Element* as **PaymentTerm** and copy the following JavaScript code as the *Expression*
-
-    ```JavaScript
-        this._metadata.elements.paymentTerm.removeMessage('validation');
-        if(this.paymentTerm <0)
-            this._metadata.elements.paymentTerm.addMessage('Value must be bigger than zero','error',  'validation');
-        else
-            this._metadata.elements.paymentTerm.addMessage('Payment term is valid','success',  'validation');    
-    ```
-
-9. At last, add a **User Interface Behaviour** that will validate if *OrderLines* attribute length is bigger than zero. Set its *Name* as **LineCountWarning**, *Behaviour Type* as **Before save** and copy the following JavaScript code as the *Expression*
-
-    ```JavaScript
-        if(this.orderLines.length ==0)
-            alert("Warning: The document will be saved without lines. Don't worry, you can add them later.");
-    ```
-
-10. Build & Deploy
-
-11. Go to application and validate the new behaviours, by making the following tests
-
-    - Check attribute *IsDelivered*. Attribute *DeliveryAddress* should now be visible
-    - Check attribute *Received*. Attribute *DeliveryAddress* must now be read-only and with a different size
-    - Fill attribute *PaymentTerm* with a negative or positive value. A different validation message must be shown for each scenario
-    - Save a document without any lines. Check that a warning alert is shown.
+    
+5. Build the model. Go to application, create a new Purchase Order Document, and check the "Order fullfilled?" option before submiting it. Now reopen it and verify that all fields are now "read only".

@@ -29,10 +29,10 @@ body {
     color: #777;
 }
 .bs-callout-primary {
-    border-left-color: #428bca;
+    border-left-color: #007bff;
 }
 .bs-callout-primary h4 {
-    color: #428bca;
+    color: #007bff;
 }
 .bs-callout-success {
     border-left-color: #5cb85c;

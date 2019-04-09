@@ -46,15 +46,15 @@ entries:
   - title: Deployment
     output: web, pdf
     folderitems:
-    - title: Deploying the Platform
+    - title: Platform Deployment
       url: /omnia3_deploymenttutorial.html
       output: web, pdf
       
-    - title: Infrastructure
+    - title: Infrastructure Requirements
       url: /omnia3_deploymentrequirements.html
       output: web, pdf
       
-    - title: Deployment FAQ
+    - title: FAQ
       url: /omnia3_deploymentfaq.html
       output: web, pdf
   

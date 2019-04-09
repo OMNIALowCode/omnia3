@@ -69,31 +69,31 @@ entries:
       url: /omnia3_beginnertutorial.html
       output: web, pdf
 
-    - title: 3.1. Advanced Tutorial
+    - title: 3.1. Native/External API
       url: /omnia3_advancedtutorial.html
       output: web, pdf
       
-    - title: 3.2. Application Behaviours Tutorial
+    - title: 3.2. Application Behaviours
       url: /omnia3_applicationbehaviourstutorial.html
       output: web, pdf
            
-    - title: 3.3. Data Sources Tutorial
+    - title: 3.3. Data Sources
       url: /omnia3_datasourcetutorial.html
       output: web, pdf
       
-    - title: 3.4. Connector Tutorial
+    - title: 3.4. Connector
       url: /omnia3_connectortutorial.html
       output: web, pdf
       
-    - title: 3.5. Advanced Connector Tutorial
+    - title: 3.5. Advanced Connector
       url: /omnia3_multisystemconnectortutorial.html
       output: web, pdf
       
-    - title: 3.6. API Clients Tutorial
+    - title: 3.6. API Client
       url: /omnia3_apiclienttutorial.html
       output: web, pdf
       
-    - title: 3.7. UI Extensibility Tutorial
+    - title: 3.7. UI Extensibility
       url: /omnia3_uiextensibilitytutorial.html
       output: web, pdf
     

@@ -43,18 +43,18 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 		    element.attributes.isReadOnly = true;
 
 		    if (element.type.toUpperCase() === 'LIST') {
-		    element.attributes.addEntry = "hidden";
-		    element.attributes.removeEntry = "hidden";
+		    	element.attributes.addEntry = "hidden";
+		    	element.attributes.removeEntry = "hidden";
 		    }
 	    }
     }
 
     function setReadonlyState(metadata, data) {
-    setAllElementsAsReadOnly(metadata.elements, data);
+    	setAllElementsAsReadOnly(metadata.elements, data);
 
-    for (const entry of data.orderLines) {
+    	for (const entry of data.orderLines) {
 	    setAllElementsAsReadOnly(entry._metadata.elements, entry);
-    }
+    	}
     }
 
     if(this.orderReceived === true)

@@ -61,6 +61,6 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
     setReadonlyState(this._metadata, this);    
     ```
     
-5. Build the model and go to application, create a new Purchase Order Document, and check the "Order fulfilled?" option before submiting it. Now reopen it and verify that all fields are now "read only".
+5. Build the model and go to application, create a new Purchase Order Document, and check the "Order fulfilled?" option before submitting it. Now reopen it and verify that all fields are now "read only".
 
 	![PurchaseOrderDocument_readOnly](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/advanced/purchaseDocument_closed.jpg)

@@ -7,9 +7,9 @@ permalink: omnia3_features.html
 folder: omnia3
 ---
 
-## Modeler
+## 1. Modeler
 
-### Entities
+### 1.1 Entities
 
 - Model entities of the following types:
 
@@ -27,7 +27,7 @@ folder: omnia3
 - Manage Behaviours
 - Review User Interface
 
-### Attributes
+### 1.2 Attributes
 
 - Supported attribute types:
     
@@ -39,7 +39,7 @@ folder: omnia3
     - Text
     - Uuid (Universally unique identifier)
     
-### Behaviours
+### 1.3 Behaviours
 
 It is possible to manage the following types of behaviours:
 
@@ -57,7 +57,7 @@ Behaviours that allow the user to extend the user interface, by:
     - Set element values
     - Show custom messages to the end user
 
-### Data Analytics
+### 1.4 Data Analytics
 
 - Manage Queries
 - Create Advanced Queries using pgSQL
@@ -65,24 +65,20 @@ Behaviours that allow the user to extend the user interface, by:
 - Manage Lists
 - Manage Dashboards
 
-## Management
+## 2. Management
 
 - Manage tenants
 - Manage Api Clients
 - Manage Connectors
 - Manage Security: Roles, Policies and users
 
-## Application
+## 3. Application
 
 - Work on multiple tenants
 - Manage tenant security: Roles, Policies and Users
 - Create, Read, Update and Delete instances of the model entities
 
-## Connector
+## 4. Connector
 
 - Installed and managed as a Windows service
 - Execute modeled behaviours
-
-
-
-

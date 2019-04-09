@@ -53,7 +53,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
     	setAllElementsAsReadOnly(metadata.elements, data);
 
     	for (const entry of data.orderLines) {
-	    setAllElementsAsReadOnly(entry._metadata.elements, entry);
+		setAllElementsAsReadOnly(entry._metadata.elements, entry);
     	}
     }
 

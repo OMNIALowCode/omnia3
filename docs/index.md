@@ -1,18 +1,19 @@
 ---
-title: "OMNIA Platform 3.0"
+title: "Welcome"
 keywords: omnia3
 tags: [omnia3]
 sidebar: omnia3_sidebar
 permalink: index.html
 ---
 
+<h2>Introduction</h2>
 <p>Numbers are not always transparent. Sometimes, they tell us a different story 
 apart from the background they’re delivering. 
 OMNIA 3.0 addresses all the answers to your customers’ pains, when thriving in their daily management complexity. 
 Whether you need to develop a business application from ground zero, or deliver it in a fast manner, OMNIA gives you the right tool for minimizing the time between the analysis of your customers’ requirements, 
 and the delivery of the solution to their challenges.</p>
 
-<h1 id="building-a-business-management-app-has-never-been-this-easier-nor-simple">Building a Business Management App has never been this easier. Nor simple.</h1>
+<h1 style="font-size:34px;" id="building-a-business-management-app-has-never-been-this-easier-nor-simple">Low-Code Business Application Development Platform</h1>
 
 
 <p><strong> Developed with one simple purpose: taking your Business Data further to perfection!</strong></p> 
@@ -56,6 +57,3 @@ long.</p>
 <p><strong> Responsive by default</strong></p>
 
 <p>Anywhere, everywhere, just access and manage​ your business data with OMNIA on your favourite devices!</p>
-
-
-

@@ -9,7 +9,7 @@ folder: omnia3
 
 ## 1. Modeler
 
-  ### 1.1 Entities
+###   1.1 Entities
 
   - Model entities of the following types:
 
@@ -27,7 +27,7 @@ folder: omnia3
   - Manage Behaviours
   - Review User Interface
 
-  ### 1.2 Attributes
+###   1.2 Attributes
 
   - Supported attribute types:
     
@@ -39,7 +39,7 @@ folder: omnia3
     - Text
     - Uuid (Universally unique identifier)
     
-  ### 1.3 Behaviours
+###   1.3 Behaviours
 
   It is possible to manage the following types of behaviours:
 
@@ -53,7 +53,7 @@ folder: omnia3
     - Set element values
     - Show custom messages to the end user
 
-  ### 1.4 Data Analytics
+###   1.4 Data Analytics
 
   - Manage Queries
   - Create Advanced Queries using pgSQL

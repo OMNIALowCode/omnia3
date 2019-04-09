@@ -20,7 +20,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 
 ## 3. UI Extensibility
 
-1. Access Omnia homepage, select the tenant where you have developed the beginner tutorial, and go to the modeling area.
+1. Access OMNIA homepage, select the tenant where you have developed the beginner tutorial, and go to the modeling area.
 
 2. Through the left side menu, edit *PurchaseOrder* document by accessing the option ***Documents / PurchaseOrder***
 

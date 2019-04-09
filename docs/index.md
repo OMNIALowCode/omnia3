@@ -1,12 +1,11 @@
 ---
-title: "Welcome"
+title: "Introduction"
 keywords: omnia3
 tags: [omnia3]
 sidebar: omnia3_sidebar
 permalink: index.html
 ---
 
-<h2>Introduction</h2>
 <p>Numbers are not always transparent. Sometimes, they tell us a different story 
 apart from the background they’re delivering. 
 OMNIA 3.0 addresses all the answers to your customers’ pains, when thriving in their daily management complexity. 

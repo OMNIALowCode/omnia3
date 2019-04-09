@@ -10,7 +10,7 @@ folder: omnia3
 
 ## 1. Introduction
 
-After you have completed the [Beginner Tutorial](https://docs.omnialowcode.com/omnia3_beginnertutorial.html), whose result is a functional order management application, OMNIA UI Extensibility Tutorial focus on the execution of behaviours on the user interface (client browser).
+Now that you have completed the [Beginner Tutorial](https://docs.omnialowcode.com/omnia3_beginnertutorial.html), whose result is a functional order management application, this UI Extensibility Tutorial will focus on the execution of behaviours on the user interface (client browser).
 
 ## 2. Prerequisites
 

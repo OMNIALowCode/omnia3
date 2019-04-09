@@ -23,15 +23,15 @@ entries:
   - title: Information
     output: web, pdf
     folderitems:
-    - title: Welcome to OMNIA 3.0
+    - title: Welcome to OMNIA
       url: /index.html
       output: web, pdf
 
-    - title: Features of OMNIA 3.0
+    - title: Features
       url: /omnia3_features.html
       output: web, pdf
       
-    - title: Web App Requirements
+    - title: Requirements
       url: /omnia3_webapprequirements.html
       output: web, pdf
       

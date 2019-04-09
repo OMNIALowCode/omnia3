@@ -1,13 +1,11 @@
 ---
-title: Features
+title: Platform Features
 keywords: omnia3
-summary: "OMNIA 3 Features"
+summary: "List of features available on OMNIA Platform"
 sidebar: omnia3_sidebar
 permalink: omnia3_features.html
 folder: omnia3
 ---
-
-List of features available on OMNIA Platform 3.0:
 
 ## Modeler
 

@@ -93,7 +93,7 @@ entries:
       url: /omnia3_apiclienttutorial.html
       output: web, pdf
       
-    - title: 3.7. UI Extensibility
+    - title: 3.7. User Interface Behaviours
       url: /omnia3_uiextensibilitytutorial.html
       output: web, pdf
     

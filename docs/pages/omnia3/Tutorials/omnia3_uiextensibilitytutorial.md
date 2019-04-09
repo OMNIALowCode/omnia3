@@ -61,4 +61,4 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
     setReadonlyState(this._metadata, this);    
     ```
     
-5. Build the model. Go to application, create a new Purchase Order Document, and check the "Order fulfilled?" option before submiting it. Now reopen it and verify that all fields are now "read only".
+5. Build the model and go to application, create a new Purchase Order Document, and check the "Order fulfilled?" option before submiting it. Now reopen it and verify that all fields are now "read only".

@@ -11,9 +11,9 @@ folder: omnia3
 
 Based on a simple Order Management sample application, this tutorial shows how easily OMNIA Platform models can be used through our API, by external applications.
 
-On the first tutorial area (Define an API Client), we are going to evaluate how an API client is defined on Omnia Platform, and how it is configured on Omnia's security system. On the second area (Consume Omnia API), we are going to see a simple example of how Omnia API can be consumed.
+On the first tutorial area (Define an API Client), we are going to evaluate how an API client is defined on OMNIA Platform, and how it is configured on OMNIAs security system. On the second area (Consume OMNIA API), we are going to see a simple example of how OMNIA API can be consumed.
 
-As a tool to consume Omnia API, we are going to use [Postman](https://www.getpostman.com/), a tool that simplifies interaction with APIs. It is worth noting that the API could be consumed as easily with other tools or your own developments using your preferred programming language. [Download Postman](https://www.getpostman.com/downloads/)
+As a tool to consume OMNIA API, we are going to use [Postman](https://www.getpostman.com/), a tool that simplifies interaction with APIs. It is worth noting that the API could be consumed as easily with other tools or your own developments using your preferred programming language. [Download Postman](https://www.getpostman.com/downloads/)
 
 
 ## 2. Prerequisites
@@ -31,7 +31,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
     ![Management_Create_APIClient](/images/tutorials/apiclient/Management-Create-ApiClient.PNG)
     
-3. After creating, select the new API Client on the list, and check that you have now access to a Client Id and Secret to consume Omnia API. Copy the Client Username to the clipboard
+3. After creating, select the new API Client on the list, and check that you have now access to a Client Id and Secret to consume OMNIA API. Copy the Client Username to the clipboard
 
     ![Management_Edit_ApiClient](/images/tutorials/apiclient/Management-Edit-ApiClient.PNG)
 
@@ -54,7 +54,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     ![Postman_Configure_AccessToken](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/apiclient/newAccessToken.jpg)
 
     * Grant Type: Set as "Client Credentials"
-    * Access token URL: The base url used to access Omnia, adding "/identity/connect/token" at the end
+    * Access token URL: The base url used to access OMNIA, adding "/identity/connect/token" at the end
     * Client ID: client ID generated previously
     * Client Secret: secret generated previously
     * Scope: set as "api"

@@ -14,7 +14,7 @@ h4 {color: #808080; }
 }
 
 .nav > li.active > a {
-    background-color: #007bff;
+    background-color: #2998f6;
 }
 
 .nav > li > a:hover {
@@ -22,7 +22,7 @@ h4 {color: #808080; }
 }
 
 div.navbar-collapse .dropdown-menu > li > a:hover {
-    background-color: #007bff;
+    background-color: #2998f6;
 }
 
 .nav li.thirdlevel > a {
@@ -38,8 +38,8 @@ a[data-toggle="tooltip"] {
 }
 
 .navbar-inverse {
-    background-color: #007bff;
-    border-color: #015CAE;
+    background-color: #2998f6;
+    border-color: #2998f6;
 }
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
     color: white;

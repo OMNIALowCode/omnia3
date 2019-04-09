@@ -11,7 +11,7 @@ folder: omnia3
 
 Based on a simple Order Management sample application, this tutorial shows how easily OMNIA Platform models can be used through our API, by external applications.
 
-On the first tutorial area (Define an API Client), we are going to evaluate how an API client is defined on OMNIA Platform, and how it is configured on OMNIAs security system. On the second area (Consume OMNIA API), we are going to see a simple example of how OMNIA API can be consumed.
+On the first tutorial area we are going to evaluate how an API client is defined on OMNIA Platform, and how it is configured on OMNIAs security system. On the second area we are going to see a simple example of how OMNIA API can be consumed.
 
 As a tool to consume OMNIA API, we are going to use [Postman](https://www.getpostman.com/), a tool that simplifies interaction with APIs. It is worth noting that the API could be consumed as easily with other tools or your own developments using your preferred programming language. [Download Postman](https://www.getpostman.com/downloads/)
 

@@ -12,7 +12,7 @@ folder: omnia3
 
 Now that you have completed the [Beginner Tutorial](https://docs.omnialowcode.com/omnia3_beginnertutorial.html), whose result is a functional order management application, this UI Extensibility Tutorial will focus on the execution of behaviours on the user interface (client browser).
 
-In this example, we'll add a new boolean attribute to our document, so that we can give the user the option to "Close" a document when its order is fullfilled. After the user declares the order as fullfilled, the entire document becomes "read only" and cannot be changed again.
+In this example, we'll add a new boolean attribute to our document, so that we can give the user the option to "Close" a document when its order is fulfilled. After the user declares the order as fulfilled, the entire document becomes "read only" and cannot be changed again.
 
 To know more about how User Interface (UI) Behaviours work, see our [User Inteface Behaviour page](omnia3_modeler_uibehaviours.html).
 
@@ -26,16 +26,16 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 
 1. Go to the modeling area and edit your *PurchaseOrder* document by accessing the option ***Documents / PurchaseOrder***
 
-2. Add the following attribute, that will allow the user to identify when an Order is fullfilled, by clicking on button **Add new / Primitive**: 
+2. Add the following attribute, that will allow the user to identify when an Order is fulfilled, by clicking on button **Add new / Primitive**: 
 
     - *Name*: **OrderReceived**
     - *Type*: ***Boolean***
-    - *Row*: 6
-    - *Column*: 11
-    - *Size*: 2
+    - *Row*: **6**
+    - *Column*: **11**
+    - *Size*: **2**
     
     
-3. Now let's navigate to tab **User Interface Behaviours** and create a new *Initializer* behaviour called *CloseDocument*, label it "Oder fullfilled?" and paste the following code:
+3. Now let's navigate to tab **User Interface Behaviours** and create a new *Initializer* behaviour called *CloseDocument*, label it "Order fulfilled?" and paste the following code:
 
     ```JavaScript
        function setAllElementsAsReadOnly(elements, data) {
@@ -61,4 +61,4 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
     setReadonlyState(this._metadata, this);    
     ```
     
-5. Build the model. Go to application, create a new Purchase Order Document, and check the "Order fullfilled?" option before submiting it. Now reopen it and verify that all fields are now "read only".
+5. Build the model. Go to application, create a new Purchase Order Document, and check the "Order fulfilled?" option before submiting it. Now reopen it and verify that all fields are now "read only".

@@ -1,7 +1,7 @@
 ---
-title: Advanced Tutorial
+title: Native and External API Tutorial
 keywords: omnia3
-summary: "OMNIA Low-Code Development Platform Advanced Tutorial"
+summary: "Learn all about native and external API communications, queries, lists and dashboards"
 sidebar: omnia3_sidebar
 permalink: omnia3_advancedtutorial.html
 folder: omnia3

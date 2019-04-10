@@ -9,13 +9,13 @@ folder: omnia3
 
 ## 1. Introduction
 
-OMNIA, a truly **Agile Low-Code Development** and operation of **Management Information Systems**' platform, welcomes you aboard to its continuous development process: the User Experience.
+OMNIA, a truly **Agile Low-Code Development Platform**, welcomes you aboard to its continuous development process: the Developer Experience.
 
-We do understand all your difficulties on how to build a **business management application** from ground zero. That's why **OMNIA** takes the pledge to **leverage and accelerate** the entire development process, providing a **simple**, **fast** and **responsive-by-default** platform.
+We do understand all the difficulties of build a **business management application** from the ground up. That's why **OMNIA** takes the pledge to **leverage and accelerate** the entire development process, providing a **simple**, **fast** and **responsive-by-default** platform.
 
-It's now time to judge our premises. To that end, we've just created a simple and intuitive tutorial based on an Order Management's example, guiding you throughout the **short-time period** of deploying all your inputs into a **business application**.
+Now is the time to judge our premises. To that end, we've just created a simple and intuitive tutorial based on an Order Management example, guiding you throughout the **short-time period** of deploying all your inputs into a **business application**.
 
-**Start your 20-minute exercise on OMNIA Low-Code Development Platform!**
+**Start your exercise on OMNIA Low-Code Development Platform!**
 
 ## 2. Prerequisites
 

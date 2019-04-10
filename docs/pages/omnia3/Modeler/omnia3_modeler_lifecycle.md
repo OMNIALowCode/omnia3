@@ -10,7 +10,7 @@ folder: omnia3
 ## 1. Introduction
 The OMNIA Platform was designed around a development lifecycle with the following steps:
 * **Model**: create the model definitions;
-* *Build**: compile the model; 
+* **Build**: compile the model; 
 * **Test**: create records using the previously created model;
 
 Each operation is recorded, creating this way a full log of everything was made in the platform.

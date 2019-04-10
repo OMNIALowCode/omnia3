@@ -25,14 +25,14 @@ A query is automatically created when an entity is created. This automatic query
 
 ### How to create a new query?
 Selecting the option _Add new_ in the list of queries, you need to fill the following information:
-* _Name_: The name of the query (needs to be unique);
-* _Description_: The textual explanation of the query's purpose (can be used as development documentation);
-* _Type_: The type of the entity this query targets;
+* **Name**: The name of the query (needs to be unique);
+* **Description**: The textual explanation of the query's purpose (can be used as development documentation);
+* **Type**: The type of the entity this query targets;
 
 ### How to add properties to a query?
 Selecting the option _Add new_ when editing a query, you need to fill the following information:
-* _Alias_: The Alias of the property, i.e. the name you want to see it show up with;
-* _Path_: The Path to that property. If the attribute belongs to the entity, it can be selected. Else:
+* **Alias**: The Alias of the property, i.e. the name you want to see it show up with;
+* **Path**: The Path to that property. If the attribute belongs to the entity, it can be selected. Else:
     - If you want to get properties from a collection inside the entity, use '>', i.e. ```OrderLines>_amount```;
     - If you want to get properties from a reference inside the entity, use '.', i.e. ```VATSummary._amount```;
 
@@ -120,21 +120,21 @@ A list can be created automatically, based on a query, or manually.
 To automatically create a new list based on a query, you must edit the query, and on top right *More Options* button, click on *Generate List*. A list will be automatically generated and can be edited later.
 
 To create a list manually, select the option _Add new_ when in the list of Lists, and fill in the following information:
-* _Name_: the name of the list (needs to be unique);
-* _Description_: the textual explanation of the list's purpose (can be used as development documentation);
-* _Query_: select a previously created query to use;
-* _Label_: what label should be displayed for the list;
-* _Help Text_: Auxiliary texts that explain the list's purpose to the users.
+* **Name**: the name of the list (needs to be unique);
+* **Description**: the textual explanation of the list's purpose (can be used as development documentation);
+* **Query**: select a previously created query to use;
+* **Label**: what label should be displayed for the list;
+* **Help Text**: Auxiliary texts that explain the list's purpose to the users.
 
 ### How to edit the columns in a list?
 
 When the list is created manually, after its creation it will be empty, and you must select which columns from the query you want to show.
 
 By editing a list in the menu, and selecting the option _Add new_, you can add the following information:
-* _Query property_: The property of the query this column will represent. In case of advanced queries you will define the column alias;
-* _Label_: What the label of the column will say;
-* _Help Text_: Auxiliary text that explains this column to users;
-* _Format as_: Which formatting strategy should this column have. Similar to spreadsheet applications, i.e. a result of "5" can be shown normally, or formatted as a decimal.
+* **Query property**: The property of the query this column will represent. In case of advanced queries you will define the column alias;
+* **Label**: What the label of the column will say;
+* **Help Text**: Auxiliary text that explains this column to users;
+* **Format as**: Which formatting strategy should this column have. Similar to spreadsheet applications, i.e. a result of "5" can be shown normally, or formatted as a decimal.
 
 ## 4. Dashboards
 __*Data Analytics / Dashboards*__
@@ -146,22 +146,21 @@ When a new entity is created, a dashboard is automatically generated. This dashb
 ### How to create a dashboard?
 
 Select the option _Add new_ when in the list of Dashboards, and fill in the following information:
-* _Name_: the name of the dashboard (needs to be unique);
-* _Description_: the textual explanation of the dashboard's purpose (can be used as development documentation);
-* _Label_: what label should be displayed for the dashboard;
-* _Help Text_: Auxiliary texts that explain the dashboard's purpose to the users.
+* **Name**: the name of the dashboard (needs to be unique);
+* **Description**: the textual explanation of the dashboard's purpose (can be used as development documentation);
+* **Label**: what label should be displayed for the dashboard;
+* **Help Text**: Auxiliary texts that explain the dashboard's purpose to the users.
 
 **Special case:** A dashboard with a code of **Home** will be automatically displayed in the homepage of the application.
 
 ### How to edit elements in a dashboard?
 
 Select the option _Add new_ when editing a dashboard, and fill in the following information:
-* _Name_: the name of the element (needs to be unique);
-* _Description_: the textual explanation of the element's purpose (can be used as development documentation);
-* _List_: which list should be displayed in this dashboard element;
-* _Label_: what label should be displayed for the element;
-* _Help Text_: Auxiliary texts that explain the element's purpose to the users.
-* _Row_: the layout row in which the element will be placed;
-* _Column_: the layout column in which the element will be placed;
-* _Size_: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
-
+* **Name**: the name of the element (needs to be unique);
+* **Description**: the textual explanation of the element's purpose (can be used as development documentation);
+* **List**: which list should be displayed in this dashboard element;
+* **Label**: what label should be displayed for the element;
+* **Help Text**: Auxiliary texts that explain the element's purpose to the users.
+* **Row**: the layout row in which the element will be placed;
+* **Column**: the layout column in which the element will be placed;
+* **Size**: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);

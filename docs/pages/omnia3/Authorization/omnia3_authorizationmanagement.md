@@ -15,7 +15,7 @@ On OMNIA Platform, authorization is managed on two distinct areas, one for the P
 
 In the platform authorization area (option **Management / Security**) you can manage all the *Policies* and *Roles*. 
 
-#### Roles
+### Roles
 
 By default, Omnia Platform has one role, named *Administration*. This role cannot be removed and it has, by default, associated the user identified on platform setup as the *Platform Administrator*. Other users can be added to this *Role*.
 
@@ -26,7 +26,7 @@ Additionally, when a tenant is created, two new roles are automatically created:
 
 If needed, new Roles can be created to grant a set of policies to a group of users.
 
-#### Policies
+### Policies
 
 By default, Omnia Platform has one policy, named *PlatformSecurity*, that controls the access to the following security permissions:
 
@@ -45,19 +45,19 @@ Since policies and permissions are limited and managed by the platform, they can
 
 In the tenant authorization area (option **Security** on right side of top navbar) you can manage all *Policies* and *Roles* inside a tenant. Access to this option is limited by the Platform Roles.
 
-#### Roles
+### Roles
 
 By default, every tenant has only one Role, named *Administration*. This role cannot be removed and it has, by default, associated the user responsible for the tenant creation. Other users can be added to this *Role*.
 
 If needed, new Roles can be created to grant a set of policies to a group of users.
 
-#### Policies
+### Policies
 
 By default, each tenant has three policies:
 
-- Model: controls the access to the tenant modeling area;
-- Security: controls the access to the tenant security features (Users, Privileges and Roles);
-- Application: controls the access to the modeled entities CRUD operations.
+- **Model**: controls the access to the tenant modeling area;
+- **Security**: controls the access to the tenant security features (Users, Privileges and Roles);
+- **Application**: controls the access to the modeled entities CRUD operations.
 
 *Administration* role has access granted to all this permissions. If new roles are added, access to the permissions can be granted.
 

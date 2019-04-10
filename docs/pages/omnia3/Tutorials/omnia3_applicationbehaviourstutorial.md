@@ -1,7 +1,7 @@
 ---
 title: Application Behaviours Tutorial
 keywords: omnia3
-summary: "Application Behaviour for external API call"
+summary: "Develop an application behaviour for external API call"
 sidebar: omnia3_sidebar
 permalink: omnia3_applicationbehaviourstutorial.html
 folder: omnia3

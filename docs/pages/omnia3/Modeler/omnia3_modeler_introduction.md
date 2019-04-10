@@ -12,7 +12,7 @@ folder: omnia3
 
 The _Modeler_ is the area where the model development occurs.
 
-To create new _OMNIA_ applications you must understand the [modeling lifecycle](omnia3_modeler_lifecycle.html), in order to follow the best development practices.
+To create new OMNIA applications you must understand the [modeling lifecycle](omnia3_modeler_lifecycle.html), in order to follow the best development practices.
 
 ## 2. Understanding the homepage
 Accessing the _Modeler_ you will see three different groups of information:

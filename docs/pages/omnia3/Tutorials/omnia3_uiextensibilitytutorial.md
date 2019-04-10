@@ -1,7 +1,7 @@
 ---
 title: User Interface (UI) Behaviours Tutorial
 keywords: omnia3
-summary: "A tutorial exemplifying how you can use UI Behaviours"
+summary: "Learn to apply behaviours to change interface elements"
 sidebar: omnia3_sidebar
 permalink: omnia3_uiextensibilitytutorial.html
 folder: omnia3

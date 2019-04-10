@@ -1,7 +1,7 @@
 ---
 title: API Client Tutorial
 keywords: omnia3
-summary: "OMNIA Low-Code Development Platform - API Clients Management"
+summary: "Learn all you need to know about using API Clients"
 sidebar: omnia3_sidebar
 permalink: omnia3_apiclienttutorial.html
 folder: omnia3

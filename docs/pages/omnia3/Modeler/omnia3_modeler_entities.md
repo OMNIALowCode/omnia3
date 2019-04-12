@@ -162,7 +162,7 @@ __*Entity / User Interface Behaviours*__
 
 In order to extend your application user interface you can add new behaviours to your entities' user interface.
 
-Click [here](omnia3_modeler_behaviours.html), to know more about user interface behaviours.
+Click [here](omnia3_modeler_uibehaviours.html), to know more about user interface behaviours.
 
 ### How to hide an element?
 

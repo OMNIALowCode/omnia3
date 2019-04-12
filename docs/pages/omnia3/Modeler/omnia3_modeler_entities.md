@@ -95,16 +95,19 @@ The accelerator feature is a simple yet powerful tool that enables you to easily
 
  * **1. Get Entity**
    This accelerator allows you to connect pre-existing attributes in a very simple manner, bridging the gap between them and allowing you assign an entity value to a different attribute, regardless of its context.
+   
    Example: Get the UnitPrice of a Product (Resource) and output it to a purchase order document element.
    
 [Accelerator_GetEntity](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/accelerator.png)
 
   * **2. Execute Query**
    This accelerator was built to enable you to execute queries and manipulate its output data in a different context that its initial.
+   
    Example: Get all available products of a specific supplier, filter them by price range, and output that information directly on a document.
 
   * **3. Execute Application Behaviour**
    With this accelerator, you'll be able to easily execute Application Behaviours and its output data, regardless of context.
+   
    Example: You have an Application Behaviour that calculates currency rates, based on online values. Call and execute that behaviour from any entity. 
 
 ### How to edit the execution code of a behaviour?

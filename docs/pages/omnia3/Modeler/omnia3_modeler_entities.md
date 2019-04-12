@@ -183,6 +183,22 @@ In order to extend your application user interface you can add new behaviours to
 
 Click [here](omnia3_modeler_uibehaviours.html), to know more about user interface behaviours.
 
+### Accelerators
+ 
+![UI Accelerator](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/UIaccelerator.png)
+ 
+* **Hide an Element**
+The accelerator will allow you to easily select an interface element you wish to hide and add the conditions (value or role) that will trigger that behaviour
+Example: A user selects his payment option and that action will hide the unnecessary elements.
+ 
+* **Set Element Read Only**
+Easily select an interface element you wish to define as Read Only and add the conditions (value or role) that will trigger that behaviour
+Example: Depending on the user role, allow your Supplier to edit the field "Unit Price", while the custumer only sees it as read only. 
+ 
+* **3. Add Validation Message**
+Quickly add validation messages to your interface elements, add the trigger conditions (value or role) and define the content of your message
+Example: If a user tries to add an invalid email on a field, an error message is returned indicating that.
+
 ### How to hide an element?
 
 In this sample, base element *_code* is set as hidden:

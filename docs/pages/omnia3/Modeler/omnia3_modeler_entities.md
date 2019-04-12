@@ -98,7 +98,7 @@ The accelerator feature is a simple yet powerful tool that enables you to easily
    
    Example: Get the UnitPrice of a Product (Resource) and output it to a purchase order document element.
    
-[Accelerator_GetEntity](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/accelerator.png)
+![Accelerator_GetEntity](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/accelerator.png)
 
   * **2. Execute Query**
    This accelerator was built to enable you to execute queries and manipulate its output data in a different context that its initial.

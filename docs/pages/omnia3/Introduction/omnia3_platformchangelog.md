@@ -18,7 +18,7 @@ Release Date: 2019-04-15
 
 ### Implemented enhancements:
 
- - Debug internal rutime behaviours
+ - Debug internal rutime behaviours (Breaking change - Required to update connector to 1.0.172 or higher and re-build model)
  - Display the data source name instead of code
  - Accelerator GetEntity: Get data source info to generate the data source parameter value
  - Modeler: Show row number when modeling the User Interface

@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.172](#1.0.172)
+Release Date: 2019-04-15
+
+### Implemented enhancements:
+
+- Attached mode to support Debug of Internal runtime behaviours
+
 ## [1.0.146](#1.0.146)
 Release Date: 2019-03-28
 

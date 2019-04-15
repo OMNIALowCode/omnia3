@@ -9,6 +9,44 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.0.237](#3.0.237)
+Release Date: 2019-04-15
+
+### Bugs: 
+ - Don't mark WebComponents as optinal fields where placed in grids
+
+### Implemented enhancements:
+
+ - Debug internal rutime behaviours
+ - Display the data source name instead of code
+ - Accelerator GetEntity: Get data source info to generate the data source parameter value
+ - Modeler: Show row number when modeling the User Interface
+ - Modeler: Suggest the Behaviours name
+ - Add "Add validation message" Accelerator
+ - Modeler: Allow to download last build directly from top bar
+
+
+## [3.0.216](#3.0.216)
+Release Date: 2019-04-11
+
+### Bugs: 
+ - Show the correct message when a WebComponent fails to load
+ - Show errors in calendars
+ - Modeler: Allow to filter lookup fields
+ - Don't show "Go to Tenants management" option to non-admin users
+ - Translate filters section
+ - Translate calendar entry form
+ - VisibleFromScreenSizes: Fix dropdown options values
+ 
+### Implemented enhancements:
+ - WebApp: Send language in API client
+ - WebApp: Add ExecuteQuery Accelerator
+ - Generate code to get the Document's serie on Initialize
+ - Add Accelerator: ExecuteApplicationBehaviour
+ - Add JS Accelerators
+ - Remove the Serie data when removing a document
+
 ## [3.0.200](#3.0.200)
 Release Date: 2019-04-01
 

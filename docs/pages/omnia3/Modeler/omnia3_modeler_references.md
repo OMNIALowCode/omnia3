@@ -29,7 +29,6 @@ In order to add them, you can access the modeler, edit a data source, and go to 
     - Relative paths are also supported. The assumed start path is the folder where the application is running. i.e. If it is located on C:\Omnia, and your assembly is on C:\Assemblies, the path should be ..\Assemblies\MyAssembly.dll
 - **Assembly name:** The assembly name of the reference you are importing.
 - **Execution Location:** The location where the assembly is going to be used. Possible values:
-    - OMNIA and other systems (Both): The assembly will be available to be used on behaviours executed on Omnia externally
     - Other system (External): The assembly will be available to be used only on behaviours external to Omnia
     - OMNIA (Internal): The assembly will be available to be used only on behaviours executed on Omnia
     

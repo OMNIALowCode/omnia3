@@ -165,6 +165,10 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     if(string.IsNullOrEmpty(fromCurrency) || string.IsNullOrEmpty(toCurrency))
     throw new Exception($"Both currencies must be sended to calculate the rate."); 
 
+    if(string.Equals(fromCurrency, toCurrency))
+
+    return new Dictionary<string, object>() { { "Rate", 1m } };
+    
     HttpClient httpClient = new HttpClient();
        
     var response = httpClient.GetAsync($"https://api.exchangeratesapi.io/latest?base={fromCurrency}&symbols={toCurrency}")

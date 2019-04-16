@@ -9,6 +9,11 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.238](#3.0.238)
+Release Date: 2019-04-16
+
+### Bugs: 
+ - Error when loading dashboards with calendars mapped to lists
 
 ## [3.0.237](#3.0.237)
 Release Date: 2019-04-15

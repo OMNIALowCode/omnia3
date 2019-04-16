@@ -145,7 +145,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
     };
 
-    var result = SystemApplicationBehaviours.GetCurrencyRate(rateArgs);
+    var result = SystemApplicationBehaviours.GetExchangeRate(rateArgs);
   
     this.Rate = (decimal)result["Rate"];
     

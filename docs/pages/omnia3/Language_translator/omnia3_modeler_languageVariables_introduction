@@ -8,16 +8,16 @@ folder: omnia3
 ---
 
 ## 1. Introduction
-The need for multi language systems is a priority at the core of our platform. Despite being written in English by default, OMNIA allows you to easily add new languages and upload their respective content in a easy and very simple way.
+The need for multi language systems was a priority at the core developments of our platform. Despite being written in English by default, OMNIA allows you to easily add new languages and upload their respective content in a easy, scalable and simple way.
 
 Currently there are two language slots available, one for the English language, and one for the Portuguese. (this will soon change to allow for the creation of any number of languages)
 
 ## 2. Structure
-In order to build a language-flexible, scalable, web application, there are two simple but very important steps needed to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
+In order to build a language-flexible, scalable, web application, there are two features needed to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
 
-**Dictionaries** work as language datasets, this means that each language has its own, exclusive, dictionary, allowing the user to fill them with data as he sees fit.
+**Dictionaries** work as language datasets, this means that each language has its own, exclusive, dictionary, allowing the user to fill them with data as he sees fit. Dictionaries can contain single words, or multiple word strings.
 
-**Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI (label field), and it will be filled with different data, according to its users selected language and the data present in the respective language dictionary.
+**Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI, and it will be filled with different data, according to its users selected language and the data present in the respective language dictionary.
 
 # Structure
 
@@ -29,18 +29,25 @@ Example:
 
 In the application's English language dictionary the user input the following values:
 
-And does the same with the term's translation on the Portuguese language dictionary:
+And does the same with the terms translation on the Portuguese language dictionary:
 
-After the respective Dictionaries have that variable defined and with an assigned value, the platform will output the value instead of the Language Variable.
+After the Dictionaries have that variable defined and are assigned a value, the platform will output the value instead of the Language Variable:
 
+Language Variable | English | Portuguese
+---------|------------|--------------|
+ **{Texts.Description}** | Description | Descrição
+ **{Texts.Apples}** | Apples | Maçãs
+ **{Texts.CustomerService}** | Customer Service | Atendimento ao Cliente
+
+# Data Upload
+
+As mentioned previously, uploading an entire dictionary data can be achieved in a very simple way, by making use of JSON type files.
+
+By using the "Update with JSON" funcionality, which requires only a JSON file (see example file), the user will be able to translate the entire platform in one single click, provided that Language Variables were used correctly.
 
 ### Context structure
 
-Property | Explanation|
----------|------------|
- **tenant** | Information about the tenant the user is working on, using the _TenantContext_ structure.
- **operation** | Information about the operation the user is working on, using the _OperationContext_ structure.
- **authentication** | Information about the operation the user is working on, using the _AuthenticationContext_ structure.
+
 
 
  __*Tenant Context*__

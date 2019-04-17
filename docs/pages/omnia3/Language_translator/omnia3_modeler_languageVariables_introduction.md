@@ -10,20 +10,20 @@ folder: omnia3
 
 ## 1. Introduction
 
-The need for multi language systems was a priority at the core developments of our platform. Despite being written in English by default, OMNIA allows you to easily add new languages and upload their respective content in a easy, scalable and simple way.
+Despite being written in English by default, OMNIA allows you to easily add new languages and upload their respective content in a easy and  scalable way. 
 
 Currently there are two language slots available, one for the English language, and one for the Portuguese (this will soon change to allow for the creation of any number of languages).
 
 
 ## 2. Structure
 
-In order to build a language-flexible, scalable, web application, there are two features needed to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
+In order to build a language-flexible, scalable web application, we developed two features to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
 
 
-**Dictionaries** work as language datasets, this means that each language has its own, exclusive, dictionary, allowing the user to fill them with data as he sees fit. Dictionaries can contain single words, or multiple word strings.
+**Dictionaries** work as language datasets, this means that each language has its unique dictionary, allowing the developer to fill them with data as he sees fit. Dictionaries can contain single words, or multiple word strings.
 
 
-**Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI, and it will be filled with different data, according to its users selected language and the data present in the respective language dictionary.
+**Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI, and it will be filled with different data according to its users selected language and the data present in the respective language dictionary.
 
 
 The structure of Language Variables is very simple and does not change, regardless of context, and works as follows:
@@ -32,7 +32,7 @@ The structure of Language Variables is very simple and does not change, regardle
    **{Texts.Description}** - represents the Language Variable for the term "Description" and will output the respective dictionary registry, according to the user's selected language.
 
 
-**Example:**
+**Examples:**
 
 In the application's English language dictionary the user input the following values:
 

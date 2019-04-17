@@ -15,7 +15,7 @@ Currently there are two language slots available, one for the English language, 
 ## 2. Structure
 In order to build a language-flexible, scalable, web application, there are two simple but very important steps needed to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
 
-**Dictionaries** are, as the name implies, pools of language data that are associated with only one language, this means that each language has its own, exclusive, dictionary, allowing the user to fill them data as he sees fit.
+**Dictionaries** work as language datasets, this means that each language has its own, exclusive, dictionary, allowing the user to fill them with data as he sees fit.
 
 **Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI (label field), and it will be filled with different data, according to its users selected language and the data present in the respective language dictionary.
 
@@ -23,13 +23,15 @@ In order to build a language-flexible, scalable, web application, there are two 
 
 The structure of Language Variables is very simple and does not change, regardless of context, and works as follows:
 
-{Texts.LanguageVariable} - represents the Language Variable for the term "Language Variable" and will output the respective dictionary registry, according to the user's selected language.
+{Texts.Description} - represents the Language Variable for the term "Description" and will output the respective dictionary registry, according to the user's selected language.
 
 Example:
 
 In the application's English language dictionary the user input the following values:
 
 And does the same with the term's translation on the Portuguese language dictionary:
+
+After the respective Dictionaries have that variable defined and with an assigned value, the platform will output the value instead of the Language Variable.
 
 
 ### Context structure

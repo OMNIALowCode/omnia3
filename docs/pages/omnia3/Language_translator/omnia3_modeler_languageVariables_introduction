@@ -15,77 +15,22 @@ Currently there are two language slots available, one for the English language, 
 ## 2. Structure
 In order to build a language-flexible, scalable, web application, there are two simple but very important steps needed to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
 
-Language Variables operate on the same basic principle of mathematical variables, you place a variable in your UI (label field), and it will be filled with different data, according to its users selected language.
+**Dictionaries** are, as the name implies, pools of language data that are associated with only one language, this means that each language has its own, exclusive, dictionary, allowing the user to fill them data as he sees fit.
+
+**Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI (label field), and it will be filled with different data, according to its users selected language and the data present in the respective language dictionary.
 
 # Structure
 
 The structure of Language Variables is very simple and does not change, regardless of context, and works as follows:
 
-{Texts.Description} - represents the Language Variable for the word "Description" and will output the respective dictionary registry, according to the user's selected language.
+{Texts.LanguageVariable} - represents the Language Variable for the term "Language Variable" and will output the respective dictionary registry, according to the user's selected language.
 
+Example:
 
+In the application's English language dictionary the user input the following values:
 
-An excerpt of a Web Component with the minimum configurations would be:
+And does the same with the term's translation on the Portuguese language dictionary:
 
-```javascript
-class MyComponent extends HTMLElement {  
-  constructor() {
-   super();
-   
-    // Using regular Javascript, create the content of the Web Component
-    this.wrapper = document.createElement('div');
-    this.wrapper.innerHTML = 'My first Web Component in OMNIA Platform!';
-  }
-
-  connectedCallback() {
-    // Append the elements to the Web Component
-    this.appendChild(this.wrapper);
-  }
-}
-
-// Add to DOM custom elements you Web Component
-// The 1st parameter represents the custom element name (must be the same you write when you add the Web Component to the model)
-// The 2nd parameter is the class that will be used to represent your component (the class created in this code block)
-customElements.define('omnia-component', MyComponent);
-```
-
-## 3. Mappings
-If it's necessary to use the data of another element (for example, a textarea to display the value of an attribute or a chart to display the data of a list) you need to model the mappings between the element that owns the data and the Web Component.
-
-To do that, when you are adding the Web Component to the page you need:
-* If the page is a **Form**, set the mapping with the attribute of the entity;
-* If the page is a **Dashboard**, set the mapping with the list that has the required data.
-
-After the mapping is configured, the Web Component will receive the data as a parameter. To know how to use it, check the [_Available parameters_](#5-available-parameters) section.
-
-## 4. Available parameters
-Each component can receive up to three parameters, depending on the mapping configuration:
-* **context**: the current session information (the structure is represented [below](#context-structure));
-* **state**: all the data of the current Form or Dashboard, in the same structure of the [User Interface Behaviours](omnia3_modeler_uibehaviours.html#4-structure-of-the-class);
-* **value**: if the mapping is configured, has the value of the mapped element.
-
-### 4.1. Using the parameters
-To use the parameters, it's necessary to know when they have his value changed.
-
-The approach we recommend is to use the [setters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) of the class to catch the updates.
-
-Check the next code block to see how you can do it.
-
-```javascript
-class MyComponent extends HTMLElement {  
-  constructor() {
-   super();
-   ...
-  }
-  
-  set value(newValue){
-    // When the property value changes, update the Web Component content
-    this.wrapper.innerHTML = newValue;
-  }
-}
-
-...
-```
 
 ### Context structure
 

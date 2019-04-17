@@ -19,7 +19,7 @@ When developing behaviours in the OMNIA platform, writing C# with no context dir
 
 ## 3. Structure of the downloaded build
 After extracting the downloaded build (a .zip file), you will have the following folders:
-* **classes**: The [C# classes](#4-c#-behaviours) generated based on the modeled behaviours (Entity, Data and Application);
+* **classes**: The [C# classes](#4-c-behaviours) generated based on the modeled behaviours (Entity, Data and Application);
 * **queries**: The SQL queries (modeled in advanced mode or not);
 * **uiClasses**: The JavaScript classes generated based on User Interface behaviours.
 
@@ -34,9 +34,9 @@ Each *Data Source* will have a folder with a *Visual Studio* C# Project, which c
 
 The project can have (depending of which behaviours are modeled) the following folders:
 * **Application**: Contains the [*Application Behaviours*](omnia3_modeler_behaviours.html#5-application-behaviours);
-* **Data**: Contains the *Data Access Objects (DAOs)* (one per entity), each one with the representation of the modeled [*Data Behaviours*](omnia3_modeler_datasources.html#2-types-of-data-behaviours)
-* **Entity**: Contains the classes (one per entity) that support the execution of the operations modeled through [*Entity Behaviours*](omnia3_modeler_behaviours.html#2-types-of-behaviours)
-  * To each entity will be generated a file which name will respect the rule _MyEntityName.**Operations.cs**_
+* **Data**: Contains the *Data Access Objects (DAOs)* (one per entity), each one with the representation of the modeled [*Data Behaviours*](omnia3_modeler_datasources.html#2-types-of-data-behaviours);
+* **Entity**: Contains the classes (one per entity) that support the execution of the operations modeled through [*Entity Behaviours*](omnia3_modeler_behaviours.html#2-types-of-behaviours).
+  * To each entity will be generated a file which name will respect the rule _MyEntityName.**Operations.cs**_.
 
 ## 5. Debugging
 It's possilbe to debug all the C# behaviours, using the _Visual Studio_ and all of its debugging features.

@@ -56,11 +56,11 @@ Language Variable | English | Portuguese
 
 As mentioned previously, uploading an entire dictionary dataset can be achieved in a very simple way, by making use of JSON type files.
 
-By using the "Update with JSON" funcionality, which requires only a JSON file (see example file), the user will be able to translate the entire platform in one single click, provided that Language Variables were used correctly.
+By using the "Update with JSON" funcionality, which requires only a JSON file (see example below), the user will be able to translate the entire platform in one single click, provided that Language Variables were used correctly.
 
 JSON file for example provided in the previous point:
 
-    '''json
+    
     {
 	"name": "PTPT",
 	"texts": [

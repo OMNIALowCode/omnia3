@@ -26,16 +26,13 @@ In order to build a language-flexible, scalable, web application, there are two 
 **Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI, and it will be filled with different data, according to its users selected language and the data present in the respective language dictionary.
 
 
-# Structure
-
-
 The structure of Language Variables is very simple and does not change, regardless of context, and works as follows:
 
 
-{Texts.Description} - represents the Language Variable for the term "Description" and will output the respective dictionary registry, according to the user's selected language.
+   **{Texts.Description}** - represents the Language Variable for the term "Description" and will output the respective dictionary registry, according to the user's selected language.
 
 
-Example:
+**Example:**
 
 In the application's English language dictionary the user input the following values:
 

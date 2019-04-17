@@ -195,7 +195,7 @@ Example: A user selects his payment option and that action will hide the unneces
 Easily select an interface element you wish to define as Read Only and add the conditions (value or role) that will trigger that behaviour
 Example: Depending on the user role, allow your Supplier to edit the field "Unit Price", while the custumer only sees it as read only. 
  
-* **3. Add Validation Message**
+* **Add Validation Message**
 Quickly add validation messages to your interface elements, add the trigger conditions (value or role) and define the content of your message
 Example: If a user tries to add an invalid email on a field, an error message is returned indicating that.
 

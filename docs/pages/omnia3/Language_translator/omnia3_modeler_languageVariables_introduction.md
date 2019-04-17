@@ -20,13 +20,13 @@ Currently there are two language slots available, one for the English language, 
 In order to build a language-flexible, scalable web application, we developed two features to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
 
 
-**Dictionaries** work as language datasets, this means that each language has its unique dictionary, allowing the developer to fill them with data as he sees fit. Dictionaries can contain single words, or multiple word strings.
+ - **Dictionaries** work as language datasets, this means that each language has its unique dictionary, allowing the developer to fill them with data as he sees fit. Dictionaries can contain single words, or multiple word strings.
 
 
-**Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI, and it will be filled with different data according to its users selected language and the data present in the respective language dictionary.
+ - **Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI, and it will be filled with different data according to its users selected language and the data present in the respective language dictionary.
 
 
-The structure of Language Variables is very simple and does not change, regardless of context, and works as follows:
+The structure of Language Variables works as follows:
 
 
    **{Texts.Description}** - represents the Language Variable for the term "Description" and will output the respective dictionary registry, according to the user's selected language.
@@ -34,9 +34,13 @@ The structure of Language Variables is very simple and does not change, regardle
 
 **Examples:**
 
-In the application's English language dictionary the user input the following values:
+In the application's English language dictionary the user needs to input the following values:
+
+![EN_language_examples](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/language-EN-examples.jpg)
 
 And does the same with the terms translation on the Portuguese language dictionary:
+
+![PT_language_examples](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/language-PT-examples.jpg)
 
 After the Dictionaries have that variable defined and are assigned a value, the platform will output the value instead of the Language Variable:
 

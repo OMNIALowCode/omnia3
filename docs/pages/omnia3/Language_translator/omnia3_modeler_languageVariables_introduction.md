@@ -26,6 +26,7 @@ In order to build a language-flexible, scalable web application, we developed tw
  - **Language Variables** operate on the same basic principle of mathematical variables, you place a variable in your UI, and it will be filled with different data according to its users selected language and the data present in the respective language dictionary.
 
 
+
 The structure of Language Variables works as follows:
 
 
@@ -34,15 +35,15 @@ The structure of Language Variables works as follows:
 
 **Examples:**
 
-In the application's English language dictionary the user needs to input the following values:
+In the application's English language dictionary the developer inputs the following values:
 
 ![EN_language_examples](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/language-EN-examples.jpg)
 
-And does the same with the terms translation on the Portuguese language dictionary:
+And does the same with the translated terms on the Portuguese language dictionary:
 
 ![PT_language_examples](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/modeler/language-PT-examples.jpg)
 
-After the Dictionaries have that variable defined and are assigned a value, the platform will output the value instead of the Language Variable:
+After the Dictionaries have that variable defined and are assigned a value, the platform will output the value instead of the Language Variable.
 
 Language Variable | English | Portuguese
 ---------|------------|--------------|

@@ -1,7 +1,7 @@
 ---
 title: Languages
 keywords: omnia3
-summary: "All you need to know about the language mechanism of our development platform"
+summary: "All you need to know about the language mechanism of our low-code development platform"
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_languagetranslator.html
 folder: omnia3
@@ -29,7 +29,7 @@ In order to build a language-flexible, scalable web application, we developed tw
 The structure of Language Variables works as follows:
 
 
-   **{Texts.Description}** - represents the Language Variable for the term "Description" and will output the respective dictionary registry, according to the user's selected language.
+   **{Texts.Description}** - represents the Language Variable for the term "Description" and will output the respective dictionary registry, according to the user's selected language. Following the structure {Texts. + [your word/phrase] + }, you can create the all the language variables you see fit for your project. 
 
 
 **Examples:**

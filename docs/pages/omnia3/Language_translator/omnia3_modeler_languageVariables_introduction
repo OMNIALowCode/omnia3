@@ -12,10 +12,18 @@ The need for multi language systems is a priority at the core of our platform. D
 
 Currently there are two language slots available, one for the English language, and one for the Portuguese. (this will soon change to allow for the creation of any number of languages)
 
-## 2. Language Variables
-In order to build a language-flexible, scalable, web applications, there is one simple but very important step needed to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**.
+## 2. Structure
+In order to build a language-flexible, scalable, web application, there are two simple but very important steps needed to assure that your work will be easily and fully translatable with very little effort. We call them **Language Variables**, and **Dictionaries**.
 
-Language Variables operate on the same basic principle of mathematical variables, you create a variable that will be filled with different info, acording to a given context.
+Language Variables operate on the same basic principle of mathematical variables, you place a variable in your UI (label field), and it will be filled with different data, according to its users selected language.
+
+# Structure
+
+The structure of Language Variables is very simple and does not change, regardless of context, and works as follows:
+
+{Texts.Description} - represents the Language Variable for the word "Description" and will output the respective dictionary registry, according to the user's selected language.
+
+
 
 An excerpt of a Web Component with the minimum configurations would be:
 

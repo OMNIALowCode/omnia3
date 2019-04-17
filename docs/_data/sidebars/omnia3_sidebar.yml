@@ -138,6 +138,10 @@ entries:
       url: /omnia3_modeler_references.html
       output: web, pdf
 
+    - title: Developing and Debugging
+      url: /omnia3_modeler_developingbehaviours.html
+      output: web, pdf
+
     - title: User Interface Behaviours
       url: /omnia3_modeler_uibehaviours.html
       output: web, pdf

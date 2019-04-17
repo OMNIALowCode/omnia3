@@ -1,7 +1,7 @@
 ---
-title: Developing and Testing Behaviours
+title: Developing and Debugging Behaviours
 keywords: omnia3
-summary: "How to develop and test Behaviours with the help of Visual Studio"
+summary: "How to develop and debug Behaviours with the help of Visual Studio"
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_developingbehaviours.html
 folder: omnia3
@@ -11,33 +11,73 @@ folder: omnia3
 ## 1. Introduction
 When developing behaviours in the OMNIA platform, writing C# with no context directly into the modeling area is not going to be enough for any other than the simplest scenarios. However, it is possible to download the exact C# classes that the platform will use for its execution of the behaviours, and both develop code and test it in Visual Studio.
 
-## 2. Downloading the auxiliary solution
 
-In order to simplify the debugging explained in this section, we have created a [Visual Studio 2017 solution](https://github.com/numbersbelieve/omnia3-behaviours) that contains a pre-baked example of how to test a sample Purchase Order model such as the one described in the [Beginners Tutorial](omnia3_beginnertutorial.html).
+## 2. Obtaining the model
 
-If you want to develop your own VS Solution, you will need to manually add a series of NuGet package references.
+- Access the modeling area for the tenant and environment you want to develop in;
+- Access ***Versioning > Builds*** and download the build you want, using the *Download build* option;
 
-## 3. Obtaining the model
+## 3. Structure of the downloaded build
+After extracting the downloaded build (a .zip file), you will have the following folders:
+* **classes**: The [C# classes](#4-c#-behaviours) generated based on the modeled behaviours (Entity, Data and Application);
+* **queries**: The SQL queries (modeled in advanced mode or not);
+* **uiClasses**: The JavaScript classes generated based on User Interface behaviours.
 
-- Access the modeling area for the tenant and environment you want to develop in.
-- Access ***Versioning > Builds***, and, next to the latest build of the model, you will see a download button. Press it.
-- That zip file contains the current state of the model. You can extract it to the sample solution from point 2. or develop your own Visual Studio solution for testing.
+## 4. C# Behaviours
+In the build folder, inside the *classes* folder you will have the following folders:
+* **_common**: Contains the *Data Transfer Objects (DTOs)* used to transfer the entity's data between systems. To each entity added to the model, a *DTO* will be generated in this folder;
+* **Internal**: Contains a folder to each [Data Source](#41-data-source-structure) that will have behaviours executed in the internal OMNIA behaviour environment (the Data Source *System* will always be placed here);
+* **External**: Contains a folder to each [Data Source](#41-data-source-structure) that will have behaviours executed in an external environment (either on OMNIA Connector or not).
 
-## 4. Structure of the downloaded behaviours
+### 4.1 Data Source structure
+Each *Data Source* will have a folder with a *Visual Studio* C# Project, which contains all the behaviours that will be executed in this *Data Source*.
 
-Upon extracting the zip file, you will see a series of folders. 
+The project can have (depending of which behaviours are modeled) the following folders:
+* **Application**: Contains the [*Application Behaviours*](omnia3_modeler_behaviours.html#5-application-behaviours);
+* **Data**: Contains the *Data Access Objects (DAOs)* (one per entity), each one with the representation of the modeled [*Data Behaviours*](omnia3_modeler_datasources.html#2-types-of-data-behaviours)
+* **Entity**: Contains the classes (one per entity) that support the execution of the operations modeled through [*Entity Behaviours*](omnia3_modeler_behaviours.html#2-types-of-behaviours)
+  * To each entity will be generated a file which name will respect the rule _MyEntityName.**Operations.cs**_
 
-- **_common** contains the system classes that are always necessary for other behaviours (Context, ApiClient), as well as the _[EntityName]Dto.cs_ Data Transfer Objects (DTOs) that are used to pass data between the platform and the place where behaviours are executed (whether inside the platform or in the connector).
+## 5. Debugging
+It's possilbe to debug all the C# behaviours, using the _Visual Studio_ and all of its debugging features.
 
-- **System** contains the structural code for any entities that do not have a custom Data Source.
-    - The **Entity** folder contains all the _[EntityName].Operations.cs_ classes that are where your custom behaviours will be. **This will be the only place you need to edit when testing entity behaviours**.
-    - The **Entity/Domain** folder contains the Domain representations of the entities, _[EntityName].cs_. 
-    - The **Application** folder, if it exists, contains all the **Application** behaviours, one per file.
+To debug and develop behaviours you need to use the OMNIA Connector to receive the requests made to a given *Tenant* and *Data Source*.
 
-If there are any custom data sources, you will also see other folders:
+Attaching the connector to a *Data Source*, will make all the requests to to be forwarded to your connector during that session.
 
-- **[DataSourceCode]** folders contain, for each data source other than System, the classes for every entity that is associated with that Data Source.
-    - The Entity folder is the same as above, so is the Application folder.
-    - If there are any Data behaviours (i.e. the **Data Access** runtime of this entity is External), there will also be a **Data** folder, which contains the Data Access Object (DAO) classes _[EntityName]Dao.cs_, where all the Data Behaviours exist. **This will be the only place you need to edit when testing data behaviours**.
+### 5.1 Pre-requisites
+In order to debug the OMNIA Behaviours you will need to:
+* Download and configure the OMNIA Connector. [See here how to do that](omnia3_connector_install.html);
+* [Download the build](#2-obtaining-the-model) you want to debug and unzip the file.
 
-This folder division is what allows for the connector to only compile what it needs to run the external data sources, as well as for the platform to only compile what it needs to run its internal data sources.
+### 5.2 Debug Cloud Behaviours
+In order to debug the behaviours that will be executed in the cloud (including the behaviours of the *Data Source* *System*), you need to attach your *OMNIA Connector* to the *OMNIA Platform* subscription running on the cloud.
+
+To do that, you need to execute the following command, using the *Command Line*, replacing the Tenant code and the Data Source you want to debug:
+```
+    Omnia.Connector.Windows.exe run --attach -tenant:YourTenantCode -datasource:DataSourceToDebug
+```
+
+*Note: The parameters are case sensitive*
+
+Once you have runned the previous command:
+* Open the build folder and navigate to the folder *classes*;
+* Open the folder of the *Data Source* you have attached to debug in the previous command;
+* Open the C# project in _Visual Studio_, using the _.csproj_ file.
+
+Using the _Visual Studio_ debbuging features, start the debbuger and from now on, all the requests made in the _OMNIA Platform_ to this _Data Source_ will be forwarded to this debug session.
+
+### 5.3 Debug Connector Behaviours
+In order to debug the behaviours that will be executed in the Connector, through a custom [*Data Source*](omnia3_modeler_datasources.html), you need to start the _OMNIA Connector_:
+* Opening the executable *Omnia.Connector.Windows.exe*;
+* Or executing the following command on the *Command Line*:
+    ```
+        Omnia.Connector.Windows.exe
+    ```
+
+Once you have the *OMNIA Connector* running:
+* Open the build folder and navigate to the folder *classes*;
+* Open the folder of the *Data Source* you want to debug;
+* Open the C# project in _Visual Studio_, using the _.csproj_ file.
+
+Using the _Visual Studio_ debbuging features, start the debbuger and from now on, all the requests made in the _OMNIA Platform_ to this _Data Source_ will be forwarded to this debug session.

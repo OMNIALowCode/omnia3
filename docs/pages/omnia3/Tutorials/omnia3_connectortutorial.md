@@ -23,7 +23,7 @@ As our custom data source, we are going to use a CSV file with a list of compani
 
 This tutorial assumes that you have created a OMNIA tenant ([click here to see how](omnia3_tenantcreation.html)), and are logged in as a user with modeling privileges to this tenant. You must also have access to the management area to manage the connectors.
 
-Please download this [TransportationServices.csv](https://github.com/OMNIALowCode/omnia3/blob/master/docs/tutorialPics/modelingTutorial/TransportationServices.csv?raw=true) (right click and save the document), we'll be using it as a data source in this tutorial. 
+Please download this [TransportationServices.csv](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/connector/TransportationServices.csv), we'll be using it as a data source in this tutorial. 
 
 
 ## 3. Create a new connector

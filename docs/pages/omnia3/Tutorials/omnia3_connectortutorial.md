@@ -66,7 +66,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 
   List<IDictionary<string, object>> listData = new List<IDictionary<string, object>>();
 
-  string filePath = @"place your filepath here";
+  string filePath = @"{your filepath}\TransportationServices.csv";
   char csvSplitChar = ';';
 
   int numberOfRecords = 0;111
@@ -97,27 +97,27 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 
    Copy and paste the following code:
 
-    ```C#
-    string filePath = @"C:\Users\Primavera BSS\Desktop\TransportationServices.csv";
-	char csvSplitChar = ';';
+  ```C#
+  string filePath = @"{your filepath}\TransportationServices.csv";
+  char csvSplitChar = ';';
 
-	TransportationDto transportation = new TransportationDto();
-	using (var reader = new System.IO.StreamReader(filePath))
-	{
-     	while (!reader.EndOfStream)
-     	{
-        	var line = reader.ReadLine();
-        	var values = line.Split(csvSplitChar);
-        	var valuesLen = values.Length;
-        	if (values[0].Equals(identifier, System.StringComparison.InvariantCultureIgnoreCase)) {
-            	transportation._code = values[0];
-            	transportation._name = values[1];
-        	}
-     	}
-	}
+  TransportationDto transportation = new TransportationDto();
+  using (var reader = new System.IO.StreamReader(filePath))
+  {
+  while (!reader.EndOfStream)
+  {
+       	var line = reader.ReadLine();
+       	var values = line.Split(csvSplitChar);
+       	var valuesLen = values.Length;
+       	if (values[0].Equals(identifier, System.StringComparison.InvariantCultureIgnoreCase)) {
+         	transportation._code = values[0];
+          	transportation._name = values[1];
+       	}
+  }
+  }
 
-	return transportation;
-    ```
+  return transportation;
+  ```
 
 **6.** On *"Data Behaviours"* of Agent Transportation, define a behaviour, to be executed on *"Update"* (when a Transportation Service is updated on OMNIA). 
 
@@ -125,32 +125,32 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 
    Copy and paste the following code:
 
-    ```C#
-      TransportationDto transportation = new TransportationDto();
-	 string fileContent = "";
-	 string filePath = @"C:\Users\Primavera BSS\Desktop\TransportationServices.csv";
-	 char csvSplitChar = ';';
-	 string transportationDetails = $"{dto._code}{csvSplitChar}{dto._name}{csvSplitChar}";
+  ```C#
+  TransportationDto transportation = new TransportationDto();
+  string fileContent = "";
+  string filePath = @"{your filepath}\TransportationServices.csv";
+  char csvSplitChar = ';';
+  string transportationDetails = $"{dto._code}{csvSplitChar}{dto._name}{csvSplitChar}";
 
-	 using (var reader = new System.IO.StreamReader(filePath))
-	 {
-		    while (!reader.EndOfStream)
-	     {
-		 var line = reader.ReadLine();
-		 var values = line.Split(csvSplitChar);
-		 var valuesLen = values.Length;
-		 if (!values[0].Equals(identifier, System.StringComparison.InvariantCultureIgnoreCase)) {
-		     fileContent+= "\n"+line;						
-		 }else{
-		     fileContent+= "\n"+transportationDetails;
-		 }
-	     }								
+  using (var reader = new System.IO.StreamReader(filePath))
+  {
+   while (!reader.EndOfStream)
+  {
+	 var line = reader.ReadLine();
+	 var values = line.Split(csvSplitChar);
+	 var valuesLen = values.Length;
+	 if (!values[0].Equals(identifier, System.StringComparison.InvariantCultureIgnoreCase)) {
+	     fileContent+= "\n"+line;						
+	 }else{
+	     fileContent+= "\n"+transportationDetails;
 	 }
+     }								
+  }
 
-	 System.IO.File.WriteAllText(filePath, fileContent);
+  System.IO.File.WriteAllText(filePath, fileContent);
 
-	 return transportation;
-    ```
+  return transportation;
+   ```
 
 **7.** On *"Data Behaviours"* of Agent Transportation, define a behaviour, to be executed on *"Create"* (when a Transportation Service is updated on OMNIA). 
 
@@ -158,8 +158,8 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 
    Copy and paste the following code:
 
-    ```C#
-      string filePath = @"C:\Users\Primavera BSS\Desktop\TransportationServices.csv";
+  ```C#
+  string filePath = @"{your filepath}\TransportationServices.csv";
 	 char csvSplitChar = ';';
 	 string transportationDetails = $"\n{dto._code}{csvSplitChar}{dto._name}{csvSplitChar}";
 
@@ -180,7 +180,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
     ```C#
       TransportationDto transportation = new TransportationDto();
 	 string fileContent = "";
-	 string filePath = @"C:\Users\Primavera BSS\Desktop\TransportationServices.csv";
+	 string filePath = @"{your filepath}\TransportationServices.csv";
 	 char csvSplitChar = ';';
 
 	 using (var reader = new System.IO.StreamReader(filePath))

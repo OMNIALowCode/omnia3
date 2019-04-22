@@ -66,7 +66,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 
   List<IDictionary<string, object>> listData = new List<IDictionary<string, object>>();
 
-  string filePath = @"{your filepath}\TransportationServices.csv";
+  string filePath = @"filePath\TransportationServices.csv";
   char csvSplitChar = ';';
 
   int numberOfRecords = 0;
@@ -98,7 +98,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
    Copy and paste the following code:
 
   ```C#
-  string filePath = @"{your filepath}\TransportationServices.csv";
+  string filePath = @"filePath\TransportationServices.csv";
   char csvSplitChar = ';';
 
   TransportationDto transportation = new TransportationDto();
@@ -128,7 +128,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
   ```C#
   TransportationDto transportation = new TransportationDto();
   string fileContent = "";
-  string filePath = @"{your filepath}\TransportationServices.csv";
+  string filePath = @"filePath\TransportationServices.csv";
   char csvSplitChar = ';';
   string transportationDetails = $"{dto._code}{csvSplitChar}{dto._name}{csvSplitChar}";
 
@@ -159,7 +159,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
    Copy and paste the following code:
 
   ```C#
-  string filePath = @"{your filepath}\TransportationServices.csv";
+  string filePath = @"filePath\TransportationServices.csv";
   char csvSplitChar = ';';
   string transportationDetails = $"\n{dto._code}{csvSplitChar}{dto._name}{csvSplitChar}";
 
@@ -180,7 +180,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
   ```C#
   TransportationDto transportation = new TransportationDto();
   string fileContent = "";
-  string filePath = @"{your filepath}\TransportationServices.csv";
+  string filePath = @"filePath\TransportationServices.csv";
   char csvSplitChar = ';';
 
   using (var reader = new System.IO.StreamReader(filePath))

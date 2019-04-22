@@ -69,7 +69,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
   string filePath = @"{your filepath}\TransportationServices.csv";
   char csvSplitChar = ';';
 
-  int numberOfRecords = 0;111
+  int numberOfRecords = 0;
   using (var reader = new System.IO.StreamReader(filePath))
   {
   while (!reader.EndOfStream)

@@ -9,6 +9,15 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.240](#3.0.238)
+Release Date: 2019-04-22
+
+### Bugs: 
+ - Redis Cache stability issues
+
+### Implemented enhancements:
+ - Add option to remove languages in modeler portal
+
 ## [3.0.238](#3.0.238)
 Release Date: 2019-04-16
 

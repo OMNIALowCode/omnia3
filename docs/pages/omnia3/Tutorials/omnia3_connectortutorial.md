@@ -66,10 +66,10 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 
 	List<IDictionary<string, object>> listData = new List<IDictionary<string, object>>();
 
-	string filePath = @"C:\Users\Primavera BSS\Desktop\TransportationServices.csv";
+	string filePath = @"place your filepath here";
 	char csvSplitChar = ';';
 
-	int numberOfRecords = 0;
+	int numberOfRecords = 0;111
 	using (var reader = new System.IO.StreamReader(filePath))
 	{
 	while (!reader.EndOfStream)
@@ -88,7 +88,7 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 	}
 
 		 return (numberOfRecords, listData);
-	      ```
+	```
 
 
 **5.** Create a new **Data Behaviour** for the operation *"Read"*, so that data is retrieved when you wish to select a Transportation Service for your order.

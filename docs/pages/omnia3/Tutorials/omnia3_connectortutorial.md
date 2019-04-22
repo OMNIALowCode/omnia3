@@ -62,33 +62,33 @@ Please download this [TransportationServices.csv](https://raw.githubusercontent.
 
    Copy and paste the following code:
 
-	```C# 
+  ```C# 
 
-	List<IDictionary<string, object>> listData = new List<IDictionary<string, object>>();
+  List<IDictionary<string, object>> listData = new List<IDictionary<string, object>>();
 
-	string filePath = @"place your filepath here";
-	char csvSplitChar = ';';
+  string filePath = @"place your filepath here";
+  char csvSplitChar = ';';
 
-	int numberOfRecords = 0;111
-	using (var reader = new System.IO.StreamReader(filePath))
+  int numberOfRecords = 0;111
+  using (var reader = new System.IO.StreamReader(filePath))
+  {
+  while (!reader.EndOfStream)
 	{
-	while (!reader.EndOfStream)
+	var line = reader.ReadLine();
+	var values = line.Split(csvSplitChar);
+	Dictionary<string, object> transportationData = new Dictionary<string, object>();
+		if (values.Length > 1)
 		{
-		var line = reader.ReadLine();
-		var values = line.Split(csvSplitChar);
-		Dictionary<string, object> transportationData = new Dictionary<string, object>();
-			if (values.Length > 1)
-			{
-			transportationData.Add("_code", values[0]);
-			transportationData.Add("_name", values[1]);
-			numberOfRecords++;
-			listData.Add(transportationData);
-			}
+		transportationData.Add("_code", values[0]);
+		transportationData.Add("_name", values[1]);
+		numberOfRecords++;
+		listData.Add(transportationData);
 		}
 	}
+  }
 
-		 return (numberOfRecords, listData);
-	```
+  return (numberOfRecords, listData);
+  ```
 
 
 **5.** Create a new **Data Behaviour** for the operation *"Read"*, so that data is retrieved when you wish to select a Transportation Service for your order.

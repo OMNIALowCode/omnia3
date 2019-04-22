@@ -14,6 +14,7 @@ Release Date: 2019-04-22
 
 ### Bugs: 
  - Redis Cache stability issues
+ - Fix: Can't GET an entity from an external data source when then behaviour runtime is internal.
 
 ### Implemented enhancements:
  - Add option to remove languages in modeler portal

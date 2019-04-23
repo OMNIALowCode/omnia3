@@ -14,7 +14,7 @@ Now that you have completed the [Beginner Tutorial](https://docs.omnialowcode.co
 
 In this example, we'll add a new boolean attribute to our document, so that we can give the user the option to "Close" a document when its order is fulfilled. After the user declares the order as fulfilled, the entire document becomes "read only" and cannot be changed again.
 
-To know more about how User Interface (UI) Behaviours work, see our [User Inteface Behaviour page](omnia3_modeler_uibehaviours.html).
+To know more about how User Interface (UI) Behaviours work, see our [User Interface Behaviour page](omnia3_modeler_uibehaviours.html).
 
 ## 2. Prerequisites
 

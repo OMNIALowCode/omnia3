@@ -33,3 +33,22 @@ The recommended tool to see what is using disk space in your vm is `ncdu`, which
 
 ### How do I update the platform?
 Download the `OmniaPlatform.Binaries.VersionNumber.zip`. Delete the contents of `/home/omnia/bin/`, then extract it to that folder. Restart the site with `systemctl restart omnia`.
+
+### How to increase the file size limit?
+
+By default, NGINX sets a max size to the body of each request, using the directive **client_max_body_size**, whose default value is 1MB.
+> Sets the maximum allowed size of the client request body, specified in the “Content-Length” request header field. If the size in a request exceeds the configured value, the 413 (Request Entity Too Large) error is returned to the client. *(from [NGINX documentation](http://nginx.org/en/docs/http/ngx_http_core_module.html))*
+
+In order to allow file uploads higher than 1MB, it's neccessary to replace the value of the directive:
+
+* Edit the NGINX configuration file (`/etc/nginx/nginx.conf`), using `nano` or a similar tool;
+
+* Search the directive **client_max_body_size** (if it doesn’t exist, then add it inside and at the end of http);
+
+* Set the directive's value to the new max size (like the following example): `client_max_body_size 10M`;
+
+* Save the changes.
+
+After updating the configuration, you need to reload NGINX.
+
+

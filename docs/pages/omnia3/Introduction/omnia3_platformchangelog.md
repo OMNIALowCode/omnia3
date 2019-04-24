@@ -9,7 +9,21 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
-## [3.0.240](#3.0.238)
+## [3.0.241](#3.0.241)
+Release Date: 2019-04-24
+
+### Bugs: 
+ - White space in the login page background image when using zoom out
+ - Use system directory slash to normalize paths on server setup
+ - Cached HTML resources when the version is upgraded - Review HTML headers to force WebApp to reload every time
+
+### Implemented enhancements:
+ - Redirect homepage when the user changes the role
+ - Support upload of files with non unicode characters in the name
+ - Consider the error messages added using extensibility to invalidate the form
+ 
+ 
+## [3.0.240](#3.0.240)
 Release Date: 2019-04-22
 
 ### Bugs: 

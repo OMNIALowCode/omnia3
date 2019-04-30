@@ -134,8 +134,8 @@ entries:
       url: /omnia3_modeler_datasources.html
       output: web, pdf
 
-    - title: References in Behaviours
-      url: /omnia3_modeler_references.html
+    - title: Behaviour Dependencies
+      url: /omnia3_modeler_dependencies.html
       output: web, pdf
 
     - title: Developing and Debugging

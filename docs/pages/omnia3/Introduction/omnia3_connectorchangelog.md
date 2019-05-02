@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.173](#1.0.173)
+Release Date: 2019-05-02
+
+### Implemented enhancements:
+
+- Support Code/Expression Dependencies
+
 ## [1.0.172](#1.0.172)
 Release Date: 2019-04-15
 

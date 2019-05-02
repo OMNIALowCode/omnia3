@@ -98,7 +98,7 @@ Here are some usage suggestions for each type of behaviour - though, of course, 
     - Performing integrations with external systems that depend on the OMNIA-side document already being saved.
     - Triggering e-mail notifications.
 
- Keep in mind that all Omnia entities are independent, and therefore an entity behaviour should not depend on another entity. 
+ Keep in mind that all OMNIA entities are independent, and therefore an entity behaviour should not depend on another entity. 
  As an example, a Commitment behaviour code should not be dependent of a specific Document, because a Commitment can be available on more than one Document. On these scenarios, the behaviour should be defined on the Document.
 
 ## 3.3 How to know if an Attribute has been changed?

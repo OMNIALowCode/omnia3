@@ -23,7 +23,7 @@ In OMNIA, if you want to depend from external code, you can accomplish it by:
 
 ### 2.1 Adding file dependencies
 
-In order to add dependencies, you can access the modeler, edit a data source, and go to ***Behaviour Dependencies > Add new > File dependency***. Here, you identify the reference you want:
+In order to add dependencies, access the modeler, edit a data source, and go to ***Behaviour Dependencies > Add new > File dependency***. Here, you identify the reference you want:
 
 - **Name:** A platform-side identifier for the dependency;
 - **Description:** A human-readable description for the dependency;
@@ -35,8 +35,8 @@ In order to add dependencies, you can access the modeler, edit a data source, an
 - **Assembly name:** The assembly name of the reference you are importing.
 - **Execution Location:** The location where the assembly is going to be used. Possible values:
 
-    - Other system (External): The assembly will be available to be used only on behaviours external to Omnia
-    - OMNIA (Internal): The assembly will be available to be used only on behaviours executed on Omnia
+    - Other system (External): The assembly will be available to be used only on behaviours external to OMNIA
+    - OMNIA (Internal): The assembly will be available to be used only on behaviours executed on OMNIA
 
     
 
@@ -56,7 +56,7 @@ Then, identify the following information:
 
 ### 2.3 Supported references
 
-As the platform uses .NET Core, all references that run on an Internal data source will have to be compiled against one of the following:
+Due to our platform's usage of .NET Core, all references that run on an Internal data source will have to be compiled against one of the following:
 
 - **.NET Core 1.0 - 2.1**
 - **.NET Standard 1.0 - 2.0**
@@ -71,13 +71,13 @@ This is the only way we can guarantee compatibility. The most recent version of 
 
 ## 3. Code dependencies
 
-Code dependencies can be used to add code that your behaviours depend on but you don't have a physical DLL to depend on.
+Code dependencies can be used to add code that your behaviours depend on but you don't have a physical DLL.
 
-This feature will enable you to add C# Code that will be compiled together with the behaviours, inside a *"CodeDependencies"* folder and the file will have the name of the Dependency.
+This feature will enable you to add C# Code that will be compiled together with behaviours, inside a *"CodeDependencies"* folder and the file will have the name of the Dependency.
 
 Code dependencies don't need to respect any contract so you can add complete classes. 
 
-The code provided will be generated inside of a namespace related to the tenant, and the tenant namespace will be automatically added.
+The code provided will be generated inside of a namespace related to the tenant, and the tenant's namespace will be automatically added.
 
 ```c#
 using Omnia.Behaviours.MyTenant.Dtos;
@@ -93,14 +93,14 @@ namespace Omnia.Behaviours.MyTenant.Internal.System
 
 ### 3.1 Adding code dependencies
 
-In order to add code/expression dependencies, you can access the modeler, edit a data source, and go to ***Behaviour Dependencies > Add new > Code/Expression dependency***. Here, you identify the code you want:
+In order to add code/expression dependencies, access the modeler, edit a data source, and go to ***Behaviour Dependencies > Add new > Code/Expression dependency***. Here, you identify the code you want:
 
 - **Name:** A platform-side identifier for the dependency;
 - **Description:** A human-readable description for the dependency;
 - **Generate the following C# code:** The code you want to add to the compiled assembly.
 - **Execution Location:** The location where the assembly is going to be used. Possible values:
   - Other system (External): The assembly will be available to be used only on behaviours external to Omnia
-  - OMNIA (Internal): The assembly will be available to be used only on behaviours executed on Omnia
+  - OMNIA (Internal): The assembly will be available to be used only on behaviours executed on OMNIA
 
 ### 3.2 Using code dependencies
 

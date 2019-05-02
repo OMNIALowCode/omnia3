@@ -26,7 +26,7 @@ There are five different data behaviours:
 
 ## 3. Referencing external libraries in Behaviours
 
-The way to use references to .NET assemblies is explained in a [separate article](omnia3_modeler_references.html), as it is shared for both Entity and Data Behaviours.
+The way to use references to .NET assemblies is explained in a [separate article](omnia3_modeler_dependencies.html), as it is shared for both Entity and Data Behaviours.
 
 ## 4. Using Application Behaviours
 

@@ -98,7 +98,7 @@ Here are some usage suggestions for each type of behaviour - though, of course, 
     - Performing integrations with external systems that depend on the OMNIA-side document already being saved.
     - Triggering e-mail notifications.
 
- Keep in mind that all Omnia entities are independent, and therefore an entity behaviour should not depend on another entity. 
+ Keep in mind that all OMNIA entities are independent, and therefore an entity behaviour should not depend on another entity. 
  As an example, a Commitment behaviour code should not be dependent of a specific Document, because a Commitment can be available on more than one Document. On these scenarios, the behaviour should be defined on the Document.
 
 ## 3.3 How to know if an Attribute has been changed?
@@ -130,7 +130,7 @@ if(this.State == 'COMPLETED' && _Dto._ChangedProperties.Count>0)
 
 ## 4. Referencing external libraries in Behaviours
 
-The way to use references to .NET assemblies is explained in a [separate article](omnia3_modeler_references.html), as it is shared for both Entity and Data Behaviours.
+The way to use references to .NET assemblies is explained in a [separate article](omnia3_modeler_dependencies.html), as it is shared for both Entity and Data Behaviours.
 
 ## 5. Application Behaviours
 

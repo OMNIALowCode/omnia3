@@ -55,7 +55,7 @@ If it's necessary to use the data of another element (for example, a textarea to
 
 To do that, when you are adding the Web Component to the page you need:
 * If the page is a **Form**, set the mapping with the attribute of the entity;
-* If the page is a **Dashboard**, set the mapping with the list that has the required data.
+* If the page is a **Dashboard**, set the mapping with the list that has the required data. *When mapping to a list, the page size will also be imposed. Please make sure that you take the page size in consideration designing the feature.*
 
 After the mapping is configured, the Web Component will receive the data as a parameter. To know how to use it, check the [_Available parameters_](#5-available-parameters) section.
 

@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.175](#1.0.175)
+Release Date: 2019-05-07
+
+### Bugs:
+
+- Prevent concurrency issues on build download and compile
+
 ## [1.0.173](#1.0.173)
 Release Date: 2019-05-02
 

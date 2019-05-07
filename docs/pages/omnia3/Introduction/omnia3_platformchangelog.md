@@ -9,6 +9,18 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.244](#3.0.244)
+Release Date: 2019-05-07
+
+### Bugs: 
+ - GetEntity Accelerator: Don't use the default data source instance when the Entity in from a data source other then the system.
+ - Ignore OMNIA \_code validation rules for entities in exteranl data sources
+ - Execute After Save retries with the current active build version
+
+### Implemented enhancements:
+ - Enable password definition form the administration user during the Platform Setup
+ - Calendar mapping - Select list columns when mapping to a list
+
 ## [3.0.242](#3.0.242)
 Release Date: 2019-05-02
 

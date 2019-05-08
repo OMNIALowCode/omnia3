@@ -12,10 +12,10 @@ Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest ve
 ## [3.0.244](#3.0.244)
 Release Date: 2019-05-07
 
-### Bugs: 
- - GetEntity Accelerator: Don't use the default data source instance when the Entity in from a data source other then the system.
- - Ignore OMNIA \_code validation rules for entities in exteranl data sources
- - Execute After Save retries with the current active build version
+### Fixed Bugs: 
+ - GetEntity Accelerator: Default data source instancing for external data source entities
+ - Non-optional OMNIA \_code validation rules for external data source entities 
+ - After Save retries with wrong build version
 
 ### Implemented enhancements:
  - Enable password definition form the administration user during the Platform Setup
@@ -30,10 +30,10 @@ Release Date: 2019-05-02
 ## [3.0.241](#3.0.241)
 Release Date: 2019-04-24
 
-### Bugs: 
+### Fixed Bugs: 
  - White space in the login page background image when using zoom out
  - Use system directory slash to normalize paths on server setup
- - Cached HTML resources when the version is upgraded - Review HTML headers to force WebApp to reload every time
+ - Cached HTML resources version upgrade - Review HTML headers forcing WebApp to reload every time
 
 ### Implemented enhancements:
  - Redirect homepage when the user changes the role
@@ -44,9 +44,9 @@ Release Date: 2019-04-24
 ## [3.0.240](#3.0.240)
 Release Date: 2019-04-22
 
-### Bugs: 
+### Fixed Bugs: 
  - Redis Cache stability issues
- - Fix: Can't GET an entity from an external data source when then behaviour runtime is internal.
+ - Entity GET from an external data source for internal behaviour runtime
 
 ### Implemented enhancements:
  - Add option to remove languages in modeler portal
@@ -54,14 +54,14 @@ Release Date: 2019-04-22
 ## [3.0.238](#3.0.238)
 Release Date: 2019-04-16
 
-### Bugs: 
- - Error when loading dashboards with calendars mapped to lists
+### Fixed Bugs: 
+ - Loading List Mapped Calendar dashboard error 
 
 ## [3.0.237](#3.0.237)
 Release Date: 2019-04-15
 
-### Bugs: 
- - Don't mark WebComponents as optinal fields where placed in grids
+### Fixed Bugs: 
+ - WebComponents no longer optional by default when placed in grids
 
 ### Implemented enhancements:
 
@@ -77,11 +77,11 @@ Release Date: 2019-04-15
 ## [3.0.216](#3.0.216)
 Release Date: 2019-04-11
 
-### Bugs: 
- - Show the correct message when a WebComponent fails to load
+### Fixed Bugs: 
+ - WebComponent "loading failed" message
  - Show errors in calendars
  - Modeler: Allow to filter lookup fields
- - Don't show "Go to Tenants management" option to non-admin users
+ - "Go to Tenants management" now hidden for non-admin users
  - Translate filters section
  - Translate calendar entry form
  - VisibleFromScreenSizes: Fix dropdown options values
@@ -97,14 +97,14 @@ Release Date: 2019-04-11
 ## [3.0.200](#3.0.200)
 Release Date: 2019-04-01
 
-### Bugs: 
- - Error Building a model after removing an entity
+### Fixed Bugs: 
+ - Model building error after entity removal
 
 ## [3.0.199](#3.0.199)
 Release Date: 2019-03-28
 
-### Bugs: 
- - Error creating Application Behaviours in DataSource "System" - Missing Runtime Location
+### Fixed Bugs: 
+ - Error creating Application Behaviours in System DataSource - Missing Runtime Location
 
 ### Implemented enhancements:
 
@@ -116,8 +116,8 @@ Release Date: 2019-03-28
 ## [3.0.192](#3.0.192)
 Release Date: 2019-03-22
 
-### Bugs: 
- - Month Calendar: Fix error where the same day was rendered multiple times
+### Fixed Bugs: 
+ - Month Calendar: Same day rendering multiple times
 
 ### Implemented enhancements:
 
@@ -153,8 +153,8 @@ Release Date: 2019-02-20
 ## [3.0.179](#3.0.179)
 Release Date: 2019-02-19
 
-### Bugs:
- - Can't export CSV from a list of an external Data Source that uses the Connector
+### Fixed Bugs:
+ - CSV export from list of external Connector Data Source
 
 ### Implemented enhancements:
 
@@ -163,7 +163,7 @@ Release Date: 2019-02-19
 ## [3.0.174](#3.0.174)
 Release Date: 2019-02-06
 
-### Bugs:
+### Fixed Bugs:
  - Can't control calendar form metadata: Review calendar form opening to wait for all components to load
  - Date selectors aren't opening near to the inputs
  - Allow to set details WebComponts as read-only
@@ -179,7 +179,7 @@ Release Date: 2019-02-06
 ## [3.0.170](#3.0.170)
 Release Date: 2019-02-04
 
-### Bugs:
+### Fixed Bugs:
  - Review grid column's size calculation to fix multi-browser issues
  - Validation: Ignore non-required attributes without value
  - Users removal from Authorization Roles
@@ -199,7 +199,7 @@ Release Date: 2019-02-04
 ## [3.0.153](#3.0.153)
 Release Date: 2019-01-29
 
-### Bugs:
+### Fixed Bugs:
  - UI Reference Selector - use camel case getting selected data
  - Limit the User's access to all areas based on permissions
  - WebComponents in Lists: set the width property in the list header
@@ -232,11 +232,11 @@ Release Date: 2019-01-02
 ## [3.0.113](#3.0.113)
 Release Date: 2018-12-26
 
-### Bugs:
+### Fixed Bugs:
  
- - Fix sidebar translations in top entries
- - Allow to select the WebComponent mapping when the list is inside a container
- - Don't block save button while the temporary is being updated
+ - Sidebar translations of top entries
+ - WebComponent mapping selection, inside a container
+ - Save button disabeling by temporary updated
  
 ### Implemented enhancements:
 
@@ -249,9 +249,9 @@ Release Date: 2018-12-26
 ## [3.0.93](#3.0.93)
 Release Date: 2018-12-12
 
-### Bugs:
+### Fixed Bugs:
  
- - Trigger C# On Change behaviours on edit
+ - On Change C# behaviours triggered on edit
  
 ### Implemented enhancements:
 
@@ -263,9 +263,9 @@ Release Date: 2018-12-12
 ## [3.0.90](#3.0.90)
 Release Date: 2018-12-10
 
-### Bugs:
+### Fixed Bugs:
  
- - 403 Error when using the lookup in a Calendar modal
+ - Calendar modal 403 Error
 
 
 ## [3.0.89](#3.0.89)
@@ -276,11 +276,11 @@ Release Date: 2018-12-10
  - Calendar: Add "See all" option when there are too many entries in one day
  - Send list filters & sort conditions to external data sources data behaviours
  
-### Bugs:
+### Fixed Bugs:
  
- - Translate column names in List filters
- - Exceptions throwed at Before Save in UI Behaviours aren't visible
- - Review list columns to don't break when the text is too big
+ - List filters column name translations
+ - UI Behaviours, Before Save Excepetions visibility
+ - List column break reviewed for large text inputs
 
 
 ## [3.0.85](#3.0.85)
@@ -292,10 +292,10 @@ Release Date: 2018-11-30
  - UI Behaviours - Support async behaviours
  - Access to translations in UI behaviours
  
-### Bugs:
+### Fixed Bugs:
  
- - Don't allow to write in the readonly numeric fields
- - Review list columns to don't break when the text is too big
+ - Read only numeric fields input disabeling
+ - List column break reviewed for large text inputs
 
 
 ## [3.0.83](#3.0.83)

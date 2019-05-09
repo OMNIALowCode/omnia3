@@ -342,3 +342,22 @@ In this sample, a function is added to the calendar metadata, in order to be exe
         // your code here
     }
 ```
+
+### **Web Components**
+The Web Component instance will be available to interact with in the JS object and is identified by the name of the element.
+
+### How to set a value of a Web Component's property?
+
+In this sample, a custom property's value of a Web Component is setted:
+
+```JavaScript
+    this.myWebComponent.theProperty = "The new value";
+```
+
+### How to call a function of a Web Component?
+
+In this sample, a custom function of a Web Component is executed:
+
+```JavaScript
+    this.myWebComponent.theFunction(parameter1, parameterN);
+```

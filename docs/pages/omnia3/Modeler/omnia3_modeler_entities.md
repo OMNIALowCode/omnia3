@@ -311,18 +311,22 @@ In this sample, the lookup list of the attribute *employee* is filtered using th
 ```
 
 ### **Calendar**
-### How to execute an action when the view is changed?
+### How to set the entries of a calendar?
+To each entry is neccessary to define the *date* and the *title*. 
+The *category* can also be defined, in order to group the entries.
 
-In this sample, a function is added to the calendar metadata, in order to be executed every time the calendar's view is changed:
+In this sample, the entries of the element *calendar* are setted:
 
 ```JavaScript
-    this._metadata.elements.calendar.onDataRangeChange = (startDate, finishDate, view) => {
-        // your code here
-    }
+    this._metadata.elements.calendar.attributes.entries = [
+        { date: '2019-12-25', title: 'Christmas', category: 'Holidays' },
+        { date: '2019-12-23', title: 'Vacations: Mary Smith', category: 'EmployeeVacations' },
+        ...
+    ]
 ```
 
 ### How to set the categories of a calendar?
-To each category is possible to define the name (used as the unique identifier), a title and a color. Is also possible to set the category as inactive by default.
+To each category is possible to define the *name* (used as the unique identifier), a *title* and a *color*. Is also possible to set the category as inactive by default.
 
 In this sample, the categories of the element *calendar* are setted:
 
@@ -331,6 +335,16 @@ In this sample, the categories of the element *calendar* are setted:
         { name: 'Category01', title: 'Le 1st category', color: '#d90dea', startAsInactive: true },
         { name: 'A', title: 'Le "A" category', color: '#259fb4', startAsInactive: false }
     ]
+```
+
+### How to execute an action when the view is changed?
+
+In this sample, a function is added to the calendar metadata, in order to be executed every time the calendar's view is changed:
+
+```JavaScript
+    this._metadata.elements.calendar.onDataRangeChange = (startDate, finishDate, view) => {
+        // your code here
+    }
 ```
 
 ### How to execute an action when a category is toggled?

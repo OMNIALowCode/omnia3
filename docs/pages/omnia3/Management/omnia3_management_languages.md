@@ -1,7 +1,7 @@
 ---
 title: Languages (Management)
 keywords: omnia3
-summary: "How to manage Platform's language"
+summary: "How to manage Platform's languages"
 sidebar: omnia3_sidebar
 permalink: omnia3_management_languages.html
 folder: omnia3

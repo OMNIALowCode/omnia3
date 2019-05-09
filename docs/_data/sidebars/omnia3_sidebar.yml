@@ -241,8 +241,13 @@ entries:
     - title: How to use the API
       url: /omnia3_api_swagger.html
       output: web, pdf
+
     - title: How to check version
       url: /omnia3_apiversion.html
+      output: web, pdf      
+
+    - title: API Error Codes
+      url: /omnia3_api_errors.html
       output: web, pdf      
       
   - title: Downloads

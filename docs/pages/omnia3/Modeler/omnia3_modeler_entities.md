@@ -232,7 +232,6 @@ In this sample, custom element *supplier* value is changed:
 ```
 
 ### How to add or remove a message?
-
 In this sample, is removed and added (based on a condition) a message to the base element *_code*:
 
 ```JavaScript
@@ -242,6 +241,7 @@ In this sample, is removed and added (based on a condition) a message to the bas
     else
         this._metadata.elements._code.addMessage('My success message', 'success', 'validation');
 ```
+*Note*: There are available only two types of message, as shown in the previous sample: **error** and **success**.
 
 ### How to manage the state of the add and remove options in an editable list?
 

@@ -9,12 +9,18 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.247](#3.0.247)
+Release Date: 2019-05-23
+
+### Bugs: 
+ - Security fix
+
 ## [3.0.244](#3.0.244)
 Release Date: 2019-05-07
 
 ### Bugs: 
- - GetEntity Accelerator: Don't use the default data source instance when the Entity in from a data source other then the system.
- - Ignore OMNIA \_code validation rules for entities in exteranl data sources
+ - GetEntity Accelerator: Don't use the default data source instance when the Entity is from a data source other then the System.
+ - Ignore OMNIA \_code validation rules for entities in external data sources
  - Execute After Save retries with the current active build version
 
 ### Implemented enhancements:

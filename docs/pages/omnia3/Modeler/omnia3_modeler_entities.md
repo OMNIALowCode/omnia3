@@ -40,7 +40,11 @@ On Commitments or Events, the following properties are required:
 
 On Generic Entities, the following property is available:
 
- **Is a root entity?**: indicates if the entity acts only as a sub-entity;
+ * **Is a root entity?**: indicates if the entity acts only as a sub-entity;
+
+ After creating a new entity, will be automatically generated the default **Query**, **List**, **Dashboard** and **Form**. If the entity is a **Document**, a **Serie** will be also generated.
+
+ Each one of these automatically generated artifacts will be named using the entity's name and the artifact type (to the Entity *MyEntity*, the Query will be named *MyEntityQuery*).
 
 
 ## 3. Attributes
@@ -114,7 +118,16 @@ In the behaviours list, select the behaviour you want to change and, in the code
 ### How to remove a behaviour?
 Picking the behaviour you want to remove, select the option _Delete_ and confirm your option in the confirmation window.
 
-## 5. User Interface
+## 5. Security
+To ensure the data access security, the platform's runtime will evaluate the current user's permissions to the entity (using the configured Roles and Policies).
+
+If the user is trying to obtain the data of one record (either to consult the data or to edit the record), the platform's runtime will evaluate through the default Query if the user has access to the corresponding record.
+
+To ensure the security mechanism works properly, the following rules should be guaranteed:
+* The default Query exists (is created automatically, shouldn't be removed);
+* The default query has the **_code** property (is created automatically, shouldn't be removed).
+
+## 6. User Interface
 __*Entity / User Interface*__
 
 In **OMNIA Platform** you can customize how the fields are shown in the form to create or edit of your entity.
@@ -176,7 +189,7 @@ In the User Interface tab, select the element you want to change and, in the _Si
 ### How to remove an element?
 Picking the element you want to remove, select the option _Delete_ and confirm your option in the confirmation window.
 
-## 6. User Interface Behaviours
+## 7. User Interface Behaviours
 __*Entity / User Interface Behaviours*__
 
 In order to extend your application user interface you can add new behaviours to your entities' user interface.

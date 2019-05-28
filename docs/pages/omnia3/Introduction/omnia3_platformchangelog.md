@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.250](#3.0.250)
+Release Date: 2019-05-28
+
+### Bugs: 
+ - Client can't execute Application Behaviour with external runtime location when the DataSource has Internal Behaviours runtime.
+
 ## [3.0.247](#3.0.247)
 Release Date: 2019-05-23
 

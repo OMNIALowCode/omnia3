@@ -228,6 +228,14 @@ In this sample, base element *_code* is set as read only:
     this._metadata.elements._code.attributes.isReadOnly = true;
 ```
 
+### How make an element required in the UI?
+
+In this sample, element *email* is set as required:
+
+```JavaScript
+    this._metadata.elements.email.attributes.min = "1";
+```
+
 ### How to change the size of an element?
 
 In this sample, custom element *supplier* size is changed:

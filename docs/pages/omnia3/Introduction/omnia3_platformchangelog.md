@@ -9,6 +9,16 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.257](#3.0.257)
+Release Date: 2019-06-04
+
+### Bugs: 
+ - Add missing translations 
+ - WebComponents with mapping - Display the errors related to the mapped element
+
+### Implemented enhancements:
+ - Refresh button in Dashboards
+
 ## [3.0.250](#3.0.250)
 Release Date: 2019-05-28
 

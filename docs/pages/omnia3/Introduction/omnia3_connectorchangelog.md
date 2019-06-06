@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.181](#1.0.181)
+Release Date: 2019-06-06
+
+### Implemented enhancements:
+- Expand environment variables in file paths when looking for file dependencies
+
 ## [1.0.175](#1.0.175)
 Release Date: 2019-05-07
 

@@ -9,6 +9,15 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.261](#3.0.261)
+
+### Bugs: 
+ - Fix: Case sensitive search when filtering a list with an equals operator
+
+### Implemented enhancements:
+ - Expand environment variables in file paths when looking for file dependencies
+ - Allow to add containers to dashboards
+
 ## [3.0.257](#3.0.257)
 Release Date: 2019-06-04
 

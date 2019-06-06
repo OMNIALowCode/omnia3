@@ -10,6 +10,7 @@ folder: omnia3
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 ## [3.0.261](#3.0.261)
+Release Date: 2019-06-06
 
 ### Bugs: 
  - Fix: Case sensitive search when filtering a list with an equals operator

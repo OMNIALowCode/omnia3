@@ -21,7 +21,7 @@ The texts of each language will only be used to translate the applications to th
 
 A language is defined by:
 * Name: The unique identifier of the language (e.g.: to American English is ENUS);
-* Culture: The language tag (e.g.: to American English is en-US);
+* Culture: The language tag (e.g.: to American English is en-US). Use the shortest ISO 639 code to identify the language. Optionaly, you can define the region with the ISO 3166-1 code after a dash.;
 * Description: The description of the language (e.g.: to American English can be English (US));
 * Texts: A collection in which entry is composed by a name and a value, representing the identifier of the text and the translation in the language.
  

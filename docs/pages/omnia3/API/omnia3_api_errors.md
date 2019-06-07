@@ -29,7 +29,7 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 ### Validation Failed - Errors
 
 | Error code | Error message |
-| ---------|------------|------------|
+| ---------|------------|
 | CannotBeRemoved | Entity can't be removed. |
 | Duplicated | Duplicated element. |
 | InvalidIdentifier | Identifier (code or name) with invalid format. |

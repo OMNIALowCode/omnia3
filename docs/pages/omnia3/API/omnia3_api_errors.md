@@ -11,7 +11,6 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 
 | Error code | HTTP status code | Error message |
 | ---------|------------|------------|
-| ResourceAlreadyExists | 409 | The specified resource already exists. |
 | BehaviourFailed | 400 | Behaviour execution failed. |
 | ConnectorBehaviourFailed | 400 | Behaviour execution failed while running in Connector. |
 | ConnectorNotFound | 503 | Connector can't be reached. |
@@ -23,4 +22,25 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 | InternalError | 500 | Internal system error. |
 | InvalidInput | 400 | Invalid request input data. |
 | TenantNotFound | 404 | Tenant/Environment can't be found. |
-| ValidationFailed | 400 | Request validation failed. |
+| ValidationFailed | 400 | Request validation failed. This error can have details in the "errors" properties. Error descriptions in the section "Validation Failed - Errors" |
+
+
+
+### Validation Failed - Errors
+
+| Error code | Error message |
+| ---------|------------|------------|
+| CannotBeRemoved | Entity can't be removed. |
+| Duplicated | Duplicated element. |
+| InvalidIdentifier | Identifier (code or name) with invalid format. |
+| LowerLimitNotRespected | Minimal number of elements in collection not respected. |
+| NotFound | Entity/Reference cannot be found. |
+| RequiredValue | Attribute value is required. |
+| TypeMismatch | Attribute value doesn't match the attribute type. |
+| UpperLimitNotRespected | Maximum number of elements in collection not respected. |
+| CreateRootUnsupported | Cannot create an instance separately, as it is marked as non-root and must be used in the context of another entity. |
+| CreateSystemDataSourceUnsupported | It's not possible to add records to 'System' Data Source. |
+| ValueCannotBeChanged | Attribute value cannot be changed. |
+| InvalidModelConfiguration | Invalid model definition. |
+| InvalidTenantConfiguration | Invalid tenant definition. |
+

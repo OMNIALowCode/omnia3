@@ -32,6 +32,7 @@ In order to add dependencies, access the modeler, edit a data source, and go to 
     - If it's a System.* reference, the path can be defined with only the assembly file name. i.e. System.Data.dll (File will be searched in the folder of the current .net SDK)
     - For non-System assemblies, a full path (including the file name) can be provided i.e. C:\Assemblies\MyAssembly.dll
     - Relative paths are also supported. The assumed start path is the folder where the application is running. i.e. If it is located on C:\Omnia, and your assembly is on C:\Assemblies, the path should be ..\Assemblies\MyAssembly.dll
+    - The file path can be composed using an environment variable. For example: %ProgramFiles%\MyLibrary\Library.dll
 - **Assembly name:** The assembly name of the reference you are importing.
 - **Execution Location:** The location where the assembly is going to be used. Possible values:
 

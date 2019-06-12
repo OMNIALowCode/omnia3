@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.182](#1.0.182)
+Release Date: 2019-06-12
+
+### Bugs: 
+ - Add the missing reference to Microsoft.CSharp.dll in Visual Studio downloaded project. 
+
 ## [1.0.181](#1.0.181)
 Release Date: 2019-06-06
 

@@ -9,6 +9,16 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.265](#3.0.265)
+Release Date: 2019-06-12
+
+### Bugs: 
+ - Add the missing reference to Microsoft.CSharp.dll in Visual Studio downloaded project. 
+
+### Implemented enhancements:
+ - Forms: Allow to configure the precision of decimal elements [(see here)](https://docs.omnialowcode.com/omnia3_modeler_entities.html#how-to-change-the-number-of-decimal-places-of-the-element)
+ - Dashboard: Add periodic auto-refresh [(see here)](https://docs.omnialowcode.com/omnia3_modeler_datavisualization.html#how-to-define-the-auto-refresh-interval-of-the-dashboard)
+
 ## [3.0.261](#3.0.261)
 Release Date: 2019-06-06
 

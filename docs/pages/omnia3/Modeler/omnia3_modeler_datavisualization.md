@@ -164,3 +164,21 @@ Select the option _Add new_ when editing a dashboard, and fill in the following 
 * **Row**: the layout row in which the element will be placed;
 * **Column**: the layout column in which the element will be placed;
 * **Size**: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
+
+
+## 5. User Interface Behaviours
+__*Dashboard / User Interface Behaviours*__
+
+In order to extend your application user interface you can add new behaviours to your dashboard' user interface.
+
+Click [here](omnia3_modeler_uibehaviours.html), to know more about user interface behaviours.
+
+### How to define the auto refresh interval of the dashboard?
+
+In this sample, the auto refresh interval is setted to 30 seconds:
+
+```JavaScript
+    this._metadata.attributes.autoRefreshInterval = 30;
+```
+
+*Note: The unit of measure of autoRefreshInterval property's value is the second.*

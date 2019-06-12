@@ -312,6 +312,19 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
         }
     );
 ```
+
+### **Decimal Attributes**
+### How to change the number of decimal places of the element?
+In this sample, the number of decimal places of the element *decimalField* is setted to a custom value *(3)*. 
+
+```JavaScript
+    this._metadata.elements.decimalField.attributes.precision = 3;
+```
+
+*Note 1: This is only possible in elements that represent decimal attributes. In the other data types, even this attribute is setted, the value will be ignored.*
+
+*Note 2: This only changes the number of decimal places in the interface. In order to apply decimal places to the server-side data, you need to develop that logic using C# behaviours.*
+
 ### **Shared Attributes**
 ### How to change the shared attribute's lookup list?
 

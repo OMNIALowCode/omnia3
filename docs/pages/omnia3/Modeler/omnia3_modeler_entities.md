@@ -313,6 +313,24 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
     );
 ```
 
+### How to hide entities default options?
+
+In this sample, the default entity options *Save*, *Show history*, *Delete record* and *Destroy sensitive data*  are set as hidden:
+
+```JavaScript
+    // Hide History option
+    this._metadata.attributes.showHistoryOption = "hidden";
+    
+    // Hide Delete option
+    this._metadata.attributes.deleteOption = "hidden";
+    
+    // Disable Destroy option
+    this._metadata.attributes.destroyOption = "hidden";
+    
+    // Disable Save option
+    this._metadata.attributes.saveOption = "hidden";
+```
+
 ### **Decimal Attributes**
 ### How to change the number of decimal places of the element?
 In this sample, the number of decimal places of the element *decimalField* is setted to a custom value *(3)*. 

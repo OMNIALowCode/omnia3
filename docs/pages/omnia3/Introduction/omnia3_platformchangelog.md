@@ -9,6 +9,21 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.271](#3.0.271)
+Release Date: 2019-06-27
+
+### Bugs: 
+ - Date fields hidden inside grids
+ - Cannot create new queries for entities of type Data Source
+
+### Implemented enhancements:
+ - Allow to dismiss all notifications with one click
+ - Disable add and remove buttons in grids when a request is processing
+ - Set focus on WebComponent element after the API response
+ - Model Menu: WYSIWYG modeling experience
+ - Display option to change Data Source when the current isn't connected
+ 
+
 ## [3.0.265](#3.0.265)
 Release Date: 2019-06-12
 

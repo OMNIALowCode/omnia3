@@ -282,6 +282,33 @@ In this sample, the options to remove or add records of custom element *collecti
     this._metadata.elements.collection.attributes.removeEntry = "enabled";
 ```
 
+
+### How to manage the state of the entities default options?
+
+In this sample, the default entity options *Save*, *Show history*, *Delete record* and *Destroy sensitive data* are set as hidden:
+
+```JavaScript
+    // Hide History option
+    this._metadata.attributes.showHistoryOption = "hidden";
+    // or Disable History option
+    this._metadata.attributes.showHistoryOption = "disabled";
+    
+    // Hide Delete option
+    this._metadata.attributes.deleteOption = "hidden";
+    // or Disable Delete option
+    this._metadata.attributes.deleteOption = "disabled";
+    
+    // Hide Destroy option
+    this._metadata.attributes.destroyOption = "hidden";
+    // or Disable Destroy option
+    this._metadata.attributes.destroyOption = "disabled";
+    
+    // Hide Save option
+    this._metadata.attributes.saveOption = "hidden";
+    // or Disable Save option
+    this._metadata.attributes.saveOption = "disabled";
+```
+
 ### How to move an element to the details area of a grid?
 
 This feature only applies to the inner elements of a collection element.
@@ -311,24 +338,6 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
             resolve();
         }
     );
-```
-
-### How to hide entities default options?
-
-In this sample, the default entity options *Save*, *Show history*, *Delete record* and *Destroy sensitive data*  are set as hidden:
-
-```JavaScript
-    // Hide History option
-    this._metadata.attributes.showHistoryOption = "hidden";
-    
-    // Hide Delete option
-    this._metadata.attributes.deleteOption = "hidden";
-    
-    // Disable Destroy option
-    this._metadata.attributes.destroyOption = "hidden";
-    
-    // Disable Save option
-    this._metadata.attributes.saveOption = "hidden";
 ```
 
 ### **Decimal Attributes**

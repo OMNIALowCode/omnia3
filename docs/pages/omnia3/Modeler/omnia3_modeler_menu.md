@@ -42,3 +42,9 @@ Each Menu Entry is defined by:
 * **Is the element hidden?**: the visibility of the element (hidden or visible);
 
 
+## 3. User Interface Behaviours
+__*Menu / User Interface Behaviours*__
+
+In order to extend your application user interface you can add new behaviours to your menu's user interface.
+
+Click [here](omnia3_modeler_uibehaviours.html), to know more about user interface behaviours.

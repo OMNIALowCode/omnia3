@@ -140,11 +140,11 @@ The form layout is organized with _Rows_ and _Columns_. Each row is divided hori
 By selecting the option _Add new element_ you will be able to add new elements to the layout, after filling the following information:
 
 * **Name**: the entity attribute this element will represent in the layout (will allow you to read and write in this attribute);
-* **Label**: the caption of the element;
+* **Label**: the element caption;
 * **Help text**: the detailed description of the element;
 * **Row**: the layout row in which the element will be placed;
 * **Column**: the layout column in which the element will be placed;
-* **Size**: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
+* **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size);
 * **Is the element hidden?**: the visibility of the element (hidden or visible);
 * **Minimal visible screen size**: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
 
@@ -152,11 +152,11 @@ By selecting the option _Add new element_ you will be able to add new elements t
 By selecting the option _Add new container_ you will be able to add new containers to your layout, after filling the following information:
 
 * **Name**: the element's unique identifier attribute;
-* **Label**: the caption of the element;
+* **Label**: the element caption;
 * **Help text**: the detailed description of the element;
 * **Row**: the layout row in which the element will be placed;
 * **Column**: the layout column in which the element will be placed;
-* **Size**: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
+* **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size);
 * **Is the element hidden?**: the visibility of the element (hidden or visible);
 * **Minimal visible screen size**: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
 
@@ -171,11 +171,11 @@ By selecting the option _Add new calendar_ you will be able to add new calendars
 * **Finish Date Mapping**: end date of the date mapping;
 * **Title Mapping**: the element that will be used to define the title property;
 * **Category Mapping**: the element that will be used to define the category property;
-* **Label**: the caption of the element;
+* **Label**: the element caption;
 * **Help text**: the detailed description of the element;
 * **Row**: the layout row in which the element will be placed;
 * **Column**: the layout column in which the element will be placed;
-* **Size**: the size of the element on a scale of 1 (the smaller size) to 12 (the bigger size);
+* **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size);
 * **Is the element hidden?**: the visibility of the element (hidden or visible);
 * **Minimal visible screen size**: the visibility of the element, related to the user's device screen size (at sizes smaller than the one selected, the element will be hidden);
 

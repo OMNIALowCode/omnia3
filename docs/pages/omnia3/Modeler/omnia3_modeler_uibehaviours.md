@@ -26,14 +26,15 @@ UI Behaviours are executed by the web app - when creating or editing an entity, 
 
 ## 2. Types of Behaviours
 
-It's possible to extend the user interface through custom behaviours in **Forms** and **Dashboards**.
+It's possible to extend the user interface through custom behaviours in **Forms**, **Dashboards** and **Menu**.
 
 There are currently three different execution moments for UI behaviours, which follow a logical flow:
-- **Initialize**: Executes when entering the page (form or dashboard);
-- **On Change**: Executes during updates, requires an element, and, given the new value of the attribute associated to that element, performs an operation. Similar role to **Action** in the entity behaviours;
-- **Before Change**: Executes immediately before the update request is send to the API;
-- **After Change**: Executes immediately after the API response to the update request;
-- **Before Save**: Executes when an entity is saved (only applies to forms).
+- **Initialize**: Executes when entering the page (form, dashboard or menu);
+- **On Change**: Executes during updates, requires an element, and, given the new value of the attribute associated to that element, performs an operation. Similar role to **Action** in the entity behaviours (only applies to forms and dashboards);
+- **Before Change**: Executes immediately before the update request is send to the API (only applies to forms);
+- **After Change**: Executes immediately after the API response to the update request (only applies to forms);
+- **Before Save**: Executes when an entity is saved (only applies to forms);
+- **On Select**: Executes when an Menu Entry is selected (only applies to menus);
 
 ![The behaviour execution lifecycle](images\modeler\UIBehaviourLifecycle.png)
 

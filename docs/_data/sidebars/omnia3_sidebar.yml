@@ -158,6 +158,10 @@ entries:
       url: /omnia3_modeler_webcomponents.html
       output: web, pdf
 
+    - title: Menu
+      url: /omnia3_modeler_menu.html
+      output: web, pdf
+
     - title: Languages
       url: /omnia3_modeler_languages.html
       output: web, pdf

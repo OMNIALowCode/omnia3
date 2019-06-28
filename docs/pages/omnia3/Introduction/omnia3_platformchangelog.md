@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.272](#3.0.272)
+Release Date: 2019-06-28
+
+### Bugs: 
+ - Occasionally menu isn't filtered out with privileges.
+ - When a Menu has subfolders, the top level menu folder is visible even there's no access to subentries.
+
 ## [3.0.271](#3.0.271)
 Release Date: 2019-06-27
 

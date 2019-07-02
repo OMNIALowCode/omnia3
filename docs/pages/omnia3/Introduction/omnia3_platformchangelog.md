@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.273](#3.0.273)
+Release Date: 2019-07-02
+
+### Bugs: 
+ - Error when changing language after interacting with menu
+ 
 ## [3.0.272](#3.0.272)
 Release Date: 2019-06-28
 

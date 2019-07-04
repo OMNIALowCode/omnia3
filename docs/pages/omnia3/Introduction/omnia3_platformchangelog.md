@@ -79,6 +79,18 @@ Release Date: 2019-05-23
 ### Bugs: 
  - Security fix
 
+## [3.0.245](#3.0.245)
+Release Date: 2019-05-23
+
+### Bugs: 
+ - Fix: When the user accesses to application using a link is redirected to homepage
+
+### Implemented enhancements:
+ - Platform Languages - Custom platform languages
+ - Platform Languages - Translate exceptions / feedback messages
+ - Manangement: When creating a new language, use en-US as template
+ - The API response when the prefer header is minimal, will return the "identifier" property instead of "code". Please review your client to use the "identifier" or do the request with the "representation" prefer header. (API BREAKING CHANGE)
+
 ## [3.0.244](#3.0.244)
 Release Date: 2019-05-07
 

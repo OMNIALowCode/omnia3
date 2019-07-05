@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.184](#1.0.184)
+Release Date: 2019-07-05
+
+### Bugs: 
+ - Can't compile behaviours when a File dependency, depends on an obfuscated dll.
+
 ## [1.0.182](#1.0.182)
 Release Date: 2019-06-12
 

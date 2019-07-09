@@ -127,6 +127,8 @@ if(this.State == 'COMPLETED' && _Dto._ChangedProperties.Count>0)
     throw new Exception("Changes can't be done in a completed document.");
 ```
 
+The `HasPropertyChanged` method validates if a given attribute is in the list of `_ChangedProperties`. The `_ChangedProperties` list contains all those properties for which the user sent a value in a given interaction. If the user changes the attribute _"A"_ and attribute _"B"_ in two different steps, you will never see both _"A"_ and _"B"_ at the same time in the list. For that reason, the `_ChangedProperties` is empty in _AfterSave_ behaviours.
+
 
 ## 4. Referencing external libraries in Behaviours
 

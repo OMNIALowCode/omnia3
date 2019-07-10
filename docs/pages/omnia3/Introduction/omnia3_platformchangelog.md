@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.275](#3.0.275)
+Release Date: 2019-07-10
+
+### Implemented enhancements: 
+ - Enumerations [(see here)](https://docs.omnialowcode.com/omnia3_modeler_enumerations.html)
+
 ## [3.0.274](#3.0.274)
 Release Date: 2019-07-05
 

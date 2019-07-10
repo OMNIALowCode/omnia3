@@ -12,7 +12,7 @@ folder: omnia3
 
 In OMNIA Platform you can add your own entities, and each one is based on an OMNIA concept.
 
-In each entity, it's possible to define the attributes, the behaviours and the user interface,
+In each entity, it's possible to define the attributes, the behaviours and the user interface.
 
 ## 2. Model Entities
 
@@ -53,15 +53,16 @@ __*Entity / Attributes*__
 The attributes allow you to define the structure of your entity. Each one will represent a property in the data you can read or write.
 
 ### How to add a new attribute?
-Selecting the option _Add new_ you need to first select one of three types of attribute:
+Selecting the option _Add new_ you need to first select one of four types of attribute:
 * **Primitive**: A primitive type such as a text field or an integer;
+* **Enumeration**: An enumerated type of the model;
 * **Reference**: A reference to another entity on the platform;
 * **Collection**: Another entity that will act as a 'sub-entity' of this one. Must be of a compatible type: Events or Commitments in a Document, and Generic Entities (only those marked as non-root) in any entity type.
 
 Afterwards, you must fill the following information (not all the fields apply to all attribute types):
 * **Name**: the name of the attribute (needs to be unique inside the entity);
 * **Description**: the textual explanation of the attribute's purpose (can be used as development documentation);
-* **Type**: the attribute's data type. Possible values depend on whether we are in a Primitive, a Reference or a Collection;
+* **Type**: the attribute's data type. Possible values depend on whether we are in a Primitive, an Enumeration, a Reference or a Collection;
 * **Is required?**: indicates if the attribute is required or not (not applicable to _Commitments_ or _Events_);
 * **Is read only?**: indicates if the attribute's value can be changed by the user's input (not applicable to _Commitments_ or _Events_);
 * **Is a list of records?**: indicates whether or not this attribute will receive multiple values at once.

@@ -129,7 +129,11 @@ entries:
     - title: Modeling Lifecycle
       url: /omnia3_modeler_lifecycle.html
       output: web, pdf
-        
+    
+    - title: Modeling Enumerations
+      url: /omnia3_modeler_enumerations.html
+      output: web, pdf
+      
     - title: Behaviours
       url: /omnia3_modeler_behaviours.html
       output: web, pdf

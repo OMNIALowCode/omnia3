@@ -20,7 +20,7 @@ In the __Management__ area it's possible to add new languages to the plaform ([c
 
 A language is defined by:
 * Name: A reference to the Platform's language;
-* Description: The description of the language (e.g.: to American English can be English (US)). If not writen, the Platform's language's description will be used;
+* Description: The description of the language (e.g.: to American English can be English (US)). If not written, the Platform's language's description will be used;
 * Texts: A collection in which entry is composed by a name and a value, representing the identifier of the text and the translation in the language.
  
 By accessing **_Languages_** in the sidebar, you will have access to the languages management screen.

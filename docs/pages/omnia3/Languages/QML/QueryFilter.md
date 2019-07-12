@@ -10,6 +10,6 @@ folder: omnia3
 # QueryFilter
 Query Filter condition.
 ## Properties
-|Name|Type|Aggregation Kind|Multiplicity|Description|
-|--|--|--|--|--|
+Name | Type | Aggregation Kind | Multiplicity | Description
+--------- | --------- | --------- | --------- | ---------
 

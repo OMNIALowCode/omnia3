@@ -10,9 +10,9 @@ folder: omnia3
 # Enumeration
 Representation of a collection of values.
 ## Properties
-|Name|Type|Aggregation Kind|Multiplicity|Description|
-|--|--|--|--|--|
-|Name|Text|None|1..*|The name of the entity (unique identifier).|
-|Description|Text|None|0..*|The textual explanation of the entities' purpose.|
-|Values|EnumerationValue|Composite|0..2147483647|A collection of entries representing an entry of an enumeration.|
+Name | Type | Aggregation Kind | Multiplicity | Description
+--------- | --------- | --------- | --------- | ---------
+Name | Text | None | 1..* | The name of the entity (unique identifier).
+Description | Text | None | 0..* | The textual explanation of the entities' purpose.
+Values | EnumerationValue | Composite | 0..2147483647 | A collection of entries representing an entry of an enumeration.
 

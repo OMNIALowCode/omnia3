@@ -10,9 +10,9 @@ folder: omnia3
 # EnumerationValue
 Represents an entry of an enumeration.
 ## Properties
-|Name|Type|Aggregation Kind|Multiplicity|Description|
-|--|--|--|--|--|
-|Name|Text|None|1..*|The name of the entity (unique identifier).|
-|Description|Text|None|0..*|The textual explanation of the entities' purpose.|
-|Order|Integer|None|1..*|The order of the value inside the enumeration.|
+Name | Type | Aggregation Kind | Multiplicity | Description
+--------- | --------- | --------- | --------- | ---------
+Name | Text | None | 1..* | The name of the entity (unique identifier).
+Description | Text | None | 0..* | The textual explanation of the entities' purpose.
+Order | Integer | None | 1..* | The order of the value inside the enumeration.
 

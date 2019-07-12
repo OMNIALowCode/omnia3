@@ -21,6 +21,7 @@ Entity required for financial transactions, in order to complement the informati
 | BehaviourNamespaces | BehaviourNamespace | Composite | 0..2147483647 | A collection of entries representing the coding namespaces to be included (as usings) on code generated with your data and entity behaviours. |
 | DataSource | DataSource | Shared | 1..* | The Data Source in which the entities are computed and/or persisted. |
 | IsRoot | Boolean | None | 1..* | Indicates if the entity acts as a root entity or as a sub-entity. |
+
 ## Operations
 
 | Name | Type | Description |

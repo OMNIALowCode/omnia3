@@ -23,6 +23,7 @@ Representation of a system that allows to store entities and/or execute behaviou
 | DataAccessRuntime | RuntimeLocation | None | 1..* | The location where the data behaviours are executed. |
 | ExecutesInConnector | Boolean | None | 1..* | Indicates if the Data Source is executed using the platform's connector. |
 | BehaviourDependencies | BehaviourDependency | Composite | 0..2147483647 | A collection of entries that allows to define which dependencies are loaded in the Data Source. |
+
 ## Operations
 
 | Name | Type | Description |

@@ -18,3 +18,4 @@ Authorization Policy is a group of Permissions for that are required in a given 
 | Permissions | AuthorizationPolicyPermission | Composite | 0..2147483647 | List of permissions. |
 | Policies | AuthorizationPolicy | Composite | 0..2147483647 | Child authorization policies. |
 
+

@@ -20,6 +20,7 @@ Promise of a transaction to trade resources, between two agents. Is made because
 | DataBehaviours | DataBehaviour | Composite | 0..2147483647 | A collection of entries representing how the entity' data is stored and retrieved. |
 | BehaviourNamespaces | BehaviourNamespace | Composite | 0..2147483647 | A collection of entries representing the coding namespaces to be included (as usings) on code generated with your data and entity behaviours. |
 | DataSource | DataSource | Shared | 1..* | The Data Source in which the entities are computed and/or persisted. |
+
 ## Operations
 
 | Name | Type | Description |

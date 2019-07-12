@@ -18,3 +18,4 @@ Element behaviour. In order to extend your application user interface you can ad
 | Type | ElementBehaviourType | None | 1..* | Type of behaviour. |
 | Expression | Text | None | 1..* | Behaviour expression related to the Element. |
 
+

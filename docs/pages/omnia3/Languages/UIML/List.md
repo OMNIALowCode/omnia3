@@ -23,6 +23,7 @@ Application list, used to present data from a given Query. A list is little more
 | Elements | InnerElement | Composite | 0..2147483647 |  |
 | Query | Query | Shared | 1..* | Reference a previously created query to use. |
 | DataSource | Text | None | 0..* | The Data Source in which the entities are computed and/or persisted |
+
 ## Operations
 
 | Name | Type | Description |

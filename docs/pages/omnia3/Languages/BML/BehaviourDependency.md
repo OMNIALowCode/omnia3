@@ -22,3 +22,4 @@ Assembly or Expression loaded to be used on behaviours.
 | AssemblyName | Text | None | 0..* | The assembly name of the dependency (when the Type is 'File') |
 | Expression | Text | None | 0..* | The C# code that will be executed (when the Type is 'Expression'). |
 
+

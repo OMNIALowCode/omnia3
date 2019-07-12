@@ -27,3 +27,4 @@ Child Element
 | IsHidden | Boolean | None | 1..* | The visibility of the element (hidden or visible). |
 | VisibleFrom | ScreenSize | None | 0..* | The visibility of the element, related to the user’s device screen size (at sizes smaller than the one selected, the element will be hidden). |
 
+

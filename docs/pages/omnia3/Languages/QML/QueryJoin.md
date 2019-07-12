@@ -17,6 +17,7 @@ Defines the relation between to tables.
 | Table | QueryTable | Composite | 1..* | Table with of the Definition to join with. |
 | JoinType | QueryJoinType | None | 1..* | Type of join/relation. |
 | Predicate | QueryJoinPredicate | Composite | 1..* | Relationship condition. |
+
 ## Operations
 
 | Name | Type | Description |

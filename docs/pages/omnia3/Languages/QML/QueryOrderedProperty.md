@@ -18,3 +18,4 @@ Property to order/sort.
 | Function | QueryFunction | None | 1..* | Function to apply over the selected path data. |
 | Direction | QuerySort | None | 1..* | Sorting direction. |
 
+

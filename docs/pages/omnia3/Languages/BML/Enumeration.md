@@ -17,3 +17,4 @@ Representation of a collection of values.
 | Description | Text | None | 0..* | The textual explanation of the entities' purpose. |
 | Values | EnumerationValue | Composite | 0..2147483647 | A collection of entries representing an entry of an enumeration. |
 
+

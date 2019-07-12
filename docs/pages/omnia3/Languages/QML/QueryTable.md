@@ -19,3 +19,4 @@ Table to query.
 | OrderedProperties | QueryOrderedProperty | Composite | 0..2147483647 | Properties to order. |
 | Filter | QueryFilter | Composite | 0..* | Condition to apply. |
 
+

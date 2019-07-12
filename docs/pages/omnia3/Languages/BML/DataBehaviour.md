@@ -18,3 +18,4 @@ Behaviour representing how the entity is stored and retrieved from a Data Source
 | Type | DataBehaviourType | None | 1..* | The execution moment of the behaviour. |
 | Expression | Text | None | 1..* | The C# code that will be executed. |
 
+

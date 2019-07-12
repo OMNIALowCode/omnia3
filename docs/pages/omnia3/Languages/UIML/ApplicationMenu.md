@@ -21,6 +21,7 @@ Application Menu. Describe the application navigation structure.
 | Attributes | ElementAttribute | Composite | 0..2147483647 |  |
 | Behaviours | ElementBehaviour | Composite | 0..2147483647 |  |
 | Elements | InnerElement | Composite | 0..2147483647 |  |
+
 ## Operations
 
 | Name | Type | Description |

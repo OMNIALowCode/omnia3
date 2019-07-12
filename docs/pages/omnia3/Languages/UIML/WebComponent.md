@@ -18,3 +18,4 @@ Web Components can extend the default layout, adding custom elements.
 | CustomElementName | Text | None | 1..* | Custom element name, or the name of the element that will be created to be attached to the page’s DOM. |
 | Expression | Text | None | 1..* | Web Component Javascript code. |
 
+

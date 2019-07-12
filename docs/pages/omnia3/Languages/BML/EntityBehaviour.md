@@ -19,3 +19,4 @@ Behaviour representing how the entity behaves in a specific moment and is expres
 | Type | EntityBehaviourType | None | 1..* | The execution moment of the behaviour. |
 | Expression | Text | None | 1..* | The C# code that will be executed. |
 
+

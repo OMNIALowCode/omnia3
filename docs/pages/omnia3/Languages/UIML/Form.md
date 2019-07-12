@@ -23,6 +23,7 @@ Form to manage a given Entity Definition.
 | Elements | InnerElement | Composite | 0..2147483647 |  |
 | Entity | Text | None | 1..* | Entity to manage. |
 | DataSource | Text | None | 0..* | The Data Source in which the entities are computed and/or persisted |
+
 ## Operations
 
 | Name | Type | Description |

@@ -16,3 +16,4 @@ Subjects (users) that have the Role assigned.
 | Id | Uuid | None | 1..* | User Id (unique identifier). |
 | Username | Text | None | 1..* | Username of the user. |
 
+

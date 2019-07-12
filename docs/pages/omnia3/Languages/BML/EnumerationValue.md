@@ -17,3 +17,4 @@ Represents an entry of an enumeration.
 | Description | Text | None | 0..* | The textual explanation of the entities' purpose. |
 | Order | Integer | None | 1..* | The order of the value inside the enumeration. |
 
+

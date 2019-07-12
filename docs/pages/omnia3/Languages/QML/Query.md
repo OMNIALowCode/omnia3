@@ -20,3 +20,4 @@ Query over a given Data Source.
 | Joins | QueryJoin | Composite | 0..2147483647 | List of the relations with other tables. |
 | Expression | Text | None | 0..* | Query based on expression. Content of the Advanced Query. When the expression has value, the rest of the Query definition will be ignored. |
 
+

@@ -16,3 +16,4 @@ Action that the entry will take.
 | Type | Text | None | 0..* | Type of action to execute. |
 | Location | Text | None | 0..* | Target of location of the menu entry. |
 
+

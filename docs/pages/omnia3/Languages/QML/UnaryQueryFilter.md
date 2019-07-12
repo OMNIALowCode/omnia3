@@ -17,3 +17,4 @@ Filter condition that compares a given value with a parameter.
 | Operator | QueryComparisonOperator | None | 1..* | Comparison operator to apply to the condition. |
 | Parameter | QueryFilterParameter | Composite | 1..* | Parameter to receive the value to filter by. |
 
+

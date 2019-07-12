@@ -17,3 +17,4 @@ Binary condition that is composed by two logical conditions.
 | Operator | QueryLogicalOperator | None | 1..* | Logical operator over the left and right condition result. |
 | Right | QueryFilter | Composite | 1..* | Right part of the condition. |
 
+

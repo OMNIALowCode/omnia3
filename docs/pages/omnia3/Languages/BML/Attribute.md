@@ -23,3 +23,4 @@ Allow to define the structure of an entity and represents a property in the data
 | DependsOnAttribute | Text | None | 0..* | In Shared attributes whose Type is from a custom Data Source, indicates the attribute used to identify the Data Source. |
 | IsSensitiveData | Boolean | None | 0..* | Indicates  if contains sensitive data. If so, the information can be destroyed. |
 
+

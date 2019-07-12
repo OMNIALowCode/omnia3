@@ -21,3 +21,4 @@ Menu entry
 | Action | ApplicationMenuEntryAction | Composite | 0..* | Will define how the system should behave. |
 | Entries | ApplicationMenuEntry | Composite | 0..2147483647 | Child entries. Used in case of folders. |
 
+

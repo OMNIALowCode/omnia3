@@ -17,3 +17,4 @@ Condition that defines the relation between to tables.
 | OuterPath | Text | None | 1..* | Path to the property of the target table of the join. |
 | OuterDefinition | Text | None | 1..* | Path to the target table of the join condition. |
 
+

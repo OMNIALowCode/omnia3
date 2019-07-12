@@ -17,3 +17,4 @@ Property to select in query.
 | Alias | Text | None | 1..* | Alias to the property to select (unique identifier). |
 | Function | QueryFunction | None | 1..* | Function to apply over the selected path data. |
 
+

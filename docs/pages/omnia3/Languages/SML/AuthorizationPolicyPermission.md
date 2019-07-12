@@ -17,3 +17,4 @@ Permission and the Roles that have that permission.
 | Description | Text | None | 0..* | The textual explanation of the permission purpose. |
 | Roles | Text | Shared | 0..2147483647 | List of roles that have the permission. |
 
+

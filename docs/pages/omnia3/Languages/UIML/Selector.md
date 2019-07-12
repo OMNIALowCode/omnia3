@@ -1,3 +1,12 @@
+---
+title: OMNIA 3.0
+keywords: omnia3
+summary: "OMNIA 3.0 UIMLSelector"
+sidebar: omnia3_sidebar
+permalink: omnia3_languages_UIMLSelector.html
+folder: omnia3
+---
+
 # Selector
 Visual selector over a given enumeration.
 ## Properties
@@ -15,3 +24,4 @@ Visual selector over a given enumeration.
 |Name|Type|Description|
 |--|--|--|
 |Defaults|Initialize||
+

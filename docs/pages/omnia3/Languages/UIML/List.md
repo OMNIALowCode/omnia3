@@ -1,3 +1,12 @@
+---
+title: OMNIA 3.0
+keywords: omnia3
+summary: "OMNIA 3.0 UIMLList"
+sidebar: omnia3_sidebar
+permalink: omnia3_languages_UIMLList.html
+folder: omnia3
+---
+
 # List
 Application list, used to present data from a given Query. A list is little more than a way to see a query displayed in the web app: you select a query, (part or all of) its columns, and how to display those columns.
 ## Properties
@@ -17,3 +26,4 @@ Application list, used to present data from a given Query. A list is little more
 |Name|Type|Description|
 |--|--|--|
 |Defaults|Initialize||
+

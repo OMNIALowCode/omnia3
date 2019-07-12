@@ -1,3 +1,12 @@
+---
+title: OMNIA 3.0
+keywords: omnia3
+summary: "OMNIA 3.0 QMLQueryJoin"
+sidebar: omnia3_sidebar
+permalink: omnia3_languages_QMLQueryJoin.html
+folder: omnia3
+---
+
 # QueryJoin
 Defines the relation between to tables.
 ## Properties
@@ -11,3 +20,4 @@ Defines the relation between to tables.
 |Name|Type|Description|
 |--|--|--|
 |SetName|Initialize||
+

@@ -1,3 +1,12 @@
+---
+title: OMNIA 3.0
+keywords: omnia3
+summary: "OMNIA 3.0 UIMLInnerElement"
+sidebar: omnia3_sidebar
+permalink: omnia3_languages_UIMLInnerElement.html
+folder: omnia3
+---
+
 # InnerElement
 Child Element
 ## Properties
@@ -16,3 +25,4 @@ Child Element
 |Size|Integer|None|1..*|The element size on a scale of 1 (the smaller size) to 12 (the bigger size).|
 |IsHidden|Boolean|None|1..*|The visibility of the element (hidden or visible).|
 |VisibleFrom|ScreenSize|None|0..*|The visibility of the element, related to the user’s device screen size (at sizes smaller than the one selected, the element will be hidden).|
+

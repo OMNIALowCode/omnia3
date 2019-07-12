@@ -1,3 +1,12 @@
+---
+title: OMNIA 3.0
+keywords: omnia3
+summary: "OMNIA 3.0 UIMLDashboard"
+sidebar: omnia3_sidebar
+permalink: omnia3_languages_UIMLDashboard.html
+folder: omnia3
+---
+
 # Dashboard
 Dashboard is a group of elements like WebComponents or Lists.
 ## Properties
@@ -15,3 +24,4 @@ Dashboard is a group of elements like WebComponents or Lists.
 |Name|Type|Description|
 |--|--|--|
 |Defaults|Initialize||
+

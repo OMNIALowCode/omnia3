@@ -9,7 +9,7 @@ folder: omnia3
 
 # SML
 
- - [AuthorizationPolicy](/AuthorizationPolicy.md)
- - [AuthorizationPolicyPermission](/AuthorizationPolicyPermission.md)
- - [AuthorizationRole](/AuthorizationRole.md)
- - [AuthorizationRoleSubject](/AuthorizationRoleSubject.md)
+ - [Authorization Policy](/AuthorizationPolicy.md)
+ - [Authorization Policy Permission](/AuthorizationPolicyPermission.md)
+ - [Authorization Role](/AuthorizationRole.md)
+ - [Authorization Role Subject](/AuthorizationRoleSubject.md)

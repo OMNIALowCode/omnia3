@@ -226,28 +226,28 @@ entries:
       output: web, pdf
 
     
-  #- title: Languages
-  #  output: web, pdf
-  #  folderitems:
-  #  - title: Introduction and MEF
-  #    url: /omnia3_languages_introduction.html
-  #    output: web, pdf
+  - title: Languages
+    output: web, pdf
+    folderitems:
+    - title: Introduction and MEF
+      url: /omnia3_languages_introduction.html
+      output: web, pdf
         
-  #  - title: BML
-  #    url: /omnia3_languages_bml.html
-  #    output: web, pdf
+    - title: BML
+      url: /omnia3_languages_BML.html
+      output: web, pdf
         
-  #  - title: QML
-  #    url: /omnia3_languages_qml.html
-  #    output: web, pdf
-        
-  #  - title: SML
-  #    url: /omnia3_languages_sml.html
-  #    output: web, pdf
-        
-  #  - title: UIML
-  #    url: /omnia3_languages_uiml.html
-  #    output: web, pdf
+    - title: QML
+      url: /omnia3_languages_QML.html
+      output: web, pdf
+       
+    - title: SML
+      url: /omnia3_languages_SML.html
+      output: web, pdf
+       
+    - title: UIML
+      url: /omnia3_languages_UIML.html
+      output: web, pdf
         
         
   - title: API

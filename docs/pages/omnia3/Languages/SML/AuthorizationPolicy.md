@@ -13,9 +13,9 @@ Authorization Policy is a group of Permissions for that are required in a given 
 
 | Name | Type | Aggregation Kind | Multiplicity | Description |
 | --------- | --------- | --------- | --------- | --------- |
-| Name | Text | None | 1..* | The name of the policy (unique identifier). |
-| Description | Text | None | 0..* | The textual explanation of the policy purpose. |
-| Permissions | AuthorizationPolicyPermission | Composite | 0..2147483647 | List of permissions. |
-| Policies | AuthorizationPolicy | Composite | 0..2147483647 | Child authorization policies. |
+| Name | Text | None | 1..1 | The name of the policy (unique identifier). |
+| Description | Text | None | 0..1 | The textual explanation of the policy purpose. |
+| Permissions | AuthorizationPolicyPermission | Composite | 0..* | List of permissions. |
+| Policies | AuthorizationPolicy | Composite | 0..* | Child authorization policies. |
 
 

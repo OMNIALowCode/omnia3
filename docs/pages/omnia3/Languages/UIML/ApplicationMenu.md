@@ -13,14 +13,14 @@ Application Menu. Describe the application navigation structure.
 
 | Name | Type | Aggregation Kind | Multiplicity | Description |
 | --------- | --------- | --------- | --------- | --------- |
-| Name | Text | None | 1..* | The name of the entity (unique identifier). |
-| Description | Text | None | 0..* | The textual explanation of the entities’ purpose. |
-| Label | Text | None | 1..* | Label to display in the application. |
-| HelpText | Text | None | 0..* | Text/annotation to help the user. |
-| Type | ElementType | None | 1..* |  |
-| Attributes | ElementAttribute | Composite | 0..2147483647 |  |
-| Behaviours | ElementBehaviour | Composite | 0..2147483647 |  |
-| Elements | InnerElement | Composite | 0..2147483647 |  |
+| Name | Text | None | 1..1 | The name of the entity (unique identifier). |
+| Description | Text | None | 0..1 | The textual explanation of the entities’ purpose. |
+| Label | Text | None | 1..1 | Label to display in the application. |
+| HelpText | Text | None | 0..1 | Text/annotation to help the user. |
+| Type | ElementType | None | 1..1 |  |
+| Attributes | ElementAttribute | Composite | 0..* |  |
+| Behaviours | ElementBehaviour | Composite | 0..* |  |
+| Elements | InnerElement | Composite | 0..* |  |
 
 ## Operations
 

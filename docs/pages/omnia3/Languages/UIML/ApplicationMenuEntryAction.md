@@ -13,7 +13,7 @@ Action that the entry will take.
 
 | Name | Type | Aggregation Kind | Multiplicity | Description |
 | --------- | --------- | --------- | --------- | --------- |
-| Type | Text | None | 0..* | Type of action to execute. |
-| Location | Text | None | 0..* | Target of location of the menu entry. |
+| Type | Text | None | 0..1 | Type of action to execute. |
+| Location | Text | None | 0..1 | Target of location of the menu entry. |
 
 

@@ -13,9 +13,9 @@ Behaviour representing how the entity is stored and retrieved from a Data Source
 
 | Name | Type | Aggregation Kind | Multiplicity | Description |
 | --------- | --------- | --------- | --------- | --------- |
-| Name | Text | None | 1..* | The name of the entity (unique identifier). |
-| Description | Text | None | 0..* | The textual explanation of the entities' purpose. |
-| Type | DataBehaviourType | None | 1..* | The execution moment of the behaviour. |
-| Expression | Text | None | 1..* | The C# code that will be executed. |
+| Name | Text | None | 1..1 | The name of the entity (unique identifier). |
+| Description | Text | None | 0..1 | The textual explanation of the entities' purpose. |
+| Type | DataBehaviourType | None | 1..1 | The execution moment of the behaviour. |
+| Expression | Text | None | 1..1 | The C# code that will be executed. |
 
 

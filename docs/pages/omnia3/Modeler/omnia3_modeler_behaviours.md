@@ -179,8 +179,8 @@ To access the cache, you have a method in the *Context* to create a cache client
 
 The cache client exposes 3 methods:
 
- 1. **SetAsync:** Get an entry of a given Type from the cache.
- 1. **GetAsync:** Set a key with an object of any given type.
+ 1. **SetAsync:** Set a key with a value of any object type;
+ 1. **GetAsync:** Get an entry of a given object type from the cache;
  1. **RemoveAsync:** Remove a key from the cache.
 
 Example:
@@ -206,7 +206,7 @@ cache.RemoveAsync("MyKeyName")
 
 ### Notes:
 
- - All the keys in Cache, have a 24 hours lifetime, since the last access to the key.
+ - All the keys in Cache, have a 24 hours lifetime, after the last access to the key.
 
 
 ## 8. .NET Versions

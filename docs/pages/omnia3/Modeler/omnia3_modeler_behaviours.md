@@ -163,6 +163,51 @@ Methods:
 var httpClient = this._Context.CreateApplicationHttpClient();
 ```
 
+## 8. Caching in behaviours
+
+A cache can improve the performance of an OMNIA application, especially when your application is loading data from other systems.
+
+Depending on the setup of your OMNIA subscription, your cache can be at:
+    - Redis: distributed cache that is shared by multiple app servers and survives server restarts and app deployments.
+    - Memory: local memory of the server.
+
+If the "RedisConnectionString" is defined in the subscription config, you will be using the Redis Cache.
+
+### Accessing to cache
+
+To access the cache, you have a method in the *Context* to create a cache client. 
+
+The cache client exposes 3 methods:
+
+ 1. **SetAsync:** Get an entry of a given Type from the cache.
+ 1. **GetAsync:** Set a key with an object of any given type.
+ 1. **RemoveAsync:** Remove a key from the cache.
+
+Example:
+
+```
+// Create cache client
+var cache = _Context.CreateCacheClient();
+
+// Write data to cache
+cache.SetAsync("MyKeyName", "Hello!")
+    .GetAwaiter().GetResult();	
+
+// Read data from cache
+var value = cache.GetAsync<string>("MyKeyName")
+    .GetAwaiter().GetResult();    
+
+// Remove data from cache
+cache.RemoveAsync("MyKeyName")
+    .GetAwaiter().GetResult();
+
+```
+
+
+### Notes:
+
+ - All the keys in Cache, have a 24 hours lifetime, since the last access to the key.
+
 
 ## 8. .NET Versions
 

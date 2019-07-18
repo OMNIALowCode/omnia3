@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.283](#3.0.283)
+Release Date: 2019-07-18
+
+### Implemented enhancements: 
+ - Caching in c# behaviours [(see here)](https://docs.omnialowcode.com/omnia3_modeler_behaviours.html#8-caching-in-behaviours)
+
 ## [3.0.275](#3.0.275)
 Release Date: 2019-07-10
 

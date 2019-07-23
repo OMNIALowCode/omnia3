@@ -9,6 +9,21 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.286](#3.0.286)
+Release Date: 2019-07-23
+
+### Implemented enhancements: 
+ - Optimize load time when the user access the WebApp or hits the refresh button
+ - Performance improvement - Use browser cache to load application metadata
+ 
+### Bugs: 
+ - Breadcrumb entries not translated
+ - All the roles available in the @\_userRoles parameter in advanced queries even when the user filters to one active role
+ - Error when the user quickly remove multiple lines from a collection
+ - Date Attributes: When dates are inserted manually, they are being replaced for 01/01/0001
+ - Management: when production tenant is edited, the VAT Number is always empty
+ - Modeler: Export Model option on Edge returns a txt file
+
 ## [3.0.283](#3.0.283)
 Release Date: 2019-07-18
 

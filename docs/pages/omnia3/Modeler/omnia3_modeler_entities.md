@@ -399,6 +399,31 @@ In this sample, the categories of the element *calendar* are setted:
     ]
 ```
 
+
+### How to change the initial date of a calendar?
+In this sample, the date where the calendar will be positioned when is initialized is setted:
+
+```JavaScript
+    this._metadata.elements.calendar.attributes.initialDate = '2020-01-06';
+```
+
+### How to change the initial view of a calendar?
+In this sample, the view in which the calendar is initialized is setted:
+
+```JavaScript
+    this._metadata.elements.calendar.attributes.initialView = 'year';
+```
+
+The following views are available:
+| Value | Description |
+| --------- | --------- | --------- | --------- | --------- |
+| 'week' | One week view as calendar |
+| 'month' | One month view as calendar |
+| 'year' | One year view as calendar |
+| 'week_schedule' | One week view as schedule |
+| 'month_schedule' | One month view as schedule |
+| 'year_schedule' | One year view as schedule |
+
 ### How to execute an action when the view is changed?
 
 In this sample, a function is added to the calendar metadata, in order to be executed every time the calendar's view is changed:

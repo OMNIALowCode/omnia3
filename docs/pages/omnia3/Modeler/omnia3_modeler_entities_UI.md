@@ -7,7 +7,7 @@ permalink: omnia3_modeler_entities_ui.html
 folder: omnia3
 ---
 
-## 6. User Interface
+## 1. User Interface
 __*Entity / User Interface*__
 
 In **OMNIA Platform** you can customize how the fields are shown in the form to create or edit of your entity.
@@ -69,7 +69,7 @@ In the User Interface tab, select the element you want to change and, in the _Si
 ### How to remove an element?
 Picking the element you want to remove, select the option _Delete_ and confirm your option in the confirmation window.
 
-## 7. User Interface Behaviours
+## 2. User Interface Behaviours
 __*Entity / User Interface Behaviours*__
 
 In order to extend your application user interface you can add new behaviours to your entities' user interface.

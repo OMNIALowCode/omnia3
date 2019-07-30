@@ -293,8 +293,9 @@ In this sample, the view in which the calendar is initialized is setted:
 ```
 
 The following views are available:
+
 | Value | Description |
-| --------- | --------- | --------- | --------- | --------- |
+| --------- | --------- |
 | 'week' | One week view as calendar |
 | 'month' | One month view as calendar |
 | 'year' | One year view as calendar |

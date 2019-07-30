@@ -122,7 +122,7 @@ entries:
       url: /omnia3_modeler_introduction.html
       output: web, pdf
         
-    - title: Modeling Entities
+    - title: Modeling Entities (Structure)
       url: /omnia3_modeler_entities.html
       output: web, pdf
         
@@ -132,6 +132,10 @@ entries:
     
     - title: Modeling Enumerations
       url: /omnia3_modeler_enumerations.html
+      output: web, pdf
+      
+    - title: Modeling Entities (User Interface)
+      url: /omnia3_modeler_entities_ui.html
       output: web, pdf
       
     - title: Behaviours

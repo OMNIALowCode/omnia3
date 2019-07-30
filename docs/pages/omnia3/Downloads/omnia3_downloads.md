@@ -10,7 +10,3 @@ folder: omnia3
 ## Platform
 
 ## Connector
-
-## Behaviours Development solution
-
-Visit our [GitHub page for this project](https://github.com/omnialowcode/omnia3-behaviours) for the latest updates.

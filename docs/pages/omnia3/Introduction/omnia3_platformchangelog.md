@@ -9,6 +9,17 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.295](#3.0.295)
+Release Date: 2019-07-30
+
+### Implemented enhancements: 
+ - Allow setting initial dates and views in calendars [(see here)](https://docs.omnialowcode.com/omnia3_modeler_entities_ui.html#how-to-change-the-initial-date-of-a-calendar)
+ 
+### Bugs: 
+ - The "Remember me" option when the user signs in, isn't respected.
+ - User can't see a tenant when his email is added to that tenant using a different casing.
+ - Can't edit elements inside a container
+
 ## [3.0.286](#3.0.286)
 Release Date: 2019-07-23
 

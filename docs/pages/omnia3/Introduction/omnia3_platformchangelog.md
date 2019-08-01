@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.296](#3.0.296)
+Release Date: 2019-08-01
+
+### Bugs: 
+ - Can't remove Generic Entities non-root
+ - Incorrect label in the breadcrumb when accessing a Dashboard
+ 
 ## [3.0.295](#3.0.295)
 Release Date: 2019-07-30
 

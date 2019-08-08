@@ -9,6 +9,20 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.X](#3.0.X)
+Release Date: 2019-08-X
+
+### Implemented enhancements: 
+ - State Machines
+ - Quick link to Clean & Build in the top bar
+ - Format columns as Enumeration in lists
+ - Entity History - Timeline visualization
+
+### Breaking change: 
+  - API Application History methods deprecated:
+    - /application/history
+    - /application/history/{definition}/{code}
+
 ## [3.0.296](#3.0.296)
 Release Date: 2019-08-01
 

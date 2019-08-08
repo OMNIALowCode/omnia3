@@ -33,11 +33,29 @@ The State Machine can change from one state to another in response to some exter
 
 ### Project structure
 
-### State machine in the context of the entity lifecycle
+In the behaviours project, you will find in the Entity folder a file with the name _"{Entity}.StateMachine.cs"_ (example: _Customer.StateMachine.cs_).
+The state machine definition is in this C# class, side by side with the entity Operations class.
+
+In the _StateMachine.cs_ file you will find the following methods:
+
+ - **EvaluateStateTransitions:** Used by the platform to decide the next state. This method can't be changed and is a representation of the modeled State Machine.
+ - **EvaluateStateTransition_{State}_{TransitionName}:** Transition boolean expression method to decide if the transition should take place. The data from the current entity can be accessed since this is a method of the class.
+ - **AssignTo_{State}:** Assign expression method to decide the value of the _\_assing_ attribute when the entity enters in a given state. The data from the current entity can be accessed since this is a method of the class.
+
+### The state machine in the context of the entity lifecycle
+
+The evaluation of the State Machine happens immediately before the Platform invokes the Before Save behaviours.
 
 ### Accessing to user Decision
 
+In the context of entity behaviours, the modeler can access to the Decision taken through the Context using `_Context.Operation.Decision`. Example:
 
+```c#
+if("Accept".Equals(_Context.Operation.Decision))
+{
+
+}
+```
 
 ## 4. State Machine UI Behaviours
 

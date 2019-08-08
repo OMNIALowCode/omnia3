@@ -53,10 +53,21 @@ In the context of entity behaviours, the modeler can access to the Decision take
 ```c#
 if("Accept".Equals(_Context.Operation.Decision))
 {
-
+    ...
 }
 ```
 
 ## 4. State Machine UI Behaviours
 
+When a user selects a decision, the _Save_ action is performed. When the _BeforeSave_ behaviour is executed it is possible to use the user's decision in the JavaScript code.
+
 ### Accessing to user Decision
+Accessing the context, it's possible to know the decision the user has selected.
+
+In the following sample is shown how to use the decision value in a condition.
+
+```JavaScript
+if(this._context.operation.decision === 'Accept'){
+    ...
+}
+```

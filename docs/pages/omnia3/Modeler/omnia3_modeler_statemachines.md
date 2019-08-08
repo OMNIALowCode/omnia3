@@ -27,6 +27,7 @@ The State Machine can change from one state to another in response to some exter
 
 ### How to assign the entity to someone in a given state?
 
+### How to manage State and Decision Labels
 
 
 ## 3. State Machine Entity Behaviours

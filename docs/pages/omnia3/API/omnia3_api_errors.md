@@ -25,7 +25,6 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 | ValidationFailed | 400 | Request validation failed. This error can have details in the "errors" properties. Error descriptions in the section "Validation Failed - Errors" |
 
 
-
 ### Validation Failed - Errors
 
 | Error code | Error message |
@@ -43,4 +42,4 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 | ValueCannotBeChanged | Attribute value cannot be changed. |
 | InvalidModelConfiguration | Invalid model definition. |
 | InvalidTenantConfiguration | Invalid tenant definition. |
-
+| TextMaxLengthMismatch | Value is too long to the defined length of (defined length). |

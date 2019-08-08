@@ -10,20 +10,42 @@ folder: omnia3
 ## 1. Introduction
 
 OMNIA Platform enables you to model a [finite-state machine (FSM)](https://en.wikipedia.org/wiki/Finite-state_machine) to describe the states and transitions that occur during the entity lifetime.
+
 The State Machine can change from one state to another in response to some external inputs. The change from one state to another is called a transition. A State Machine is defined by a list of its states and transitions.
 
-## 2. Model State Machine
-
+## 2. Model State Machines
+By choosing *__State Machines__* in the sidebar, you will have access to the _State Machines'_ management screen, in which will be presented the existing data of the model.
 
 ### How to create a State Machine?
- 
+Select the option _Add new_ and define the following properties:
+* __Related to__: the entity that will be managed using the State Machine;
+* __Description__: a textual explanation of this State Machine(can be used as development documentation).
+
+After creating a new state machine, will be automatically created two states: _Initial_ (the State Machine's initial state) and _Completed_. Also, a new [_Enumeration_](omnia3_modeler_enumerations.html) will be created containing the existing states (this enumeration will be updated evertyme a state is added or removed).
+
 ### How to create a State?
+__*State Machine / States*__
+
+Accessing to the details of a _State Machine_ you can add a new state. To do that, in the _States_ list, select the option _Add new_ and define the following properties:
+* __Name:__ the name of the state (needs to be unique inside the state machine);
+* __Description:__: the textual explanation of the state's purpose (can be used as development documentation);
+* __Is the initial state?:__ if the state is the initial one or not;
+* __Assign to (C# expression)__: a C# expression to define to whom will be assigned the record when it is in this state.
 
 ### How to define the initial state?
+__*State Machine / States / State*__
+
+In the details page of a _State Machine_, selecting one of the existing states is possible to change the _State Machine's_ initial state.
+
+In the State's details page, select the option _Edit State_ and mark the property _Is the initial state?_.
+
+Since a _State Machine_ can only have one, and only one, initial state, after marking a state as initial, the previous initial state will be unmarked. If you try to remove the initial state will get an error remembering you that you need one initial state.
 
 ### How to create a Transition?
 
 ### How to condition transitions?
+
+### How to create a Decision?
 
 ### How to assign the entity to someone in a given state?
 

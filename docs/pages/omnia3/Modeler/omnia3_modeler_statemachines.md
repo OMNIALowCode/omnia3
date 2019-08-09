@@ -48,7 +48,7 @@ Since a _State Machine_ can only have one, and only one, initial state, after ma
 ### How to assign the entity to someone in a given State?
 In the details page of a _State Machine_, selecting one of the existing states is possible to change to whom the _State's_ is assigned, using the property __Assign to (C# expression)__.
 
-Everytime the entity enters in the _State_, the C# code expression provided in the _Assign to_ property is evaluated and the result is store in the system attribute ___assigned__.
+Everytime the entity is saved in the _State_, the C# code expression provided in the _Assign to_ property is evaluated and the result is stored in the system attribute ___assigned__.
 
 ### How to create a Decision?
 __*State Machine / States / State / Decisions*__
@@ -111,11 +111,12 @@ In the _StateMachine.cs_ file you will find the following methods:
 
  - **EvaluateStateTransitions:** Used by the platform to decide the next state. This method can't be changed and is a representation of the modeled State Machine.
  - **EvaluateStateTransition_{State}_{TransitionName}:** Transition boolean expression method to decide if the transition should take place. The data from the current entity can be accessed since this is a method of the class.
- - **AssignTo_{State}:** Assign expression method to decide the value of the _\_assing_ attribute when the entity enters in a given state. The data from the current entity can be accessed since this is a method of the class.
+ - **AssignTo_{State}:** Assign expression method to decide the value of the _\_assing_ attribute when the entity is in a given state. The data from the current entity can be accessed since this is a method of the class.
 
 ### The state machine in the context of the entity lifecycle
 
 The evaluation of the State Machine happens immediately before the Platform invokes the Before Save behaviours.
+
 
 ### Accessing to user Decision
 

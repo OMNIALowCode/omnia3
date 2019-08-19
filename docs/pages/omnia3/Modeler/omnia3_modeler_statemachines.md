@@ -34,7 +34,15 @@ Accessing to the details of a _State Machine_ you can add a new state. To do tha
 * __Name__: the name of the state (needs to be unique inside the state machine);
 * __Description__: the textual explanation of the state's purpose (can be used as development documentation);
 * __Is the initial state?__: if the state is the initial one or not;
+* __Disable all attributes?__: if marked, all the attributes will be all be shown as read-only, when the entity is in the state;
+* __Disable all operations?__: if marked, all the operations (e.g.: save, add lines, etc.) will be disabled, when the entity is in the state;
 * __Assign to (C# expression)__: a C# expression to define to whom will be assigned the record when it is in this state.
+
+_Note 1_: If the _Disable all attributes_ propery is checked, will be possible to define an exception list of attributes. The attributes in this exception list will not have the _read-only_ property overriden.
+
+_Note 2_: If the _Disable all operations_ propery is checked, will be possible to define an exception list of operations. The operations in this exception list will not have the value  overriden.
+
+_Note 3_: If there is any User Interface Behaviour in the entity's Form to set an attribute as read-only (or editable) or to set an operation as disabled (or enabled), the configuration set in the Behaviour will be maintained.
 
 ### How to define the initial state?
 __*State Machine / States / State*__
@@ -46,9 +54,61 @@ In the State's details page, select the option _Edit State_ and mark the propert
 Since a _State Machine_ can only have one, and only one, initial state, after marking a state as initial, the previous initial state will be unmarked. If you try to remove the initial state will get an error remembering you that you need one initial state.
 
 ### How to assign the entity to someone in a given State?
+__*State Machine / States / State*__
+
 In the details page of a _State Machine_, selecting one of the existing states is possible to change to whom the _State's_ is assigned, using the property __Assign to (C# expression)__.
 
+In the State's details page, select the option _Edit State_ and change the property _Assign to (C# expression)_.
+
 Everytime the entity is saved in the _State_, the C# code expression provided in the _Assign to_ property is evaluated and the result is stored in the system attribute ___assigned__.
+
+
+### How to disable all attributes in a given State?
+__*State Machine / States / State*__
+
+In the details page of a _State Machine_, selecting one of the existing states is possible to set all attributes as _read-only_ when a record is in the _State_.
+
+In the State's details page, select the option _Edit State_ and mark the property _Disable all attributes?_.
+
+
+### How to disable all operations in a given State?
+__*State Machine / States / State*__
+
+In the details page of a _State Machine_, selecting one of the existing states is possible to set all operations as _disabled_ when a record is in the _State_.
+
+In the State's details page, select the option _Edit State_ and mark the property _Disable all operations?_.
+
+
+### How to enable an attribute in a given State?
+__*State Machine / States / State / Enabled Attributes*__
+
+The _Enabled Attributes_ list works as an exception list to the disabled attributes.
+
+It's possible to define a set of enabled attributes in each state.
+
+In order to do that, access the details page of a _State Machine_ and select a  state. In the _Enabled Attributes_ list, select the option _Add new_ and define the following properties:
+* __Name__: the unique name to the entry;
+* __Description__: the textual explanation of the purpose (can be used as development documentation);
+* __Path__: the path to the attribute to enable - corresponds to the attribute name (if the attribute is inside a collection, the path should be the collection name and the attribute's name joined using a dot).
+
+_Note_: This is only possible if the property _Disable all attributes?_ is checked.
+
+
+### How to enable an operation in a given State?
+__*State Machine / States / State / Enabled Operations*__
+
+The _Enabled Operations_ list works as an exception list to the disabled operations.
+
+It's possible to define a set of enabled operations in each state.
+
+In order to do that, access the details page of a _State Machine_ and select a  state. In the _Enabled Operations_ list, select the option _Add new_ and define the following properties:
+* __Name__: the unique name to the entry;
+* __Description__: the textual explanation of the purpose (can be used as development documentation);
+* __Path__: the path to the operation to enable - corresponds to the attribute name, if the attribute is a collection (if the operation is relative to the entity, the path should be left empty);
+* __Type__: the operation type (_Add_ or _Delete_).
+
+_Note_: This is only possible if the property _Disable all operations?_ is checked.
+
 
 ### How to create a Decision?
 __*State Machine / States / State / Decisions*__
@@ -59,6 +119,7 @@ It's possible to define a set of allowed decisions in each state.
 In order to do that, access the details page of a _State Machine_ and select a  state. In the _Decisions_ list, select the option _Add new_ and define the following properties:
 * __Name__: the name of the decision (needs to be unique inside the state);
 * __Description__: the textual explanation of the decision's purpose (can be used as development documentation);
+* __Comment type__: the type of comment that will be prompted to the user, when the decision is made (_None_, _Optional_ or _Required_);
 * __Order__: an integer representing the order of the decision in the state.
 
 _Note_: When a state has decisions, a new [_Enumeration_](omnia3_modeler_enumerations.html) is created to store the state's decisions. Everytime a decision is added or removed, the _Enumeration_ is updated.
@@ -142,4 +203,11 @@ In the following sample is shown how to use the decision value in a condition.
 if(this._context.operation.decision === 'Accept'){
     ...
 }
+```
+
+### How to control the available decisions?
+In this sample, the decision _myDecison_ is hidden from the decision selector:
+
+```JavaScript
+    this._metadata.attributes.decisionSelector.elements.myDecision.isHidden = true;
 ```

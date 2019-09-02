@@ -141,6 +141,10 @@ entries:
     - title: Behaviours
       url: /omnia3_modeler_behaviours.html
       output: web, pdf
+      
+    - title: State Machines
+      url: /omnia3_modeler_statemachines.html
+      output: web, pdf
         
     - title: Data Sources and Data Behaviours
       url: /omnia3_modeler_datasources.html

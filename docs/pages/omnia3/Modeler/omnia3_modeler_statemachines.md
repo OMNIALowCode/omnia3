@@ -105,7 +105,10 @@ In order to do that, access the details page of a _State Machine_ and select a  
 * __Name__: the unique name to the entry;
 * __Description__: the textual explanation of the purpose (can be used as development documentation);
 * __Path__: the path to the operation to enable - corresponds to the attribute name, if the attribute is a collection (if the operation is relative to the entity, the path should be left empty);
-* __Type__: the operation type (_Add_ or _Delete_).
+* __Type__: the operation type (_Add_, _Update_ or _Delete_).
+    - _Add_ - Can be used when a collection is referenced in the _Path_. Use this to enable the user to Add new entries to the collection.
+    - _Update_ - Can be used to enable the user to save the entity in the current state. Leave the _Path_ empty to use it.
+    - _Delete_ - Can be used for both entity and collections. Use this to enable Entity delete or remove entries from Collection.
 
 _Note_: This is only possible if the property _Disable all operations?_ is checked.
 
@@ -119,7 +122,7 @@ It's possible to define a set of allowed decisions in each state.
 In order to do that, access the details page of a _State Machine_ and select a  state. In the _Decisions_ list, select the option _Add new_ and define the following properties:
 * __Name__: the name of the decision (needs to be unique inside the state);
 * __Description__: the textual explanation of the decision's purpose (can be used as development documentation);
-* __Comment type__: the type of comment that will be prompted to the user, when the decision is made (_None_, _Optional_ or _Required_);
+* __Should the user write a comment when taking the decision?__: the type of comment that will be prompted to the user, when the decision is made (_None_, _Optional_ or _Required_);
 * __Order__: an integer representing the order of the decision in the state.
 
 _Note_: When a state has decisions, a new [_Enumeration_](omnia3_modeler_enumerations.html) is created to store the state's decisions. Everytime a decision is added or removed, the _Enumeration_ is updated.
@@ -163,6 +166,13 @@ In order, to change the labels of a _State_ or a _Decision_, it's only neccessar
 
 ## 3. State Machine Entity Behaviours
 
+### Transition behaviours
+
+In the modeler, you can add behaviours to be triggered when a transition happens. These behaviours will be executed either when the entity enters (__In__) in a given state or exits (__Out__) a given state.
+
+__In__ and __Out__ behaviours execute in a transaction together with the state machine evaluation and receive the old state and the new state respectively.
+
+
 ### Project structure
 
 In the behaviours project, you will find in the Entity folder a file with the name _"{Entity}.StateMachine.cs"_ (example: _Customer.StateMachine.cs_).
@@ -173,6 +183,8 @@ In the _StateMachine.cs_ file you will find the following methods:
  - **EvaluateStateTransitions:** Used by the platform to decide the next state. This method can't be changed and is a representation of the modeled State Machine.
  - **EvaluateStateTransition_{State}_{TransitionName}:** Transition boolean expression method to decide if the transition should take place. The data from the current entity can be accessed since this is a method of the class.
  - **AssignTo_{State}:** Assign expression method to decide the value of the _\_assing_ attribute when the entity is in a given state. The data from the current entity can be accessed since this is a method of the class.
+ - **On{State}In:** Expression method to be executed when the entity enters the State. Old state is received in the variable _fromState_.
+- **On{State}Out:** Expression method to be executed when the entity exits the State. New state is received in the variable _toState_.
 
 ### The state machine in the context of the entity lifecycle
 
@@ -189,6 +201,11 @@ if("Accept".Equals(_Context.Operation.Decision))
     ...
 }
 ```
+
+### Accessing to user comment
+
+In the context of entity behaviours, the modeler can access to the Comment written by the user through the Context using `_Context.Operation.Comment`. 
+
 
 ## 4. State Machine UI Behaviours
 

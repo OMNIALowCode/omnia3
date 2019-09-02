@@ -9,6 +9,32 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.7](#3.0.7)
+Release Date: 2019-09-02
+
+### Implemented enhancements: 
+ - State Machines [(see here)](/omnia3_modeler_statemachines.html)
+ - Quick link to Clean & Build in the top bar
+ - Format columns as Enumeration in lists
+ - Entity History - Timeline visualization
+ - Limit the name max size of Model entities
+ - Ignore Name when updating an entity with JSON using the Modeler WebApp
+ - Labels partially hidden, when the text is too big to prevent the UI from breaking
+ - Remove WebApp JS Code transpilation to ES6
+ - WebApp: Memory cache metadata API calls to improve performance
+
+### Bugs: 
+ - OnChange UIBehaviours for Enum attributes are not included on generated JS
+ - WebComponent Mapping to non-existing elements in collections causes an infinite PATCH
+ - Data Source name is case sensitive when invoking an Application Behaviour in the connector using code
+ - It's possible to define formula behaviours for documents attribute _code
+ - Error "ExecutesInConnector is required" for Data Source System when importing a model
+
+### Breaking change: 
+  - API Application History methods deprecated:
+    - /application/history
+    - /application/history/{definition}/{code}
+
 ## [3.0.296](#3.0.296)
 Release Date: 2019-08-01
 

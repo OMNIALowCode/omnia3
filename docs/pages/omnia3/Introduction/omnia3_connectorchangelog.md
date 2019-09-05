@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.191](#1.0.191)
+Release Date: 2019-09-05
+
+### Bugs: 
+ - Error when debugging System behaviours or when an exception is throwed after an API request
+
 ## [1.0.187](#1.0.187)
 Release Date: 2019-07-18
 

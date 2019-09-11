@@ -43,3 +43,9 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 | InvalidModelConfiguration | Invalid model definition. |
 | InvalidTenantConfiguration | Invalid tenant definition. |
 | TextMaxLengthMismatch | Value is too long to the defined length of (defined length). |
+| StateConfigurationNotFound | The configuration of the current state was not found. |
+| CommentNotAccepted | Comments are not allowed based on the current state configuration. |
+| ForbidToAddToCollectionBasedOnStateMachineConfiguration |  is not possible to add to collection based on record's current state configuration. |
+| ForbidToChangeAttributeValueBasedOnStateMachineConfiguration | It is not possible to change the value of the attribute based on record's current state configuration. |
+| ForbidToDeleteFromCollectionBasedOnStateMachineConfiguration | It is not possible to remove from collection based on record's current state configuration. |
+| ForbidToSaveBasedOnStateMachineConfiguration | It is not possible to save the record based on its current state configuration. |

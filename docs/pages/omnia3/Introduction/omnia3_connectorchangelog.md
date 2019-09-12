@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.0.192](#1.0.192)
+Release Date: 2019-09-12
+
+### Implemented enhancements: 
+ - State Machines
+
 ## [1.0.191](#1.0.191)
 Release Date: 2019-09-05
 

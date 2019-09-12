@@ -9,6 +9,27 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.10](#3.0.10)
+Release Date: 2019-09-12
+
+### Implemented enhancements: 
+ - State Machines - Don't allow to change an attribute if is not enabled in the current state
+ - Improve UX for Enable Attributes and Operations
+ - Have access to decision & comment on After Save 
+ - State Machines for entities in an External Data Source
+ - Notify the user that a new version of the tenant model is available
+
+
+### Bugs: 
+ - Decision Comments - Label isn't translated
+ - Can't see columns in Form grids when the element size is 0
+
+## [3.0.309](#3.0.309)
+Release Date: 2019-09-06
+
+### Bugs: 
+ - ListParameters aren't applyed to the query when a lookup page change (navigation)
+
 ## [3.0.7](#3.0.7)
 Release Date: 2019-09-02
 

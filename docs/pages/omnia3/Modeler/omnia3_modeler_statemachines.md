@@ -87,9 +87,7 @@ The _Enabled Attributes_ list works as an exception list to the disabled attribu
 It's possible to define a set of enabled attributes in each state.
 
 In order to do that, access the details page of a _State Machine_ and select a  state. In the _Enabled Attributes_ list, select the option _Add new_ and define the following properties:
-* __Name__: the unique name to the entry;
-* __Description__: the textual explanation of the purpose (can be used as development documentation);
-* __Path__: the path to the attribute to enable - corresponds to the attribute name (if the attribute is inside a collection, the path should be the collection name and the attribute's name joined using a dot).
+* __Which is the attribute to enable?__: the path to the attribute to enable - corresponds to the attribute name (if the attribute is inside a collection, the path should be the collection name and the attribute's name joined using a dot).
 
 _Note_: This is only possible if the property _Disable all attributes?_ is checked.
 
@@ -102,10 +100,9 @@ The _Enabled Operations_ list works as an exception list to the disabled operati
 It's possible to define a set of enabled operations in each state.
 
 In order to do that, access the details page of a _State Machine_ and select a  state. In the _Enabled Operations_ list, select the option _Add new_ and define the following properties:
-* __Name__: the unique name to the entry;
-* __Description__: the textual explanation of the purpose (can be used as development documentation);
-* __Path__: the path to the operation to enable - corresponds to the attribute name, if the attribute is a collection (if the operation is relative to the entity, the path should be left empty);
-* __Type__: the operation type (_Add_, _Update_ or _Delete_).
+* __The operation is related to...__: define if the operation to enable is over the current Entity or a given Collection Attribute of the Entity. This will influence the opeation types _"(Which is the operation to enable?)"_ that the user can select;
+* __Which is the attribute?__: the path to the operation to enable - corresponds to the attribute name, if the attribute is a collection (if the operation is relative to the entity, the path should be left empty);
+* __Which is the operation to enable?__: the operation type (_Add_, _Update_ or _Delete_).
     - _Add_ - Can be used when a collection is referenced in the _Path_. Use this to enable the user to Add new entries to the collection.
     - _Update_ - Can be used to enable the user to save the entity in the current state. Leave the _Path_ empty to use it.
     - _Delete_ - Can be used for both entity and collections. Use this to enable Entity delete or remove entries from Collection.

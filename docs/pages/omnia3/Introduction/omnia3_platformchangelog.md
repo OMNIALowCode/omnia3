@@ -9,7 +9,7 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
-## [3.0.10](#3.0.10)
+## [3.0.310](#3.0.310)
 Release Date: 2019-09-12
 
 ### Implemented enhancements: 
@@ -30,7 +30,7 @@ Release Date: 2019-09-06
 ### Bugs: 
  - ListParameters aren't applyed to the query when a lookup page change (navigation)
 
-## [3.0.7](#3.0.7)
+## [3.0.307](#3.0.307)
 Release Date: 2019-09-02
 
 ### Implemented enhancements: 

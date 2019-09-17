@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.318](#3.0.318)
+Release Date: 2019-09-17
+
+### Bugs: 
+ - 401 after an hour without reloading the page
+
 ## [3.0.317](#3.0.317)
 Release Date: 2019-09-17
 

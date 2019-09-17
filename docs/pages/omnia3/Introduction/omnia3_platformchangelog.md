@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.317](#3.0.317)
+Release Date: 2019-09-17
+
+### Bugs: 
+ - Can't remove entities without state machine
+ - History for a given entity is showing the history for removed entities with the same identifier
+
 ## [3.0.310](#3.0.310)
 Release Date: 2019-09-12
 
@@ -18,7 +25,6 @@ Release Date: 2019-09-12
  - Have access to decision & comment on After Save 
  - State Machines for entities in an External Data Source
  - Notify the user that a new version of the tenant model is available
-
 
 ### Bugs: 
  - Decision Comments - Label isn't translated

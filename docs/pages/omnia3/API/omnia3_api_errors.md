@@ -49,3 +49,5 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 | ForbidToChangeAttributeValueBasedOnStateMachineConfiguration | It is not possible to change the value of the attribute based on record's current state configuration. |
 | ForbidToDeleteFromCollectionBasedOnStateMachineConfiguration | It is not possible to remove from collection based on record's current state configuration. |
 | ForbidToSaveBasedOnStateMachineConfiguration | It is not possible to save the record based on its current state configuration. |
+| SmtpServerInvalidConfiguration | The SMTP server configuration is invalid. |
+| ErrorSendingEmail | It was not possible to send the email. |

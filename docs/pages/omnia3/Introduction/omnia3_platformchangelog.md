@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.319](#3.0.319)
+Release Date: 2019-09-23
+
+### Bugs: 
+ - Entity Behaviours Name - maximum size too short
+
 ## [3.0.318](#3.0.318)
 Release Date: 2019-09-17
 

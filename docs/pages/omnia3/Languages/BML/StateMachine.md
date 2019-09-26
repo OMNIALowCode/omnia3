@@ -13,10 +13,10 @@ State Machine related to a given Definition.
 
 | Name | Type | Aggregation Kind | Multiplicity | Description |
 | --------- | --------- | --------- | --------- | --------- |
-| Name | Text | None | 1..1 |  |
-| Description | Text | None | 0..1 |  |
-| Definition | Text | None | 1..1 |  |
-| States | State | Composite | 0..* |  |
+| Name | Text | None | 1..1 | The name of the state machine (unique identifier). |
+| Description | Text | None | 0..1 | The textual explanation of the state machine purpose. |
+| Definition | Text | None | 1..1 | the entity that will be managed using the State Machine. |
+| States | State | Composite | 0..* | A collection of states of the current State Machine. |
 
 ## Operations
 

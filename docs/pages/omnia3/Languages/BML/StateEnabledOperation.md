@@ -15,7 +15,7 @@ Operation enabled in a given State.
 | --------- | --------- | --------- | --------- | --------- |
 | Name | Text | None | 1..1 | The name of the entity (unique identifier). |
 | Description | Text | None | 0..1 | The textual explanation of the entities' purpose. |
-| Path | Text | None | 0..1 |  |
-| Type | StateEnabledOperationTypeEnum | None | 1..1 |  |
+| Path | Text | None | 0..1 | Path to the operation to enable. When accessing to a composite collection, use the '.' to navigate. |
+| Type | StateEnabledOperationTypeEnum | None | 1..1 | The operation type to enable. |
 
 

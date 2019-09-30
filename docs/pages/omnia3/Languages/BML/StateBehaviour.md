@@ -15,7 +15,7 @@ Behaviour representing how the entity should behave during a state change.
 | --------- | --------- | --------- | --------- | --------- |
 | Name | Text | None | 1..1 | The name of the entity (unique identifier). |
 | Description | Text | None | 0..1 | The textual explanation of the entities' purpose. |
-| Type | StateBehaviourTypeEnum | None | 1..1 |  |
-| Expression | Text | None | 1..1 |  |
+| Type | StateBehaviourTypeEnum | None | 1..1 | The execution moment of the behaviour. |
+| Expression | Text | None | 1..1 | The C# code that will be executed. |
 
 

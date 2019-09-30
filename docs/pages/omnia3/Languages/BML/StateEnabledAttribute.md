@@ -15,6 +15,6 @@ Attribute enabled in a given state.
 | --------- | --------- | --------- | --------- | --------- |
 | Name | Text | None | 1..1 | The name of the entity (unique identifier). |
 | Description | Text | None | 0..1 | The textual explanation of the entities' purpose. |
-| Path | Text | None | 1..1 |  |
+| Path | Text | None | 1..1 | Path to the attribute to enable. When accessing to a composite collection, use the '.' to navigate. |
 
 

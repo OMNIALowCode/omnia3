@@ -9,6 +9,20 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.0.321](#3.0.321)
+Release Date: 2019-09-30
+
+### Implemented enhancements: 
+ - Text Templates [(see here)](/omnia3_modeler_texttemplates.html)
+ - Email Notifications API Endpoint [(see here)](/omnia3_modeler_emailnotifications.html)
+ - Keep label aligned when the label is empty or whitespace
+ - Ignore \_state property when validating the changed attributes
+ 
+### Bugs:
+ - History button available on non-System entities
+ - Page reload address when a new version is available - don't keep url arguments
+
 ## [3.0.319](#3.0.319)
 Release Date: 2019-09-23
 

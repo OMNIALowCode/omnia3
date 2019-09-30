@@ -177,7 +177,15 @@ entries:
     - title: Languages
       url: /omnia3_modeler_languages.html
       output: web, pdf
-        
+
+    - title: Text Templates
+      url: /omnia3_modeler_texttemplates.html
+      output: web, pdf
+
+    - title: Email Notifications
+      url: /omnia3_modeler_emailnotifications.html
+      output: web, pdf
+
   - title: Application
     output: web, pdf
     folderitems:

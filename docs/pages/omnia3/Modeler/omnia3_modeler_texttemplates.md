@@ -41,10 +41,10 @@ The following parameters are available to use when writing a text template:
 * **Texts**: The set of texts of the language in which the request was made.
 
 ## 3. Using Text Templates
-The text templates can be used in all scenarios where a text content is required, based on different data and/or language (for example, in the body of an e-mail notification). 
+Text templates can be used in all scenarios where a text content is required, based on different data and/or language (for example, in the body of an e-mail notification). 
 
 ### How to render a Text Template in a Behaviour?
-In order to transform a Text Template, is available in the OMNIA API an endpoint to do that.
+Our platform's API provides a specific endpoint for Text Template rendering inside Behaviours
 
 In the following sample, a template called "MyTemplate" is transformed using an entity's DTO as parameter.
 

@@ -53,5 +53,5 @@ After updating the configuration, you need to reload NGINX.
 
 ### How to clone a OMNIA database server?
 
-Click [here](omnia3_clonedatabaseserver.html) to check our documentation.
+Click [here](omnia3_clonedatabaseserver.html) to check our documentation page.
 

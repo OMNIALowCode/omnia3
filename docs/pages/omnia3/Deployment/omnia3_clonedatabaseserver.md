@@ -2,6 +2,7 @@
 title: OMNIA 3.0 Clone Database Server
 keywords: omnia3
 summary: "How to clone an OMNIA Postgres server"
+sidebar: omnia3_sidebar
 permalink: omnia3_clonedatabaseserver.html
 folder: omnia3
 ---

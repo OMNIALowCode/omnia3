@@ -19,7 +19,7 @@ OMNIA Text Templates are based on the [Liquid Templating Language](https://shopi
 ## 2. Model Text Templates
 Each text template contains an expression, that will be transformed using the parameters, in order to get the result text.
 
-### How to add a new enumeration?
+### How to add a new Text Template?
 By accessing **_Extensibility / Text Templates_** in the sidebar, you will have access to the text templates management screen.
 
 Selecting the option _Add new_ in the list of text templates, you need to fill the following information:

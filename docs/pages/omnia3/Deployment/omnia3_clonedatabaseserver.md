@@ -13,7 +13,7 @@ folder: omnia3
 - Access to origin and destination server must be granted
 
 
-### Steps
+## Steps
 
 The following steps must be executed on command line:
 

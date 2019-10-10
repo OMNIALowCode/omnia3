@@ -9,6 +9,22 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.326](#3.0.326)
+Release Date: 2019-10-10
+
+### Implemented enhancements: 
+ - Modeler - OMNIA Blog feed in the modeler homepage
+ - Modeler - Update entities with JSON
+
+## [3.0.325](#3.0.325)
+Release Date: 2019-10-04
+ 
+### Bugs:
+ - Ignore \_assign property when validating the changed attributes
+ - History - Error when collection elements are removed
+ - Can't save entities after a new state machine has been added to the definition
+ - Text Templates: empty result preview when template uses translations that doesn't exists
+ - List \_code hyperlink does not work if same list was opened on modal
 
 ## [3.0.321](#3.0.321)
 Release Date: 2019-09-30

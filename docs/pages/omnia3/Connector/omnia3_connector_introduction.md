@@ -22,6 +22,7 @@ The manager will launch a new server process when configurable maximal number of
 ## 3. Requirements
 
 * Internet access
+    - Access to the OMNIA Platform address (Port 443 or 80 if not running under HTTPS).
 * .NET Framework 4.7.2
 * Compatible Windows version:
     - Windows Server 2012 or higher

@@ -92,6 +92,15 @@ Example: Depending on the user role, allow your Supplier to edit the field "Unit
 Quickly add validation messages to your interface elements, add the trigger conditions (value or role) and define the content of your message
 Example: If a user tries to add an invalid email on a field, an error message is returned indicating that.
 
+### Casing
+Because OMNIA WebApp is following the JavaScript best practices, the elements' names are in camelCase.
+
+In the following sample, to access the value representing the attribute _TotalAmount_, is used the _totalAmount_ property.
+
+```JavaScript
+    this.totalAmount
+```
+
 ### How to hide an element?
 
 In this sample, base element *_code* is set as hidden:

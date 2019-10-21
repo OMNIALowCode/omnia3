@@ -57,7 +57,7 @@ Selecting the option _Add new_ you need to first select one of four types of att
 * **Primitive**: A primitive type such as a text field or an integer;
 * **Enumeration**: An enumerated type of the model;
 * **Reference**: A reference to another entity on the platform;
-* **Collection**: Another entity that will act as a 'sub-entity' of this one. Must be of a compatible type: Events or Commitments in a Document, and Generic Entities (only those marked as non-root) in any entity type.
+* **Collection**: Another entity that will act as a 'sub-entity' of this one. Must be of a compatible type: Events or Commitments in a Document, Commitment or Event, and Generic Entities (only those marked as non-root) in any entity type.
 
 Afterwards, you must fill the following information (not all the fields apply to all attribute types):
 * **Name**: the name of the attribute (needs to be unique inside the entity);
@@ -79,7 +79,27 @@ In the attributes list, select the attribute you want to change and check the **
 ### How to remove an attribute?
 Picking the attribute you want to remove, select the option **Delete** and confirm your option in the confirmation window.
 
-## 4. Behaviours
+## 4. Nested Collections
+
+Nested Collections are a simple feature that allow to add a collection as an attribute of another collections.
+
+There are three collection concepts that will now be able to be have other collections as an attribute:
+* Events;
+* Commitments;
+* Generic Entities.
+
+In the User Interface, these collection will be represented as Nested Grids.
+
+### How many levels is possible to have?
+3 levels deep. 
+
+For example: 
+- Document *MyDocument*
+  - Commitment *DocumentLines*
+    - Commitment *CommitmentDetailLines*
+      - Generic Entity *DetailsDistribution*
+
+## 5. Behaviours
 __*Entity / Behaviours*__
 
 In order to extend your application you can add new behaviours to your entities.
@@ -119,7 +139,7 @@ In the behaviours list, select the behaviour you want to change and, in the code
 ### How to remove a behaviour?
 Picking the behaviour you want to remove, select the option _Delete_ and confirm your option in the confirmation window.
 
-## 5. Security
+## 6. Security
 To ensure the data access security, the platform's runtime will evaluate the current user's permissions to the entity (using the configured Roles and Policies).
 
 If the user is trying to obtain the data of one record (either to consult the data or to edit the record), the platform's runtime will evaluate through the default Query if the user has access to the corresponding record.

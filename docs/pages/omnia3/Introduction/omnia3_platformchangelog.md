@@ -9,7 +9,7 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
-## [3.0.344](#3.0.344)
+## [3.0.345](#3.0.345)
 Release Date: 2019-10-22
 
 ### Implemented enhancements: 

@@ -9,6 +9,17 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.344](#3.0.344)
+Release Date: 2019-10-22
+
+### Implemented enhancements: 
+ - Nested Collections [(see here)](/omnia3_modeler_entities.html#nested-collections)
+ - Present error messsages on the context of the Grid Line
+ - New navigation flow for Grids in Mobile devices
+
+### Bugs:
+ - Double click on reference fields to add a new Line
+
 ## [3.0.326](#3.0.326)
 Release Date: 2019-10-10
 

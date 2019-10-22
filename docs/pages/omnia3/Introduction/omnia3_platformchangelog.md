@@ -13,7 +13,7 @@ Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest ve
 Release Date: 2019-10-22
 
 ### Implemented enhancements: 
- - Nested Collections [(see here)](/omnia3_modeler_entities.html#nested-collections)
+ - Nested Collections [(see here)](/omnia3_modeler_entities.html#4-nested-collections)
  - Present error messsages on the context of the Grid Line
  - New navigation flow for Grids in Mobile devices
 

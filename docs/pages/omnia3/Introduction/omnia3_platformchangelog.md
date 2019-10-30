@@ -9,6 +9,18 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.0.355](#3.0.355)
+Release Date: 2019-10-30
+
+### Implemented enhancements: 
+ - UX Improvement: Dotted border between Lookup button and input
+
+### Bugs:
+ - List Export: Data export with invalid encoding
+ - Mobile/Grids: Missing translation when there are no grid lines and on grid operations
+ - State Machine: when Patching a document via API, changes are identified on attributes unchanged
+ - Quantity isn't respected when creating a document by API
+
 ## [3.0.345](#3.0.345)
 Release Date: 2019-10-22
 

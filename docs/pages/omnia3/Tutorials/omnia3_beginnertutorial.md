@@ -39,7 +39,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. "Build & Deploy" your model (top right corner of the modeling area).
 
-6. On the right side of the top bar, click the first button and select the option ***Application***. You will now be redirected to the application area. 
+6. On the right side of the top bar, click the first button and select the option ***Application*** (Refresh the page if you can see the option). You will now be redirected to the application area. 
 
     ![Modeler_Navigate_Application](/images/tutorials/beginner/Modeler-Navigate-Application.PNG)
     

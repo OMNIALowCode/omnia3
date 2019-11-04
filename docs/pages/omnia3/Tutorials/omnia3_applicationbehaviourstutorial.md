@@ -147,7 +147,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
     var result = SystemApplicationBehaviours.GetExchangeRate(rateArgs);
   
-    this.exchangeRate = (decimal)result["Rate"];
+    this.ExchangeRate = (decimal)result["Rate"];
     
     } else {
     

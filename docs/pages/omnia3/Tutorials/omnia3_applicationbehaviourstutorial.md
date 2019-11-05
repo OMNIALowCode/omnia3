@@ -54,7 +54,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
         - Attribute Type: *Decimal* 
         - *Is read only?*: Yes
         
-    3.1. Go to the "*User Interface Tab*" and change the layout of your newly created elements:
+    3.1. Go to the "*User Interface*" tab and change the layout of your newly created elements:
     - *CompanyCurrency*: 
         - **Row**: 4; 
         - **Column**: 1; 

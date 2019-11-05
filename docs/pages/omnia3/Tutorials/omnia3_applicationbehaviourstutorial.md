@@ -72,8 +72,9 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     
     ![PurchaseOrderDocumentLayout](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/document-layout.jpg)
 
-4. Now that have all the elements created, let's add two **Action/Change Entity Behaviours** that will fetch the currency value, and add the rate calculation as an **After Change** *Entity Behaviour*:
+4. Now that have all the elements created, let's add one new **Action/Change Entity Behaviour** and edit the pre-existing "GetSupplierName" behaviour, so that they'll fetch the currency value and add the rate calculation as an **After Change** *Entity Behaviour*:
     
+    Add new Behaviour:
     - **Name**: *OnChange_Company*
     - **Action to attribute**: *Company*
     - **Code**:
@@ -102,8 +103,8 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
         this.CompanyCurrency = entity.CompanyCurrency; 
     ```
     
-    
-    - **Name**: *OnChange_Supplier*
+    Edit exinting Behaviour
+    - **Name**: *GetSupplierName*
     - **Action to attribute**: *Supplier*
     - **Code**:    
     

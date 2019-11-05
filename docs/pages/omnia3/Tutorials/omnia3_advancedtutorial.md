@@ -67,7 +67,7 @@ Set its name **GetSupplierName**, and **Supplier** as the attribute that trigger
 
 ### External API
 
-1. Go to the **Modeler** and click on option **Data sources / System** to add references to this data source. Click on button **Add new** to add a new  **Behaviour Dependency**  for .NET assembly System.Net.Http
+1. Go to the **Modeler** and click on option **Data sources / System** to add references to this data source. Click on button **Add new > File Dependency** to add a new  **Behaviour Dependency**  for .NET assembly System.Net.Http
 
     ![Modeler Add_Dependency](/images/tutorials/advanced/Modeler-Add-Behaviour-Dependency.PNG)
 

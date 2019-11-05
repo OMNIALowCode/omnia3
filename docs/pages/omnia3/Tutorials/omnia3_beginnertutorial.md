@@ -63,7 +63,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 13. Add a new document by selecting option ***Documents / Add new***. Set **PurchaseOrder**, as the document's *Name*;
 
-14. Click on ***Attribute / Add new / Collection*** in **Document**. Set its *Name* as *OrderLines*, *Type* as **Commitment > GoodsPurchaseRequest**.
+14. Click on ***Attributes / Add new / Collection*** in **Document**. Set its *Name* as *OrderLines*, *Type* as **Commitment > GoodsPurchaseRequest**.
 
     ![Modeler_Create_Composite_Attribute](/images/tutorials/beginner/Modeler-Create-OrderLines-Attribute.PNG)
 

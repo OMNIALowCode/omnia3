@@ -103,3 +103,5 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 
     **Congratulations** on your very **first insight** into OMNIA Low-Code Platform's true **development agility**! Now, it's time to **move** to our next challenge: [**OMNIA's Platform Advanced Tutorial**](omnia3_advancedtutorial.html). 
+    
+    

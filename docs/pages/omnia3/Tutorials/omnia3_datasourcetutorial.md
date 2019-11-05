@@ -26,7 +26,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 ## 3. CRUD operations
 
-1. Start by selecting the tenant where you are going to model, and you will be redirected to the modeling area.
+1. Start by selecting the tenant where you are going to model, and you will be redirected to the modeling area (if you only have one tenant, redirection will be automatic).
 
     ![Homepage_Dashboard](/images/tutorials/beginner/Modeler-Homepage.PNG)
 

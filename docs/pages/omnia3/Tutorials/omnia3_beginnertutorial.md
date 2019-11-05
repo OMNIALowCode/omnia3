@@ -25,7 +25,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 ## 3. Modeling an application
 
-1. Start by selecting the tenant where you are going to model, and you will be redirected to the modeling area.
+1. Start by selecting the tenant where you are going to model and you will be redirected to the modeling area (if you only have one tenant, redirection will be automatic).
  
     ![Homepage_Dashboard](/images/tutorials/beginner/Modeler-Homepage.PNG)
  
@@ -39,7 +39,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. "Build & Deploy" your model (top right corner of the modeling area).
 
-6. On the right side of the top bar, click the first button and select the option ***Application*** (Refresh the page if you can see the option). You will now be redirected to the application area. 
+6. On the right side of the top bar, click the first button and select the option ***Application*** (Refresh the page so you can see the option). You will now be redirected to the application area. 
 
     ![Modeler_Navigate_Application](/images/tutorials/beginner/Modeler-Navigate-Application.PNG)
     
@@ -49,11 +49,11 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 8.  Follow the same process of the previous step to create a new **Supplier** and **Product**.
 
-9. Go back to the modeling area (***Modeler***) and create a new **Commitment** with *Name* set as ***GoodsPurchaseRequest***, **Product** as the resource to be exchanged, **Supplier** as provider agent and **Company** as receiver agent.
+9. Go back to the modeling area (***Modeler*** - top right corner) and create a new **Commitment** with *Name* set as ***GoodsPurchaseRequest***, **Product** as the resource to be exchanged, **Supplier** as provider agent and **Company** as receiver agent.
 
     ![Modeler_Create_Commitment](/images/tutorials/beginner/Modeler-Create-Commitment.PNG)
 
-10. Add a new attribute by clicking on button **Add new / Primitive**. Set its *Name* as **UnitPrice**, *Type* as ***Decimal***, and as required by checking option *Is required?*.
+10. Add a new attribute ([more info here](https://docs.omnialowcode.com/omnia3_modeler_entities.html)) by clicking on button **Add new / Primitive**. Set its *Name* as **UnitPrice**, *Type* as ***Decimal***, and as required by checking option *Is required?*.
 
     ![Modeler_Create_Attribute](/images/tutorials/beginner/Modeler-Create-Attribute.PNG)
 

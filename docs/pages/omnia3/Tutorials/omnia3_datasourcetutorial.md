@@ -36,7 +36,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 3. Navigate to tab **Behaviour Dependencies** and add a new **File Dependency** reference to .NET assembly System.Net.Http
 
-    ![Modeler_Add_Dependency](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/behaviour-dependencies-netAssembly.jpg)
+    ![Modeler_Add_Dependency](/images/tutorials/datasource/DataSourceTutorial-3.jpg)
 
 4. Create a new Agent with *Name* "Employee", and set it as using the external data source "ExternalAPI" that you created earlier.
 
@@ -44,7 +44,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. Navigate to tab **Behaviour Namespaces** and add a reference to namespace System.Net.Http
 
-    ![Modeler_Add_Namespace](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/behaviour-namespaces-net.jpg)
+    ![Modeler_Add_Namespace](/images/tutorials/datasource/DataSourceTutorial-5.jpg)
     
 6. Still on *Agent* **Employee**, navigate to tab "Data Behaviours", and define a behaviour to be executed on "Create". This behaviour will be used to perform a POST request to the external Application when we create an instance of the Employee on the OMNIA platform. Copy and paste the following code:
 

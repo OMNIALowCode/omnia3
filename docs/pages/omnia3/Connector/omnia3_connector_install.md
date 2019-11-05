@@ -6,13 +6,11 @@ sidebar: omnia3_sidebar
 permalink: omnia3_connector_install.html
 folder: omnia3
 ---
-## 1. Installing the connector
+## 1. Download connector
 
-After you have downloaded the connector (see our [Downloads page](omnia3_downloads.html)) and extracted it, you can either run it directly or install it as a Windows service.
+First you need to download the connector (Downloads page);
 
-To run it, you should just do `Omnia.Connector.Windows.exe` (in cmd) or `./Omnia.Connector.Windows.exe` (in powershell) from the folder you extracted it to. In order to install the Windows service, add `install` to the end of that line. To uninstall it, add `uninstall`. In both of these scenarios, ensure you are running as an administrator.
-
-## 2. Configuring the connector
+## 2. Configure connector
 
 A configuration file (_**config.json**_) is distributed together with the connector, that you must fill in in order to use it. 
 
@@ -25,7 +23,13 @@ It also supports optional parameters:
 
 - **BehavioursManagerPort**: The port that the connector will open its behaviours manager on. If ommitted, defaults to **49995**. If this is already in use (i.e. you want to have two connectors in parallel), you must add this configuration.
 
-## 2. Managing the connector
+## 3. Install connector
+
+After you have downloaded the connector (see our [Downloads page](omnia3_downloads.html)) and extracted it, you can either run it directly (not recommended for production environments) or install it as a Windows service.
+
+To run it, you should just do `Omnia.Connector.Windows.exe` (in cmd) or `./Omnia.Connector.Windows.exe` (in powershell) from the folder you extracted it to. In order to install the Windows service, add `install` to the end of that line. To uninstall it, add `uninstall`. In both of these scenarios, ensure you are running as an administrator.
+
+## 4. Managing connector
 
 When the connector is installed as a Windows service, it can be started or stopped on Windows Services list.
 

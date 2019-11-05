@@ -51,11 +51,11 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 9. Go back to the modeling area (***Modeler*** - top right corner) and create a new **Commitment** with *Name* set as ***GoodsPurchaseRequest***, **Product** as the resource to be exchanged, **Supplier** as provider agent and **Company** as receiver agent.
 
-    ![Modeler_Create_Commitment](/images/tutorials/beginner/Modeler-Create-Commitment.PNG)
+    ![Modeler_Create_Commitment](/images/tutorials/beginner/BeginnerTutorial-9.jpg)
 
 10. Add a new attribute ([more info here](https://docs.omnialowcode.com/omnia3_modeler_entities.html)) by clicking on button **Add new / Primitive**. Set its *Name* as **UnitPrice**, *Type* as ***Decimal***, and as required by checking option *Is required?*.
 
-    ![Modeler_Create_Attribute](/images/tutorials/beginner/Modeler-Create-Attribute.PNG)
+    ![Modeler_Create_Attribute](/images/tutorials/beginner/BeginnerTutorial-10.jpg)
 
 11. Edit the attribute **_amount**, and check option *Is read only?*.
 

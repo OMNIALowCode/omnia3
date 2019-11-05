@@ -27,7 +27,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
  
 1. Go to the **Modeler** and edit the previously modeled document *PurchaseOrder*. Create a new  **Attribute**  by clicking the button  ***Add new / Primitive***  on the top right side, and setting its  **Name** and **Type**  to  **SupplierName** and ***Text***, respectively. Set the attribute as **Read Only**.
 
-    ![Modeler_Create_Document_Attribute](/images/tutorials/advanced/Modeler-Create-Attribute-SupplierName.PNG)
+    ![Modeler_Create_Document_Attribute](/images/tutorials/advanced/nativeAPITutorial-1.jpg)
 
 2. Create a new ***Action Behaviour***  to fill the new attribute (on the *PurchaseOrder* document, go to tab **Entity Behaviours** and click on ***Add new / (Action / Change)***). Now let's use one of our development "Acelerators" to get our ***SupplierName*** from the **Agent**s attribute "**_name**". 
 Set its name **GetSupplierName**, and **Supplier** as the attribute that triggers the behaviour:

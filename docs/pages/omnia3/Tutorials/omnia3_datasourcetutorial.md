@@ -216,6 +216,7 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 	
 	*Reference Attribute* for "Employee"
 	- **Name**: *Employee*
+	- **Type**: *Agent > Employee*
 	- **Data Source**: *ExternalAPI*
 	
 	

@@ -59,7 +59,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 11. Edit the attribute **_amount**, and check option *Is read only?*.
 
-12. Click on tab ***Entity Behaviours*** and on button **Add new > Formula**. Set its *Name* as **CalculateAmount**, attribute as **_amount** and set as code to execute `return UnitPrice * _quantity;`.
+12. Click on tab ***Entity Behaviours*** and on button **Add new > Formula**. Set its *Name* as **CalculateAmount**, attribute as **_amount** and set as code to execute `return UnitPrice * _quantity;` (this will set _amount to formula's result).
 
 13. Add a new document by selecting option ***Documents / Add new***. Set **PurchaseOrder**, as the document's *Name*;
 
@@ -69,9 +69,9 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 15. Build & Deploy model
 
-16. Navigate to ***Application*** through the top bar menu, and create a **Serie** for the document you just created, by selecting the option **Series / PurchaseOrderSeries -> Create New**.
+16. Navigate to ***Application*** through the top bar menu and create a **Serie** for the document you just created, by selecting the option **Series / PurchaseOrderSeries -> Create New** and fill in the input fields. 
 
-17. Create a new **PurchaseOrder** by selecting the option ***Documents / PurchaseOrder -> Create New*** and fill the needed fields.
+17. Click the menu arrow to see the main menu and create a new **PurchaseOrder** by selecting the option ***Documents / PurchaseOrder -> Create New*** and fill the needed fields.
 
 18. After saving your new document, go back to modeling area (by accessing top bar menu option ***Modeler***) and edit the **PurchaseOrder** document to simplify its interface. Add a new attribute by clicking the button **Add new / Reference**. Set its *Name* as **Company**, *Type* as ***Agent / Company***, and as required by checking option *Is required?*.
 
@@ -86,7 +86,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
         });
     ```
 
-21. Go to your ***PurchaseOrder*** **Document** User Interface by accessing the respective tab, and reorganize them to simplify the interface. Remove the elements **Provider**, **Receiver**  and **Code** from **OrderLines** element. At last, remove **Code** element UI from Document.
+21. Go to your ***PurchaseOrder*** **Document** User Interface by accessing the respective tab and reorganize them to simplify the interface (click on a element to edit/remove it). Remove the elements **Provider**, **Receiver**  and **Code** from **OrderLines** element. At last, remove **Code** element UI from Document.
 
 22. Reorganize Rows and Columns, re-establishing the **size** and **position** of their elements:
   * ***Serie***: Row 1, Column 1 and Size 4; 

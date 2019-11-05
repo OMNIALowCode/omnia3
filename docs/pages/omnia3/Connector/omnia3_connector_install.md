@@ -8,7 +8,7 @@ folder: omnia3
 ---
 ## 1. Download connector
 
-First you need to download the connector (Downloads page);
+First you need to download the connector (visit [Downloads page](https://docs.omnialowcode.com/omnia3_downloads.html));
 
 ## 2. Configure connector
 

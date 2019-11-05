@@ -56,6 +56,6 @@ var requestResult = httpClient.PostAsync("TextTemplates/MyTemplate", this.ToDto(
 if (!requestResult.IsSuccessStatusCode)
  throw new Exception("It was not possible to transform the text template.");
  
-var myTemplateContent = requestResult.Content.ReadAsAsync<string>().GetAwaiter().GetResult();
+var myTemplateContent = requestResult.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
 ```

@@ -206,7 +206,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     - *Code*: **EUR**; *Name*: **Euro**;
     - *Code*: **USD**; *Name*: **US Dollar**;
 
-9. Now access the "**AnalogSound**" *Company* (Configurations > Company), and select one "***Company Currency***" from the list. Now repeat the process for your "**SupplierA**" *Supplier* (Configurations > Supplier).
+9. Now access the "**AnalogSound**" *Company* (Configurations > Company), and select one "***Company Currency***" from the list. Now repeat the process for your *Supplier* (Configurations > Supplier) and add the other currency so you can see the functionality in action.
 
 10. Create a new Purchase Order and select a "*Company*" and a "*Supplier*" to verify that the "*Rate*" is automatically calculated when you **change the "Supplier"**, and that's it, your first Application Behaviour is complete!
 

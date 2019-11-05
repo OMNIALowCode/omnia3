@@ -210,6 +210,6 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
 10. Create a new Purchase Order and select a "*Company*" and a "*Supplier*" to verify that the "*Rate*" is automatically calculated when you **change the "Supplier"**, and that's it, your first Application Behaviour is complete!
 
-![AppBehaviourFinalResult](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/app_behaviours_final.jpg)
+![AppBehaviourFinalResult](/images/tutorials/applicationbehaviours/ApplicationBehaviourTutorial-6.jpg)
 
 Our next tutorial is about Data Sources, [click here](omnia3_datasourcetutorial.md) to get started right away

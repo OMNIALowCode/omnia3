@@ -29,7 +29,7 @@ After you have downloaded the connector (see our [Downloads page](omnia3_downloa
 
 To run it, you should just do `Omnia.Connector.Windows.exe` (in cmd) or `./Omnia.Connector.Windows.exe` (in powershell) from the folder you extracted it to. In order to install the Windows service, add `install` to the end of that line. To uninstall it, add `uninstall`. In both of these scenarios, ensure you are running as an administrator.
 
-## 4. Managing connector
+## 4. Manage connector
 
 When the connector is installed as a Windows service, it can be started or stopped on Windows Services list.
 

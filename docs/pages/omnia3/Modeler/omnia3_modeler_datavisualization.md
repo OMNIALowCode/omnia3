@@ -103,6 +103,9 @@ If you want to validate if the user has one specific role, you can use the *user
 
 You can access a SQL parameter (**@_userLanguage**) with the active language of the current user.
 
+### Recommendations
+
+When joining two views, use the _identifier_ instead of the _\_code_ for performance improvements.
 
 ## 3. Lists
 __*Data Analytics / Lists*__

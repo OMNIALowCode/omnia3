@@ -105,7 +105,14 @@ You can access a SQL parameter (**@_userLanguage**) with the active language of 
 
 ### Recommendations
 
-When joining two views, use the _identifier_ instead of the _\_code_ for performance improvements.
+ - When joining two views, use the _identifier_ instead of the _\_code_ for performance improvements.
+ 
+```SQL
+    SELECT document._code, lines._resource, lines._amount, employee._name
+    FROM vw_MyDocument document
+    JOIN vw_MyDocument_Lines lines on lines.identifier = document.identifier
+    LEFT JOIN vw_Employee employee on employee.identifier = document.employee
+``` 
 
 ## 3. Lists
 __*Data Analytics / Lists*__

@@ -13,7 +13,7 @@ folder: omnia3
 The model's language management allow to change which languages are available in the model to the application's end-users.
 
 It's only possible to add a language to the model if the language exists in the platform.
-In the __Management__ area it's possible to add new languages to the plaform ([click here](omnia3_management_languages.html) to see how to do it).
+In the __Management__ area it's possible to add new languages to the plaform ([click here](omnia3_modeler_languagetranslator.html) to see how to do it).
 
 
 ## 2. Language Management

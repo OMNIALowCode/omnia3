@@ -27,4 +27,4 @@ By accessing **_Languages_** in the sidebar, you will have access to the languag
 
 Here you can **Add new** languages, identifying their **Name** and **Description**.
 
-After you create a new language ([read more](omnia3_modeler_languagetranslator.html), you will be able to change the language's texts.
+After you create a new language ([see how](omnia3_modeler_languagetranslator.html)), you will be able to change the language's texts.

@@ -15,7 +15,7 @@ folder: omnia3
     **Best practises**: avoid sharing the PostgreSQL server between multiple separate installations of OMNIA. As the platform allows modelers to write their own C# code, it could potentially lead to them accessing information of other installations.
 
 ### Optional
-- A Redis server, with support for Redis PubSub. Tested on version 4.0.9 and above. **Required** when scaling the platform horizontally - in that scenario, each instance will have to point to the same redis server.
+- A Redis server, with support for Redis PubSub. Tested on version 4.0.9 and above. **Required** in Production environments and when scaling the platform horizontally - in that scenario, each instance will have to point to the same redis server.
 
     **Best practises**: avoid sharing the redis server between multiple separate installations of OMNIA. As the platform allows modelers to write their own C# code, it could potentially lead to them accessing information of other installations.
 

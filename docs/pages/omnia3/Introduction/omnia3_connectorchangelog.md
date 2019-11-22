@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.1.1](#1.1.1)
+Release Date: 2019-11-22
+
+### Implemented enhancements: 
+ - Compliance with [RFC6749](https://tools.ietf.org/html/rfc6749#section-2.3.1)
+
 ## [1.0.192](#1.0.192)
 Release Date: 2019-09-12
 

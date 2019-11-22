@@ -56,7 +56,8 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     * Grant Type: Set as "Client Credentials"
     * Access token URL: The base url used to access OMNIA, adding "/identity/connect/token" at the end
     * Client ID: client ID generated previously
-    * Client Secret: secret generated previously
+    * Client Secret: secret generated previously. 
+    * **NOTE: Postman doesn't support Client Id and Secret urlencoded when using Basic Auth header. To workaround this issue, you can urlencode the required fields (Client ID and Client Secret in this case) manually by right-clicking on the field and selecting EncodeURIComponent option.** [Click here](https://github.com/postmanlabs/postman-app-support/issues/7138) to follow up the state of this issue.
     * Scope: set as "api"
     * Client Authentication: set as "Send as Basic Auth header"
 

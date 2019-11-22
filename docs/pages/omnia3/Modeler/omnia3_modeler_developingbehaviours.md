@@ -55,7 +55,7 @@ In order to debug the behaviours that will be executed in the cloud (including t
 
 To do that, you need to execute the following command, using the *Command Line*, replacing the Tenant code and the Data Source you want to debug:
 ```
-    Omnia.Connector.Windows.exe run --attach -tenant:YourTenantCode -datasource:DataSourceToDebug
+    ./Omnia.Connector.Windows.exe run --attach -tenant:YourTenantCode -datasource:DataSourceToDebug
 ```
 
 *Note: The parameters are case sensitive*
@@ -72,7 +72,7 @@ In order to debug the behaviours that will be executed in the Connector, through
 * Opening the executable *Omnia.Connector.Windows.exe*;
 * Or executing the following command on the *Command Line*:
     ```
-        Omnia.Connector.Windows.exe
+        ./  Omnia.Connector.Windows.exe
     ```
 
 Once you have the *OMNIA Connector* running:

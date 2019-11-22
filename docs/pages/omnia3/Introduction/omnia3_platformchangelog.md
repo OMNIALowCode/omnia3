@@ -9,6 +9,42 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.1.4](#3.1.4)
+Release Date: 2019-11-22
+
+**This version contains breaking changes**
+
+### Implemented enhancements: 
+ - Feature: Enable or disable User/Password authentication [(see here)](/omnia3_management_features.html)
+ - Quick access to Tenant from Management Tenant list
+ - New User's profile page
+ - App Behavious and Web Components: Don't close modal when ESC key is pressed
+ - Allow restarting the System
+ - API Client - Security improvement - One time only access to Secrets
+ - Authentication Providers [(see here)](/omnia3_management_authentication_providers.html)
+
+      To support Authentication Providers was needed to be compliant with [RFC6749](https://tools.ietf.org/html/rfc6749#section-2.3.1). With the upgrade, client secrets with a "+" sign will fail to authenticate causing a client validation fails. This can happen with API Clients and Connectors.
+      
+      This change means that you will need to upgrade the Connector, review API Clients to encode the Secret or regenerate your Secret. 
+
+      More information here:
+
+      https://tools.ietf.org/html/rfc6749#section-2.3.1
+      https://github.com/IdentityServer/IdentityServer4/issues/2236
+      https://github.com/IdentityServer/IdentityServer4/pull/2052/files
+
+      
+### Bugs:
+ - Quantity isn't respected when creating a document by API
+ - Create a tenant with a numeric Code
+ - Web App: Messages are not shown on date attributes
+ - When a collection is required and no entries are added, no error is shown when saving
+ - Line breaking in the Web App error popup is not working correctly
+ - Error messages in Operation Details don't have line breaks if the message is too large
+ - Cannot select a role when associating to policy
+
+
 ## [3.0.355](#3.0.355)
 Release Date: 2019-10-30
 

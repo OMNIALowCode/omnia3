@@ -115,6 +115,14 @@ entries:
       url: /omnia3_management_languages.html
       output: web, pdf
 
+    - title: Features
+      url: /omnia3_management_features.html
+      output: web, pdf
+
+    - title: Authentication Providers
+      url: /omnia3_management_authentication_providers.html
+      output: web, pdf
+
   - title: Modeler
     output: web, pdf
     folderitems:

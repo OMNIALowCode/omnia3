@@ -23,6 +23,7 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 | InvalidInput | 400 | Invalid request input data. |
 | TenantNotFound | 404 | Tenant/Environment can't be found. |
 | ValidationFailed | 400 | Request validation failed. This error can have details in the "errors" properties. Error descriptions in the section "Validation Failed - Errors" |
+| MissingSystemConfiguration | 424 | Missing system configuration. Example: Redis service must configured in your system to be able to restart. |
 
 
 ### Validation Failed - Errors

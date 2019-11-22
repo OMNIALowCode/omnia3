@@ -115,6 +115,10 @@ entries:
       url: /omnia3_management_languages.html
       output: web, pdf
 
+    - title: Features
+      url: /omnia3_management_features.html
+      output: web, pdf
+
   - title: Modeler
     output: web, pdf
     folderitems:

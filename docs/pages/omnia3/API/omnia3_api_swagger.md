@@ -40,28 +40,39 @@ After the register, using the generated _Client ID_ and _Client Secret_, you are
 
 Requesting an access token can be easy using [IdentityModel](https://www.nuget.org/packages/identitymodel/) an OpenID Connect & OAuth 2.0 client library.
 
+
 ```C#
 using IdentityModel.Client;
 
-string accessToken = null;
 
-// discover endpoints from metadata
-var discoveryClient = new DiscoveryClient("[Identity Endpoint]") 
-{ 
-	//Policy = { RequireHttps = false } //uncomment the Policy property if you use a insecure connection
-};
-var discoEndpoint = await discoveryClient.GetAsync();
-if (!discoEndpoint.IsError)
+var endpoint = "[Identity Endpoint]";
+var clientId = "[Client ID]";
+var clientSecret = "[Client Secret]";
+
+using (var httpClient = new HttpClient())
 {
-    //request token
-    var tokenClient = new TokenClient(discoEndpoint.TokenEndpoint, userId, "[Your secret]");
-    var tokenResponse = await tokenClient.RequestClientCredentialsAsync("[Required scopes]");
+    var discover = await httpClient.GetDiscoveryDocumentAsync(endpoint);
 
-    if (!tokenResponse.IsError)
+    if (discover.IsError)
     {
-        accessToken = tokenResponse.AccessToken;
+        throw new Exception(discover.Error);
+    }
+
+    //request token
+    using (var tokenHttpClient = new HttpClient() { BaseAddress = new Uri(discover.TokenEndpoint) })
+    {
+        var tokenClient = new TokenClient(tokenHttpClient, new TokenClientOptions() { ClientId = clientId, ClientSecret = clientSecret });
+        var tokenResponse = await tokenClient.RequestClientCredentialsTokenAsync("api");
+
+        if (tokenResponse.IsError)
+        {
+            throw new Exception(tokenResponse.Error);
+        }
+
+        return tokenResponse.AccessToken;
     }
 }
+
 ```
 
 As you can see in the previous example, when a token is requested, the scope must be sent. Currently, OMNIA platform supports only one scope, named *api*. This is the scope required to access OMNIA API.
@@ -69,6 +80,9 @@ As you can see in the previous example, when a token is requested, the scope mus
 ### 3.2 Using HttpClient to send request to the API
 
 Using the built-in .NET HttpClient, you can use the requested token to perform requests to our API.
+
+
+#### Call the API
 
 ```C#
 using System.Collections.Generic;
@@ -84,4 +98,3 @@ if (requestResponse.IsSuccessStatusCode)
 	var response = JsonConvert.DeserializeObject<Dictionary<string, object>>(responseBody);
 }
 ```
-

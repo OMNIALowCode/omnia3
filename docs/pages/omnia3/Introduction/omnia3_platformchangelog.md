@@ -30,9 +30,11 @@ Release Date: 2019-11-22
 
       More information here:
 
-      https://tools.ietf.org/html/rfc6749#section-2.3.1
-      https://github.com/IdentityServer/IdentityServer4/issues/2236
-      https://github.com/IdentityServer/IdentityServer4/pull/2052/files
+       - [https://tools.ietf.org/html/rfc6749#section-2.3.1](https://tools.ietf.org/html/rfc6749#section-2.3.1)
+       
+       - [https://github.com/IdentityServer/IdentityServer4/issues/2236](https://github.com/IdentityServer/IdentityServer4/issues/2236)
+       
+       - [https://github.com/IdentityServer/IdentityServer4/pull/2052/files](https://github.com/IdentityServer/IdentityServer4/pull/2052/files)
 
       
 ### Bugs:
@@ -44,6 +46,7 @@ Release Date: 2019-11-22
  - Error messages in Operation Details don't have line breaks if the message is too large
  - Cannot select a role when associating to policy
 
+------
 
 ## [3.0.355](#3.0.355)
 Release Date: 2019-10-30

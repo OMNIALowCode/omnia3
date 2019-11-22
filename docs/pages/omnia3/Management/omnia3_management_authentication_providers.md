@@ -3,7 +3,7 @@ title: Authentication Providers
 keywords: omnia3
 summary: "How to manage Authentication Providers"
 sidebar: omnia3_sidebar
-permalink: omnia4_management_authentication_providers.html
+permalink: omnia3_management_authentication_providers.html
 folder: omnia3
 ---
 
@@ -97,7 +97,17 @@ You can find useful information here:
 
  - https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow
 
-### 3.6 Microsoft
+### 3.6 Microsoft Account
+
+You will need to configure an Application on Microsoft and get the following parameters to configure in OMNIA:
+ - Client ID (App ID)
+ - Client Secret (App Secret)
+
+The Redirect UI to configure: `"[YOUR OMNIA URL]/identity/signin-microsoft"`
+
+You can find useful information here:
+
+ - https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-add-identity-providers#create-an-azure-active-directory-application
 
 ### 3.7 Twitter
 

@@ -48,7 +48,6 @@ When using OpenID Connect you will need to configure the following parameters th
  - Client ID (App ID)
  - Client Secret (App Secret)
 
-
 ### 3.2 Facebook
 
 You will need to configure an Application on Facebook and get the following parameters to configure in OMNIA:

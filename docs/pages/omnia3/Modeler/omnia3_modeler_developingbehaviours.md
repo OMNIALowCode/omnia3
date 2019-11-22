@@ -72,7 +72,7 @@ In order to debug the behaviours that will be executed in the Connector, through
 * Opening the executable *Omnia.Connector.Windows.exe*;
 * Or executing the following command on the *Command Line*:
     ```
-        ./  Omnia.Connector.Windows.exe
+        ./Omnia.Connector.Windows.exe
     ```
 
 Once you have the *OMNIA Connector* running:

@@ -12,7 +12,7 @@ folder: omnia3
 
 The platform's feature management allows to enabled and disabled some platform's features.
 
-After changing the state of a feature, a **platform's restart is required to the operation take effect**.
+After changing the state of a feature, a **platform restart is required for the operation take effect**.
 
 
 ## 2. Supported Features

@@ -12,6 +12,9 @@ Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest v
 ## [1.1.1](#1.1.1)
 Release Date: 2019-11-22
 
+**This version contains breaking changes**
+Upgrade to this version to use the platform with a version higher than 3.1.0
+
 ### Implemented enhancements: 
  - Compliance with [RFC6749](https://tools.ietf.org/html/rfc6749#section-2.3.1)
 

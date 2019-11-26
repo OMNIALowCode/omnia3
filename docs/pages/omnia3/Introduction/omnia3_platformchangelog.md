@@ -10,6 +10,14 @@ folder: omnia3
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.1.6](#3.1.6)
+Release Date: 2019-11-26
+
+### Bugs:
+ - Authentication Providers - When the Name of an OpenIdConnect provider is changed, the user can't associate to account
+ - Lists are generated with too many attributes
+
+
 ## [3.1.4](#3.1.4)
 Release Date: 2019-11-22
 

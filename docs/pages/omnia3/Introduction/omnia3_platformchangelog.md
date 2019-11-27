@@ -30,6 +30,11 @@ Release Date: 2019-11-22
  - App Behavious and Web Components: Don't close modal when ESC key is pressed
  - Allow restarting the System
  - API Client - Security improvement - One time only access to Secrets
+ 
+   After creating a new API Client, the Client ID and Client Secret will be shown to you. Save these values, mainly the Client Secret, since will not be possible to consult it again [(see here)](/omnia3_management_introduction.html).
+   **If you need to access an old secret, you will need to regenerate it.**
+   
+ 
  - Authentication Providers [(see here)](/omnia3_management_authentication_providers.html)
 
       To support Authentication Providers was needed to be compliant with [RFC6749](https://tools.ietf.org/html/rfc6749#section-2.3.1). With the upgrade, client secrets with a "+" sign will fail to authenticate causing a client validation fails. This can happen with API Clients and Connectors.

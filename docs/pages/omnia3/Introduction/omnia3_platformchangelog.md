@@ -38,11 +38,11 @@ Release Date: 2019-11-22
 
       More information here:
 
-       - [https://tools.ietf.org/html/rfc6749#section-2.3.1](https://tools.ietf.org/html/rfc6749#section-2.3.1)
+      - [https://tools.ietf.org/html/rfc6749#section-2.3.1](https://tools.ietf.org/html/rfc6749#section-2.3.1)
        
-       - [https://github.com/IdentityServer/IdentityServer4/issues/2236](https://github.com/IdentityServer/IdentityServer4/issues/2236)
+      - [https://github.com/IdentityServer/IdentityServer4/issues/2236](https://github.com/IdentityServer/IdentityServer4/issues/2236)
        
-       - [https://github.com/IdentityServer/IdentityServer4/pull/2052/files](https://github.com/IdentityServer/IdentityServer4/pull/2052/files)
+      - [https://github.com/IdentityServer/IdentityServer4/pull/2052/files](https://github.com/IdentityServer/IdentityServer4/pull/2052/files)
 
       
 ### Bugs:

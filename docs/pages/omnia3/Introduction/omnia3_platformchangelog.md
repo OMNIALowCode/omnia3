@@ -9,6 +9,16 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.1.20](#3.1.20)
+Release Date: 2019-12-03
+
+### Bugs:
+ - iPad: List columns are overlapping with each other
+ - Calendar: On scheduler year view, first record is not being calculated correctly
+ - Attributes: Required error is not shown if the attribute is not visible
+ - Mobile: View history option behaviour is not clear after click
+ - Mobile: "New application version" message is under the menu button
+ - Entity state disappears with user interaction
 
 ## [3.1.6](#3.1.6)
 Release Date: 2019-11-26

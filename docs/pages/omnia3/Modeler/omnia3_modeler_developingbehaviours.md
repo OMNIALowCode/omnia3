@@ -21,7 +21,8 @@ When developing behaviours in the OMNIA platform, writing C# with no context dir
 After extracting the downloaded build (a .zip file), you will have the following folders:
 * **classes**: The [C# classes](#4-c-behaviours) generated based on the modeled behaviours (Entity, Data and Application);
 * **queries**: The SQL queries (modeled in advanced mode or not);
-* **uiClasses**: The JavaScript classes generated based on User Interface behaviours.
+* **uiClasses**: The JavaScript classes generated based on User Interface behaviours;
+* **webComponents**: The JavaScript files representing the modeled Web Components.
 
 ## 4. C# Behaviours
 In the build folder, inside the *classes* folder you will have the following folders:
@@ -38,7 +39,7 @@ The project can have (depending of which behaviours are modeled) the following f
 * **Entity**: Contains the classes (one per entity) that support the execution of the operations modeled through [*Entity Behaviours*](omnia3_modeler_behaviours.html#2-types-of-behaviours).
   * To each entity will be generated a file which name will respect the rule _MyEntityName.**Operations.cs**_.
 
-## 5. Debugging
+## 5. C# Debugging
 It's possilbe to debug all the C# behaviours, using the _Visual Studio_ and all of its debugging features.
 
 To debug and develop behaviours you need to use the OMNIA Connector to receive the requests made to a given *Tenant* and *Data Source*.
@@ -81,3 +82,42 @@ Once you have the *OMNIA Connector* running:
 * Open the C# project in _Visual Studio_, using the _.csproj_ file.
 
 Using the _Visual Studio_ debbuging features, start the debbuger and from now on, all the requests made in the _OMNIA Platform_ to this _Data Source_ will be forwarded to this debug session.
+
+
+## 6. JavaScript Debugging
+### 6.1. Pre-requisites
+In order to debug the OMNIA UI Behaviours you will need to:
+* Install node.js. [Click here to download](https://nodejs.org/);
+* Using the command line, install the npm package [_http-server_](https://www.npmjs.com/package/http-server), running the command _npm install http-server -g_;
+* [Download the build](#2-obtaining-the-model) you want to debug and unzip the file.
+
+### 6.2. Initializing the debugging environment
+In order to debug the User Interface Behaviours and the Web Components, you need to serve the corresponding files using a local HTTP server. 
+
+To do that, open the command line, change the working directory to the unziped folder (the build files) and run the following command:
+    ```
+        http-server . --cors
+    ```
+
+After the command executes, the files will be accessible from your browser. Save the URL of the HTTP server (you will need it later).
+
+Once you have the HTTP server running:
+* Access the modeler area of the tenant you want to debug;
+* In the topbar, open the additional options of the _Build & deploy_ button and select the option **Debug Ui behaviours**;
+* Then, you will be prompted about the **debugging endpoint** and you must provide the URL of the HTTP server;
+* After you type in the debugging endpoint, you can **Start** the debugging environment;
+* You will be redirected to the application with the debug mode activated.
+
+
+### 6.3. Debug User Interface Behaviours and Web Components
+
+The best way to debug the JavaScript code executing in the OMNIA platform is using the Browser Developer Tools.
+
+**Example with Chrome Developer Tools**
+
+* Open the Developer Tools (F12);
+* Go to the _Sources_ tab;
+* Under the _(no domain)_ section, you have access to the loaded files;
+* Opening the files, you can set breakpoints and debug the code like in any other web application.
+
+Tip: If you add ```debugger;``` in any place of your code and have the Developer Tools open, it will act as a breakpoint when the browser hit this line of code.

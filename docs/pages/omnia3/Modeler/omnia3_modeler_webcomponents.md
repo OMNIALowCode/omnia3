@@ -62,8 +62,13 @@ After the mapping is configured, the Web Component will receive the data as a pa
 ## 4. Available parameters
 Each component can receive up to three parameters, depending on the mapping configuration:
 * **context**: the current session information (the structure is represented [below](#context-structure));
-* **state**: all the data of the current Form or Dashboard, in the same structure of the [User Interface Behaviours](omnia3_modeler_uibehaviours.html#4-structure-of-the-class);
-* **value**: if the mapping is configured, has the value of the mapped element.
+* **elementMetadata**: the current element metadata;
+* **isPreviousValue**: boolean value representing if the _value_ corresponds to the previous value (used only when a Form is in the history mode and the mapping is configured; setted as _true_ if the user chooses to see the previous version value of the element);
+* **isReadOnly**: boolean value representing if the WebComponent is in a read-only state (setted as _true_ when a Form is in the history mode, otherwise is _false_);
+* **rootMetadata**: the metadata of the current root Element;
+* **state**: all the data of the current root Element, in the same structure of the [User Interface Behaviours](omnia3_modeler_uibehaviours.html#4-structure-of-the-class);
+* **value**: if the mapping is configured, has the value of the mapped element;
+* **valueHasChanged**: boolean value representing if the _value_ has changed since the previous version (used only when a Form is in the history mode and the mapping is configured; setted as _true_ if the _value_ has changed since the previous version).
 
 ### 4.1. Using the parameters
 To use the parameters, it's necessary to know when they have his value changed.

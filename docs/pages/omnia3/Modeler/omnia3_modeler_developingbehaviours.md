@@ -84,29 +84,30 @@ Once you have the *OMNIA Connector* running:
 Using the _Visual Studio_ debbuging features, start the debbuger and from now on, all the requests made in the _OMNIA Platform_ to this _Data Source_ will be forwarded to this debug session.
 
 
-## 6. JavaScript Debugging
+## 6. Remote UI Development
 ### 6.1. Pre-requisites
-In order to debug the OMNIA UI Behaviours you will need to:
+To develop OMNIA UI Behaviours and WebComponents you will need to:
 * Install node.js. [Click here to download](https://nodejs.org/);
 * Using the command line, install the npm package [_http-server_](https://www.npmjs.com/package/http-server), running the command _npm install http-server -g_;
 * [Download the build](#2-obtaining-the-model) you want to debug and unzip the file.
 
-### 6.2. Initializing the debugging environment
-In order to debug the User Interface Behaviours and the Web Components, you need to serve the corresponding files using a local HTTP server. 
+### 6.2. Initializing the development environment
+To develop the User Interface Behaviours and Web Components, you need to serve the corresponding files using a local HTTP server. 
 
-To do that, open the command line, change the working directory to the unziped folder (the build files) and run the following command:
-    ```
-        http-server . --cors
-    ```
+To do that, open the command line, change the working directory to the unzipped folder (the build files) and run the following command:
 
-After the command executes, the files will be accessible from your browser. Save the URL of the HTTP server (you will need it later).
+```
+    http-server . --cors
+```
+
+After the command executes, the files will be accessible from your browser. Save the Port of the HTTP server (you will need it later).
 
 Once you have the HTTP server running:
-* Access the modeler area of the tenant you want to debug;
-* In the topbar, open the additional options of the _Build & deploy_ button and select the option **Debug Ui behaviours**;
-* Then, you will be prompted about the **debugging endpoint** and you must provide the URL of the HTTP server;
-* After you type in the debugging endpoint, you can **Start** the debugging environment;
-* You will be redirected to the application with the debug mode activated.
+* Access the modeler area of the tenant you want to develop;
+* In the top bar, open the additional options of the _Build & deploy_ button and select the option **Remote UI Development**;
+* Then, you will be prompted about the **Development endpoint port** and you must provide the Port of the HTTP server;
+* After you type in the development endpoint port, you can **Start** the remote development environment;
+* You will be redirected to the application with the development mode activated.
 
 
 ### 6.3. Debug User Interface Behaviours and Web Components

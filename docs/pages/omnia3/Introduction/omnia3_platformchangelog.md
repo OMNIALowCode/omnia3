@@ -14,7 +14,7 @@ Release Date: 2019-05-07
 
 ### Fixed Bugs: 
  - GetEntity Accelerator: Default data source instancing for external data source entities
- - Non-optional OMNIA \_code validation rules for external data source entities 
+ - Required OMNIA \_code validation rules for external data source entities 
  - After Save retries with wrong build version
 
 ### Implemented enhancements:
@@ -33,7 +33,7 @@ Release Date: 2019-04-24
 ### Fixed Bugs: 
  - White space in the login page background image when using zoom out
  - Use system directory slash to normalize paths on server setup
- - Cached HTML resources version upgrade - Review HTML headers forcing WebApp to reload every time
+ - Cached HTML resources when the platform version is upgraded - Review HTML headers forcing WebApp to reload every time
 
 ### Implemented enhancements:
  - Redirect homepage when the user changes the role
@@ -46,7 +46,7 @@ Release Date: 2019-04-22
 
 ### Fixed Bugs: 
  - Redis Cache stability issues
- - Entity GET from an external data source for internal behaviour runtime
+ - Error while using GET Entity from an external data source for internal behaviour runtime
 
 ### Implemented enhancements:
  - Add option to remove languages in modeler portal
@@ -55,13 +55,13 @@ Release Date: 2019-04-22
 Release Date: 2019-04-16
 
 ### Fixed Bugs: 
- - Loading List Mapped Calendar dashboard error 
+ - Error loading dashboards that contain calendars mapped to lists 
 
 ## [3.0.237](#3.0.237)
 Release Date: 2019-04-15
 
 ### Fixed Bugs: 
- - WebComponents no longer optional by default when placed in grids
+ - Optional tag attached to Web Component displays properly
 
 ### Implemented enhancements:
 
@@ -78,7 +78,7 @@ Release Date: 2019-04-15
 Release Date: 2019-04-11
 
 ### Fixed Bugs: 
- - WebComponent "loading failed" message
+ - WebComponent loading showing wrong error message
  - Show errors in calendars
  - Modeler: Allow to filter lookup fields
  - "Go to Tenants management" now hidden for non-admin users
@@ -265,7 +265,7 @@ Release Date: 2018-12-10
 
 ### Fixed Bugs:
  
- - Calendar modal 403 Error
+ - 403 Error when using Calendar modal lookup
 
 
 ## [3.0.89](#3.0.89)
@@ -278,8 +278,8 @@ Release Date: 2018-12-10
  
 ### Fixed Bugs:
  
- - List filters column name translations
- - UI Behaviours, Before Save Excepetions visibility
+ - Column name translations in List filters working as intended 
+ - "Before Save" Excepetions in UI Behaviours are now visible
  - List column break reviewed for large text inputs
 
 

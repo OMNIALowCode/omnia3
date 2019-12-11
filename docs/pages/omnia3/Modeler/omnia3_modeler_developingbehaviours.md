@@ -37,10 +37,11 @@ The project can have (depending of which behaviours are modeled) the following f
 * **Application**: Contains the [*Application Behaviours*](omnia3_modeler_behaviours.html#5-application-behaviours);
 * **Data**: Contains the *Data Access Objects (DAOs)* (one per entity), each one with the representation of the modeled [*Data Behaviours*](omnia3_modeler_datasources.html#2-types-of-data-behaviours);
 * **Entity**: Contains the classes (one per entity) that support the execution of the operations modeled through [*Entity Behaviours*](omnia3_modeler_behaviours.html#2-types-of-behaviours).
-  * To each entity will be generated a file which name will respect the rule _MyEntityName.**Operations.cs**_.
+  * A file will be generated for each entity and its name will respect the rule _MyEntityName.**Operations.cs**_.
 
 ## 5. C# Debugging
-It's possilbe to debug all the C# behaviours, using the _Visual Studio_ and all of its debugging features.
+
+All C# behaviours can be debugged using all the debugging features of _Visual Studio_.
 
 To debug and develop behaviours you need to use the OMNIA Connector to receive the requests made to a given *Tenant* and *Data Source*.
 

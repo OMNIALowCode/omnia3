@@ -1,5 +1,5 @@
 ---
-title: OMNIA 3.0 Feed
+title: OMNIA 3 Feed
 keywords: omnia3
 summary: "How to use OMNIA versions feed"
 sidebar: omnia3_sidebar

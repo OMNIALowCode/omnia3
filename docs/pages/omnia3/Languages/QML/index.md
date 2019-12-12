@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 QML"
+summary: "OMNIA 3 QML"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_QML.html
 folder: omnia3

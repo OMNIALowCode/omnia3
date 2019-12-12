@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0 Application Introduction
+title: OMNIA 3 Application Introduction
 keywords: omnia3
-summary: "OMNIA 3.0 Application Introduction"
+summary: "OMNIA 3 Application Introduction"
 sidebar: omnia3_sidebar
 permalink: omnia3_application_introduction.html
 folder: omnia3

@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0 Connector Introduction
+title: OMNIA 3 Connector Introduction
 keywords: omnia3
-summary: "OMNIA 3.0 Connector Introduction"
+summary: "OMNIA 3 Connector Introduction"
 sidebar: omnia3_sidebar
 permalink: omnia3_connector_introduction.html
 folder: omnia3

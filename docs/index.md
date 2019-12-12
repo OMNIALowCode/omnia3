@@ -7,7 +7,7 @@ permalink: index.html
 
 <p>Numbers are not always transparent. Sometimes, they tell us a different story 
 apart from the background they’re delivering. 
-OMNIA 3.0 addresses all the answers to your customers’ pains, when thriving in their daily management complexity. 
+OMNIA 3 addresses all the answers to your customers’ pains, when thriving in their daily management complexity. 
 Whether you need to develop a business application from ground zero, or deliver it in a fast manner, OMNIA gives you the right tool for minimizing the time between the analysis of your customers’ requirements, 
 and the delivery of the solution to their challenges.</p>
 

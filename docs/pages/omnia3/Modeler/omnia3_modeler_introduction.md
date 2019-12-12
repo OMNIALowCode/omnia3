@@ -1,5 +1,5 @@
 ---
-title: OMNIA 3.0 Modeler Introduction
+title: OMNIA 3 Modeler Introduction
 keywords: omnia3
 summary: "OMNIA Modeler Intro"
 sidebar: omnia3_sidebar

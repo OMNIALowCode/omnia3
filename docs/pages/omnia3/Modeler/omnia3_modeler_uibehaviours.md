@@ -26,14 +26,15 @@ UI Behaviours are executed by the web app - when creating or editing an entity, 
 
 ## 2. Types of Behaviours
 
-It's possible to extend the user interface through custom behaviours in **Forms** and **Dashboards**.
+It's possible to extend the user interface through custom behaviours in **Forms**, **Dashboards** and **Menu**.
 
 There are currently three different execution moments for UI behaviours, which follow a logical flow:
-- **Initialize**: Executes when entering the page (form or dashboard);
-- **On Change**: Executes during updates, requires an element, and, given the new value of the attribute associated to that element, performs an operation. Similar role to **Action** in the entity behaviours;
-- **Before Change**: Executes immediately before the update request is send to the API;
-- **After Change**: Executes immediately after the API response to the update request;
-- **Before Save**: Executes when an entity is saved (only applies to forms).
+- **Initialize**: Executes when entering the page (form, dashboard or menu);
+- **On Change**: Executes during updates, requires an element, and, given the new value of the attribute associated to that element, performs an operation. Similar role to **Action** in the entity behaviours (only applies to forms and dashboards);
+- **Before Change**: Executes immediately before the update request is send to the API (only applies to forms);
+- **After Change**: Executes immediately after the API response to the update request (only applies to forms);
+- **Before Save**: Executes when an entity is saved (only applies to forms);
+- **On Select**: Executes when an Menu Entry is selected (only applies to menus);
 
 ![The behaviour execution lifecycle](images\modeler\UIBehaviourLifecycle.png)
 
@@ -47,7 +48,7 @@ In a dashboard, the *On Change* behaviours is executed after the list data is re
 
 ## 3. Usage
 
-There are many possible usage scenarios for these behaviours, as JavaScript coding will allow you to execute whatever you want. Usage examples are described in our [FAQ](omnia3_modeler_entities.html#6-user-interface-behaviours).
+There are many possible usage scenarios for these behaviours, as JavaScript coding will allow you to execute whatever you want. Usage examples are described in our [FAQ](omnia3_modeler_entities.ui.html#6-user-interface-behaviours).
 
 ## 4. Structure of the class
 
@@ -102,7 +103,7 @@ Property | Explanation|
  **attributes** | A series of properties which govern the way the element displayed on the form: **isReadOnly**: set it to ```"true"``` to have the field be read only, to ```"false"``` otherwise.
  **column**, **row**, and **size** | Control the size and position of the element in the form.
  **isHidden** | Set to false to show the field, and to true to hide it.
- **messages** | An array of messages (error or otherwise) to display under the field. See the [FAQ](omnia3_modeler_entities.html#5-user-interface-behaviours) for usage examples.
+ **messages** | An array of messages (error or otherwise) to display under the field. See the [FAQ](omnia3_modeler_entities_ui.html#2-user-interface-behaviours) for usage examples.
  **label** | The label of the field. 
  **helpText** | The Help Text of the field. Can be set, if none exists, and it will show up.
 

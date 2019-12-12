@@ -40,10 +40,12 @@ By accessing **API Clients**, you will have access to the API Clients management
 
 Here you can **Add new** clients, identifying their Name.
 
-Upon creating a client, the *Client ID* and *Client Secret* are automatically created. 
+Upon creating a client, the *Client ID* and *Client Secret* are automatically created.
 
 ### 4.1. Get the API Client credentials
-In the **API Clients** list, selecting one of the records will open a new window containing the required credentials to accessing the OMNIA API: the **Client ID** and the **Client Secret**.
+After creating a new API Client, the **Client ID** and **Client Secret** will be shown to you. Save these values, mainly the *Client Secret*, since will not be possible to consult it again.
+
+In the **API Clients** list, selecting one of the records will open a new window containing the **Client Username** and the **Client ID**. As said before, the **Client Secret** is only visible right after the API Client's creation.
 
 ### 4.2. Regenerate the Client Secret
 If you need to regenerate the Client Secret for some reason (e.g. your private secret got shared publically accidentally), select one of the records in the list and, in the details window, select the option **Regenerate secret**.

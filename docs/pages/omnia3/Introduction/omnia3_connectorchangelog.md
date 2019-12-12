@@ -9,6 +9,51 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [1.1.1](#1.1.1)
+Release Date: 2019-11-22
+
+**This version contains breaking changes**
+Upgrade to this version to use the platform with a version higher than 3.1.0
+
+### Implemented enhancements: 
+ - Compliance with [RFC6749](https://tools.ietf.org/html/rfc6749#section-2.3.1)
+
+## [1.0.192](#1.0.192)
+Release Date: 2019-09-12
+
+### Implemented enhancements: 
+ - State Machines
+
+## [1.0.191](#1.0.191)
+Release Date: 2019-09-05
+
+### Bugs: 
+ - Error when debugging System behaviours or when an exception is throwed after an API request
+
+## [1.0.187](#1.0.187)
+Release Date: 2019-07-18
+
+### Implemented enhancements: 
+ - Caching in c# behaviours [(see here)](https://docs.omnialowcode.com/omnia3_modeler_behaviours.html#8-caching-in-behaviours)
+
+## [1.0.184](#1.0.184)
+Release Date: 2019-07-05
+
+### Bugs: 
+ - Can't compile behaviours when a File dependency, depends on an obfuscated dll.
+
+## [1.0.182](#1.0.182)
+Release Date: 2019-06-12
+
+### Bugs: 
+ - Add the missing reference to Microsoft.CSharp.dll in Visual Studio downloaded project. 
+
+## [1.0.181](#1.0.181)
+Release Date: 2019-06-06
+
+### Implemented enhancements:
+- Expand environment variables in file paths when looking for file dependencies
+
 ## [1.0.175](#1.0.175)
 Release Date: 2019-05-07
 

@@ -54,7 +54,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
         - Attribute Type: *Decimal* 
         - *Is read only?*: Yes
         
-    3.1. Go to the "*User Interface Tab*" and change the layout of your newly created elements:
+    3.1. Go to the "*User Interface*" tab and change the layout of your newly created elements:
     - *CompanyCurrency*: 
         - **Row**: 4; 
         - **Column**: 1; 
@@ -72,8 +72,9 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     
     ![PurchaseOrderDocumentLayout](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/document-layout.jpg)
 
-4. Now that have all the elements created, let's add two **Action/Change Entity Behaviours** that will fetch the currency value, and add the rate calculation as an **After Change** *Entity Behaviour*:
+4. Now that have all the elements created, let's add one new **Action/Change Entity Behaviour** and edit the pre-existing "GetSupplierName" behaviour, so that they'll fetch the currency value and add the rate calculation as an **After Change** *Entity Behaviour*:
     
+    Add new Behaviour:
     - **Name**: *OnChange_Company*
     - **Action to attribute**: *Company*
     - **Code**:
@@ -102,8 +103,8 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
         this.CompanyCurrency = entity.CompanyCurrency; 
     ```
     
-    
-    - **Name**: *OnChange_Supplier*
+    Edit exinting Behaviour
+    - **Name**: *GetSupplierName*
     - **Action to attribute**: *Supplier*
     - **Code**:    
     
@@ -147,7 +148,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
 
     var result = SystemApplicationBehaviours.GetExchangeRate(rateArgs);
   
-    this.exchangeRate = (decimal)result["Rate"];
+    this.ExchangeRate = (decimal)result["Rate"];
     
     } else {
     
@@ -205,10 +206,10 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     - *Code*: **EUR**; *Name*: **Euro**;
     - *Code*: **USD**; *Name*: **US Dollar**;
 
-9. Now access the "**AnalogSound**" *Company* (Configurations > Company), and select one "***Company Currency***" from the list. Now repeat the process for your "**SupplierA**" *Supplier* (Configurations > Supplier).
+9. Now access the "**AnalogSound**" *Company* (Configurations > Company), and select one "***Company Currency***" from the list. Now repeat the process for your *Supplier* (Configurations > Supplier) and add the other currency so you can see the functionality in action.
 
 10. Create a new Purchase Order and select a "*Company*" and a "*Supplier*" to verify that the "*Rate*" is automatically calculated when you **change the "Supplier"**, and that's it, your first Application Behaviour is complete!
 
-![AppBehaviourFinalResult](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/applicationbehaviours/app_behaviours_final.jpg)
+![AppBehaviourFinalResult](/images/tutorials/applicationbehaviours/ApplicationBehaviourTutorial-6.jpg)
 
 Our next tutorial is about Data Sources, [click here](omnia3_datasourcetutorial.md) to get started right away

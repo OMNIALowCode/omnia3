@@ -127,6 +127,8 @@ if(this.State == 'COMPLETED' && _Dto._ChangedProperties.Count>0)
     throw new Exception("Changes can't be done in a completed document.");
 ```
 
+The `HasPropertyChanged` method validates if a given attribute is in the list of `_ChangedProperties`. The `_ChangedProperties` list contains all those properties for which the user sent a value in a given interaction. If the user changes the attribute _"A"_ and attribute _"B"_ in two different steps, you will never see both _"A"_ and _"B"_ at the same time in the list. For that reason, the `_ChangedProperties` is empty in _AfterSave_ behaviours.
+
 
 ## 4. Referencing external libraries in Behaviours
 
@@ -161,14 +163,59 @@ Methods:
 var httpClient = this._Context.CreateApplicationHttpClient();
 ```
 
+## 8. Caching in behaviours
 
-## 8. .NET Versions
+A cache can improve the performance of an OMNIA application, especially when your application is loading data from other systems.
+
+Depending on the setup of your OMNIA subscription, your cache can be at:
+    - Redis: distributed cache that is shared by multiple app servers and survives server restarts and app deployments.
+    - Memory: local memory of the server.
+
+If the "RedisConnectionString" is defined in the subscription config, you will be using the Redis Cache.
+
+### Accessing to cache
+
+To access the cache, you have a method in the *Context* to create a cache client. 
+
+The cache client exposes 3 methods:
+
+ 1. **SetAsync:** Set a key with a value of any object type;
+ 1. **GetAsync:** Get an entry of a given object type from the cache;
+ 1. **RemoveAsync:** Remove a key from the cache.
+
+Example:
+
+```
+// Create cache client
+var cache = _Context.CreateCacheClient();
+
+// Write data to cache
+cache.SetAsync("MyKeyName", "Hello!")
+    .GetAwaiter().GetResult();	
+
+// Read data from cache
+var value = cache.GetAsync<string>("MyKeyName")
+    .GetAwaiter().GetResult();    
+
+// Remove data from cache
+cache.RemoveAsync("MyKeyName")
+    .GetAwaiter().GetResult();
+
+```
+
+
+### Notes:
+
+ - All the keys in Cache, have a 24 hours lifetime, after the last access to the key.
+
+
+## 9. .NET Versions
 
 The compiled C# code, targets the following platforms:
 
 - **Behaviours that are executed in Connector:** Framework .net 4.7.2, Runtime x86
 - **Behaviours that are executed in OMNIA:** Framework .net standard 2.0
 
-## 8. Developing and testing behaviours
+## 10. Developing and testing behaviours
 
 The way to develop and test behaviours is explained in a [separate article](omnia3_modeler_developingbehaviours.html), as it is shared for both Entity and Data Behaviours.

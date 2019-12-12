@@ -22,6 +22,7 @@ The manager will launch a new server process when configurable maximal number of
 ## 3. Requirements
 
 * Internet access
+    - Access to the OMNIA Platform address (Port 443 or 80 if not running under HTTPS).
 * .NET Framework 4.7.2
 * Compatible Windows version:
     - Windows Server 2012 or higher
@@ -53,3 +54,10 @@ This will lead to manual intervention being necessary.
 Only one connector can be connected using the same pair of configurations (client and secret). For this reason, if you start a new connector with the same configuration, the platform will request the previously active connector to shut down. 
 
 In this case, you will see a warning in the new connector saying *"Another connector or connection has been disconnected."*. This message can also mean that the connector for some reason (network instability for example) needed to start a new connection with the server.
+
+## 6. Communication Security
+The Connector initiates a communication socket with the Platform servers. During the connection the connector is authenticated in the platform using the Id and Secret configured. 
+
+This way, the connector is treated by the security system as a user, enabling the platform administrator to manage the privileges to that connector user.
+
+Besides the authorization part, is higlhy recommended to configure the [OMNIA Platform to work with HTTPS](https://docs.omnialowcode.com/omnia3_deploymenttutorial.html#53-configure-https), in order to use a secure communication channel.

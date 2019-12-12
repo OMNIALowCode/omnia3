@@ -111,6 +111,18 @@ entries:
       url: /omnia3_management_introduction.html
       output: web, pdf
 
+    - title: Languages
+      url: /omnia3_management_languages.html
+      output: web, pdf
+
+    - title: Features
+      url: /omnia3_management_features.html
+      output: web, pdf
+
+    - title: Authentication Providers
+      url: /omnia3_management_authentication_providers.html
+      output: web, pdf
+
   - title: Modeler
     output: web, pdf
     folderitems:
@@ -118,16 +130,28 @@ entries:
       url: /omnia3_modeler_introduction.html
       output: web, pdf
         
-    - title: Modeling Entities
+    - title: Modeling Entities (Structure)
       url: /omnia3_modeler_entities.html
       output: web, pdf
         
     - title: Modeling Lifecycle
       url: /omnia3_modeler_lifecycle.html
       output: web, pdf
-        
+    
+    - title: Modeling Enumerations
+      url: /omnia3_modeler_enumerations.html
+      output: web, pdf
+      
+    - title: Modeling Entities (User Interface)
+      url: /omnia3_modeler_entities_ui.html
+      output: web, pdf
+      
     - title: Behaviours
       url: /omnia3_modeler_behaviours.html
+      output: web, pdf
+      
+    - title: State Machines
+      url: /omnia3_modeler_statemachines.html
       output: web, pdf
         
     - title: Data Sources and Data Behaviours
@@ -154,7 +178,22 @@ entries:
       url: /omnia3_modeler_webcomponents.html
       output: web, pdf
 
-        
+    - title: Menu
+      url: /omnia3_modeler_menu.html
+      output: web, pdf
+
+    - title: Languages
+      url: /omnia3_modeler_languages.html
+      output: web, pdf
+
+    - title: Text Templates
+      url: /omnia3_modeler_texttemplates.html
+      output: web, pdf
+
+    - title: Email Notifications
+      url: /omnia3_modeler_emailnotifications.html
+      output: web, pdf
+
   - title: Application
     output: web, pdf
     folderitems:
@@ -211,28 +250,28 @@ entries:
       output: web, pdf
 
     
-  #- title: Languages
-  #  output: web, pdf
-  #  folderitems:
-  #  - title: Introduction and MEF
-  #    url: /omnia3_languages_introduction.html
-  #    output: web, pdf
+  - title: Languages
+    output: web, pdf
+    folderitems:
+    - title: Introduction and MEF
+      url: /omnia3_languages_introduction.html
+      output: web, pdf
         
-  #  - title: BML
-  #    url: /omnia3_languages_bml.html
-  #    output: web, pdf
+    - title: BML
+      url: /omnia3_languages_BML.html
+      output: web, pdf
         
-  #  - title: QML
-  #    url: /omnia3_languages_qml.html
-  #    output: web, pdf
-        
-  #  - title: SML
-  #    url: /omnia3_languages_sml.html
-  #    output: web, pdf
-        
-  #  - title: UIML
-  #    url: /omnia3_languages_uiml.html
-  #    output: web, pdf
+    - title: QML
+      url: /omnia3_languages_QML.html
+      output: web, pdf
+       
+    - title: SML
+      url: /omnia3_languages_SML.html
+      output: web, pdf
+       
+    - title: UIML
+      url: /omnia3_languages_UIML.html
+      output: web, pdf
         
         
   - title: API
@@ -241,8 +280,13 @@ entries:
     - title: How to use the API
       url: /omnia3_api_swagger.html
       output: web, pdf
+
     - title: How to check version
       url: /omnia3_apiversion.html
+      output: web, pdf      
+
+    - title: API Error Codes
+      url: /omnia3_api_errors.html
       output: web, pdf      
       
   - title: Downloads

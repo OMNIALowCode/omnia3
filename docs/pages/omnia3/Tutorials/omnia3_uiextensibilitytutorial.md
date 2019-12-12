@@ -30,12 +30,12 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 
     - *Name*: **OrderReceived**
     - *Type*: ***Boolean***
-    - *Row*: **6**
-    - *Column*: **11**
-    - *Size*: **2**
+    - *Row*: **6** (edit in "User Interface" tab)
+    - *Column*: **11** (edit in "User Interface" tab)
+    - *Size*: **2** (edit in "User Interface" tab)
     
     
-3. Now let's navigate to tab **User Interface Behaviours** and create a new *Initializer* behaviour called *CloseDocument*, label it "Order fulfilled?" and paste the following code:
+3. Now let's navigate to tab **User Interface Behaviours** and create a new *Initializer* behaviour called *CloseDocument*, label it "Order fulfilled?" (User Interface tab) and paste the following code:
 
     ```JavaScript
        function setAllElementsAsReadOnly(elements, data) {

@@ -11,6 +11,15 @@ There are three different logs being produced when you run the connector: the co
 
 Each of them will output their logs into the log folder configured by the user, following the same logging logic as the rest of the platform: a file prefixed by the date, such as `20180606-behavioursserver.log`. These files will be automatically split when they become too large.
 
+### Where to find the log files?
+
+The default locations are:
+
+ - **Behaviours logs:** c:\var\log
+ - **Connector logs:** %temp%\omnia\
+
+_Note: if the Connector is running in the context of Local System user, the Temp folder of that user is: C:\Windows\Temp\omnia_
+
 ## 2. Analyzing the logs
 To analyze these logs, we recommend using a tool such as Notepad++, due to their potentially large file size and contents.
 

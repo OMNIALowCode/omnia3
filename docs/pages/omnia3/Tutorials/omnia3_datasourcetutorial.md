@@ -26,7 +26,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 ## 3. CRUD operations
 
-1. Start by selecting the tenant where you are going to model, and you will be redirected to the modeling area.
+1. Start by selecting the tenant where you are going to model, and you will be redirected to the modeling area (if you only have one tenant, redirection will be automatic).
 
     ![Homepage_Dashboard](/images/tutorials/beginner/Modeler-Homepage.PNG)
 
@@ -34,9 +34,9 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
     ![Modeler_Create_DataSource](/images/tutorials/datasource/Modeler-Create-DataSource.PNG)
 
-3. Navigate to tab **Behaviour Dependencies** and add a reference to .NET assembly System.Net.Http
+3. Navigate to tab **Behaviour Dependencies** and add a new **File Dependency** reference to .NET assembly System.Net.Http
 
-    ![Modeler_Add_Dependency](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/behaviour-dependencies-netAssembly.jpg)
+    ![Modeler_Add_Dependency](/images/tutorials/datasource/DataSourceTutorial-3.jpg)
 
 4. Create a new Agent with *Name* "Employee", and set it as using the external data source "ExternalAPI" that you created earlier.
 
@@ -44,7 +44,7 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 5. Navigate to tab **Behaviour Namespaces** and add a reference to namespace System.Net.Http
 
-    ![Modeler_Add_Namespace](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/behaviour-namespaces-net.jpg)
+    ![Modeler_Add_Namespace](/images/tutorials/datasource/DataSourceTutorial-5.jpg)
     
 6. Still on *Agent* **Employee**, navigate to tab "Data Behaviours", and define a behaviour to be executed on "Create". This behaviour will be used to perform a POST request to the external Application when we create an instance of the Employee on the OMNIA platform. Copy and paste the following code:
 
@@ -196,7 +196,7 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 
 11. Build & Deploy model
 
-12. On Application area, create a new instance of the ExternalAPI data source, with code "ReqRes".
+12. On Application area, create a new instance of the ExternalAPI data source (Configurations > ExternalAPI), with code "ReqRes".
 
     ![Application-Create-DataSource](/images/tutorials/datasource/Application-Create-DataSource-Instance.PNG)
     
@@ -207,7 +207,7 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
     
 ## 4. Add Employee to Purchase Document
 
-1. To add an Employee to our Purchase Document, and assign a user responsible for it, we'll need to add three new attributes to our Purchase Order Document. Access the document and create the following attributes:
+1. To add an Employee (Agent) to our Purchase Document and assign a user responsible for it we'll need to go back to the **Modeler** and add three new attributes to our Purchase Order Document. Access the document and create the following attributes:
 	
 	*Reference Attribute* for External API
 	- **Name**: *ExternalAPI*
@@ -216,17 +216,18 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 	
 	*Reference Attribute* for "Employee"
 	- **Name**: *Employee*
+	- **Type**: *Agent > Employee*
 	- **Data Source**: *ExternalAPI*
 	
 	
 	*Primitive Attribute* for Employee Name
 	- **Name**: *EmployeeName*
 	- **Type**: *Text*
-	- **Label**: *Ordered by employee:*
 	- **is read only?**: *Yes*
+	- **Label**: *Ordered by employee:* (go to "User Interface" tab to change labels)
 
 
-2. Now let's add an entity behaviour to our document, so that our employee selection fill the "EmployeeName" field automatically. Select the "Get Entity" acelerator, and make sure you have the following configuration:
+2. Now let's add an entity behaviour (OnChange - Employee) to our document, so that our employee selection fills the "EmployeeName" field automatically. Select the "Get Entity" acelerator and make sure you have the following configuration:
 
 	![Acelerator_GetEntity_ChangeEmployee](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/getentityDataSource_onChangeEmployee.jpg)
 	- **Entity Behaviour Name**: *"OnChange_Employee"*
@@ -255,7 +256,7 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 	this.EmployeeName = entity._name; 
  ```
 
-3. Go to your application, create a new Purchase Order Document, select the available External API, and select one of the three available employees. Check that the "Ordered by employee:" field fills automatically, as demonstrated in the image bellow:
+3. Build&Deploy and go to your application, create a new Purchase Order Document, select the available External API, and select one of the three available employees. Check that the "Ordered by employee:" field fills automatically, as demonstrated in the image bellow:
 
 	![DataSources_Tutorial_End](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/dataSources_ending.jpg)
 

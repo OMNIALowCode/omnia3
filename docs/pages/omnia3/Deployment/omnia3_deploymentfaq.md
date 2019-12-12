@@ -51,4 +51,7 @@ In order to allow file uploads higher than 1MB, it's neccessary to replace the v
 
 After updating the configuration, you need to reload NGINX.
 
+### How to clone a OMNIA database server?
+
+Click [here](omnia3_clonedatabaseserver.html) to check our documentation page.
 

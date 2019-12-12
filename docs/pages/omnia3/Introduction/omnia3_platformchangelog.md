@@ -9,6 +9,20 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.1.38](#3.1.38)
+Release Date: 2019-12-12
+
+
+### Implemented enhancements: 
+ - Remote UI Development [(see here)](/omnia3_modeler_developingbehaviours.html#6-remote-ui-development)
+ - History tab: Display changes to data mapped to WebComponents
+
+### Bugs:
+ - When using the SPA navigation and after saving an entity, the page is redirected to the default dashboard instead of the previous page.
+ - `_state` is transformed into a number instead of a text when used in Text Templates. 
+    - A new Model Build is required to apply this fix.
+
+
 ## [3.1.20](#3.1.20)
 Release Date: 2019-12-03
 

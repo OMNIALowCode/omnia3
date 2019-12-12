@@ -229,6 +229,15 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
     );
 ```
 
+### How to start with a container opened?
+
+Changing the default behaviour of a container can only be done on `Initialize`.
+
+
+```JavaScript
+    this._metadata.elements.myContainer.attributes.isOpen = true
+```
+
 ### **Decimal Attributes**
 ### How to change the number of decimal places of the element?
 In this sample, the number of decimal places of the element *decimalField* is setted to a custom value *(3)*. 

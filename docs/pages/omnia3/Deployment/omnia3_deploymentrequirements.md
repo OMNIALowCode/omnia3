@@ -1,5 +1,5 @@
 ---
-title: OMNIA 3.0 Infrastructure
+title: OMNIA 3 Infrastructure
 keywords: omnia3
 summary: "Requirements for deploying and maintaining an OMNIA installation"
 sidebar: omnia3_sidebar

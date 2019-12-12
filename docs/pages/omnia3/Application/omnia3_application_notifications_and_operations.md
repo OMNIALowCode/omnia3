@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0 Notifications & Operations
+title: OMNIA 3 Notifications & Operations
 keywords: omnia3
-summary: "OMNIA 3.0 Notifications & Operations"
+summary: "OMNIA 3 Notifications & Operations"
 sidebar: omnia3_sidebar
 permalink: omnia3_application_notifications_and_operations.html
 folder: omnia3

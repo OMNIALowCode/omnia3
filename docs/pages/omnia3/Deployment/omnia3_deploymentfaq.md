@@ -1,5 +1,5 @@
 ---
-title: OMNIA 3.0 Deployment FAQ
+title: OMNIA 3 Deployment FAQ
 keywords: omnia3
 summary: "FAQs about deploying and managing our platform"
 sidebar: omnia3_sidebar

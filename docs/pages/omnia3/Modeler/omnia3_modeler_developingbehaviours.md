@@ -90,7 +90,9 @@ Using the _Visual Studio_ debbuging features, start the debbuger and from now on
 To develop OMNIA UI Behaviours and WebComponents you will need to:
 * Install node.js. [Click here to download](https://nodejs.org/);
 * Using the command line, install the npm package [_http-server_](https://www.npmjs.com/package/http-server), running the command _npm install http-server -g_;
-* [Download the build](#2-obtaining-the-model) you want to debug and unzip the file.
+* [Download the build](#2-obtaining-the-model) you want to debug and unzip to a new folder.
+
+*We recommend to use VS Code and you can open the folder extracted. You can also use your IDE of choice.*
 
 ### 6.2. Initializing the development environment
 To develop the User Interface Behaviours and Web Components, you need to serve the corresponding files using a local HTTP server. 

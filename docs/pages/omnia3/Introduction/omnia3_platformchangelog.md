@@ -9,6 +9,38 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.1.70](#3.1.70)
+Release Date: 2019-12-30
+
+### Implemented enhancements: 
+ - UI accelerators: Add an accelerator to ease API requests / Get Entity
+ - UI accelerators: Add an accelerator to ease API requests / Execute Query
+ - User Interface Modeling - Present to the modeler the attribute mapped
+ - Modeler: Edit the entity's description
+
+
+### Bugs:
+ - When using `_Context.Authentication.UserRoles` in a Data Behaviour, user can see all the roles even when the user as one selected
+ - UI accelerator: 'Set an Element as read-only' doesn't recognize if selected WebComponent is an OMNIA component
+ - When the User exit a non-required Decimal input, the value 0.00 is setted
+ - Date fields: In smaller devices, with a small size, the input is breaking
+ - Cancel button on 'Add new dashboard' doesn't work
+ - Error messages on reference attributes are shown duplicate
+ - Deleting a row from a grid with nested grid - nested grid do not clean all values and do not become collapsed
+ - WebApp: Errors in hidden fields are not visible
+ - Read-only optional integer attribute is not properly updated when it is calculated
+ - Platform Language: error on delete
+ - WebComponents are not updated when the mapping property is updated
+ - When an attribute is hidden, it affects the positioning of other attributes inline
+ - When the label is too big and the elements have help text, the text is breaking
+ - Remote UI Development: Error when loading dashboard with WebComponents
+ - Execute Query Accelerator - Message with HTML tags
+ - Whenever navigates between platform areas, logout doesn't work at first attempt
+ - User Interface modeling - "Show hidden elements" isn't preserved when the user changes the position of an element
+ - Grids: If a WebComponent is set on the grid details area, the application patches until it breaks
+ - Dates: In fields with multiplicity > 1, changing a date turns in endless patches
+
+
 ## [3.1.38](#3.1.38)
 Release Date: 2019-12-12
 

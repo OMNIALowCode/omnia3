@@ -9,6 +9,19 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.1.76](#3.1.76)
+Release Date: 2020-01-16
+
+### Implemented enhancements: 
+ - Support persistent cookies on authentication with External Providers
+ 
+### Bugs:
+ - Date picker overlaps with "Show Options" button
+ - Mobile: don't show keyboard on read-only attributes
+ - Do not show "Forgot Password" option when User Password Authentication is disabled
+ - When a data source has a "Internal" behaviour runtime and an Application Behaviour executes on the connector, its dependencies are not resolved
+ 
+
 ## [3.1.70](#3.1.70)
 Release Date: 2019-12-30
 

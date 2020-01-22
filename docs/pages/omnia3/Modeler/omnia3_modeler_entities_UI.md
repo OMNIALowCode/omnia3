@@ -235,7 +235,7 @@ Changing the default behaviour of a container can only be done on `Initialize`.
 
 ### How to inform the user that an element is loading data?
 
-To apply a loader in a given element is loading, inputs give you an attribute to control the loader.
+Inputs give you an attribute to control an internal loader. This is particularly useful when a triggered C# behaviour will change the value of other elements and we want to inform the user that something is happening relative to that element.
 You will be responsible to enable and disable the loader. For example, you can enable when a given element changes the value and disable it [in the UI After Change behaviour](omnia3_modeler_uibehaviours.html#2-types-of-behaviours). 
 
 ```JavaScript

@@ -233,9 +233,13 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
 
 Changing the default behaviour of a container can only be done on `Initialize`.
 
+### How to inform the user that an element is loading data?
+
+To apply a loader in a given element is loading, inputs give you an attribute to control the loader.
+You will be responsible to enable and disable the loader. For example, you can enable when a given element changes the value and disable it [in the UI After Change behaviour](omnia3_modeler_uibehaviours.html#2-types-of-behaviours). 
 
 ```JavaScript
-    this._metadata.elements.myContainer.attributes.isOpen = true
+    this._metadata.elements._description.attributes.isLoading = true;
 ```
 
 ### **Decimal Attributes**
@@ -312,14 +316,14 @@ In this sample, the view in which the calendar is initialized is setted:
 
 The following views are available:
 
-| Value | Description |
-| --------- | --------- |
-| 'week' | One week view as calendar |
-| 'month' | One month view as calendar |
-| 'year' | One year view as calendar |
-| 'week_schedule' | One week view as schedule |
+| Value            | Description                |
+| ---------------- | -------------------------- |
+| 'week'           | One week view as calendar  |
+| 'month'          | One month view as calendar |
+| 'year'           | One year view as calendar  |
+| 'week_schedule'  | One week view as schedule  |
 | 'month_schedule' | One month view as schedule |
-| 'year_schedule' | One year view as schedule |
+| 'year_schedule'  | One year view as schedule  |
 
 
 ### How to execute an action when the view is changed?

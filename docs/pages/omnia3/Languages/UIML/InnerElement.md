@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 UIMLInnerElement"
+summary: "OMNIA 3 UIMLInnerElement"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_UIMLInnerElement.html
 folder: omnia3

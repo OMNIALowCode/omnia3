@@ -109,14 +109,4 @@ Property | Explanation|
 
 ## 5. Developing and testing UI behaviours
 
-In terms of development, all behaviours defined for a given form will execute based on a JavaScript class. 
-
-To download these classes, access ***Versioning > Builds***, and, next to the latest build of the model, you will see a download button. Press it. This ZIP will contain a series of folders - for what we are interested here, the **uiClasses** folder will contain the JavaScript class for each of the forms that exist in the model.
-
-These classes come with all the execution moments' methods already created so it's easier to see what they will look like. In the browser, the final class will look slightly different, as it is **transpiled** for compatibility.
-
-In order to debug the behaviours in the platform, you can use your browser's debugger - for example, using Chrome and opening the Developer Console, you will see the class for entity employee as **EmployeeForm!transpiled** in the _(no domain)_ area. An example is shown in the image below.
-
-![Debugging behaviours for an entity in chrome](images\modeler\UIBehaviourDebugging.png)
-
-Inside this transpiled source code, you can use breakpoints and console logs in order to debug the code you need to write.
+Detailed information [here](omnia3_modeler_developingbehaviours.md).

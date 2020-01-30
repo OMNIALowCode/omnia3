@@ -31,6 +31,8 @@ Selecting the option _Add new_ in the list of themes, you need to fill the follo
 - **Help Text**: the detailed description of the theme;
 - **Description**: the textual explanation of the theme's purpose (can be used as development documentation).
 
+Theme's are generated in build time, therefore you need to build a new model in order to enable the new theme.
+
 ### How to update the Theme's expression?
 
 By accessing **_User Interface / Themes_** in the sidebar, select one of the themes of the list.
@@ -39,9 +41,11 @@ In the **_Theme_** page will you have theme's **Template**, the place to write t
 
 It's only required to set the values of the desired variables to change (the other variables will remain unchanged, setting it's value to OMNIA default appearance).
 
+Since theme's are generated in build time, to update one you need to re-build the model. If no changes have been applied, use the _"Clean & Build"_ option to fix it.
+
 ### Which are the available variables?
 
-Since theme's are overriding Bootstrap variables the modeler must know what are, so to find more information about Bootstrap customization [click here](https://getbootstrap.com/docs/4.0/getting-started/theming/).
+Since theme's are overriding Bootstrap variables the modeller must know what are, so to find more information about Bootstrap customization [click here](https://getbootstrap.com/docs/4.0/getting-started/theming/).
 
 In order to allow unlimited customization options, we've added the following custom variables, with the same propose and nomenclature as the official Bootstrap variables:
 
@@ -85,7 +89,7 @@ $topbar-color:              $body-color;
 
 ## 3. Themes Usage
 
-Themes can be used to change any application-side element appearance and, as referred on the topic above, the modeler can set a new theme as the default option for Tenant's users. In order to avoid misunderstanding, let's clarify basic scenarios:
+Themes can be used to change any application-side element appearance and, as referred on the topic above, the modeller can set a new theme as the default option for Tenant's users. In order to avoid misunderstanding, let's clarify basic scenarios:
 
 - **No theme set**: OMNIA's default theme will be applied;
 - **No theme set, but default theme exists**: User's will have this set has it's platform theme, without the possibility to change it;
@@ -93,3 +97,7 @@ Themes can be used to change any application-side element appearance and, as ref
 - **Applied theme is deleted**: If a default theme exists it will be set as the new theme, otherwise OMNIA's default theme is applied.
 
 **IMPORTANT NOTE**: Theme's are applied per user, browser and device, which means p.e. an user can have a theme on it's phone and a different one on it's computer.
+
+## 4. Samples
+
+Click [here](https://omnialowcode.github.io/omnia3-samples/) to access to our collection of Themes and find a set of templates ready to use in your applications.

@@ -9,45 +9,45 @@ folder: omnia3
 
 ## 1. Introduction
 
-OMNIA Platform enables you to model a Theme that can be rendered in order to change application appearance.
+This feature allows you to add, edit or develop new user interface (UI) themes for your web applications.
 
-This themes can be useful in case you want to make your Tenant unique, relax the end users with a darker theme or offer them multiple options so they can customize their application as their desire.
+UI Themes allow you to make your applications unique and improve their User Experience. As a modeler, you can choose what theme your users will use, or you can provide them with a range of choices.
 
-OMNIA Themes are based on the [SCSS language](https://sass-lang.com/documentation) and [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/theming/).
+OMNIA Themes are based on the [SCSS language](https://sass-lang.com/documentation) and [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/theming/), we recommend that you become familiar with SCSS before trying to dive into this feature.
 
-## 2. Model Themes
+## 2. Modelling Themes
 
-Each theme contains an expression, that will override platform Bootstrap variables, in order to apply visual changes.
+Themes are built using SCSS variables and, because OMNIA uses Bootstrap 4 as its framework, they will override the default Bootstrap variables.
 
 ### How to add a new Themes?
 
-By accessing **_User Interface / Themes_** in the sidebar, you will have access to the themes management screen.
+To add a new theme, go to your modeler and find the **_User Interface / Themes_** option on the menu and access it. This will take you to your themes management dashboard.
 
-Selecting the option _Add new_ in the list of themes, you need to fill the following information:
+Now select _Add new_ and fill in the following information:
 
-- **Do you want to make this the default theme?**: option to replace OMNIA default theme on current Tenant;
-- **Name**: the name of the theme (needs to be unique within the model). If default theme option is enabled, this will be set as _"DefaultTheme"_, meaning it's only possible to have one default theme per Tenant;
-- **Label**: the text shown in the theme selector, to represent the theme option;
+- **Do you want to make this the default theme?**: option to define the theme as the application's default;
+- **Name**: the name of the theme (needs to be unique within the model). If default theme option is enabled, this will be set as _"DefaultTheme"_, meaning it's only possible to have one default theme per application;
+- **Label**: the text shown in the theme selector, representing its name;
 - **Help Text**: the detailed description of the theme;
 - **Description**: the textual explanation of the theme's purpose (can be used as development documentation).
 
 Theme's are generated in build time, therefore you need to build a new model in order to enable the new theme.
 
-### How to update the Theme's expression?
+### How to edit a Theme?
 
-By accessing **_User Interface / Themes_** in the sidebar, select one of the themes of the list.
+By accessing **_User Interface / Themes_** in the sidebar and selecting one from the list.
 
-In the **_Theme_** page will you have theme's **Template**, the place to write the Theme's expression, using the [SCSS language](https://sass-lang.com/documentation).
+In the **_Theme_** page will you have theme's **Template**. Here's where you add/edit the Theme's expression, using [SCSS language](https://sass-lang.com/documentation).
 
-It's only required to set the values of the desired variables to change (the other variables will remain unchanged, setting it's value to OMNIA default appearance).
+A theme does not require a minimum amount of variables to work. You can change only one variable, or you can change them all. Every variable not edited in a theme will assume the default OMNIA theme's value.
 
-Since theme's are generated in build time, to update one you need to re-build the model. If no changes have been applied, use the _"Clean & Build"_ option to fix it.
+Because themes are generated in build time, if a platform update performs changes at the UI level, you'll need to use the _"Clean & Build"_ option to make it compatible with the new update.
 
 ### Which are the available variables?
 
-Since theme's are overriding Bootstrap variables the modeller must know what are, so to find more information about Bootstrap customization [click here](https://getbootstrap.com/docs/4.0/getting-started/theming/).
+OMNIA Themes are based in Bootstrap 4 variables and, for that reason, we recommend modellers to become familiar with them. To find more information about Bootstrap 4 variables [click here](https://getbootstrap.com/docs/4.0/getting-started/theming/).
 
-In order to allow unlimited customization options, we've added the following custom variables, with the same propose and nomenclature as the official Bootstrap variables:
+Alongside Bootstrap variables and elements, OMNIA features a few Custom Variables, designed to allow the styling of the following custom OMNIA elements:
 
 #### Side Panel
 
@@ -89,7 +89,7 @@ $topbar-color:              $body-color;
 
 ## 3. Themes Usage
 
-Themes can be used to change any application-side element appearance and, as referred on the topic above, the modeller can set a new theme as the default option for Tenant's users. In order to avoid misunderstanding, let's clarify basic scenarios:
+Themes are used to customize the look and feel of your applications and it's up to the Modeller to control which themes are available to each application's users. To clarify, here are some basic scenarios:
 
 - **No theme set**: OMNIA's default theme will be applied;
 - **No theme set, but default theme exists**: User's will have this set has it's platform theme, without the possibility to change it;
@@ -100,4 +100,4 @@ Themes can be used to change any application-side element appearance and, as ref
 
 ## 4. Samples
 
-Click [here](https://omnialowcode.github.io/omnia3-samples/) to access to our collection of Themes and find a set of templates ready to use in your applications.
+Click [here](https://omnialowcode.github.io/omnia3-samples/) to access our collection of Themes and you'll find a set of templates ready to use in your applications. Just copy and paste its SCSS variables, build your model and your application will immediately have a new theme available for its users.

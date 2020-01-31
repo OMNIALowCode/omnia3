@@ -209,6 +209,10 @@ entries:
             url: /omnia3_applicationversion.html
             output: web, pdf
 
+          - title: Menu Favorites
+            url: /omnia3_application_menu_favorites.html
+            output: web, pdf
+
       - title: Authorization
         output: web, pdf
         folderitems:

@@ -13,7 +13,7 @@ Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest ve
 Release Date: 2020-01-31
 
 **This version contains breaking changes.**
-**Upgrade required to OMNIA Connector.**
+**Upgrade to OMNIA Connector is required.**
 **Compatible with OMNIA Connector 3.2.**
 
 ### Implemented enhancements: 

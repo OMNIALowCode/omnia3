@@ -9,6 +9,24 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.2.3](#3.2.3)
+Release Date: 2020-01-31
+
+**This version contains breaking changes.**
+**Upgrade to OMNIA Connector is required.**
+**Compatible with OMNIA Connector 3.2.**
+
+### Implemented enhancements: 
+ - [Application Themes](/omnia3_modeler_themes.html)
+ - [Menu user favorites](/omnia3_application_menu_favorites.html)
+ - [Build Folder - New organization](/omnia3_modeler_developingbehaviours.html)
+ - [Remote UI Development - New development experience using NPM](/omnia3_modeler_developingbehaviours.html#6-remote-ui-development)
+ - Performance improvement applying Patch's
+ 
+### Bugs:
+ - Browser error when loading favicon
+ - The label of optional attributes on a grid with a small size is not visible
+
 ## [3.1.76](#3.1.76)
 Release Date: 2020-01-16
 

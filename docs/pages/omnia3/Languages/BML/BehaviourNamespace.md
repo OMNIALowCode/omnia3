@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 BMLBehaviourNamespace"
+summary: "OMNIA 3 BMLBehaviourNamespace"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_BMLBehaviourNamespace.html
 folder: omnia3

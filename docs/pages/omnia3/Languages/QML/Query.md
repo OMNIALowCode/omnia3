@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 QMLQuery"
+summary: "OMNIA 3 QMLQuery"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_QMLQuery.html
 folder: omnia3

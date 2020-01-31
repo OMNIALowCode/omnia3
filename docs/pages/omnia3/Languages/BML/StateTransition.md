@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 BMLStateTransition"
+summary: "OMNIA 3 BMLStateTransition"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_BMLStateTransition.html
 folder: omnia3

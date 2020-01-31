@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 SMLAuthorizationPolicy"
+summary: "OMNIA 3 SMLAuthorizationPolicy"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_SMLAuthorizationPolicy.html
 folder: omnia3

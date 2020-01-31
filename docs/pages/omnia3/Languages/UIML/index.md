@@ -23,3 +23,4 @@ folder: omnia3
  - [Language](/Language.md)
  - [Selector](/Selector.md)
  - [Text Template](/TextTemplate.md)
+ - [Theme](/Theme.md)

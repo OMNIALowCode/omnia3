@@ -19,11 +19,15 @@ When developing behaviours in the OMNIA platform, writing C# with no context dir
 
 ## 3. Structure of the downloaded build
 After extracting the downloaded build (a .zip file), you will have the following folders:
-* **classes**: The [C# classes](#4-c-behaviours) generated based on the modeled behaviours (Entity, Data and Application);
-* **queries**: The SQL queries (modeled in advanced mode or not);
-* **uiClasses**: The JavaScript classes generated based on User Interface behaviours;
-* **webComponents**: The JavaScript files representing the modeled Web Components.
-
+* **Server**
+  * **Behaviours**: The [C# classes](#4-c-behaviours) generated based on the modeled behaviours (Entity, Data and Application);
+* **Database**
+  * **Queries**: The SQL queries (modeled in advanced mode or not);
+* **UI**
+  * **Behaviours**: The JavaScript classes generated based on User Interface behaviours;
+  * **WebComponents**: The JavaScript files representing the modeled Web Components.
+  * **Themes**: The SASS files representing the modeled Themes.
+  
 ## 4. C# Behaviours
 In the build folder, inside the *classes* folder you will have the following folders:
 * **_common**: Contains the *Data Transfer Objects (DTOs)* used to transfer the entity's data between systems. To each entity added to the model, a *DTO* will be generated in this folder;
@@ -89,18 +93,18 @@ Using the _Visual Studio_ debbuging features, start the debbuger and from now on
 ### 6.1. Pre-requisites
 To develop OMNIA UI Behaviours and WebComponents you will need to:
 * Install node.js. [Click here to download](https://nodejs.org/);
-* Using the command line, install the npm package [_http-server_](https://www.npmjs.com/package/http-server), running the command _npm install http-server -g_;
 * [Download the build](#2-obtaining-the-model) you want to debug and unzip to a new folder.
+* Using the command line, go to the extracted UI folder and install the npm packages running the command "`npm install`";
 
 *We recommend to use VS Code and you can open the folder extracted. You can also use your IDE of choice.*
 
 ### 6.2. Initializing the development environment
-To develop the User Interface Behaviours and Web Components, you need to serve the corresponding files using a local HTTP server. 
+To develop the User Interface Behaviours, Web Components and Themes, you need to serve the corresponding files using a local HTTP server. 
 
-To do that, open the command line, change the working directory to the unzipped folder (the build files) and run the following command:
+To do that, your project has a start script, so open the command line, change the working directory to the UI folder inside the unzipped folder (the build files) and run the following command:
 
 ```
-    http-server . --cors
+    npm start
 ```
 
 After the command executes, the files will be accessible from your browser. Save the Port of the HTTP server (you will need it later).
@@ -125,3 +129,7 @@ The best way to debug the JavaScript code executing in the OMNIA platform is usi
 * Opening the files, you can set breakpoints and debug the code like in any other web application.
 
 Tip: If you add ```debugger;``` in any place of your code and have the Developer Tools open, it will act as a breakpoint when the browser hit this line of code.
+
+### 6.4. Developing themes
+
+By running `npm start` you are launching a sass compiler that will watch the changes to your files. So, just edit the _variables.scss_ file of your theme and reload the browser page.

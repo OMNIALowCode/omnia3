@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 BMLEnumeration"
+summary: "OMNIA 3 BMLEnumeration"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_BMLEnumeration.html
 folder: omnia3

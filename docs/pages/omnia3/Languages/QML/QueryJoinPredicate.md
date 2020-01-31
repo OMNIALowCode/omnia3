@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 QMLQueryJoinPredicate"
+summary: "OMNIA 3 QMLQueryJoinPredicate"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_QMLQueryJoinPredicate.html
 folder: omnia3

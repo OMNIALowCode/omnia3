@@ -9,6 +9,16 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.2.1](#3.2.1)
+Release Date: 2020-01-31
+
+**This version contains breaking changes.**
+**Compatible with OMNIA Platform 3.2.**
+
+### Implemented enhancements: 
+ - [Compatibility with new Build Folder organization](/omnia3_modeler_developingbehaviours.html)
+ 
+
 ## [1.1.1](#1.1.1)
 Release Date: 2019-11-22
 

@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 BMLDataSource"
+summary: "OMNIA 3 BMLDataSource"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_BMLDataSource.html
 folder: omnia3

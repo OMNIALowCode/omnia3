@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 QMLQueryFilterParameterWithValue"
+summary: "OMNIA 3 QMLQueryFilterParameterWithValue"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_QMLQueryFilterParameterWithValue.html
 folder: omnia3

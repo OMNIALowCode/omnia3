@@ -1,300 +1,299 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
-
 entries:
-- title: Sidebar
-  product: OMNIA Platform
-  version: 3
-  folders:
+  - title: Sidebar
+    product: OMNIA Platform
+    version: 3
+    folders:
+      - title:
+        output: pdf
+        type: frontmatter
+        folderitems:
+          - title:
+            url: /titlepage.html
+            output: pdf
+            type: frontmatter
+          - title:
+            url: /tocpage.html
+            output: pdf
+            type: frontmatter
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
+      - title: Information
+        output: web, pdf
+        folderitems:
+          - title: Welcome to OMNIA
+            url: /index.html
+            output: web, pdf
 
-  - title: Information
-    output: web, pdf
-    folderitems:
-    - title: Welcome to OMNIA
-      url: /index.html
-      output: web, pdf
+          - title: Features
+            url: /omnia3_features.html
+            output: web, pdf
 
-    - title: Features
-      url: /omnia3_features.html
-      output: web, pdf
-      
-    - title: Requirements
-      url: /omnia3_webapprequirements.html
-      output: web, pdf
-      
-    - title: Platform Changelog
-      url: /omnia3_platformchangelog.html
-      output: web, pdf
-      
-    - title: Connector Changelog
-      url: /omnia3_connectorchangelog.html
-      output: web, pdf 
-  
-  - title: Deployment
-    output: web, pdf
-    folderitems:
-    - title: Platform Deployment
-      url: /omnia3_deploymenttutorial.html
-      output: web, pdf
-      
-    - title: Infrastructure Requirements
-      url: /omnia3_deploymentrequirements.html
-      output: web, pdf
-      
-    - title: FAQ
-      url: /omnia3_deploymentfaq.html
-      output: web, pdf
-  
-  - title: Tutorials
-    output: web, pdf
-    folderitems:      
-    - title: 1. Tenant Creation
-      url: /omnia3_tenantcreation.html
-      output: web, pdf
+          - title: Requirements
+            url: /omnia3_webapprequirements.html
+            output: web, pdf
 
-    - title: 2. Beginner Tutorial
-      url: /omnia3_beginnertutorial.html
-      output: web, pdf
+          - title: Platform Changelog
+            url: /omnia3_platformchangelog.html
+            output: web, pdf
 
-    - title: 3.1. Native | External API
-      url: /omnia3_advancedtutorial.html
-      output: web, pdf
-      
-    - title: 3.2. Application Behaviours
-      url: /omnia3_applicationbehaviourstutorial.html
-      output: web, pdf
-           
-    - title: 3.3. Data Sources
-      url: /omnia3_datasourcetutorial.html
-      output: web, pdf
-      
-    - title: 3.4. Connector
-      url: /omnia3_connectortutorial.html
-      output: web, pdf
-      
-    - title: 3.5. Advanced Connector
-      url: /omnia3_multisystemconnectortutorial.html
-      output: web, pdf
-      
-    - title: 3.6. API Client
-      url: /omnia3_apiclienttutorial.html
-      output: web, pdf
-      
-    - title: 3.7. User Interface Behaviours
-      url: /omnia3_uiextensibilitytutorial.html
-      output: web, pdf
-    
-  - title: ERP Integrations
-    output: web, pdf
-    folderitems:
-    - title: PRIMAVERA (v9)
-      url: /omnia3_primaveraconnectortutorial.html
-      output: web, pdf
-      
-  - title: Management
-    output: web, pdf
-    folderitems:
-    - title: Introduction
-      url: /omnia3_management_introduction.html
-      output: web, pdf
+          - title: Connector Changelog
+            url: /omnia3_connectorchangelog.html
+            output: web, pdf
 
-    - title: Languages
-      url: /omnia3_management_languages.html
-      output: web, pdf
+      - title: Deployment
+        output: web, pdf
+        folderitems:
+          - title: Platform Deployment
+            url: /omnia3_deploymenttutorial.html
+            output: web, pdf
 
-    - title: Features
-      url: /omnia3_management_features.html
-      output: web, pdf
+          - title: Infrastructure Requirements
+            url: /omnia3_deploymentrequirements.html
+            output: web, pdf
 
-    - title: Authentication Providers
-      url: /omnia3_management_authentication_providers.html
-      output: web, pdf
+          - title: FAQ
+            url: /omnia3_deploymentfaq.html
+            output: web, pdf
 
-  - title: Modeler
-    output: web, pdf
-    folderitems:
-    - title: Introduction
-      url: /omnia3_modeler_introduction.html
-      output: web, pdf
-        
-    - title: Modeling Entities (Structure)
-      url: /omnia3_modeler_entities.html
-      output: web, pdf
-        
-    - title: Modeling Lifecycle
-      url: /omnia3_modeler_lifecycle.html
-      output: web, pdf
-    
-    - title: Modeling Enumerations
-      url: /omnia3_modeler_enumerations.html
-      output: web, pdf
-      
-    - title: Modeling Entities (User Interface)
-      url: /omnia3_modeler_entities_ui.html
-      output: web, pdf
-      
-    - title: Behaviours
-      url: /omnia3_modeler_behaviours.html
-      output: web, pdf
-      
-    - title: State Machines
-      url: /omnia3_modeler_statemachines.html
-      output: web, pdf
-        
-    - title: Data Sources and Data Behaviours
-      url: /omnia3_modeler_datasources.html
-      output: web, pdf
+      - title: Tutorials
+        output: web, pdf
+        folderitems:
+          - title: 1. Tenant Creation
+            url: /omnia3_tenantcreation.html
+            output: web, pdf
 
-    - title: Behaviour Dependencies
-      url: /omnia3_modeler_dependencies.html
-      output: web, pdf
+          - title: 2. Beginner Tutorial
+            url: /omnia3_beginnertutorial.html
+            output: web, pdf
 
-    - title: Developing and Debugging
-      url: /omnia3_modeler_developingbehaviours.html
-      output: web, pdf
+          - title: 3.1. Native | External API
+            url: /omnia3_advancedtutorial.html
+            output: web, pdf
 
-    - title: User Interface Behaviours
-      url: /omnia3_modeler_uibehaviours.html
-      output: web, pdf
+          - title: 3.2. Application Behaviours
+            url: /omnia3_applicationbehaviourstutorial.html
+            output: web, pdf
 
-    - title: Data Visualization
-      url: /omnia3_modeler_datavisualization.html
-      output: web, pdf
+          - title: 3.3. Data Sources
+            url: /omnia3_datasourcetutorial.html
+            output: web, pdf
 
-    - title: Web Components
-      url: /omnia3_modeler_webcomponents.html
-      output: web, pdf
+          - title: 3.4. Connector
+            url: /omnia3_connectortutorial.html
+            output: web, pdf
 
-    - title: Menu
-      url: /omnia3_modeler_menu.html
-      output: web, pdf
+          - title: 3.5. Advanced Connector
+            url: /omnia3_multisystemconnectortutorial.html
+            output: web, pdf
 
-    - title: Languages
-      url: /omnia3_modeler_languages.html
-      output: web, pdf
+          - title: 3.6. API Client
+            url: /omnia3_apiclienttutorial.html
+            output: web, pdf
 
-    - title: Text Templates
-      url: /omnia3_modeler_texttemplates.html
-      output: web, pdf
+          - title: 3.7. User Interface Behaviours
+            url: /omnia3_uiextensibilitytutorial.html
+            output: web, pdf
 
-    - title: Email Notifications
-      url: /omnia3_modeler_emailnotifications.html
-      output: web, pdf
+      - title: ERP Integrations
+        output: web, pdf
+        folderitems:
+          - title: PRIMAVERA (v9)
+            url: /omnia3_primaveraconnectortutorial.html
+            output: web, pdf
 
-  - title: Application
-    output: web, pdf
-    folderitems:
-    - title: Introduction
-      url: /omnia3_application_introduction.html
-      output: web, pdf
-    - title: Notifications & Operations
-      url: /omnia3_application_notifications_and_operations.html
-      output: web, pdf
-    - title: How to check version
-      url: /omnia3_applicationversion.html
-      output: web, pdf     
-      
-  - title: Authorization
-    output: web, pdf
-    folderitems:
-    - title: Introduction
-      url: /omnia3_authorization.html
-      output: web, pdf
-      
-    - title: Manage Authorization
-      url: /omnia3_authorizationmanagement.html
-      output: web, pdf
-        
-  - title: Connector
-    output: web, pdf
-    folderitems:
-    - title: Introduction
-      url: /omnia3_connector_introduction.html
-      output: web, pdf
+      - title: Management
+        output: web, pdf
+        folderitems:
+          - title: Introduction
+            url: /omnia3_management_introduction.html
+            output: web, pdf
 
-    - title: Install Guide
-      url: /omnia3_connector_install.html
-      output: web, pdf
+          - title: Languages
+            url: /omnia3_management_languages.html
+            output: web, pdf
 
-    - title: Configuration
-      url: /omnia3_connector_configuration.html
-      output: web, pdf
+          - title: Features
+            url: /omnia3_management_features.html
+            output: web, pdf
 
-    - title: Logging
-      url: /omnia3_connector_logs.html
-      output: web, pdf
+          - title: Authentication Providers
+            url: /omnia3_management_authentication_providers.html
+            output: web, pdf
 
-    - title: Client
-      url: /omnia3_connector_client.html
-      output: web, pdf
-    
+      - title: Modeler
+        output: web, pdf
+        folderitems:
+          - title: Introduction
+            url: /omnia3_modeler_introduction.html
+            output: web, pdf
 
-  - title: GDPR
-    output: web, pdf
-    folderitems:
-    - title: Introduction
-      url: /omnia3_gdpr.html
-      output: web, pdf
+          - title: Modeling Entities (Structure)
+            url: /omnia3_modeler_entities.html
+            output: web, pdf
 
-    
-  - title: Languages
-    output: web, pdf
-    folderitems:
-    - title: Introduction and MEF
-      url: /omnia3_languages_introduction.html
-      output: web, pdf
-        
-    - title: BML
-      url: /omnia3_languages_BML.html
-      output: web, pdf
-        
-    - title: QML
-      url: /omnia3_languages_QML.html
-      output: web, pdf
-       
-    - title: SML
-      url: /omnia3_languages_SML.html
-      output: web, pdf
-       
-    - title: UIML
-      url: /omnia3_languages_UIML.html
-      output: web, pdf
-        
-        
-  - title: API
-    output: web, pdf
-    folderitems:
-    - title: How to use the API
-      url: /omnia3_api_swagger.html
-      output: web, pdf
+          - title: Modeling Lifecycle
+            url: /omnia3_modeler_lifecycle.html
+            output: web, pdf
 
-    - title: How to check version
-      url: /omnia3_apiversion.html
-      output: web, pdf      
+          - title: Modeling Enumerations
+            url: /omnia3_modeler_enumerations.html
+            output: web, pdf
 
-    - title: API Error Codes
-      url: /omnia3_api_errors.html
-      output: web, pdf      
-      
-  - title: Downloads
-    output: web, pdf
-    folderitems:
-    - title: Downloads List
-      url: /omnia3_downloads.html
-      output: web, pdf
-    - title: Download Feed
-      url: /omnia3_feed.html
-      output: web, pdf
+          - title: Modeling Entities (User Interface)
+            url: /omnia3_modeler_entities_ui.html
+            output: web, pdf
+
+          - title: Behaviours
+            url: /omnia3_modeler_behaviours.html
+            output: web, pdf
+
+          - title: State Machines
+            url: /omnia3_modeler_statemachines.html
+            output: web, pdf
+
+          - title: Data Sources and Data Behaviours
+            url: /omnia3_modeler_datasources.html
+            output: web, pdf
+
+          - title: Behaviour Dependencies
+            url: /omnia3_modeler_dependencies.html
+            output: web, pdf
+
+          - title: Developing and Debugging
+            url: /omnia3_modeler_developingbehaviours.html
+            output: web, pdf
+
+          - title: User Interface Behaviours
+            url: /omnia3_modeler_uibehaviours.html
+            output: web, pdf
+
+          - title: Data Visualization
+            url: /omnia3_modeler_datavisualization.html
+            output: web, pdf
+
+          - title: Web Components
+            url: /omnia3_modeler_webcomponents.html
+            output: web, pdf
+
+          - title: Menu
+            url: /omnia3_modeler_menu.html
+            output: web, pdf
+
+          - title: Languages
+            url: /omnia3_modeler_languages.html
+            output: web, pdf
+
+          - title: Text Templates
+            url: /omnia3_modeler_texttemplates.html
+            output: web, pdf
+
+          - title: Email Notifications
+            url: /omnia3_modeler_emailnotifications.html
+            output: web, pdf
+
+          - title: Themes
+            url: /omnia3_modeler_themes.html
+            output: web, pdf
+
+      - title: Application
+        output: web, pdf
+        folderitems:
+          - title: Introduction
+            url: /omnia3_application_introduction.html
+            output: web, pdf
+          - title: Notifications & Operations
+            url: /omnia3_application_notifications_and_operations.html
+            output: web, pdf
+          - title: How to check version
+            url: /omnia3_applicationversion.html
+            output: web, pdf
+
+      - title: Authorization
+        output: web, pdf
+        folderitems:
+          - title: Introduction
+            url: /omnia3_authorization.html
+            output: web, pdf
+
+          - title: Manage Authorization
+            url: /omnia3_authorizationmanagement.html
+            output: web, pdf
+
+      - title: Connector
+        output: web, pdf
+        folderitems:
+          - title: Introduction
+            url: /omnia3_connector_introduction.html
+            output: web, pdf
+
+          - title: Install Guide
+            url: /omnia3_connector_install.html
+            output: web, pdf
+
+          - title: Configuration
+            url: /omnia3_connector_configuration.html
+            output: web, pdf
+
+          - title: Logging
+            url: /omnia3_connector_logs.html
+            output: web, pdf
+
+          - title: Client
+            url: /omnia3_connector_client.html
+            output: web, pdf
+
+      - title: GDPR
+        output: web, pdf
+        folderitems:
+          - title: Introduction
+            url: /omnia3_gdpr.html
+            output: web, pdf
+
+      - title: Languages
+        output: web, pdf
+        folderitems:
+          - title: Introduction and MEF
+            url: /omnia3_languages_introduction.html
+            output: web, pdf
+
+          - title: BML
+            url: /omnia3_languages_BML.html
+            output: web, pdf
+
+          - title: QML
+            url: /omnia3_languages_QML.html
+            output: web, pdf
+
+          - title: SML
+            url: /omnia3_languages_SML.html
+            output: web, pdf
+
+          - title: UIML
+            url: /omnia3_languages_UIML.html
+            output: web, pdf
+
+      - title: API
+        output: web, pdf
+        folderitems:
+          - title: How to use the API
+            url: /omnia3_api_swagger.html
+            output: web, pdf
+
+          - title: How to check version
+            url: /omnia3_apiversion.html
+            output: web, pdf
+
+          - title: API Error Codes
+            url: /omnia3_api_errors.html
+            output: web, pdf
+
+      - title: Downloads
+        output: web, pdf
+        folderitems:
+          - title: Downloads List
+            url: /omnia3_downloads.html
+            output: web, pdf
+          - title: Download Feed
+            url: /omnia3_feed.html
+            output: web, pdf

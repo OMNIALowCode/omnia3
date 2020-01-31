@@ -1,7 +1,7 @@
 ---
-title: OMNIA 3.0
+title: OMNIA 3
 keywords: omnia3
-summary: "OMNIA 3.0 UIMLApplicationMenuEntryAction"
+summary: "OMNIA 3 UIMLApplicationMenuEntryAction"
 sidebar: omnia3_sidebar
 permalink: omnia3_languages_UIMLApplicationMenuEntryAction.html
 folder: omnia3

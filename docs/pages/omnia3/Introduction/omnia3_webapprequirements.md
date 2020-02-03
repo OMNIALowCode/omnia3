@@ -13,4 +13,4 @@ The OMNIA Platform is a fully browser-based application, so in order to use it y
 The following browsers are supported:
 * Chrome 67 or higher
 * Firefox 59 or higher
-* Microsoft Edge 42 or higher
+* Microsoft Edge 79 or higher

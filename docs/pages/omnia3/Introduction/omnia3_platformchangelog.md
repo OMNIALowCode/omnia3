@@ -9,6 +9,17 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.2.12](#3.2.12)
+Release Date: 2020-02-14
+
+### Implemented enhancements: 
+ - WebApp rendering performance improvements
+ 
+### Bugs:
+ - Entity History: Show previous value option is not formatted correctly on grid dates
+ - WebApp: Containers labels rendered on a new line
+
 ## [3.2.3](#3.2.3)
 Release Date: 2020-01-31
 
@@ -114,7 +125,7 @@ Release Date: 2019-11-22
  - Feature: Enable or disable User/Password authentication [(see here)](/omnia3_management_features.html)
  - Quick access to Tenant from Management Tenant list
  - New User's profile page
- - App Behavious and Web Components: Don't close modal when ESC key is pressed
+ - App Behaviours and Web Components: Don't close modal when ESC key is pressed
  - Allow restarting the System
  - API Client - Security improvement - One time only access to Secrets
  
@@ -165,7 +176,7 @@ Release Date: 2019-10-22
 
 ### Implemented enhancements: 
  - Nested Collections [(see here)](/omnia3_modeler_entities.html#4-nested-collections)
- - Present error messsages on the context of the Grid Line
+ - Present error messages on the context of the Grid Line
  - New navigation flow for Grids in Mobile devices
 
 ### Bugs:
@@ -238,7 +249,7 @@ Release Date: 2019-09-12
 Release Date: 2019-09-06
 
 ### Bugs: 
- - ListParameters aren't applyed to the query when a lookup page change (navigation)
+ - ListParameters aren't applied to the query when a lookup page change (navigation)
 
 ## [3.0.307](#3.0.307)
 Release Date: 2019-09-02
@@ -328,7 +339,7 @@ Release Date: 2019-06-28
 
 ### Bugs: 
  - Occasionally menu isn't filtered out with privileges.
- - When a Menu has subfolders, the top level menu folder is visible even there's no access to subentries.
+ - When a Menu has sub folders, the top level menu folder is visible even there's no access to subentries.
 
 ## [3.0.271](#3.0.271)
 Release Date: 2019-06-27
@@ -396,7 +407,7 @@ Release Date: 2019-05-23
 ### Implemented enhancements:
  - Platform Languages - Custom platform languages
  - Platform Languages - Translate exceptions / feedback messages
- - Manangement: When creating a new language, use en-US as template
+ - Management: When creating a new language, use en-US as template
  - The API response when the prefer header is minimal, will return the "identifier" property instead of "code". Please review your client to use the "identifier" or do the request with the "representation" prefer header. (API BREAKING CHANGE)
 
 ## [3.0.244](#3.0.244)
@@ -455,7 +466,7 @@ Release Date: 2019-04-15
 
 ### Implemented enhancements:
 
- - Debug internal rutime behaviours (Breaking change - Required to update connector to 1.0.172 or higher and re-build model)
+ - Debug internal runtime behaviours (Breaking change - Required to update connector to 1.0.172 or higher and re-build model)
  - Display the data source name instead of code
  - Accelerator GetEntity: Get data source info to generate the data source parameter value
  - Modeler: Show row number when modeling the User Interface
@@ -556,7 +567,7 @@ Release Date: 2019-02-06
 ### Fixed Bugs:
  - Can't control calendar form metadata: Review calendar form opening to wait for all components to load
  - Date selectors aren't opening near to the inputs
- - Allow to set details WebComponts as read-only
+ - Allow to set details WebComponents as read-only
  
 
 ### Implemented enhancements:
@@ -626,7 +637,7 @@ Release Date: 2018-12-26
  
  - Sidebar translations of top entries
  - WebComponent mapping selection, inside a container
- - Save button disabeling by temporary updated
+ - Save button disabling by temporary updated
  
 ### Implemented enhancements:
 
@@ -669,7 +680,7 @@ Release Date: 2018-12-10
 ### Fixed Bugs:
  
  - Column name translations in List filters working as intended 
- - "Before Save" Excepetions in UI Behaviours are now visible
+ - "Before Save" Exceptions in UI Behaviours are now visible
  - List column break reviewed for large text inputs
 
 
@@ -684,7 +695,7 @@ Release Date: 2018-11-30
  
 ### Fixed Bugs:
  
- - Read only numeric fields input disabeling
+ - Read only numeric fields input disabling
  - List column break reviewed for large text inputs
 
 

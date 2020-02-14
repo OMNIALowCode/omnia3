@@ -48,6 +48,7 @@ class MyComponent extends HTMLElement {
 // The 1st parameter represents the custom element name (must be the same you write when you add the Web Component to the model)
 // The 2nd parameter is the class that will be used to represent your component (the class created in this code block)
 customElements.define('omnia-component', MyComponent);
+
 ```
 
 ## 3. Mappings
@@ -69,6 +70,8 @@ Each component can receive up to three parameters, depending on the mapping conf
 * **state**: all the data of the current root Element, in the same structure of the [User Interface Behaviours](omnia3_modeler_uibehaviours.html#4-structure-of-the-class);
 * **value**: if the mapping is configured, has the value of the mapped element;
 * **valueHasChanged**: boolean value representing if the _value_ has changed since the previous version (used only when a Form is in the history mode and the mapping is configured; setted as _true_ if the _value_ has changed since the previous version).
+
+**_Note: None of these attributes must be used to update the state of the entity. They are only for reading purposes. To interact with the entity data, please see [5. Exchanging data with Web Components](omnia3_modeler_webcomponents.md#5-exchanging-data-with-web-components)_**
 
 ### 4.1. Using the parameters
 To use the parameters, it's necessary to know when they have his value changed.
@@ -95,34 +98,34 @@ class MyComponent extends HTMLElement {
 
 ### Context structure
 
-Property | Explanation|
----------|------------|
- **tenant** | Information about the tenant the user is working on, using the _TenantContext_ structure.
- **operation** | Information about the operation the user is working on, using the _OperationContext_ structure.
- **authentication** | Information about the operation the user is working on, using the _AuthenticationContext_ structure.
+| Property           | Explanation                                                                                          |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| **tenant**         | Information about the tenant the user is working on, using the _TenantContext_ structure.            |
+| **operation**      | Information about the operation the user is working on, using the _OperationContext_ structure.      |
+| **authentication** | Information about the operation the user is working on, using the _AuthenticationContext_ structure. |
 
 
  __*Tenant Context*__
 
-Property | Explanation|
----------|------------|
- **code** | The code of the current tenant.
- **environmentCode** | The code of the current environment.
- **version** | The current version of the application.
+| Property            | Explanation                             |
+| ------------------- | --------------------------------------- |
+| **code**            | The code of the current tenant.         |
+| **environmentCode** | The code of the current environment.    |
+| **version**         | The current version of the application. |
 
 
  __*Operation Context*__
 
-Property | Explanation|
----------|------------|
- **dataSource** | The code of the data source used in the current operation.
+| Property       | Explanation                                                |
+| -------------- | ---------------------------------------------------------- |
+| **dataSource** | The code of the data source used in the current operation. |
 
 
  __*Authentication Context*__
 
-Property | Explanation|
----------|------------|
- **username** | The user name of the current user.
+| Property     | Explanation                        |
+| ------------ | ---------------------------------- |
+| **username** | The user name of the current user. |
 
 
 ## 5. Exchanging data with Web Components
@@ -164,12 +167,12 @@ apiClient
 
 ### 6.1 Available operations
 
-Operation | Explanation|
----------|------------|
-doGet(address, preferHeader) | GET request
-doPost(address, requestBody, etag, preferHeader) | POST request
-doDelete(address, etag) | DELETE request
-doPatch(address, requestBody, etag, preferHeader) | PATCH request 
+| Operation                                         | Explanation    |
+| ------------------------------------------------- | -------------- |
+| doGet(address, preferHeader)                      | GET request    |
+| doPost(address, requestBody, etag, preferHeader)  | POST request   |
+| doDelete(address, etag)                           | DELETE request |
+| doPatch(address, requestBody, etag, preferHeader) | PATCH request  |
 
 ## 7. Samples
 Click [here](https://omnialowcode.github.io/omnia3-samples/webcomponents/docs/) to access to our collection of Web Components and find a set of components ready to use in your applications.

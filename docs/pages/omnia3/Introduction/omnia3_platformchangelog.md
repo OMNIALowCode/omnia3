@@ -9,6 +9,24 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.2.37](#3.2.37)
+Release Date: 2020-02-28
+
+### Implemented enhancements: 
+ - Detailed information on History when an Entity changes the state when is created
+ 
+### Bugs:
+ - WebApp page is cached by the browser and don't update when a new Platform version is available
+ - Duplicated calendar entries when changing visibility
+ - Date Picker - Can't clear the value of a Date attribute
+ - Error when starting Remote UI Development in a Tenant without Themes
+ - Can't use WebComponents in Lists based on Basic Queries
+ - Can't remove entities with a State Machine from the Model without removing the State Machine first
+ - Changes on collections (add and remove lines) triggered by a onChangeBehaviour are not applied correctly
+ - Modeler/UI Accelerator: Get Entity Accelerator OnChange grid is not shown if form is already filled
+ - JS Accelerator (Get Entity) exception thrown when user try to find an attribute to map data with no definition set
+ - JS Accelerator to set an attribute as read-only is not working on collections
+ - OnChange behaviours on collections are not always executed on edits
 
 ## [3.2.12](#3.2.12)
 Release Date: 2020-02-14

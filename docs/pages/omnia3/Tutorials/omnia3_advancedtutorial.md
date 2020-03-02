@@ -67,7 +67,7 @@ Set its name **GetSupplierName**, and **Supplier** as the attribute that trigger
 
 1. Go to the **Modeler** and click on option **Data sources / System** to add references to this data source. Click on button **Add new > File Dependency** to add a new  **Behaviour Dependency**  for .NET assembly System.Net.Http
 
-    ![Modeler Add_Dependency](/images/tutorials/advanced/Modeler-Add-Behaviour-Dependency.PNG)
+    ![Modeler Add_Dependency](/images/tutorials/advanced/Modeler-Add-Behaviour-Dependency.png)
 
 2. Edit the previously modeled resource *Product*. Create a new  **Attribute**  by clicking the button  **Add new / Primitive**  on the top right side, and setting its  **Name** and **Type**  to  **Artist** and ***Text***, respectively. Set the attribute as **Read Only**.
 

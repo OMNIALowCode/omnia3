@@ -133,7 +133,7 @@ Set its name **GetSupplierName**, and **Supplier** as the attribute that trigger
 
 2. Click on button **Add List** to add lists to Dashboard. Set **ProductsList** as Name, **Products List** as Label, select **ProductsArtists_QueryList** (created previously) and position it in the first **Row** and **Column**, with **Size** six.
 
-    ![Modeler_Add_List_Dashboard](/images/tutorials/advanced/Modeler-Add-List-Dashboard.PNG)
+    ![Modeler_Add_List_Dashboard](/images/tutorials/advanced/Modeler-Add-List-Dashboard.png)
 
 3. **Build & Deploy** the model.
 

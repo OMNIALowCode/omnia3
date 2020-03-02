@@ -55,7 +55,7 @@ Set its name **GetSupplierName**, and **Supplier** as the attribute that trigger
     var requestResult = httpClient.GetAsync($"Supplier/Default/{this.Supplier}").GetAwaiter().GetResult();
 
     if (!requestResult.IsSuccessStatusCode)
-        throw new Exception($"Can't retrieve the entity '{this.Supplier}'");
+    throw new Exception($"Can't retrieve the entity '{this.Supplier}'");
 
     var entity = requestResult.Content.ReadAsAsync<SupplierDto>().GetAwaiter().GetResult();
 

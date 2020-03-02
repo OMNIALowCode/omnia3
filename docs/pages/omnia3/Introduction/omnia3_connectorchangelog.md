@@ -9,6 +9,15 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.2.2](#3.2.2)
+Release Date: 2020-03-02
+
+
+### Bugs:
+ - Changes on collections (add and remove lines) triggered by a onChangeBehaviour are not applied correctly
+ - OnChange behaviours on collections are not always executed on edits
+
+
 ## [3.2.1](#3.2.1)
 Release Date: 2020-01-31
 

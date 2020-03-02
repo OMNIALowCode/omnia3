@@ -9,6 +9,14 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.2.42](#3.2.42)
+Release Date: 2020-03-02
+
+### Implemented enhancements: 
+ - WebApp - Display the Web App version in the application about section
+ 
+
 ## [3.2.39](#3.2.39)
 Release Date: 2020-02-28
 

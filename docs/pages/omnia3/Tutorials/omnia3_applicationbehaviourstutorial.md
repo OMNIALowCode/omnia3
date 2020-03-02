@@ -103,7 +103,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
         this.CompanyCurrency = entity.CompanyCurrency; 
     ```
     
-    Edit exinting Behaviour
+    Edit existing Behaviour (replace code with the following)
     - **Name**: *GetSupplierName*
     - **Action to attribute**: *Supplier*
     - **Code**:    
@@ -133,8 +133,8 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
         this.SupplierCurrency = entity.SupplierCurrency; 
         
     ```
+    Edit the existing "After Change" Behaviour and add the following code
 
-- **Name**: *AfterChangeBehaviour*
     - **Code**:
     
     ```C#
@@ -152,7 +152,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](omnia3_b
     
     } else {
     
-        this.exchangeRate = 0;
+        this.ExchangeRate = 0;
     }
     ```
 

@@ -116,7 +116,7 @@ Set its name **GetSupplierName**, and **Supplier** as the attribute that trigger
 
     ![Modeler_Create_Query](/images/tutorials/advanced/Modeler-Create-Query.PNG)
 
-2. Click on button **Add New** to add columns to Query. Add a column with Alias **Code** and Path **_code**.
+2. Now open your query and click on **Add New** to add columns to it. Add a column with Alias **Code** and Path **_code**.
     
 3. Repeat previous step to add columns with alias **Name** and **Artist**, whose Path is **_name** and **artist**, respectively.
 

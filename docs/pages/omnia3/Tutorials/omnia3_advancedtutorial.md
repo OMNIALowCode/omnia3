@@ -73,7 +73,7 @@ Set its name **GetSupplierName**, and **Supplier** as the attribute that trigger
 
 3. Navigate to tab **Behaviour Namespaces** and add namespace System.Net.Http
 
-    ![Modeler Add_Namespace](/images/tutorials/advanced/Modeler-Add-Behaviour-Namespace.PNG)
+    ![Modeler Add_Namespace](/images/tutorials/advanced/Modeler-Add-Behaviour-Namespace.png)
 
 4. Create a new **Action Behaviour** to fill the new attribute (go to tab ***Entity Behaviours*** and click on ***Add new / Action***). Set ***GetRecordData*** as **Name**, ***_code*** as the attribute that triggers the behaviour, and paste the following code:
 

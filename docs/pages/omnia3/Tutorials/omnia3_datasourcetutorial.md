@@ -256,7 +256,7 @@ NOTE: in this scenario, we are ignoring the query sent by the user when obtainin
 	   this.EmployeeName = entity._name; 
          ```
 
-3. Build&Deploy and go to your application, create a new Purchase Order Document, select the available External API, and select one of the three available employees. Check that the "Ordered by employee:" field fills automatically, as demonstrated in the image bellow:
+3. Build & Deploy and go to your application, create a new Purchase Order Document, select the available External API, and select one of the three available employees. Check that the "Ordered by employee:" field fills automatically, as demonstrated in the image bellow:
 
 	![DataSources_Tutorial_End](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/datasource/dataSources_ending.jpg)
 

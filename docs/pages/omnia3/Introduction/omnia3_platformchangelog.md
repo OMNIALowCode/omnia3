@@ -14,6 +14,7 @@ Release Date: 2020-03-04
 
 ### Implemented enhancements: 
  - While a new collection line is being added, all inputs are blocked
+ - Alert user when platform is accessed on a non-supported browser
  
 ### Bugs:
  - Application Menu is rendered before Initialize behaviour execution ends

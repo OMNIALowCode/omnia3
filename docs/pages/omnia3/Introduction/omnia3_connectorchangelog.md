@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.2.3](#3.2.3)
+Release Date: 2020-03-04
+
+
+### Bugs:
+ - Entities of external data sources are kept on browser cache and do not reflect changes
+
 ## [3.2.2](#3.2.2)
 Release Date: 2020-03-02
 

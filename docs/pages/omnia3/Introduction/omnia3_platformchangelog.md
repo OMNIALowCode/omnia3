@@ -9,6 +9,16 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.2.49](#3.2.49)
+Release Date: 2020-03-04
+
+### Implemented enhancements: 
+ - While a new collection line is being added, all inputs are blocked
+ 
+### Bugs:
+ - Application Menu is rendered before Initialize behaviour execution ends
+ - Entities of external data sources are kept on browser cache and do not reflect changes
+ - Page loader is not removed when entity has a web component on a nested grid
 
 ## [3.2.42](#3.2.42)
 Release Date: 2020-03-02

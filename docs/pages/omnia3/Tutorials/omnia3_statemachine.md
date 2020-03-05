@@ -30,7 +30,7 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 1.1. Click on the "Related to" field and select the option ***Document / Purchase Order.
 	![CreateStateMachine](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/create-state-machine.png)
 
-1.2. Now open the new "PurchaseOrderStateMachine", by clicking on it, and use the "Add New" button to add the new "Review" state.
+1.2. Open the new "PurchaseOrderStateMachine", by clicking on it, and use the "Add New" button to add the new "Review" state.
 	![AddNewState](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-new-state.png)
 
 1.3. Repeat the process to create the "Approved" and "Rejected" states, but in these states activate the options "Disable all attributes" and "Disable all operations":

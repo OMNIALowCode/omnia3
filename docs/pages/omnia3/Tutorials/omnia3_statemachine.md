@@ -55,8 +55,10 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 	![InitialToReviewTransition](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-InitialToReview-transition.png)
 
 1.6.3. Now go to the "Review" state, access the "Transitions" tab and let's add two new transitions:
+	
 	- ReviewToApproved
 	![ReviewToApproved](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-ReviewToApproved-transition.png)
+	
 	- ReviewToRejected
 	![ReviewToRejected](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-ReviewToRejected-transition.png)
 
@@ -78,6 +80,6 @@ This should be the look of your approved document:
 	![AddComentary](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-comentary.png)
 
 1.7.4. Now open the rejected document and use the option "More Options" > "Show History". You should now see the comentary that rejected the document.
-
+	![OpenHistoryTab](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/open-history-tab.png)
 
 That's it, we've just created a new State Machine and added it to our Purchase Order Management.

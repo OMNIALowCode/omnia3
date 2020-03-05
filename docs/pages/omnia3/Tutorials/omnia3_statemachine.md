@@ -55,10 +55,10 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 
 1.6.2. Now go to the "Review" state, access the "Transitions" tab and let's add two new transitions:
 	
-	- ReviewToApproved
+- ReviewToApproved
 	![ReviewToApproved](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-ReviewToApproved-transition.png)
 	
-	- ReviewToRejected
+- ReviewToRejected
 	![ReviewToRejected](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-ReviewToRejected-transition.png)
 
 This is what your State Machine should look like:

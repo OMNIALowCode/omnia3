@@ -50,10 +50,10 @@ It is necessary to have completed the steps in the  [Beginner tutorial](https://
 
 1.6. Now let's finalize our state machine by adding Transitions:
 
-1.6.2. Go back to your state machine, open the "Initial" state, go to the tab "Transitions" and "Add New":
+1.6.1. Go back to your state machine, open the "Initial" state, go to the tab "Transitions" and "Add New":
 	![InitialToReviewTransition](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-InitialToReview-transition.png)
 
-1.6.3. Now go to the "Review" state, access the "Transitions" tab and let's add two new transitions:
+1.6.2. Now go to the "Review" state, access the "Transitions" tab and let's add two new transitions:
 	
 	- ReviewToApproved
 	![ReviewToApproved](https://raw.githubusercontent.com/OMNIALowCode/omnia3/master/docs/images/tutorials/statemachine/add-ReviewToApproved-transition.png)

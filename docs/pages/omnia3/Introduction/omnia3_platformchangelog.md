@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.2.53](#3.2.53)
+Release Date: 2020-03-06
+
+### Bugs:
+ - When a advanced query is edited, the basic editor is shown
+ - Error on approval of entities with nested collections when attributes are set as disabled on a state
+
 ## [3.2.49](#3.2.49)
 Release Date: 2020-03-04
 

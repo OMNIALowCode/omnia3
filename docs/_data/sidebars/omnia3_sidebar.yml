@@ -95,6 +95,10 @@ entries:
             url: /omnia3_uiextensibilitytutorial.html
             output: web, pdf
 
+          - title: 3.8. State Machine
+            url: /omnia3_statemachine.html
+            output: web, pdf
+
       - title: ERP Integrations
         output: web, pdf
         folderitems:

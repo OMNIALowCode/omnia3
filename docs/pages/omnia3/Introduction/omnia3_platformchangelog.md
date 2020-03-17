@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.2.54](#3.2.54)
+Release Date: 2020-03-17
+
+### Bugs:
+ - Fixed issue on Menu load when user roles are used on Initialize behaviour
+
 ## [3.2.53](#3.2.53)
 Release Date: 2020-03-06
 

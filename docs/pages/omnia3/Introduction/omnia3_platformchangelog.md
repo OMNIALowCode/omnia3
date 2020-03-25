@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.2.56](#3.2.56)
+Release Date: 2020-03-25
+
+### Bugs:
+ - Loader remains visible on fields with multiplicity > 1 and nested grids
+
 ## [3.2.54](#3.2.54)
 Release Date: 2020-03-17
 

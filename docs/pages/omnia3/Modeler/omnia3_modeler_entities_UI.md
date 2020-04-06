@@ -262,9 +262,9 @@ In this sample, the date value of the attribute *dateField* is retrieved on form
     const formattedDate = this.dateField.format("YYYY-MM-DD");
 ```
 
-*Note 1: This is only possible in elements that represent decimal attributes. In the other data types, even this attribute is setted, the value will be ignored.*
+*Note 1: This is only possible in elements that represent date attributes.*
 
-*Note 2: This only changes the number of decimal places in the interface. In order to apply decimal places to the server-side data, you need to develop that logic using C# behaviours.*
+*Note 2: This only retrieves the value on that format to be used on Javascript behaviours. It does not change the format of the date visible to the user*
 
 ### **Shared Attributes**
 ### How to change the shared attribute's lookup list?

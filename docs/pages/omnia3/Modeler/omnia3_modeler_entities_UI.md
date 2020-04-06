@@ -254,6 +254,18 @@ In this sample, the number of decimal places of the element *decimalField* is se
 
 *Note 2: This only changes the number of decimal places in the interface. In order to apply decimal places to the server-side data, you need to develop that logic using C# behaviours.*
 
+### **Date Attributes**
+### How to get a date on a specific format?
+In this sample, the date value of the attribute *dateField* is retrieved on format *YYYY-MM-DD*. 
+
+```JavaScript
+    const formattedDate = this.dateField.format("YYYY-MM-DD");
+```
+
+*Note 1: This is only possible in elements that represent decimal attributes. In the other data types, even this attribute is setted, the value will be ignored.*
+
+*Note 2: This only changes the number of decimal places in the interface. In order to apply decimal places to the server-side data, you need to develop that logic using C# behaviours.*
+
 ### **Shared Attributes**
 ### How to change the shared attribute's lookup list?
 

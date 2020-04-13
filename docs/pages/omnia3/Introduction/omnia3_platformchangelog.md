@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3](#3.3)
+Release Date: 2020-xx-xx
+
+### Implemented enhancements: 
+ - Migration to .NET Core 3.1, by following the official Microsoft [instructions](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore3x)
+
 ## [3.2.56](#3.2.56)
 Release Date: 2020-03-25
 

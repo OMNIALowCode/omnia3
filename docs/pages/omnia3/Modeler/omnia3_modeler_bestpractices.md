@@ -47,3 +47,9 @@ To know more about idempotency:
 
  - https://stripe.com/en-pt/blog/idempotency
  - https://docs.microsoft.com/en-us/azure/architecture/microservices/design/api-design#idempotent-operations
+
+
+### Application Behaviours security
+
+The authorization to execute a given application behaviour should be implemented in the Application Behaviour.
+Information like the current Role or Username can be accessed from the `Context`.

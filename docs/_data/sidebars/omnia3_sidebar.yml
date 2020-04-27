@@ -200,6 +200,10 @@ entries:
             url: /omnia3_modeler_themes.html
             output: web, pdf
 
+          - title: Best Practices
+            url: /omnia3_modeler_bestpractices.html
+            output: web, pdf
+
       - title: Application
         output: web, pdf
         folderitems:

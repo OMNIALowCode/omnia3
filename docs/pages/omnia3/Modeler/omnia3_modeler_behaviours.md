@@ -210,7 +210,8 @@ cache.RemoveAsync("MyKeyName")
 
 ## 9. Logging
 
-You can access to the behaviour server logger using:
+You can access the behaviour server logger using:
+
 
 ```
 var logger = _Context.Services.GetService<ILogger<Customer>>();

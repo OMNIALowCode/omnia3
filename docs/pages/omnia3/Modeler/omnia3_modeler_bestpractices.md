@@ -10,8 +10,7 @@ folder: omnia3
 
 ## 1. Introduction
 
-Here you will find a list of recommendations that you should follow when modelling an application using OMNIA. It's a group of best practices based on learning collected from the developed applications.
-
+Here you'll find a list of recommendations that you should follow when modelling an application using OMNIA. It's a group of best practices based on our experience collected from application development.
 
 
 ## 2. Best Practices

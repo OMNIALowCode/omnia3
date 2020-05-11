@@ -10,7 +10,7 @@ folder: omnia3
 ## 1. Introduction
 In the **OMNIA Platform**, in addition to being possible to customize how the application works (using the Behaviours), it's possible to define how it looks like.
 
-Using [**Web Components**](https://developer.mozilla.org/en-US/docs/Web/Web_Components), written in Javascript, you can extend the default layout, adding your own elements.
+Using [**Web Components**](https://developer.mozilla.org/en-US/docs/Web/Web_Components), written in Javascript, you can extend the default layout, adding your own elements. Due to the array of [supported browsers](https://docs.omnialowcode.com/omnia3_webapprequirements.html), the Javascript should be written in ES6 format.
 
 You can add Web Components to a **Form** or to a **Dashboard**.
 In both scenarios, you can have two different approaches:

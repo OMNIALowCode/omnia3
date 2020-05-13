@@ -46,3 +46,12 @@ __*Menu / User Interface Behaviours*__
 In order to extend your application user interface you can add new behaviours to your menu's user interface.
 
 Click [here](omnia3_modeler_uibehaviours.html), to know more about user interface behaviours.
+
+
+## 4. Breadcrumb
+
+The application will use the menu definition to calculate breadcrumb labels. Rules to find the label:
+
+ 1. Use the menu entry label if the definition is a member of the Menu.
+ 2. Use the Dashboard label if the definition is a Dashboard and not a member of the Menu.
+ 3. Use the Form label if the definition is a Form and not a member of the Menu.

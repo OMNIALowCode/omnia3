@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.2.57](#3.2.57)
+Release Date: 2020-05-14
+
+### Bugs:
+ - On new subcriptions, the Administration user setup fails
+
 ## [3.2.56](#3.2.56)
 Release Date: 2020-03-25
 

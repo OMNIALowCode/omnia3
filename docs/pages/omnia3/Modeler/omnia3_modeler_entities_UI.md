@@ -233,6 +233,12 @@ In this sample, the behaviour returns a [Promise](https://developer.mozilla.org/
 
 Changing the default behaviour of a container can only be done on `Initialize`.
 
+In this sample, the container *myContainer* is set as opened:
+
+```JavaScript
+    this._metadata.elements.myContainer.attributes.isOpen = true;
+```
+
 ### How to inform the user that an element is loading data?
 
 Inputs give you an attribute to control an internal loader. This is particularly useful when a triggered C# behaviour will change the value of other elements and we want to inform the user that something is happening relative to that element.

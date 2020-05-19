@@ -9,6 +9,17 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.3.0](#3.3.0)
+Release Date: 2020-05-19
+
+### Implemented enhancements: 
+ - Upgrade to .NET Core 3.1 runtime
+
+    This version has stability and performance improvements.
+
+    For development/debug using Visual Studio, .NET Core 3.1 SDK must be installed.
+
+
 ## [3.2.3](#3.2.3)
 Release Date: 2020-03-04
 

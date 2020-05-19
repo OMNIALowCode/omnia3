@@ -9,11 +9,30 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
-## [3.3](#3.3)
-Release Date: 2020-xx-xx
+## [3.3.0](#3.3.0)
+Release Date: 2020-05-19
 
 ### Implemented enhancements: 
- - Migration to .NET Core 3.1, by following the official Microsoft [instructions](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore3x)
+ - Upgrade to .NET Core 3.1 runtime
+
+    This version has stability and performance improvements.
+
+    For development/debug using Visual Studio, .NET Core 3.1 SDK must be installed.
+
+ - Modeler: Update Form using JSON
+ - Add context information to modeler List and Query lists
+ - Toast notifications: Move to right/lower corner
+  
+
+### Bugs:
+ - Breadcrumb not translated on navigation (new tab)
+ - Error messages when required collection attribute is not filled are not clear
+ - UI/Calendar: Records duplicated after interacting with a caption
+ - List: Totals do not reflect the number of entities that exist
+ - Modeler: Filters on queries are case sensitive
+ - State Machine: Text Attribute detected as change when it is null
+ - When a Boolean attribute is set on behaviour as true, it cannot be set manually as false
+ - Remote debug not working for System Application Behaviours
 
 ## [3.2.56](#3.2.56)
 Release Date: 2020-03-25

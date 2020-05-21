@@ -208,14 +208,24 @@ cache.RemoveAsync("MyKeyName")
 
  - All the keys in Cache, have a 24 hours lifetime, after the last access to the key.
 
+## 9. Logging
 
-## 9. .NET Versions
+You can access the behaviour server logger using:
+
+
+```
+var logger = _Context.Services.GetService<ILogger<Customer>>();
+```
+
+_Replace "Customer" by the name of your Class._
+
+## 10. .NET Versions
 
 The compiled C# code, targets the following platforms:
 
 - **Behaviours that are executed in Connector:** Framework .net 4.7.2, Runtime x86
 - **Behaviours that are executed in OMNIA:** Framework .net standard 2.0
 
-## 10. Developing and testing behaviours
+## 11. Developing and testing behaviours
 
 The way to develop and test behaviours is explained in a [separate article](omnia3_modeler_developingbehaviours.html), as it is shared for both Entity and Data Behaviours.

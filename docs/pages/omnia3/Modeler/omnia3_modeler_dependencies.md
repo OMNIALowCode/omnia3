@@ -59,7 +59,7 @@ Then, identify the following information:
 
 Due to our platform's usage of .NET Core, all references that run on an Internal data source will have to be compiled against one of the following:
 
-- **.NET Core 1.0 - 2.1**
+- **.NET Core 2.0 - 3.1**
 - **.NET Standard 1.0 - 2.0**
 
 References that run on External data sources have to be compiled against:

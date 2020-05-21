@@ -16,7 +16,7 @@ folder: omnia3
 
 - Have a way to access the server and copy files to it. We suggest [MobaXTerm](https://mobaxterm.mobatek.net/) if you are doing the setup from a Windows machine.
 
-- Install .NET Core **2.1** SDK (current recommended version: SDK 2.1.300), by following the official Microsoft [instructions](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x). Go to the Ubuntu section, and follow the instructions for your version of Ubuntu.
+- Install .NET Core **3.1** SDK (current recommended version: SDK 3.1.201), by following the official Microsoft [instructions](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore3x). Go to the Ubuntu section, and follow the instructions for your version of Ubuntu.
 
 - Install NGINX on the server, by running ```sudo apt-get install nginx```.
 

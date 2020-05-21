@@ -10,7 +10,7 @@ folder: omnia3
 
 ## 1. Prerequisites
 
-- Create a Linux server (Ubuntu 18.04 LTS recommended, 16.04 also supported), with an **omnia** user, who will be responsible for running the application.
+- Create a Linux server (Ubuntu 18.04 LTS), with an **omnia** user, who will be responsible for running the application.
 
     Ensure the firewall has its port 80 and 443 (HTTP and HTTPS) open to the exterior, so you will be able to access the application.
 
@@ -112,7 +112,7 @@ In the nginx site configuration (`/etc/nginx/sites-enabled/default`), there is a
 If you have a valid SSL certificate, follow the instructions in the file to set the site to run in HTTPS-by-default mode, which is **the only supported mode** of running the platform.
 
 If you don't have a certificate, you can choose one of these alternatives:
-- If you have a valid DNS name for your site that you own (i.e., not aws, azure, etc.) , you can set up **Let's Encrypt** for a free certificate. See [this DigitalOcean tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04) for an example of setting it up.
+- If you have a valid DNS name for your site that you own (i.e., not aws, azure, etc.) , you can set up **Let's Encrypt** for a free certificate. See [this DigitalOcean tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04) for an example of setting it up.
 
 - If you don't, you can use the platform via HTTP. This is **not supported** though, but it can be a solution for a quick trial.
 

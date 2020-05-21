@@ -9,7 +9,7 @@ folder: omnia3
 
 ## Hardware Infrastructure
 ### Required
-- A server (virtual machine or not), running Linux. The current officially supported versions are **Ubuntu Server 16.04 LTS** and **18.04 LTS**.
+- A server (virtual machine or not), running Linux. The current officially supported version is **18.04 LTS**.
 - A PostgreSQL server, running a compatible version of Postgres (9.6 or higher).
 
     **Best practises**: avoid sharing the PostgreSQL server between multiple separate installations of OMNIA. As the platform allows modelers to write their own C# code, it could potentially lead to them accessing information of other installations.

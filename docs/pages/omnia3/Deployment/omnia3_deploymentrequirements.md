@@ -27,7 +27,7 @@ In the Linux server, it will be necessary to have the below software installed.
 ### Required
 - NGINX (**1.10.3** or above), configured to act as a reverse proxy.
 - systemd (**229** or above), to run the various parts of OMNIA as services. Comes installed with Ubuntu by default.
-- .NET Core **2.1** SDK (2.1.300 or above).
+- .NET Core **3.1** SDK (3.1.201 or above).
 
 ## Ports and SSL
 In order to run the platform, SSL is the only **supported** mode - it is possible to run it in plain HTTP, but we do not suggest doing so, as it is **not secure** and not GDPR-compliant.

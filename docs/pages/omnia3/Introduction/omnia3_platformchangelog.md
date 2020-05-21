@@ -9,6 +9,12 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.3](#3.3.3)
+Release Date: 2020-05-21
+
+### Bugs:
+  - Health Check - Unhealthy for subscriptions with pending setup
+
 ## [3.3.0](#3.3.0)
 Release Date: 2020-05-19
 

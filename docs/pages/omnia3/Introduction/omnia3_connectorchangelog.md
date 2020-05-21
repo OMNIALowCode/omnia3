@@ -20,6 +20,9 @@ Release Date: 2020-05-19
     For development/debug using Visual Studio, .NET Core 3.1 SDK must be installed.
 
 
+**This version contains breaking changes.**
+**Compatible with OMNIA Platform 3.3.**
+
 ## [3.2.3](#3.2.3)
 Release Date: 2020-03-04
 

@@ -29,7 +29,10 @@ Release Date: 2020-05-19
  - Modeler: Update Form using JSON
  - Add context information to modeler List and Query lists
  - Toast notifications: Move to right/lower corner
-  
+
+**This version contains breaking changes.**
+**Upgrade to OMNIA Connector is required.**
+**Compatible with OMNIA Connector 3.3.**  
 
 ### Bugs:
  - Breadcrumb not translated on navigation (new tab)

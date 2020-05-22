@@ -10,7 +10,7 @@ folder: omnia3
 
 ## 1. Introduction
 
-Each model has an Application Menu definition that will be available in the Application, exposing the options to the user.
+Each model has an Application Menu definition that will be available in the Application, exposing its options to the user.
 The menu can be customized or you can leave to the Platform the responsibility of generating a proposal at Build time.
 
 In case of a customized Application Menu, a new menu entry will be automatically added to the menu root when a new Entity or Dashboard is created.
@@ -43,7 +43,7 @@ Each Menu Entry is defined by:
 ## 3. User Interface Behaviours
 __*Menu / User Interface Behaviours*__
 
-In order to extend your application user interface you can add new behaviours to your menu's user interface.
+In order to extend your application's user interface you can add new behaviours to your menu's user interface.
 
 Click [here](omnia3_modeler_uibehaviours.html), to know more about user interface behaviours.
 

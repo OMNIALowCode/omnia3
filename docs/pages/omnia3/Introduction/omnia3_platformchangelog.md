@@ -14,7 +14,6 @@ Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest ve
 Release Date: 2020-05-27
 
 ### Bugs:
-  - Timeout when debugging cloud behaviours
   - State Machine: Text Attribute detected as change when it is null
   - Error when a collection is sent to update an attribute on a patch request
   - Cannot set webcomponents properties on JavaScript Behaviours when component is located on a nested grid

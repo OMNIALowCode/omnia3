@@ -10,6 +10,23 @@ folder: omnia3
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.17](#3.3.17)
+Release Date: 2020-05-27
+
+### Bugs:
+  - Timeout when debugging cloud behaviours
+  - State Machine: Text Attribute detected as change when it is null
+  - Error when a collection is sent to update an attribute on a patch request
+  - Cannot set webcomponents properties on JavaScript Behaviours when component is located on a nested grid
+  - Invalid location error when adding a namespace to a DataSource
+  - DataSource selected on an external Entity list is not reflected on entity edit
+  - Message is not clear when an entity is added to the model with the code of an existent one
+  
+  
+### Implemented enhancements: 
+  - When importing a model, a message is shown if the .zip file does not have the expected structure
+  - On Modeler, Update With Json option added to Lists, Queries and Dashboards
+  
 ## [3.3.3](#3.3.3)
 Release Date: 2020-05-21
 
@@ -40,7 +57,6 @@ Release Date: 2020-05-19
  - UI/Calendar: Records duplicated after interacting with a caption
  - List: Totals do not reflect the number of entities that exist
  - Modeler: Filters on queries are case sensitive
- - State Machine: Text Attribute detected as change when it is null
  - When a Boolean attribute is set on behaviour as true, it cannot be set manually as false
  - Remote debug not working for System Application Behaviours
 

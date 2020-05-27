@@ -9,6 +9,14 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+
+## [3.3.1](#3.3.1)
+Release Date: 2020-05-27
+
+### Implemented enhancements: 
+  - Timeout when debugging cloud behaviours
+  - Timeout when a request is made to Omnia API that is also processed by the connector 
+  
 ## [3.3.0](#3.3.0)
 Release Date: 2020-05-19
 

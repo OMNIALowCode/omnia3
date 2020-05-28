@@ -14,8 +14,14 @@ Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest v
 Release Date: 2020-05-27
 
 ### Implemented enhancements: 
+  - Concurrent request processing
+
+    **In case you need to process one request at a time or the target system can't handle concurrency, make sure you use a [lock](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/lock-statement) around your code.**
+    
+
+### Bugs: 
   - Timeout when debugging cloud behaviours
-  - Timeout when a request is made to Omnia API that is also processed by the connector 
+  
   
 ## [3.3.0](#3.3.0)
 Release Date: 2020-05-19

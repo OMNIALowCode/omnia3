@@ -13,18 +13,18 @@ Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest ve
 ## [3.3.17](#3.3.17)
 Release Date: 2020-05-27
 
-### Bugs:
-  - State Machine: Text Attribute detected as change when it is null
-  - Error when a collection is sent to update an attribute on a patch request
-  - Cannot set webcomponents properties on JavaScript Behaviours when component is located on a nested grid
-  - Invalid location error when adding a namespace to a DataSource
-  - DataSource selected on an external Entity list is not reflected on entity edit
-  - Message is not clear when an entity is added to the model with the code of an existent one
-  
-  
 ### Implemented enhancements: 
   - When importing a model, a message is shown if the .zip file does not have the expected structure
-  - On Modeler, Update With Json option added to Lists, Queries and Dashboards
+  - Update With Json option added to modeling Lists, Queries and Dashboards
+
+### Bugs:
+  - State Machine: Text Attribute detected as changed when the attribute is null
+  - Error when a collection is sent to update an attribute on a patch request
+  - Cannot set WebComponents properties on JavaScript Behaviours when a component is located on a nested grid
+  - Invalid location error when adding a namespace to a DataSource
+  - DataSource selected on an external Entity list is not reflected on entity edit
+  - The exception message is not clear when an entity is added to the model with the code of an existent one
+  
   
 ## [3.3.3](#3.3.3)
 Release Date: 2020-05-21

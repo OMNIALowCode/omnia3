@@ -55,20 +55,20 @@ if (!requestResult.IsSuccessStatusCode)
 
 ## 2. Customize Platform Notifications
 
-You can customize the List Export as CSV notifications.
-To do that, you can create a Text Template for the Subject and other to the Body.
+You can customize lists "Export as CSV" feature notifications.
+To do that, create a Text Template for the Subject and other to the Body.
 
 You will be receiving the Link (as _DownloadLink_) in the Text Template Data parameters.
 
 
 
-### How customize the Export CSV Notification subject?
+### How to customize the Export CSV Notification subject?
 
  1. Create a new Text Template using the name:  _ExportCsvSuccessEmailSubject_
  1. Change the Template with the desired text. Example: _OMNIA Platform - Your download is ready_
 
 
-### How customize the Export CSV Notification body?
+### How to customize the Export CSV Notification body?
 
  1. Create a new Text Template using the name:  _ExportCsvSuccessEmailBody_
  1. Change the Template with the desired text (HTML can be used). 

@@ -9,6 +9,16 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+  
+## [3.3.26](#3.3.26)
+Release Date: 2020-06-02
+
+### Implemented enhancements:
+  - List Export as CSV - Export in background
+  - List Export as CSV - [Customize Email notifications](/omnia3_modeler_emailnotifications.html#2-customize-platform-notifications)
+  - List Export as CSV - Define the CSV Delimiter
+  - List Export as CSV - CSV Headers with the List Labels
+
 
 ## [3.3.17](#3.3.17)
 Release Date: 2020-05-27

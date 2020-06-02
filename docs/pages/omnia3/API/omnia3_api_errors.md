@@ -25,6 +25,8 @@ The following errors may be returned by the operations of the OMNIA Platform's A
 | ValidationFailed | 400 | Request validation failed. This error can have details in the "errors" properties. Error descriptions in the section "Validation Failed - Errors" |
 | MissingSystemConfiguration | 424 | Missing system configuration. Example: Redis service must configured in your system to be able to restart. |
 | InvalidApplicationVersion | 400 | Application has been updated. It won't be possible to save current work and the page must be refreshed. |
+| DataNotFound | 404 | Your request has no data to return. Please verify your filters and try again. |
+| FileNotFound | 404 | File not found. |
 
 
 ### Validation Failed - Errors

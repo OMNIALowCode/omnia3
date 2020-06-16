@@ -10,6 +10,13 @@ folder: omnia3
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
 
+## [3.3.2](#3.3.2)
+Release Date: 2020-06-16
+
+### Bugs:
+  - `_Context.Operation.IsNew` is false at Before Save when creating a new document
+
+
 ## [3.3.1](#3.3.1)
 Release Date: 2020-05-27
 

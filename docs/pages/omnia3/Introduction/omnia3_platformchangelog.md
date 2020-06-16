@@ -9,6 +9,21 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.35](#3.3.35)
+Release Date: 2020-06-16
+
+### Implemented enhancements:
+  - Respect order of columns on expert CSV file
+  - Improve readability of ReadOnly Grid Line properties on hover
+
+### Bugs:
+  - Calendar: when there blocked days below a day with more than 2 entries, it's impossible to click "See all"
+  - `_Context.Operation.IsNew` is false at Before Save when creating a new document
+  - Can't navigate on Build history 
+  - Can't create new menus
+  - State Machine: Error when attributes of nested grids set as enabled
+  - Error during new DB Setup
+
   
 ## [3.3.27](#3.3.27)
 Release Date: 2020-06-02

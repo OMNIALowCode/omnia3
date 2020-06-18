@@ -9,6 +9,21 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.3.48](#3.3.48)
+Release Date: 2020-06-18
+
+### Implemented enhancements:
+  - Translate enumeration columns on CSV Export
+  - C# Behaviours: Added "TemporaryId" property to Operation Context
+
+### Bugs:
+  - Calendar: "See all" option shows entries of categories that are hidden
+  - Calendar: Cannot set properties of WebComponents located on calendar form
+  - Cannot set properties of WebComponents located on nested grids
+  - Queries: Cannot add new columns on basic queries
+  - CSV Export: exported data does not respect the column order
+
 ## [3.3.35](#3.3.35)
 Release Date: 2020-06-16
 

@@ -1,7 +1,7 @@
 ---
 title: OMNIA 3 Modeler Introduction
-keywords: omnia3
-summary: "OMNIA Modeler Intro"
+keywords: lowcode web application development modeler
+summary: "An introduction of the OMNIA Platform's Modeler feature and how it will help you build better web applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_introduction.html
 folder: omnia3

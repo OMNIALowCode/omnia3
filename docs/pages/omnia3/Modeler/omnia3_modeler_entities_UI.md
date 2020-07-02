@@ -1,7 +1,7 @@
 ---
 title: Modeling Entities (UI)
-keywords: omnia3
-summary: "Modeling Entities (UI)"
+keywords: user interface lowcode web application development
+summary: "Find out how to Structure your application's user interface by Modeling its Entities with the OMNIA Platform's User Interface Modeler."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_entities_ui.html
 folder: omnia3

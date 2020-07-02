@@ -1,7 +1,7 @@
 ---
 title: Email Notifications
-keywords: omnia3
-summary: "Email Notifications"
+keywords: email notifications web application lowcode
+summary: "Here's all you need to know to build the perfect system of Email Notifications for your web applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_emailnotifications.html
 folder: omnia3

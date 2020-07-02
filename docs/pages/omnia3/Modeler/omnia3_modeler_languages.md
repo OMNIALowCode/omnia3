@@ -1,7 +1,7 @@
 ---
 title: Languages
-keywords: omnia3
-summary: "How to manage Model's languages"
+keywords: webapplicationdevelopment languages lowcode
+summary: "All the information on how to make your web apps available in any language you wish."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_languages.html
 folder: omnia3

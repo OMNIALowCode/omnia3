@@ -1,7 +1,7 @@
 ---
 title: Data Visualization
-keywords: omnia3
-summary: "Data Visualization"
+keywords: data visualization query list charts
+summary: "Here's all you need to know regarding the queries, lists and (javascript) charts that make up the set of data visualization tools that OMNIA provides."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_datavisualization.html
 folder: omnia3

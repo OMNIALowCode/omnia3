@@ -1,7 +1,7 @@
 ---
 title: Modeling Entities (Structure)
-keywords: omnia3
-summary: "Modeling Entities (Structure)"
+keywords: modeler lowcode entities web applications
+summary: "Find out how to Structure your applications by Modeling its Entities using the OMNIA Platform's Modeler."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_entities.html
 folder: omnia3

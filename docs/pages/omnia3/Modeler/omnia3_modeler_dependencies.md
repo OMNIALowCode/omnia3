@@ -1,7 +1,7 @@
 ---
 title: Behaviour Dependencies
-keywords: omnia3
-summary: "How to use .NET dependencies"
+keywords: lowcode web application development dotnet dependencies
+summary: "Find out how to use .NET dependencies and how we can improve your web application development experience with the OMNIA Development Platform."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_dependencies.html
 folder: omnia3

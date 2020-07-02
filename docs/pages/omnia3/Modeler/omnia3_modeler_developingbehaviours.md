@@ -1,7 +1,7 @@
 ---
 title: Developing and Debugging Behaviours
-keywords: omnia3
-summary: "How to develop and debug Behaviours with the help of Visual Studio"
+keywords: lowcode visual studio remote development c# behaviours
+summary: "All the information on how to develop and debug C# Behaviours with the help of Visual Studio as a remote development tool for your OMNIA Applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_developingbehaviours.html
 folder: omnia3

@@ -1,7 +1,7 @@
 ---
 title: Modeling Enumerations
-keywords: omnia3
-summary: "Modeling Enumerations"
+keywords: lowcode web application enumerations
+summary: "Here's all you need to know about how to build and model Enumerations for your web applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_enumerations.html
 folder: omnia3

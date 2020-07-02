@@ -1,7 +1,7 @@
 ---
 title: Model Lifecycle
-keywords: omnia3
-summary: "OMNIA Low-Code Development Platform - Model Lifecycle"
+keywords: lowcode web app development business model
+summary: "Get to know OMNIA's web application development lifecycle: Business Model definition. Build and compile; Reuse models at future web application developments."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_lifecycle.html
 folder: omnia3

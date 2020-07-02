@@ -1,7 +1,7 @@
 ---
 title: Text Templates
-keywords: omnia3
-summary: "Text Templates"
+keywords: lowcode html css web application
+summary: "Everything you need to know about our Text Templates feature and how it allows you can build reusable, custom HTML/CSS elements for your web applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_texttemplates.html
 folder: omnia3

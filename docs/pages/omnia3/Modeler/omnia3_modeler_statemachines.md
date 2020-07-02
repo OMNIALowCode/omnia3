@@ -1,7 +1,7 @@
 ---
 title: State Machines
-keywords: omnia3
-summary: "State Machines"
+keywords: finite state machines lowcode web app development
+summary: "Learn all you need to know about our finite-state machine feature and how it easily allows you to build custom, complext state machines and easy implement them on your web applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_statemachines.html
 folder: omnia3

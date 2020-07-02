@@ -1,7 +1,7 @@
 ---
 title: Best Practices
-keywords: omnia3
-summary: "Modeling Best Practices"
+keywords: lowcode web app development best practices
+summary: "All the best modeling practices of web app development with the OMNIA Platform."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_bestpractices.html
 folder: omnia3

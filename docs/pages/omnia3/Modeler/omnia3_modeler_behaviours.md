@@ -1,7 +1,7 @@
 ---
 title: Behaviours
-keywords: omnia3
-summary: "Behaviours"
+keywords: low code web application development C# JS behaviours
+summary: "All you need to know regarding C# and JS behaviours and how they'll enhance your web application development."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_behaviours.html
 folder: omnia3

@@ -1,7 +1,7 @@
 ---
 title: Web Components
-keywords: omnia3
-summary: "Web Components"
+keywords: lowcode web application web components
+summary: "A list of all the currently available web components that you can start using today in your OMNIA web applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_webcomponents.html
 folder: omnia3

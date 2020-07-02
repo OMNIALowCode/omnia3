@@ -1,7 +1,7 @@
 ---
 title: User Interface Behaviours
-keywords: omnia3
-summary: "User Interface Behaviours"
+keywords: javascript lowcode web app development user interface
+summary: "Find all you need to know about our (Javascript) user inferface behaviours and how you can design awesome user experiences for your web app users."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_uibehaviours.html
 folder: omnia3

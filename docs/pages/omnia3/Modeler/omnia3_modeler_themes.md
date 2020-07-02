@@ -1,7 +1,7 @@
 ---
 title: Themes
-keywords: omnia3
-summary: 'Themes'
+keywords: lowcode user interface bootstrap SCSS
+summary: 'All the information regarding our Themes feature. Build amazing user interfaces fast using bootstrap's SCSS and bring your web applications to the next level.'
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_themes.html
 folder: omnia3

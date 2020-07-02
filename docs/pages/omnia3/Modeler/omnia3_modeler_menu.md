@@ -1,7 +1,7 @@
 ---
 title: Application Menu
-keywords: omnia3
-summary: "Modeling Application Menu"
+keywords: lowcode web app development menu
+summary: "All the details about our Application Menu feature and how you can build custom menus for your web applications."
 sidebar: omnia3_sidebar
 permalink: omnia3_modeler_menu.html
 folder: omnia3

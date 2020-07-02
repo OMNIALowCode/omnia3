@@ -10,6 +10,12 @@ folder: omnia3
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.54](#3.3.54)
+Release Date: 2020-07-02
+
+### Bugs:
+  - Error on multi-value attributes when a webcomponent exists on entity
+
 ## [3.3.48](#3.3.48)
 Release Date: 2020-06-18
 

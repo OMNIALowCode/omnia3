@@ -117,7 +117,7 @@ You can access a SQL parameter (**@_userLanguage**) with the active language of 
 - When concatenating columns, the result must be converted to **citext** so that the filters are evaluated in a **case insensitive** way.
  
 ```SQL
-    SELECT document._code, lines._resource, lines._amount, (employee._code || ' ' || employee._name)::citext
+    SELECT document._code, lines._resource, lines._amount, (employee._code || ' ' || employee._name)::citext employee
     FROM vw_MyDocument document
     JOIN vw_MyDocument_Lines lines on lines.identifier = document.identifier
     LEFT JOIN vw_Employee employee on employee.identifier = document.employee

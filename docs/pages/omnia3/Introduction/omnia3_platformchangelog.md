@@ -9,6 +9,16 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.66](#3.3.66)
+Release Date: 2020-07-07
+
+### Bugs:
+  - State indicator only shown on first page of builds and operations list
+  - Calendar: A blank page is shown when a calendar entry that has a webcomponent is removed
+  - History: A blank page is shown while viewing a previous version of an entity, when the entity has a multi-level collection
+  - List: Boolean column filter options are not translated
+  - Modeler: Multiple errors when entities and attributes are named "Series" or "Identifier".
+  - **Security issue:** All After Save operations of a tenant are visible to all tenant users
 
 ## [3.3.54](#3.3.54)
 Release Date: 2020-07-02

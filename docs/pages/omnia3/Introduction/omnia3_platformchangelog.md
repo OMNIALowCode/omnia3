@@ -9,6 +9,17 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.66](#3.3.66)
+Release Date: 2020-07-07
+
+### Bugs:
+  - Identifier column on database views for nested entities do not identify the parent.
+  - State indicator is displayed only on the first page of the operations list.
+  - Calendar: A blank page is displayed when a calendar entry that has a webcomponent is removed.
+  - History: A blank page is displayed while viewing a previous version of an entity when the entity has a multi-level collection.
+  - List: Boolean column filter options not translated.
+  - Modeler: Multiple errors when entities and attributes are named "Series" or "Identifier".
+  - **Security issue:** All After Save operations of a tenant are visible to all tenant users. After this version, all operations are visible to users with the Administration Role. Users without the Administration Role, can only see new operations created by the logged-in user.
 
 ## [3.3.54](#3.3.54)
 Release Date: 2020-07-02

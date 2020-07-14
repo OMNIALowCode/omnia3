@@ -5,11 +5,35 @@ sidebar: omnia3_sidebar
 permalink: index.html
 ---
 
-<p>Numbers are not always transparent. Sometimes, they tell us a different story 
-apart from the background they’re delivering. 
-OMNIA 3 addresses all the answers to your customers’ pains, when thriving in their daily management complexity. 
-Whether you need to develop a business application from ground zero, or deliver it in a fast manner, OMNIA gives you the right tool for minimizing the time between the analysis of your customers’ requirements, 
-and the delivery of the solution to their challenges.</p>
+As a productivity tool, the OMNIA Platform was built to fullfil the software needs of all types of businesses. At the core of our development platform lie principles of an economic modeling system called REA (Resources, Events, Agents), that serves as the foundation for all concepts and features you'll find during your development experience.
+ 
+The REA framework is directed at accounting systems, with a focus on the recording of the several economic, mostly recurring, events that happen within an organization. It assumes that there are a limited number os concepts within all accounting software and that it is possible to easily design adaptable applications without jeaperdising business logic.
+ 
+The concepts of this thought framework are: 
+ 
+    - Economic Resources;
+    - Economic Agents;
+    - Economic Events;
+    - Commitments;
+    - Documents;
+    - Generic Entities.
+    
+With these concepts, REA found, there is an enourmous percentagem of all day-to-day businesses activities that can be easily discribed and, with OMNIA, made into a beatiful and simple web application.
+ 
+Now for a more detailed information about each concept: 
+ 
+    - Economic Resources: System entities that represent goods with comercial value and definable quantities. These goods are posessed by Economic Agents and are exchanged in financial transactions between two different ones. Examples of Economic resources include Products, Money and Services;
+    
+    - Economic Agents: System entities that represent individuals, or groups of individuals (i.e. a Company). These entities possess Economic Resources and exchange them via financial trasactions. Examples of Economic Agents include Clients, Companies or Employees;
+    
+    - Commitments: It represents a commitment between two Economic Agents to exchange Economic Resources. The concept of a Commitment is needed for one key reason: most trasactions are registered in advance but need to happen in the future, not at the time of their registration;
+    
+    - Economic Events: Represents the actual transaction of Economic Resources between two Economic Agents, one as the receiver and one as the supplier. This way, this trasaction represents an increment for the receiver agent and a decrement for the supplier agent;
+ 
+    - Documents: Being set of Commitments and rules, a document represents everthing that can happen during the transaction of Economic Resources. (Business) Rules specify what can happen in case certain conditons aren't met during a transaction, allowing for the generation of additional commitments. Example: in the context of a Sale, a document is composed of a set of commitments that represent the exchange of goods for money and that may contain (business) rules that will only apply when/if a payment deadline is missed. This may translate into a new commitment that will represent a debt to the company, automatically.
+    
+ 
+In addition to this thought framework, OMNIA also provides the broader terminology of traditional Entity-Relationship models, which we've named Generic Entities. You can build entire applications using these, altough we would recommend prioritizing the usage of the REA elements when they fit your needs as they should, and are built to, accelerate your developments.
 
 <h1 style="font-size:34px;" id="building-a-business-management-app-has-never-been-this-easier-nor-simple">Low-Code Business Application Development Platform</h1>
 

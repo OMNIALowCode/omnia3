@@ -36,7 +36,7 @@ During the behaviour lifecycle, the platform stores the current state of the doc
 
 ## 2. Types of Behaviours
 
-There are currently five different execution moments for behaviours, which follow a logical flow:
+There are currently six different execution moments for behaviours, which follow a logical flow:
 - **Initialize**: Executes when an entity is initiated in the behaviour engine to perform an update or create;
 - **Before Change**: Executes immediately before an update is received for that entity;
 - **Formula**: Executes during updates, requires an attribute, and **calculates** the value of that attribute. Must return a value of the correct type;
@@ -44,7 +44,8 @@ There are currently five different execution moments for behaviours, which follo
 - **After Change**: Executes immediately after the update with the user's changes is done;
 - **Before Save**: Executes when an entity is saved.
 
-Other than these, there is a special entity behaviour that executes afterwards:
+Other than these, there are two special entity behaviours:
+- **Before Collection Entity Initialize**: Executes when a new entity is added to a collection, before its **Initialize** behaviour; 
 - **After Save**: Executes after an entity is saved, asynchronously, by being put in an **outbox** and processed separately. 
 
     After Save behaviours are _async_, and have a custom return type, which will be used like:
@@ -78,6 +79,8 @@ Here are some usage suggestions for each type of behaviour - though, of course, 
 
 - **Initialize**: 
     - Default values for fields;
+- **Before Collection Entity Initialize**:
+    - Set Parent values on fields located on a collection; 
 - **Before Change**: 
     - Performing operations that depend on the previous state of the document; 
 - **Formula**: 

@@ -1,6 +1,7 @@
 ---
 title: "Introduction"
 keywords: omnia3
+summary: "An introduction of the OMNIA Low-Code Development Platform."
 sidebar: omnia3_sidebar
 permalink: index.html
 ---

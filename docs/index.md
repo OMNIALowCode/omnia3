@@ -1,6 +1,7 @@
 ---
 title: "Introduction"
-keywords: omnia3
+keywords: omnia web application development low-code
+summary: "An introduction of the OMNIA Web Application Development Platform."
 sidebar: omnia3_sidebar
 permalink: index.html
 ---
@@ -10,6 +11,7 @@ As a productivity tool, the OMNIA Platform was built to fullfil the software nee
 The REA framework is directed at accounting systems, with a focus on the recording of the several economic, mostly recurring, events that happen within an organization. It assumes that there are a limited number os concepts within all accounting software and that it is possible to easily design adaptable applications without jeaperdising business logic.
  
 The concepts of this thought framework are: 
+
  
   - <strong>Economic Resources</strong>;
   - <strong>Economic Agents</strong>;
@@ -18,10 +20,12 @@ The concepts of this thought framework are:
   - <strong>Documents</strong>;
   - <strong>Generic Entities</strong>.
     
+
 With these concepts, REA found, there is an enourmous percentagem of all day-to-day businesses activities that can be easily discribed and, with OMNIA, made into a beatiful and simple web application.
  
 Now for a more detailed information about each concept: 
  
+
   - <strong>Economic Resources</strong>: System entities that represent goods with comercial value and definable quantities. These goods are posessed by Economic Agents and are exchanged in financial transactions between two different ones. Examples of Economic resources include Products, Money and Services;
     
   - <strong>Economic Agents</strong>: System entities that represent individuals, or groups of individuals (i.e. a Company). These entities possess Economic Resources and exchange them via financial trasactions. Examples of Economic Agents include Clients, Companies or Employees;

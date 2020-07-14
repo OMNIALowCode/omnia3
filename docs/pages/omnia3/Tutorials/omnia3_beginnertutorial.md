@@ -82,7 +82,6 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     ```C#
         entry._provider = Supplier;
         entry._receiver = Company;
-        });
     ```
 
 21. Go to your **_PurchaseOrder_** **Document** User Interface by accessing the respective tab and reorganize them to simplify the interface (click on a element to edit/remove it). Remove the elements **Provider**, **Receiver** and **Code** from **OrderLines** element. At last, remove **Code** element UI from Document.

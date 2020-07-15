@@ -9,6 +9,19 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.3.73](#3.3.73)
+Release Date: 2020-07-15
+
+### Implemented enhancements: 
+  - Recalculate database views on Clean & Build.
+  - New API Behaviour type: Before collection entity initialize.
+
+### Bugs:
+  - Entity History: Decisions and States are not always translated.
+  - Validation errors when importing older models.
+  - Operation Context set as "EntityUpdate" on delete operations.
+
 ## [3.3.66](#3.3.66)
 Release Date: 2020-07-07
 

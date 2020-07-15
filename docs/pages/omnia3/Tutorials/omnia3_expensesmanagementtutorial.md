@@ -112,17 +112,14 @@ This tutorial assumes that you have created a OMNIA tenant, and are logged in as
     entry._receiver = Company;
     entry._provider = Employee;
     entry._amount = entry.ExpenseAmount/ExchangeRate;
+
+    TotalAmount += entry._amount;
+
     ```
 
-22. Now, to change the **TotalAmount** add a new **After Change Behaviour** by accessing the tab Behaviours and clicking the button **_Add new / After Change_**. Set _AfterChangeBehaviours_ as Name and paste the following code:
+22. Go to your **ExpenseReport** Document User Interface by accessing the respective tab, and reorganize it to simplify the interface. Delete the attributes Code, Provider, Receiver and Quantity from the **ExpenseLines** element. At last, delete the Code attribute from Document.
 
-    ```C#
-    TotalAmount = ExpenseLines.Sum(a => a._amount);
-    ```
-
-23. Go to your **ExpenseReport** Document User Interface by accessing the respective tab, and reorganize it to simplify the interface. Delete the attributes Code, Provider, Receiver and Quantity from the **ExpenseLines** element. At last, delete the Code attribute from Document.
-
-24. Reorganize Rows and Columns, re-establishing the size and position of their attributes:
+23. Reorganize Rows and Columns, re-establishing the size and position of their attributes:
 
     - **_Serie_**: Row 1, Column 1 and Size 4;
     - **_Number_**: Row 1, Column 2 and Size 4;
@@ -137,9 +134,9 @@ This tutorial assumes that you have created a OMNIA tenant, and are logged in as
       - **_Amount_**: Row 1, Column 11 and Size 2;
     - **_TotalAmount_**: Row 5, Column 11 and Size 2.
 
-25. Perform a new Build (by accessing the option **_Versioning / Builds / Create new_**).
+24. Perform a new Build (by accessing the option **_Versioning / Builds / Create new_**).
 
-26. Go to application and validate User Interface changes, by creating a new **ExpenseReport** document. The interface should be equal to the one below:
+25. Go to application and validate User Interface changes, by creating a new **ExpenseReport** document. The interface should be equal to the one below:
 
     ![Application_ExpenseReport_Result](/images/tutorials/expensemanagement/Application-ExpenseReport-Result.PNG)
 

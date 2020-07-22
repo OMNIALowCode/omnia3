@@ -38,7 +38,7 @@ In the **_Text Template_** page will you have three different sections:
 The following parameters are available to use when writing a text template:
 * **Data**: A set of key-value pair entries, that can be sent in the request body;
 * **Context**: A representation of the request context (similar to what is used in the C# and Javascript behaviours);
-* **Texts**: The set of texts of the language in which the request was made.
+* **Texts**: The set of texts of the language in which the request was made. Example: `Texts.Hello` to use the text "Hello" from the current user language.
 
 ## 3. Using Text Templates
 Text templates can be used in all scenarios where a text content is required, based on different data and/or language (for example, in the body of an e-mail notification). 

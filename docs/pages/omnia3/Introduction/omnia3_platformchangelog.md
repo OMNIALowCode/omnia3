@@ -10,6 +10,26 @@ folder: omnia3
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.91](#3.3.91)
+Release Date: 2020-07-23
+
+
+### Bugs:
+  - Editable Grid Headers: don't respect width when a property is optional.
+  - User doesn't receive After Save notifications after token refresh (1 hour).
+  - Horizontal scaling - Requests to connector fail occasionally.
+  - User doesn't receive the New Build Version notification when he changes the Tenant.
+  - If the user doesn't have access to any tenant, can't logout.
+  - When adding a new Entity to a model, Privileges are granted to all roles the modeler is associated.
+  - Error on creating a previously removed language.
+  - Date Attributes - Date is changed to 01/01/0001 when changing the value.
+  - Mobile: Context buttons are not formatted correctly on tenant creation.
+  - Decimals on Lists exported to CSV do not reflect list data precision.
+  - User can be added multiple times to role.
+  - Security - Double click required to edit a role.
+  - WebApp Lists: On zoom in or zoom out, the number of columns on a list doesn't change because a render is necessary (or F5).
+  - WebApp Editable Grid: If the grid has a high number of columns, the size defined is not respected.
+
 ## [3.3.73](#3.3.73)
 Release Date: 2020-07-15
 

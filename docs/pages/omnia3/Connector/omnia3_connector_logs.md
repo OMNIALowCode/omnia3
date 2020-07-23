@@ -15,7 +15,6 @@ Each of them will output their logs into the log folder configured by the user, 
 
 The default locations are:
 
- - **Behaviours logs:** c:\var\log
  - **Connector logs:** %temp%\omnia\
 
 _Note: if the Connector is running in the context of Local System user, the Temp folder of that user is: C:\Windows\Temp\omnia_

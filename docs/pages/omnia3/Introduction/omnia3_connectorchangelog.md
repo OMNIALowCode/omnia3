@@ -9,6 +9,13 @@ folder: omnia3
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.3.5](#3.3.5)
+Release Date: 2020-07-23
+
+### Bugs:
+  - When installed as a Windows Service, connector fails to restart.
+  - Logs spread across multiple locations.
+
 
 ## [3.3.2](#3.3.2)
 Release Date: 2020-06-16

@@ -5,6 +5,7 @@ summary: "OMNIA Platform Changelog"
 sidebar: omnia3_sidebar
 permalink: omnia3_platformchangelog.html
 folder: omnia3
+toc: false
 ---
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.

@@ -11,6 +11,13 @@ toc: false
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.94](#3.3.94)
+Release Date: 2020-07-28
+
+### Bugs:
+  - Connector Communication: Occasional error processing request.
+
+
 ## [3.3.91](#3.3.91)
 Release Date: 2020-07-23
 

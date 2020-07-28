@@ -11,6 +11,13 @@ toc: false
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.95](#3.3.95)
+Release Date: 2020-07-28
+
+### Bugs:
+  - User doesn't receive the error that the connector is not connected.
+
+
 ## [3.3.94](#3.3.94)
 Release Date: 2020-07-28
 

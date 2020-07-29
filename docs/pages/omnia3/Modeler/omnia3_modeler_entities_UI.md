@@ -153,7 +153,7 @@ In this sample, custom element _supplier_ value is changed:
 
 ### How to add or remove a message?
 
-In this sample, is removed and added (based on a condition) a message to the base element _\_code_:
+In this sample a message is removed, and added, to the base element _\_code_:
 
 ```JavaScript
     this._metadata.elements._code.removeMessage('validation');
@@ -163,7 +163,7 @@ In this sample, is removed and added (based on a condition) a message to the bas
         this._metadata.elements._code.addMessage('My success message', 'success', 'validation');
 ```
 
-_Note_: There are available only two types of message, as shown in the previous sample: **error** and **success**.
+_Note_: There are only two types of messages available, as shown in the previous sample: **error** and **success**.
 
 ### How to manage the state of the add and remove options in an editable list?
 
@@ -253,7 +253,7 @@ In this sample, the container _myContainer_ is set as opened:
 ### How to inform the user that an element is loading data?
 
 Inputs give you an attribute to control an internal loader. This is particularly useful when a triggered C# behaviour will change the value of other elements and we want to inform the user that something is happening relative to that element.
-You will be responsible to enable and disable the loader. For example, you can enable when a given element changes the value and disable it [in the UI After Change behaviour](omnia3_modeler_uibehaviours.html#2-types-of-behaviours).
+You will be responsible to enable and disable the loader. Example: enable, or disable, it when a given element changes its value [in the UI After Change behaviour](omnia3_modeler_uibehaviours.html#2-types-of-behaviours).
 
 ```JavaScript
     this._metadata.elements._description.attributes.isLoading = true;
@@ -263,7 +263,7 @@ You will be responsible to enable and disable the loader. For example, you can e
 
 ### How to change the number of decimal places of the element?
 
-In this sample, the number of decimal places of the element _decimalField_ is setted to a custom value _(3)_.
+In this sample, the number of decimal places of the element _decimalField_ is set to a custom value _(3)_.
 
 ```JavaScript
     this._metadata.elements.decimalField.attributes.precision = 3;

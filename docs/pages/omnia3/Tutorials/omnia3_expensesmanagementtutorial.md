@@ -73,7 +73,7 @@ This tutorial assumes that you have created a OMNIA tenant, and are logged in as
 
     - Add a new **Primitive** attribute to your **Document**. Set its _Name_ as **ExpenseDate**, _Type_ as **_Date_**, and as required by checking option _Is required?_.
 
-18. Perform a new Build (by accessing the option **_Versioning / Builds / Create new_**). Access the application and test the new creation of the document.
+18. Perform a new Build (by accessing the option **_Versioning / Builds / Create new_**). Access the application and validate your changes by creating a new document.
 
 19. Go back to modeling area (through the top bar option)
 

@@ -1,7 +1,7 @@
 ---
 title: Beginner Tutorial
 keywords: omnia3
-summary: 'Get started with you first steps on OMNIA Low-Code Development Platform'
+summary: 'Take your first steps with the OMNIA Low-Code Development Platform'
 sidebar: omnia3_sidebar
 permalink: omnia3_beginnertutorial.html
 folder: omnia3
@@ -29,17 +29,17 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
    ![Homepage_Dashboard](/images/tutorials/beginner/Modeler-Homepage.PNG)
 
-2. Through the left side menu, access the option **_Agents / Add New_** on the top right side, and setting its _Name_ as **Company**.
+2. Through the left side menu, access the option **_Agents / Add New_** on the top right side, and set its _Name_ as **Company**.
 
    ![Modeler_Create_Agent](/images/tutorials/beginner/Modeler-Create-Agent.PNG)
 
 3. Return to the **_Agents_** list and click on button **_Add new_** to add a new Agent. Set its _Name_ as **Supplier**.
 
-4. Through the left side menu, access the option **_Resources / Add new_** on the top right side, and setting its _Name_ as **Product**.
+4. Through the left side menu, access the option **_Resources / Add new_** on the top right side, and set its _Name_ as **Product**.
 
 5. "Build & Deploy" your model (top right corner of the modeling area).
 
-6. On the right side of the top bar, click the first button and select the option **_Application_** (Refresh the page so you can see the option). You will now be redirected to the application area.
+6. On the right side of the top bar, click the first button and select the option **_Application_** (Refresh the page so you can see the option). You'll be redirected to the application area.
 
    ![Modeler_Navigate_Application](/images/tutorials/beginner/Modeler-Navigate-Application.PNG)
 
@@ -69,9 +69,9 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
 
 15. Build & Deploy model
 
-16. Navigate to **_Application_** through the top bar menu and create a **Serie** for the document you just created, by selecting the option **Series / PurchaseOrderSeries -> Create New** and fill in the input fields.
+16. Navigate to **_Application_** through the top bar menu and create a **Serie** for the document you've just created, by selecting the option **Series / PurchaseOrderSeries -> Create New** and filling in the input fields.
 
-17. Click the menu arrow to see the main menu and create a new **PurchaseOrder** by selecting the option **_Documents / PurchaseOrder -> Create New_** and fill the needed fields.
+17. Click the menu arrow to see the main menu and create a new **PurchaseOrder** by selecting the option **_Documents / PurchaseOrder -> Create New_** and filling in the needed fields.
 
 18. After saving your new document, go back to modeling area (by accessing top bar menu option **_Modeler_**) and edit the **PurchaseOrder** document to simplify its interface. Add a new attribute by clicking the button **Add new / Reference**. Set its _Name_ as **Company**, _Type_ as **_Agent / Company_**, and as required by checking option _Is required?_.
 
@@ -101,4 +101,4 @@ If you do not have a tenant yet, please follow the steps of the [Tenant Creation
     ![Application_Final_Interface](/images/tutorials/beginner/Application-View-PurchaseOrder.PNG)
 
 
-    **Congratulations** on your very **first insight** into OMNIA Low-Code Platform's true **development agility**! Now, it's time to **move** to our next challenge: [**OMNIA's Platform Advanced Tutorial**](omnia3_advancedtutorial.html).
+    **Congratulations** on completing your **first steps** with the **OMNIA Low-Code Development Platform** and welcome to the world of **development agility**! Now, it's time to **move** to our next challenge: [**OMNIA's Platform Advanced Tutorial**](omnia3_advancedtutorial.html).

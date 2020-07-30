@@ -204,6 +204,10 @@ entries:
             url: /omnia3_modeler_bestpractices.html
             output: web, pdf
 
+          - title: User Interface
+            url: /omnia3_modeler_userinterface.html
+            output: web, pdf
+
       - title: Application
         output: web, pdf
         folderitems:

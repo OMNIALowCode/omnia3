@@ -139,3 +139,19 @@ You will be asked for a platform administrator email. Insert a valid email addre
 The site's configurations **must** contain a valid SMTP configuration, so that emails are sent.
 
 When you receive the email, and perform a first login successfully, the platform is ready to use!
+
+## 8. Configure logging Level
+
+The platform logging level can be configured in the subscription configuration file.
+
+Levels:
+ - Debug
+ - Information
+ - Warning
+ - Error
+
+```JSON
+  "Logging": {
+	"Level": "Debug"
+  }
+```  

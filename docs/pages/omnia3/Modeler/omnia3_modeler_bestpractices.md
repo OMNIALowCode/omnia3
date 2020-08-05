@@ -52,3 +52,12 @@ To know more about idempotency:
 
 The authorization to execute a given application behaviour should be implemented in the Application Behaviour.
 Information like the current Role or Username can be accessed from the `Context`.
+
+### Round Calculated decimal attributes 
+
+Decimal attributes that are calculated on C# behaviours should be rounded to match the number of decimal cases defined on UI.
+
+
+```
+    this.Average = Decimal.Round(this.Amount / this.Quantity, 2);
+```

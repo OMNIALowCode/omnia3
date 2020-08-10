@@ -233,6 +233,8 @@ var logger = _Context.Services.GetService<ILogger<Customer>>();
 
 _Replace "Customer" by the name of your Class._
 
+To use ILogger register the namespace `Microsoft.Extensions.Logging`.
+
 ## 10. .NET Versions
 
 The compiled C# code, targets the following platforms:

@@ -11,6 +11,23 @@ toc: false
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.112](#3.3.112)
+Release Date: 2020-08-12
+
+### Implemented enhancements: 
+ - WebApp Grids: Show text on an empty collection
+ - WebApp Grids: Change column max limit on Widescreens to 20
+ - Subscription: Control logging level
+
+### Bugs:
+  - User can't access "My Account" option
+  - Calendar: When using multiple categories with similar text, the color is similar
+  - WebApp Theme/Navbar: Changing the Notification Toast position on a theme breaks navbar
+  - Multiplicity: It is possible to define a negative number of records
+  - Enumeration: if the value is set as null on behaviour, it is not reflected on UI
+  - Duplicated instances with different casing
+  - Modeler: When an enumerator is created, the user is not redirected to the new enum
+
 ## [3.3.95](#3.3.95)
 Release Date: 2020-07-28
 

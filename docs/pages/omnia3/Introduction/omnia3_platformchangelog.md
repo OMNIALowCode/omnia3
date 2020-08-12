@@ -10,7 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.113](#3.3.113)
+Release Date: 2020-08-12
 
+### Bugs:
+  - Cannot model entities with "Form" on the name
+  
 ## [3.3.112](#3.3.112)
 Release Date: 2020-08-12
 

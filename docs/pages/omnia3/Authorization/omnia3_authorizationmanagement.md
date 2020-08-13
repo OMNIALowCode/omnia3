@@ -41,6 +41,15 @@ When a new tenant is created, a new policy is created whose name is the tenant c
 
 Since policies and permissions are limited and managed by the platform, they cannot be created manually or removed.
 
+### Users
+
+An User account grants access to Omnia Platform. By default, Omnia Platform has one Administration User.
+
+On management area, new platform users can be added, by introducing the username and its roles. Existent users can be listed and added/removed from roles.
+
+When a new user is created, it receives an email notification to confirm the account. The user must confirm the account by setting its credentials on the 24 hours that follow the email reception. After that period, a password reset request must be made, using the option "Forgot your password" on the Login page.
+
+
 ### 1.2 Tenant
 
 In the tenant authorization area (option **Security** on right side of top navbar) you can manage all *Policies* and *Roles* inside a tenant. Access to this option is limited by the Platform Roles.
@@ -62,3 +71,11 @@ By default, each tenant has three policies:
 *Administration* role has access granted to all this permissions. If new roles are added, access to the permissions can be granted.
 
 Since policies and permissions are limited and managed by the platform, they cannot be created manually or removed.
+
+### Users
+
+By default, each tenant has one user, that is automatically associated to the Administration role on the moment the tenant is created.
+
+Other users can be added to the tenant, by introducing the username and defining its roles. Existent users can be listed and added/removed from roles.
+
+When a new user is created, it is automatically associated to the tenant Users[TenantCode] role, and receives an email notification to set its credentials.

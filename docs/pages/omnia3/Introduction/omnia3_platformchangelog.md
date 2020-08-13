@@ -10,6 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.115](#3.3.115)
+Release Date: 2020-08-13
+
+### Bugs:
+  - Duplicated entity error when creating an entity of a external Data Source
+
 ## [3.3.113](#3.3.113)
 Release Date: 2020-08-12
 

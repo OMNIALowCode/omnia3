@@ -10,6 +10,22 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+
+## [3.3.125](#3.3.125)
+Release Date: 2020-08-18
+
+### Implemented enhancements:
+  - Security: List and manage Users 
+  - Security: Filters implemented on all lists
+  
+### Bugs:
+  - Themes: Cancel button does not close modal on modeler
+  - Security Roles: Cancel button does not close new role modal
+  - Text Templates: Language is not available to be used on text template
+  - Modeler: It is possible to create attributes with invalid names
+  - It is possible to create tenants with invalid names
+  - Application Behaviours: Argument Keys sent to behaviour are case sensitive  
+
 ## [3.3.115](#3.3.115)
 Release Date: 2020-08-13
 

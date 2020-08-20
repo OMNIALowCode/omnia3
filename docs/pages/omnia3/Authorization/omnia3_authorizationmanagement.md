@@ -43,11 +43,12 @@ Since policies and permissions are limited and managed by the platform, they can
 
 ### Users
 
-An User account grants access to Omnia Platform. By default, Omnia Platform has one Administration User.
+User accounts grant access to the OMNIA Platform. By default, OMNIA has one User with the Role of Administration.
 
-On management area, new platform users can be added, by introducing the username and its roles. Existent users can be listed and added/removed from roles.
+You can add new users to the Platform on its Management Area, by adding a new username and its roles.
+Existent users can be listed and added/removed from roles.
 
-When a new user is created, it receives an email notification to confirm the account. The user must confirm the account by setting its credentials on the 24 hours that follow the email reception. After that period, a password reset request must be made, using the option "Forgot your password" on the Login page.
+When a new user is created an email notification is sent to confirm the account. The user must confirm the account by setting its credentials on the 24 hours that follow the email reception. After that period, a password reset request must be made, using the option "Forgot your password" on the Login page.
 
 
 ### 1.2 Tenant
@@ -74,8 +75,8 @@ Since policies and permissions are limited and managed by the platform, they can
 
 ### Users
 
-By default, each tenant has one user, that is automatically associated to the Administration role on the moment the tenant is created.
+By default, each tenant has one user that is automatically associated to the Administration role on the moment the tenant is created.
 
 Other users can be added to the tenant, by introducing the username and defining its roles. Existent users can be listed and added/removed from roles.
 
-When a new user is created, it is automatically associated to the tenant Users[TenantCode] role, and receives an email notification to set its credentials.
+When a new user is created, it is automatically associated to the tenant Users[TenantCode] role and receives an email notification to set its credentials.

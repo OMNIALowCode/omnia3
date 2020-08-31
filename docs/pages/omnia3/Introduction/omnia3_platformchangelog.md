@@ -17,6 +17,7 @@ Release Date: 2020-08-31
 ### Implemented enhancements:
   - Modeler: New Javascript accelerator to control form options
   - Hide element JS accelerator: Added support for nested grids
+  - Stability improvements when under high load conditions.
   
 ### Bugs:
   - Enumerations: When a new enum entry is modeled without a label, an error is returned and a page refresh required

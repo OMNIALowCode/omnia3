@@ -11,6 +11,21 @@ toc: false
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.139](#3.3.139)
+Release Date: 2020-08-31
+
+### Implemented enhancements:
+  - Modeler: New Javascript accelerator to control form options
+  - Hide element JS accelerator: Added support for nested grids
+  
+### Bugs:
+  - Enumerations: When a new enum entry is modeled without a label, an error is returned and a page refresh required
+  - Security Roles: User removal confirmation message is not clear
+  - After Save Behaviours: On concurrency scenarios, the request context received is not correct
+  - File upload: When the uploaded file is empty, the error message is not clear
+  - Application Behaviours: An error is returned when an application behaviour is called through API with a case that is different from the modeled
+  
+
 ## [3.3.125](#3.3.125)
 Release Date: 2020-08-18
 

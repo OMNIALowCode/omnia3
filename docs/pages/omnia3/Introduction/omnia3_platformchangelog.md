@@ -11,6 +11,20 @@ toc: false
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 
+## [3.3.149](#3.3.149)
+Release Date: 2020-09-08
+
+### Implemented enhancements:
+  - Modeler: New Javascript accelerator to control collection options
+  - Modeler: After Save accelerators suggest async/await on requests to API
+  - Users can be removed from all roles at once
+  
+### Bugs:
+  - When an entity of an external data source is removed, the confirmation modal is not closed
+  - When subscription is restarted through Management area, it does not start correctly 
+  - Security: Lists are not refreshed after an operation
+
+
 ## [3.3.139](#3.3.139)
 Release Date: 2020-08-31
 

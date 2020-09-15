@@ -10,6 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.152](#3.3.152)
+Release Date: 2020-09-15
+
+### Implemented enhancements:
+  - Management: Activate/Inactivate tenants
+
 
 ## [3.3.149](#3.3.149)
 Release Date: 2020-09-08

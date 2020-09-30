@@ -142,7 +142,7 @@ When you receive the email, and perform a first login successfully, the platform
 
 ## 8. Configure logging Level
 
-The platform logging level can be configured in the subscription configuration file.
+The platform's logging level can be configured in the subscription configuration file.
 
 Levels:
  - Debug

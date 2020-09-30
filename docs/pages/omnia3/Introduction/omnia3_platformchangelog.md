@@ -10,6 +10,16 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.149](#3.3.164)
+Release Date: 2020-09-30
+
+### Implemented enhancements:
+  - OMNIA Units - Show the current number of OMNIA Units in the modeler portal
+  
+### Bugs:
+  - Date Attributes - Picker not visible when using an attribute in a collection
+  - If a reference is added to a Data Source with whitespace on the begin or end, it fails to compile
+
 ## [3.3.152](#3.3.152)
 Release Date: 2020-09-15
 

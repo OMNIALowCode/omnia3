@@ -10,6 +10,15 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.3.166](#3.3.166)
+Release Date: 2020-10-08
+
+### Implemented enhancements:
+  - Authentication Providers - Don't trigger signout on Authentication Provider system when user logoff.
+  
+### Bugs:
+  - Read data behaviour being invoked before Save data behaviour.
+
 ## [3.3.164](#3.3.164)
 Release Date: 2020-09-30
 

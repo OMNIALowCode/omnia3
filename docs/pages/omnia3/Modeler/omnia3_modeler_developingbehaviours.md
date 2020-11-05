@@ -157,9 +157,80 @@ By running `npm start` you are launching a sass compiler that will watch the cha
 To develop an OMNIA Platform on top of a Docker you will need to:
 
 - Install Docker. [Click here to download](https://www.docker.com/products/docker-desktop/);
-- [Download the latest version of Development Environment](#omnia3_downloads.html) and unzip to a new folder.
-- Go to the extracted folder and install OMNIA services by running the executable file "`docker-install.exe`";
+- [Download the latest version of Development Environment](omnia3_downloads.html) and unzip to a new folder.
+- Go to the extracted folder and install OMNIA services by running the PowerShell script file "`start.ps1`";
 
 A new tab on your browser should open in `localhost:5000`, providing you the full OMNIA experience right from machine.
 
-The first time you build & deploy a Tenant a new folder `omnia` will be created in the location where you extracted the Development Environment on the step 2 above. It contains the behaviours for all different Tenants you build, so you can locally make changes with an instant effect on the browser.
+During the first run experience, you must create a user and add a new Tenant to the Platform.
+
+You're only able to use the Development Environment after your first Tenant build (using _Build & Deploy_ option in Modeler). After that you will have local access to Platform's Behaviours and make changes with an instant effect on your Browser.
+
+### 7.2. Initializing the local development environment
+
+To initialize the local development environment you need to:
+
+- Open Visual Studio Code;
+- Install [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker);
+- Click in the left corner new green button "`Open a Remote Window`";
+- Select "`Remote-Container: Attach to Running Container...`" option;
+- Select "`/omniaplatform_development`" container.
+
+A new VS Code window will open, you may now close the previous one. The new window is linked with the OMNIA Platform local Container, you will need to select which Behaviours to debug: `UI`, `Entity` or `Queries`. To do so:
+
+- Select "File" option in the top navigation menu;
+- Select "Open workspace";
+- To set the `.workspace` file location, replace the "`/root/`" path with "`/home/omnia/tmp/behaviours/`";
+- Keep editing the directory path, now selecting the Tenant you want to debug;
+- Select the environment directory;
+- To have access to the most recent application version select "`/Application/Source/latest/`"\* directory. You can also access any other version by replacing `latest` with the desired version's path;
+- Select one of the folders to choose the Behaviours type to debug: ["/UI"](#7.3-debug-user-interface-behaviours), ["/Server"](#7.4-debug-entity-behaviours) (Entity) or ["/Database"](#7.5-debug-database-queries) (Queries).
+
+\* NOTE: The `/latest` folder always contains the most recent version of the local Tenant's application, meaning it changes whenever you _Build & Deploy_.
+
+### 7.3. Debug User Interface Behaviours
+
+Select the "`dev.code-workspace`" file to open the UI workspace. With the UI workspace open you can check every UI Behaviour inside the "`/Behaviours`" folder, and change any code to debug. Local changes only applies after saving the files.
+
+Now to verify and test your changes, you need to start a _HTTP server_ by pressing `F5` or the `"Run"` button on the left panel. This has the same result as the _HTTP server_ you start when using Remote UI, so don't forget to save the HTTP Port it returns.
+
+To access your local application, navigate to `localhost:5000` and follow the steps ["Once you have the HTTP server running" section](#6.2-initializing-the-development-environment).
+
+This allows you to locally debug and code any OMNIA Platform application UI Behaviour, use breakpoints and _IntelliSense_ that supports entity and platform properties and variables.
+
+### 7.4. Debug Entity Behaviours
+
+Navigate to "`/Behaviours`" folder and select the "`dev.code-workspace`" file to open the Server workspace. With the Server workspace open you can check every Entity Behaviour and change any code to debug. Local changes only applies after saving the files.
+
+As soon as you open the Server workspace for the first time, you may receive a notification in VS Code to install the `C# extension` to enable _IntelliSense_. We recommend you to do that.
+
+Another notification to restore code dependencies must also prompts in the first time running the workspace, having you to confirm it to avoid errors.
+
+Now to verify and test your changes, start a local server by pressing `F5` or the `"Run"` button on the left panel.
+
+To access your local application, navigate to `localhost:5000` and open the _Application_ section.
+
+This allows you to locally debug and code any OMNIA Platform application Entity Behaviour, use breakpoints and _IntelliSense_ that supports entity and platform properties and variables.
+
+### 7.5. Debug Database Queries
+
+Check the Docker icon in your computer task-bar, right click it and open the _Dashboard_. That's where your OMNIA Platform Docker is running, containing all the different _Containers_.
+
+Expand the _Containers_ and check the "`PORT`" number where the "`omniaplatform_database`" container is running. Save it, you'll need it later.
+
+To access a subscription Database, you require pgAdmin. Download it [here](https://www.pgadmin.org/download/).
+
+After running and configure your first start of pgAdmin on your Browser, you need to:
+
+- Right click in "`Servers`" in the "`Browser`" section;
+- Select "`Create`" and then "`Server...`";
+- Set a _Name_ at your preference;
+- Select the "`Connection`" tab;
+- Set "`localhost`" as _Host name/address_;
+- Set the "`PORT`" of "`omniaplatform_database`" as _Port_;
+- Set "`omnia`" as _Username_ and _Password_;
+- Hit _Save_.
+
+You've successfully added the new OMNIA local server to pgAdmin. To check the OMNIA database click in the dropdown next to the new server, then do it again in "`Databases`" and "`omnia`".
+
+That's it! Now you have access to the entire subscription database, allowing you to locally run SQL Queries with _IntelliSense_ that supports entity and platform properties and variables.

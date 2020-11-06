@@ -171,7 +171,7 @@ You're only able to use the Development Environment after your first Tenant buil
 To initialize the local development environment you need to:
 
 - Open Visual Studio Code;
-- Install [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker);
+- Install [Remote - Containers extension](vscode:extension/ms-vscode-remote.remote-containers);
 - Click in the left corner new green button "`Open a Remote Window`";
 - Select "`Remote-Container: Attach to Running Container...`" option;
 - Select "`/omniaplatform_development`" container.

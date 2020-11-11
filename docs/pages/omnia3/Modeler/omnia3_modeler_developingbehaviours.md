@@ -194,7 +194,7 @@ Select the "`dev.code-workspace`" file to open the UI workspace. With the UI wor
 
 Now to verify and test your changes, you need to start a _HTTP server_ by pressing `F5` or the `"Run"` button on the left panel. This has the same result as the _HTTP server_ you start when using Remote UI, so don't forget to save the HTTP Port it returns.
 
-To access your local application, navigate to `localhost:5000` and follow the steps ["Once you have the HTTP server running" section](#6.2-initializing-the-development-environment).
+To access your local application, navigate to `localhost:5000` and follow the steps in ["Once you have the HTTP server running" section](#6.2-initializing-the-development-environment).
 
 This allows you to locally debug and code any OMNIA Platform application UI Behaviour, use breakpoints and _IntelliSense_ that supports entity and platform properties and variables.
 
@@ -202,7 +202,7 @@ This allows you to locally debug and code any OMNIA Platform application UI Beha
 
 Navigate to "`/Behaviours`" folder and select the "`dev.code-workspace`" file to open the Server workspace. With the Server workspace open you can check every Entity Behaviour and change any code to debug. Local changes only applies after saving the files.
 
-As soon as you open the Server workspace for the first time, you may receive a notification in VS Code to install the `C# extension` to enable _IntelliSense_. We recommend you to do that.
+As soon as you open the Server workspace for the first time, you may receive a notification in VS Code to install some `extensions`. We recommend you to do that to enable _IntelliSense_.
 
 Another notification to restore code dependencies must also prompts in the first time running the workspace, having you to confirm it to avoid errors.
 
@@ -225,7 +225,7 @@ To log in pgAdmin use the following credentials:
 
 Now, to link the OMNIA Platform database:
 
-- Right click in "`Servers`" in the "`Browser`" section;
+- In the "`Browser`" section, right click in "`Servers`";
 - Select "`Create`" and then "`Server...`";
 - Set a _Name_ at your preference;
 - Select the "`Connection`" tab;
@@ -237,3 +237,13 @@ Now, to link the OMNIA Platform database:
 You've successfully added the new OMNIA local server to pgAdmin. To check the OMNIA database click in the dropdown next to the new server, then do it again in "`Databases`" and "`omnia`".
 
 That's it! Now you have access to the entire subscription database, allowing you to locally run SQL Queries with _IntelliSense_ that supports entity and platform properties and variables.
+
+### 7.5. Remove OMNIA Containers from Docker
+
+To remove ("`uninstall`") the OMNIA Platform containers from your Docker, you simply need to run the following command:
+
+```
+    docker-compose -p OmniaPlatform down --rmi all
+```
+
+This will stop every running container from the `OmniaPlatform` project and then remove them all, including it's images.

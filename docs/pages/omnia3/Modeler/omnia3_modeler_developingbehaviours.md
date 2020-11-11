@@ -168,29 +168,27 @@ You're only able to use the Development Environment after your first Tenant buil
 
 ### 7.2. Initializing the local development environment
 
-To initialize the local development environment you need to:
+To initialize the local development environment you need to install the [Remote - Containers extension](vscode:extension/ms-vscode-remote.remote-containers) on your Visual Studio Code, to be able to open the project workspaces on Docker containers.
 
-- Open Visual Studio Code;
-- Install [Remote - Containers extension](vscode:extension/ms-vscode-remote.remote-containers);
-- Click in the left corner new green button "`Open a Remote Window`";
-- Select "`Remote-Container: Attach to Running Container...`" option;
-- Select "`/omniaplatform_development`" container.
+OMNIA Platform offers a simple way to open project workspaces directly from the local running Tenant's Modeler section. On how to do that, follow the steps in "`Open Workspaces via Modeler`".
 
-A new VS Code window will open, you may now close the previous one. The new window is linked with the OMNIA Platform local Container, you will need to select which Behaviours to debug: `UI`, `Entity` or `Queries`. To do so:
+In order to run queries using the local Database, follow the steps on how to ["Debug Database Queries"](#7.5-debug-database-queries).
 
-- Select "File" option in the top navigation menu;
-- Select "Open workspace";
-- To set the `.workspace` file location, replace the "`/root/`" path with "`/home/omnia/tmp/behaviours/`";
-- Keep editing the directory path, now selecting the Tenant you want to debug;
-- Select the environment directory;
-- To have access to the most recent application version select "`/Application/Source/latest/`"\* directory. You can also access any other version by replacing `latest` with the desired version's path;
-- Select one of the folders to choose the Behaviours type to debug: ["/UI"](#7.3-debug-user-interface-behaviours), ["/Server"](#7.4-debug-entity-behaviours) (Entity) or ["/Database"](#7.5-debug-database-queries) (Queries).
+You can also open workspaces directly from Visual Studio Code, requiring more configuration. For that, follow the steps in the ["Advanced chapter below"](#7.6-advanced-initializing-the-local-development-environment).
 
-\* NOTE: The `/latest` folder always contains the most recent version of the local Tenant's application, meaning it changes whenever you _Build & Deploy_.
+#### Open Workspaces via Modeler
+
+Open `localhost:5000` on your Browser, open the Tenant that you want to debug and go to it's Modeler page.
+
+Now click in the dropdown arrow right next to the "_Build & deploy_" option, check the options in the "_Development Workspaces (VS Code)_" section and select the "_Development Workspace_" you want to debug:
+
+- For "_Open UI Development Workspace_" wait for Visual Studio Code to open and continue reading in ["Debug User Interface Behaviours"](#7.3-debug-user-interface-behaviours);
+
+- For "_Open Server Development Workspace_", wait for Visual Studio Code to open, navigate to "`/Behaviours`" folder, select the "`dev.code-workspace`" file to open the Server workspace and continue reading in ["Debug Entity Behaviours"](#7.4-debug-entity-behaviours).
 
 ### 7.3. Debug User Interface Behaviours
 
-Select the "`dev.code-workspace`" file to open the UI workspace. With the UI workspace open you can check every UI Behaviour inside the "`/Behaviours`" folder, and change any code to debug. Local changes only applies after saving the files.
+With the UI workspace open you can check every UI Behaviour inside the "`/Behaviours`" folder, and change any code to debug. Local changes only applies after saving the files.
 
 Now to verify and test your changes, you need to start a _HTTP server_ by pressing `F5` or the `"Run"` button on the left panel. This has the same result as the _HTTP server_ you start when using Remote UI, so don't forget to save the HTTP Port it returns.
 
@@ -200,7 +198,7 @@ This allows you to locally debug and code any OMNIA Platform application UI Beha
 
 ### 7.4. Debug Entity Behaviours
 
-Navigate to "`/Behaviours`" folder and select the "`dev.code-workspace`" file to open the Server workspace. With the Server workspace open you can check every Entity Behaviour and change any code to debug. Local changes only applies after saving the files.
+With the Server workspace open you can check every Entity Behaviour and change any code to debug. Local changes only applies after saving the files.
 
 As soon as you open the Server workspace for the first time, you may receive a notification in VS Code to install some `extensions`. We recommend you to do that to enable _IntelliSense_.
 
@@ -238,12 +236,39 @@ You've successfully added the new OMNIA local server to pgAdmin. To check the OM
 
 That's it! Now you have access to the entire subscription database, allowing you to locally run SQL Queries with _IntelliSense_ that supports entity and platform properties and variables.
 
-### 7.5. Remove OMNIA Containers from Docker
+### 7.6. Advanced: Initializing the local development environment
 
-To remove ("`uninstall`") the OMNIA Platform containers from your Docker, you simply need to run the following command:
+To initialize the local development environment open Visual Studio Code and follow the next steps:
+
+- Click in the left corner new green button "`Open a Remote Window`";
+- Select "`Remote-Container: Attach to Running Container...`" option;
+- Select "`/omniaplatform_development`" container.
+
+A new VS Code window will open, you may now close the previous one. The new window is linked with the OMNIA Platform local Container, you will need to select which Behaviours to debug: `UI`, `Entity` or `Queries`. To do so:
+
+- Select "File" option in the top navigation menu;
+- Select "Open workspace";
+- To set the `.workspace` file location, replace the "`/root/`" path with "`/home/omnia/tmp/behaviours/`";
+- Keep editing the directory path, now selecting the Tenant you want to debug;
+- Select the environment directory;
+- To have access to the most recent application version select "`/Application/Source/latest/`"\* directory. You can also access any other version by replacing `latest` with the desired version's path.
+
+Select one of the folders to choose the Behaviours type to debug:
+
+- "`/UI`", select the "`dev.code-workspace`" file to open the UI workspace and continue reading in ["Debug User Interface Behaviours"](#7.3-debug-user-interface-behaviours);
+
+- "`/Server`", navigate to "`/Behaviours`" folder, select the "`dev.code-workspace`" file to open the Server workspace and continue reading in ["Debug Entity Behaviours"](#7.4-debug-entity-behaviours).
+
+\* NOTE: The `/latest` folder always contains the most recent version of the local Tenant's application, meaning it changes whenever you _Build & Deploy_.
+
+### 7.7. Remove OMNIA Containers from Docker
+
+To remove ("_uninstall_") the OMNIA Platform containers from your Docker, you simply need to run the following command:
 
 ```
     docker-compose -p OmniaPlatform down --rmi all
 ```
 
 This will stop every running container from the `OmniaPlatform` project and then remove them all, including it's images.
+
+NOTE: This command doesn't remove local storage data.

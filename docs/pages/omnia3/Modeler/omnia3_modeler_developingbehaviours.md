@@ -261,7 +261,23 @@ Select one of the folders to choose the Behaviours type to debug:
 
 \* NOTE: The `/latest` folder always contains the most recent version of the local Tenant's application, meaning it changes whenever you _Build & Deploy_.
 
-### 7.7. Remove OMNIA Containers from Docker
+### 7.7. Useful Docker commands
+
+#### Stop/Start OMNIA Containers
+
+To stop the OMNIA Platform containers run the following command:
+
+```
+    docker-compose -p OmniaPlatform stop
+```
+
+To start it back again, run:
+
+```
+    docker-compose -p OmniaPlatform start
+```
+
+#### Remove OMNIA Containers
 
 To remove ("_uninstall_") the OMNIA Platform containers from your Docker, you simply need to run the following command:
 

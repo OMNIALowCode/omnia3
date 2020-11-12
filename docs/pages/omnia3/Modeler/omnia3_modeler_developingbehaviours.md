@@ -160,7 +160,7 @@ To develop an OMNIA Platform on top of a Docker you will need to:
 - [Download the latest version of Development Environment](omnia3_downloads.html) and unzip to a new folder.
 - Go to the extracted folder and install OMNIA services by running the PowerShell script file "`start.ps1`";
 
-A new tab on your browser should open in `localhost:5000`, providing you the full OMNIA experience right from machine.
+A new tab on your browser should open in `http://host.docker.internal:5000`, providing you the full OMNIA experience right from machine.
 
 During the first run experience, you must create a user and add a new Tenant to the Platform.
 
@@ -178,7 +178,7 @@ You can also open workspaces directly from Visual Studio Code, requiring more co
 
 #### Open Workspaces via Modeler
 
-Open `localhost:5000` on your Browser, open the Tenant that you want to debug and go to it's Modeler page.
+Open `http://host.docker.internal:5000` on your Browser, open the Tenant that you want to debug and go to it's Modeler page.
 
 Now click in the dropdown arrow right next to the "_Build & deploy_" option, check the options in the "_Development Workspaces (VS Code)_" section and select the "_Development Workspace_" you want to debug:
 
@@ -192,7 +192,7 @@ With the UI workspace open you can check every UI Behaviour inside the "`/Behavi
 
 Now to verify and test your changes, you need to start a _HTTP server_ by pressing `F5` or the `"Run"` button on the left panel. This has the same result as the _HTTP server_ you start when using Remote UI, so don't forget to save the HTTP Port it returns.
 
-To access your local application, navigate to `localhost:5000` and follow the steps in ["Once you have the HTTP server running" section](#6.2-initializing-the-development-environment).
+To access your local application, navigate to `http://host.docker.internal:5000` and follow the steps in ["Once you have the HTTP server running" section](#6.2-initializing-the-development-environment).
 
 This allows you to locally debug and code any OMNIA Platform application UI Behaviour, use breakpoints and _IntelliSense_ that supports entity and platform properties and variables.
 
@@ -206,7 +206,7 @@ Another notification to restore code dependencies must also prompts in the first
 
 Now to verify and test your changes, start a local server by pressing `F5` or the `"Run"` button on the left panel.
 
-To access your local application, navigate to `localhost:5000` and open the _Application_ section.
+To access your local application, navigate to `http://host.docker.internal:5000` and open the _Application_ section.
 
 This allows you to locally debug and code any OMNIA Platform application Entity Behaviour, use breakpoints and _IntelliSense_ that supports entity and platform properties and variables.
 
@@ -263,9 +263,13 @@ Select one of the folders to choose the Behaviours type to debug:
 
 ### 7.7. Useful Docker commands
 
+If you intend to stop running Docker containers or start them again, you can do that using the `docker-compose` CLI. Don't forget to use `-p OmniaPlatform` flag to specify the Omnia Platform project name (["check Docker documentation for more information"](https://docs.docker.com/compose/reference/overview/#use--p-to-specify-a-project-name)).
+
+The `docker-compose` CLI requires the Docker configuration files, so you need to open the PowerShell in the folder where you extracted the ["_Development Environment_"](#7.1-pre-requisites) and then you're able to run the following commands:
+
 #### Stop/Start OMNIA Containers
 
-To stop the OMNIA Platform containers run the following command:
+To stop the OMNIA Platform containers run:
 
 ```
     docker-compose -p OmniaPlatform stop
@@ -279,7 +283,7 @@ To start it back again, run:
 
 #### Remove OMNIA Containers
 
-To remove ("_uninstall_") the OMNIA Platform containers from your Docker, you simply need to run the following command:
+To remove ("_uninstall_") the OMNIA Platform containers from your Docker, you simply need to run:
 
 ```
     docker-compose -p OmniaPlatform down --rmi all

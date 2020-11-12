@@ -77,6 +77,19 @@ Other than these, there are two special entity behaviours:
 
 ![The behaviour execution lifecycle](images\modeler\BehaviourLifecycle.png)
 
+### 2.1. C# method naming
+
+| Type                                | Method                                   | Observation   |
+|-------------------------------------|------------------------------------------|---------------|
+| Initialize                          | OnInitialize                             |               |
+| Before Change                       | OnBeforeUpdate                           |               |
+| Formula                             | Get{ATTRIBUTE NAME}                      |               |
+| Action/Change                       | On{ATTRIBUTE NAME}PropertyChange         |               |
+| After Change                        | OnAfterUpdate                            |               |
+| Before Save                         | OnBeforeSave                             |               |
+| After Save                          | OnAfterSave                              | Async method. |
+| Before Collection Entity Initialize | OnBefore{ATTRIBUTE NAME}EntityInitialize |               |
+
 ## 3. Usage
 
 There are many possible usage scenarios for these behaviours, as C# coding will allow you to execute whatever you want. This section gives some guiding examples.
@@ -156,7 +169,7 @@ The way to use references to .NET assemblies is explained in a [separate article
 
 Application behaviours are created in the Modeler's **Extensibility** area. Their main difference compared to the other behaviours is that they are available on a per-data source basis; i.e. instead of picking an Attribute and Type, you define the data source where it will be available.
 
-Every system that has application behaviours will have them under the base namespace of that tenant, for example, `Omnia.Behaviours.Tenant001.Application`, with a partial class logic: every application behaviour is in its own file, but they are all in the same class. If you want to use an application behaviour with the code `ValidateAPIAccess` in the **System** data source's **Initialize** behaviour, you will do so by writing `SystemApplicationBehaviours.ValidateAPIAccess()` in your code.
+Every system that has application behaviours will have them under the base namespace of that tenant, for example, `Omnia.Behaviours.Tenant001.Application`, with a partial class logic: every application behaviour is in its own file, but they are all in the same class. If you want to use an application behaviour with the code `ValidateAPIAccess` in the **System** data source's **Initialize** behaviour, you will do so by writing `SystemApplicationBehaviours.ValidateAPIAccessAsync()` in your code.
 
 The application behaviours are `static`. They all receive an (optional) `IDictionary<string,object> args`, which can be used to send any necessary information when calling them from other places, and also must return a dictionary.
 
@@ -206,16 +219,13 @@ Example:
 var cache = _Context.CreateCacheClient();
 
 // Write data to cache
-cache.SetAsync("MyKeyName", "Hello!")
-    .GetAwaiter().GetResult();
+await cache.SetAsync("MyKeyName", "Hello!");
 
 // Read data from cache
-var value = cache.GetAsync<string>("MyKeyName")
-    .GetAwaiter().GetResult();
+var value = await cache.GetAsync<string>("MyKeyName");
 
 // Remove data from cache
-cache.RemoveAsync("MyKeyName")
-    .GetAwaiter().GetResult();
+await cache.RemoveAsync("MyKeyName");
 
 ```
 

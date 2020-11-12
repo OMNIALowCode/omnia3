@@ -24,6 +24,16 @@ There are five different data behaviours:
 - **Update**: Updates an entity, given a DTO. Returns a DTO.
 - **Delete**: Deletes an entity, given its identifier.
 
+### 2.1. C# method naming
+
+| Type      | Method        | Observation   |
+|-----------|---------------|---------------|
+| Create    | CreateAsync   | Async method. |
+| Read      | ReadAsync     | Async method. |
+| ReadList  | ReadListAsync | Async method. |
+| Update    | UpdateAsync   | Async method. |
+| Delete    | DeleteAsync   | Async method. |
+
 ## 3. Referencing external libraries in Behaviours
 
 The way to use references to .NET assemblies is explained in a [separate article](omnia3_modeler_dependencies.html), as it is shared for both Entity and Data Behaviours.

@@ -30,7 +30,8 @@ To configure the CLI to communicate with a subscription open a command line and 
     omnia-cli subscriptions add --name [Name] --endpoint [Endpoint] --client-id [ApiClientId] --client-secret [ApiClientSecret]
 ```
 
-Parameters:
+
+**Parameters:**
 
 | Parameter | Description |
 |-------|--------|
@@ -38,3 +39,9 @@ Parameters:
 | Endpoint | The Omnia subscription endpoint. If interacting with a local installation, insert http://host.docker.internal:5000 |
 | ApiClientId | The Api Client Id |
 | ApiClientSecret | The Api Client Secret |
+
+**Example:**
+
+```
+    omnia-cli subscriptions add --name local --endpoint http://host.docker.internal:5000 --client-id myclientid --client-secret myclientsecret
+```

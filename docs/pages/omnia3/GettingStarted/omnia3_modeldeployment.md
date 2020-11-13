@@ -29,6 +29,13 @@ Download model behaviours to a local environment using the following command:
 | Environment | (Optional) The tenant environment. If not inserted, PRD is assumed |
 | Path | (Optional) The path where the model will be downloaded to. If not inserted, the current path is assumed |
 
+**Example:**
+
+```
+    omnia-cli model export --subscription local --tenant mytenant --environment PRD 
+```
+
+
 
 ## 3. Upload a model
 
@@ -48,3 +55,9 @@ If *--build* parameter is included, the model will be built after the upload.
 | Tenant | The code of the tenant to be updated |
 | Environment | (Optional) The tenant environment. If not inserted, PRD is assumed |
 | Path | (Optional) The path of the model behaviours code. If not inserted, the current path is assumed |
+
+**Example:**
+
+```
+    omnia-cli model import --subscription local --tenant mytenant --environment PRD --path ../Behaviours/Internal/System --build 
+```

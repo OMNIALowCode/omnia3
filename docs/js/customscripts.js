@@ -16,7 +16,7 @@ $(document).ready(function () {
     );
     httpGetFeedAsync(
       'https://mymiswebdeploy.blob.core.windows.net/omnia3/devEnvironment/updateFeed.xml',
-      'Download latest docker version',
+      'Download latest development environment version',
       'Package',
       'development-environment'
     );

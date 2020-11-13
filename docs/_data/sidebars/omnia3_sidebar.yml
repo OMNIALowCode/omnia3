@@ -199,10 +199,6 @@ entries:
             url: /omnia3_modeler_dependencies.html
             output: web, pdf
 
-          - title: Developing and Debugging
-            url: /omnia3_modeler_developingbehaviours.html
-            output: web, pdf
-
           - title: User Interface Behaviours
             url: /omnia3_modeler_uibehaviours.html
             output: web, pdf
@@ -241,6 +237,14 @@ entries:
 
           - title: User Interface
             url: /omnia3_modeler_userinterface.html
+            output: web, pdf
+
+          - title: Developing and Debugging
+            url: /omnia3_modeler_developingbehaviours.html
+            output: web, pdf
+
+          - title: Development Environment
+            url: /omnia3_modeler_developmentenvironment.html
             output: web, pdf
 
       - title: Application

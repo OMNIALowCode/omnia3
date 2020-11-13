@@ -9,9 +9,9 @@ folder: omnia3
 
 ## Introduction
 
-OMNIA Platform is composed of three different resources that you can download and install: Platform, Connector and Docker.
+OMNIA Platform is composed of three different resources that you can download and install: Platform, Connector and Development Environment.
 
-These resources are available online to be downloaded. A feed, in the form of a xml file, is available to simplify the download of the Platform, Connector and Docker versions.
+These resources are available online to be downloaded. A feed, in the form of a xml file, is available to simplify the download of the Platform, Connector and Development Environment versions.
 
 All Omnia packages are made available as .zip package files.
 

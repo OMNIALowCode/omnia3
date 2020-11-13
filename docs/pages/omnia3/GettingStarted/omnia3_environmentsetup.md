@@ -19,7 +19,7 @@ toc: false
 
 ## 2. Install 
 
-- [Download](omnia3_downloads.html) development package
+- Download development environment package [here](omnia3_downloads.html)
 - Unzip to a folder
 - Open a PowerShell window on that folder and execute file *start.ps1*. Omnia Docker images will be downloaded and its containers created
 - When the development environment setup ends, a new browser tab with local Omnia installation (endpoint below) is opened. Configure the administrator username and password (password is required, since by default SMTP configurations are not set)
@@ -31,6 +31,6 @@ toc: false
 | :------------ | :-------------- |
 | **Omnia Endpoint** | http://host.docker.internal:5000 |
 | **Omnia Username/Password** | Defined on setup after install |
-| **pgAdmin (database client)** | http://localhost:16543 |
+| **pgAdmin (database client)** | http://host.docker.internal:16543 |
 | **Database Username** | omnia@omnia |
 | **Database Password** | omnia |

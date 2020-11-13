@@ -22,7 +22,7 @@ toc: false
 - [Download](omnia3_downloads.html) development package
 - Unzip to a folder
 - Open a PowerShell window on that folder and execute file *start.ps1*. Omnia Docker images will be downloaded and its containers created
-- After the setup ends, a new browser tab with local Omnia installation (endpoint below) is opened. Configure the administrator username and password (password is required, since by default SMTP configurations are not set)
+- When the development environment setup ends, a new browser tab with local Omnia installation (endpoint below) is opened. Configure the administrator username and password (password is required, since by default SMTP configurations are not set)
 
 
 ## 3. Environment Credentials

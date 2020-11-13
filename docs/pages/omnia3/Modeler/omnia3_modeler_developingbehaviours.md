@@ -20,7 +20,7 @@ When developing behaviours in the OMNIA platform, writing C# with no context dir
 ## 3. Structure of the downloaded build
 After extracting the downloaded build (a .zip file), you will have the following folders:
 * **Server**
-  * **Behaviours**: The [C# classes](#4-c-behaviours) generated based on the modeled behaviours (Entity, Data and Application);
+  * **Behaviours**: The [C# classes](#4-c-behaviours) generated based on the modeled behaviours (Entity, Data, Application and Code Dependencies);
 * **Database**
   * **Queries**: The SQL queries (modeled in advanced mode or not);
 * **UI**
@@ -39,9 +39,14 @@ Each *Data Source* will have a folder with a *Visual Studio* C# Project, which c
 
 The project can have (depending of which behaviours are modeled) the following folders:
 * **Application**: Contains the [*Application Behaviours*](omnia3_modeler_behaviours.html#5-application-behaviours);
+  * Files under subfolder "Infrastructure" shouldn't be edited.
 * **Data**: Contains the *Data Access Objects (DAOs)* (one per entity), each one with the representation of the modeled [*Data Behaviours*](omnia3_modeler_datasources.html#2-types-of-data-behaviours);
+  * Files under subfolder "Infrastructure" shouldn't be edited.
 * **Entity**: Contains the classes (one per entity) that support the execution of the operations modeled through [*Entity Behaviours*](omnia3_modeler_behaviours.html#2-types-of-behaviours).
   * A file will be generated for each entity and its name will respect the rule _MyEntityName.**Operations.cs**_.
+  * A file will be generated for each state machine and its name will respect the rule _MyEntityName.**StateMachine.cs**_.
+  * Files under subfolder "Domain" shouldn't be edited.
+* **CodeDependencies**: Contains the [*Code Dependencies*](omnia3_modeler_dependencies.html#3-code-dependencies);
 
 ## 5. C# Debugging
 

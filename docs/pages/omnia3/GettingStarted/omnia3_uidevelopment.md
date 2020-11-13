@@ -30,23 +30,6 @@ Now to verify and test your changes, you need to start a _HTTP server_ by pressi
 
 To access your local application, navigate to `http://host.docker.internal:5000` and follow the steps in ["Once you have the HTTP server running" section](omnia3_modeler_developingbehaviours.html#6.2-initializing-the-development-environment).
 
-When you're satisfied with the result, you can apply the code to the Tenant's model using OMNIA CLI. For that, run the following code line in Powershell:
-
-```
-omnia-cli model behaviours apply --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path] --build
-```
-
-Change the Parameters inside "_[ ]_" with:
-
-| Parameter    | Description                                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------------------- |
-| Subscription | The name of the configured subscription                                                                 |
-| Tenant       | The code of the tenant to be downloaded                                                                 |
-| Environment  | (Optional) The tenant environment. If not inserted, PRD is assumed                                      |
-| Path         | (Optional) The path where the model will be downloaded to. If not inserted, the current path is assumed |
-
-Note the flag `"--build"`, it ensures a new Tenant's Build is created. If you **don't** want a new build, you can execute the code without this flag, but be aware the code you send to the OMNIA Platform will remain in the Tenant's Modeler as "_changed_".
-
 ## 4. Debug
 
 You can always locally debug any User Interface Behaviour, and since you're using Visual Studio Code it's also possible to use breakpoints and _IntelliSense_ that supports entity and platform properties and variables.

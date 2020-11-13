@@ -14,17 +14,17 @@ OMNIA Platform Server development workspace hold the _Entity Behaviours_ of a Te
 
 Click in the dropdown arrow right next to the "_Build & deploy_" option, check the options in the "_Development Workspaces (VS Code)_" section and select the "_Open Server Development Workspace_".
 
-A new Visual Studio Code window will now open. In the project file Explorer, navigate to "`/Behaviours`" folder, double click the "`dev.code-workspace`" file to open the Server development workspace.
+A new Visual Studio Code window will now open.
 
 As soon as you open the Server workspace for the first time, you may receive a notification in VS Code to install some `extensions`. We recommend you to do that to enable _IntelliSense_.
 
-Another notification to restore code dependencies must also prompts in the first time running the workspace, having you to confirm it to avoid errors.
+Another notification to restore code dependencies must also prompts in the first time running the workspace, having you to confirm it to avoid errors. This also happens after a _Clean & Build_.
 
 ## 2. Switching Tenant Model
 
 With Server Development opened, you can switch to another model by following the steps in ["Initializing Server Development"](#1.initializing-server-development) relatively the other desired Tenant.
 
-This will replace the content in your Visual Studio Code window with the model that you now opened.
+This replaces all the code in the model that you opened with Visual Studio Code.
 
 ## 3. Change code and apply changes to Model
 
@@ -42,14 +42,20 @@ omnia-cli model behaviours apply --subscription [Subscription] --tenant [Tenant]
 
 Change the Parameters inside "_[ ]_" with:
 
-| Parameter    | Description                                                                                             |
-| ------------ | ------------------------------------------------------------------------------------------------------- |
-| Subscription | The name of the configured subscription                                                                 |
-| Tenant       | The code of the tenant to be downloaded                                                                 |
-| Environment  | (Optional) The tenant environment. If not inserted, PRD is assumed                                      |
-| Path         | (Optional) The path where the model will be downloaded to. If not inserted, the current path is assumed |
+| Parameter    | Description                                                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------------- |
+| Subscription | (Optional) The name of the configured subscription. Optional if there's only one subscription configured. |
+| Tenant       | The code of the tenant to be downloaded                                                                   |
+| Environment  | (Optional) The tenant environment. If not inserted, PRD is assumed                                        |
+| Path         | (Optional) The path where the model will be downloaded to. If not inserted, the current path is assumed   |
 
 Note the flag `"--build"`, it ensures a new Tenant's Build is created. If you **don't** want a new build, you can execute the code without this flag, but be aware the code you send to the OMNIA Platform will remain in the Tenant's Modeler as "_changed_".
+
+**Example:**
+
+    ```
+        omnia-cli model behaviours apply --subscription local --tenant mytenant --environment PRD
+    ```
 
 ## 4. Debug
 

@@ -12,7 +12,9 @@ toc: false
 
 OMNIA Platform Database Development hold the _Database_ of a Tenant. To open it when locally running a Development Environment, check the Docker icon in your computer task-bar, right click it and open the _Dashboard_. That's where your OMNIA Platform Development Environment is running, containing all the different _Containers_.
 
-To access your subscription Database, you first need to instantiate pgAdmin. For that, in Docker expand _Containers_ and check the "`PORT`" number where the "`omniaplatform_pgadmin`" container is running. Open that local Port number on your Browser (for example, `localhost:16543`).
+To access your subscription Database, you first need to instantiate pgAdmin. For that open `http://host.docker.internal:16543` on your Browser.
+
+`16543` is the default port of pgAdmin, but it can be **customized**. Check [here](#2-find-a-customized-port) on how to find a **customized** port.
 
 To log in pgAdmin use the following credentials:
 
@@ -26,10 +28,16 @@ Now, to link the OMNIA Platform database:
 - Set a _Name_ at your preference;
 - Select the "`Connection`" tab;
 - Set "`omniaplatform_database`" as _Host name/address_;
-- Set the "`PORT`" of the _Container_ "`omniaplatform_database`" (check it in Docker, like you did before for "`omniaplatform_pgadmin`") as _Port_;
+- Set the **default** port _5432_ as _Port_ (check [here](#2-find-a-customized-port) on how to find a **customized** port);
 - Set "`omnia`" as _Username_ and _Password_;
 - Hit _Save_.
 
 You've successfully added the new OMNIA local server to pgAdmin. To check the OMNIA database click in the dropdown next to the new server, then do it again in "`Databases`" and "`omnia`".
 
 That's it! Now you have access to the entire subscription database, allowing you to locally run SQL Queries with _IntelliSense_ that supports entity and platform properties and variables.
+
+## 2. Find a customized port
+
+Open Docker Desktop and expand the _containers_ of the `OMNIA Platform` project. Now check the "`PORT`" number of a container.
+
+For example, with the **default** configurations, you should find _16543_ as "`omniaplatform_pgadmin`" and _5432_ as "`omniaplatform_database`" ports.

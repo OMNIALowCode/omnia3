@@ -14,50 +14,58 @@ When using a local environment to develop Omnia behaviours, it is suggested to u
 
 ## 2. Download a model
 
-Download model behaviours to a local environment using the following command:
+Download of model behaviours to a local environment can be done in two ways:
 
-```
-    omnia-cli model export --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path]
-```
+- Access Omnia Modeler portal, and use option "Download last build"
 
-**Parameters**
+- Using Omnia-CLI, by executing the following command:
 
-| Parameter | Description |
-|-------|--------|
-| Subscription | The name of the configured subscription |
-| Tenant | The code of the tenant to be downloaded |
-| Environment | (Optional) The tenant environment. If not inserted, PRD is assumed |
-| Path | (Optional) The path where the model will be downloaded to. If not inserted, the current path is assumed |
+    ```
+        omnia-cli model export --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path]
+    ```
 
-**Example:**
+    **Parameters**
 
-```
-    omnia-cli model export --subscription local --tenant mytenant --environment PRD 
-```
+    | Parameter | Description |
+    |-------|--------|
+    | Subscription | The name of the configured subscription |
+    | Tenant | The code of the tenant to be downloaded |
+    | Environment | (Optional) The tenant environment. If not inserted, PRD is assumed |
+    | Path | (Optional) The path where the model will be downloaded to. If not inserted, the current path is assumed |
+
+    **Example:**
+
+    ```
+        omnia-cli model export --subscription local --tenant mytenant --environment PRD 
+    ```
 
 
 
 ## 3. Upload a model
 
-Upload a model *.zip* file to an environment (local or cloud) using the following command:
+The upload of a model *.zip* file to an environment (local or cloud) can be done in two different ways:
 
-```
-    omnia-cli model import --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path] --build
-```
+- Access Omnia Modeler portal, and use option "Import"
 
-If *--build* parameter is included, the model will be built after the upload.
+- Using Omnia-CLI, by executing the following command:
 
-**Parameters**
+    ```
+        omnia-cli model import --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path] --build
+    ```
 
-| Parameter | Description |
-|-------|--------|
-| Subscription | The name of the configured subscription |
-| Tenant | The code of the tenant to be updated |
-| Environment | (Optional) The tenant environment. If not inserted, PRD is assumed |
-| Path | (Optional) The path of the model behaviours code. If not inserted, the current path is assumed |
+    If *--build* parameter is included, the model will be built after the upload.
 
-**Example:**
+    **Parameters**
 
-```
-    omnia-cli model import --subscription local --tenant mytenant --environment PRD --path ../Behaviours/Internal/System --build 
-```
+    | Parameter | Description |
+    |-------|--------|
+    | Subscription | The name of the configured subscription |
+    | Tenant | The code of the tenant to be updated |
+    | Environment | (Optional) The tenant environment. If not inserted, PRD is assumed |
+    | Path | (Optional) The path of the model behaviours code. If not inserted, the current path is assumed |
+
+    **Example:**
+
+    ```
+        omnia-cli model import --subscription local --tenant mytenant --environment PRD --path ../Behaviours/Internal/System --build 
+    ```

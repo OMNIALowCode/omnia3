@@ -61,3 +61,14 @@ Decimal attributes that are calculated on C# behaviours should be rounded to mat
 ```
     this.Average = Decimal.Round(this.Amount / this.Quantity, 2);
 ```
+
+### C# - Use async/await when is possible
+
+When working with c# Tasks using ".GetAwaiter().GetResult()", ".Result" or ".Wait()" to get the result can cause [deadlocks or thread pool starvation](https://gsferreira.com/archive/2020/08/avoid-getawaiter-getresult-at-all-cost/). So, it's recommended to use async/await all way down.
+
+In cases like Initialize behaviours or Action/Change behaviours, you can't use async/await. In these cases, you should extract async methods to Code Dependencies and use "GetAwaiter().GetResult()" just once to wait for that Code Dependency.
+
+
+
+
+

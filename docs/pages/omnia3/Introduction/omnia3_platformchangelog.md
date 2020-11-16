@@ -10,6 +10,16 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.2](#3.4.2)
+Release Date: 2020-11-16
+
+### Implemented enhancements:
+  - Local Development Environments
+  - Data Behaviours - Support async/await
+  - Application Behaviours - Support async/await
+  - Revised method naming for behaviours: Initialize, Before Change, After Change, Before Save and After Save
+  - State Machines - Extract code that can't be changed to a different file
+  
 ## [3.3.166](#3.3.166)
 Release Date: 2020-10-08
 

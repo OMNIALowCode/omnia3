@@ -51,11 +51,11 @@ In the following sample, a template called "MyTemplate" is transformed using an 
 ```c# 
 var httpClient = _Context.CreateApplicationHttpClient();
  
-var requestResult = httpClient.PostAsync("TextTemplates/MyTemplate", this.ToDto()).GetAwaiter().GetResult();
+var requestResult = await httpClient.PostAsync("TextTemplates/MyTemplate", this.ToDto());
  
 if (!requestResult.IsSuccessStatusCode)
  throw new Exception("It was not possible to transform the text template.");
  
-var myTemplateContent = requestResult.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+var myTemplateContent = await requestResult.Content.ReadAsStringAsync();
 
 ```

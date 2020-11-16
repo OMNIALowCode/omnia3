@@ -41,6 +41,41 @@ entries:
             url: /omnia3_connectorchangelog.html
             output: web, pdf
 
+      - title: Getting Started
+        output: web, pdf
+        folderitems:
+          - title: Overview
+            url: /omnia3_overview.html
+            output: web, pdf
+
+          - title: Environment Setup
+            url: /omnia3_environmentsetup.html
+            output: web, pdf
+
+          - title: CLI Setup
+            url: /omnia3_clisetup.html
+            output: web, pdf
+
+          - title: Sever Development
+            url: /omnia3_serverdevelopment.html
+            output: web, pdf
+
+          - title: UI Development
+            url: /omnia3_uidevelopment.html
+            output: web, pdf
+
+          - title: Database Development
+            url: /omnia3_databasedevelopment.html
+            output: web, pdf
+
+          - title: Connector Development
+            url: /omnia3_connectordevelopment.html
+            output: web, pdf
+
+          - title: Model Deployment
+            url: /omnia3_modeldeployment.html
+            output: web, pdf
+
       - title: Deployment
         output: web, pdf
         folderitems:
@@ -164,10 +199,6 @@ entries:
             url: /omnia3_modeler_dependencies.html
             output: web, pdf
 
-          - title: Developing and Debugging
-            url: /omnia3_modeler_developingbehaviours.html
-            output: web, pdf
-
           - title: User Interface Behaviours
             url: /omnia3_modeler_uibehaviours.html
             output: web, pdf
@@ -206,6 +237,14 @@ entries:
 
           - title: User Interface
             url: /omnia3_modeler_userinterface.html
+            output: web, pdf
+
+          - title: Developing and Debugging
+            url: /omnia3_modeler_developingbehaviours.html
+            output: web, pdf
+
+          - title: Development Environment
+            url: /omnia3_modeler_developmentenvironment.html
             output: web, pdf
 
       - title: Application

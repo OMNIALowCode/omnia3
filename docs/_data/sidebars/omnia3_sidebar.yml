@@ -275,6 +275,10 @@ entries:
             url: /omnia3_authorizationmanagement.html
             output: web, pdf
 
+          - title: Manage Privileges
+            url: /omnia3_privilegesmanagement.html
+            output: web, pdf
+
       - title: Connector
         output: web, pdf
         folderitems:

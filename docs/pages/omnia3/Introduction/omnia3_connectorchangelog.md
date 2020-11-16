@@ -10,6 +10,14 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+
+## [3.4.0](#3.4.0)
+Release Date: 2020-11-16
+
+### Implemented enhancements:
+  - Data Behaviours - Support async/await
+  - Application Behaviours - Support async/await
+
 ## [3.3.5](#3.3.5)
 Release Date: 2020-07-23
 

@@ -37,7 +37,7 @@ To access your local application, navigate to `http://host.docker.internal:5000`
 When you're satisfied with the result, you can apply the code to the Tenant's model using OMNIA CLI. For that, run the following code line in Powershell:
 
 ```
-omnia-cli model behaviours apply --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path] --build
+omnia-cli model apply --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path] --build
 ```
 
 Change the Parameters inside "_[ ]_" with:
@@ -54,7 +54,7 @@ Note the flag `"--build"`, it ensures a new Tenant's Build is created. If you **
 **Example:**
 
     ```
-        omnia-cli model behaviours apply --subscription local --tenant mytenant --environment PRD
+        omnia-cli model apply --subscription local --tenant mytenant --environment PRD
     ```
 
 ## 4. Debug

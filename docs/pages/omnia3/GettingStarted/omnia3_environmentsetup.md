@@ -20,17 +20,18 @@ toc: false
 ## 2. Install
 
 - Download development environment package [here](omnia3_downloads.html);
-- To avoid security errors, open the zip file properties (right click on it and then select "_Properties_"). In the "_General_" tab, check the "_Security_" option and tic the "_Unblock_" box. Click "_OK_";
+- In case of _Security Policy_ errors, open the zip file properties (right click on it and then select "_Properties_"). In the "_General_" tab, check the "_Security_" option and tic the "_Unblock_" box. Click "_OK_";
 - Unzip to a folder;
 - Open a PowerShell window on that folder;
-- To allow running scripts run the following command:
+- Execute file _start.ps1_. Omnia Docker images will be downloaded and its containers created.
 
-```
-        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
+> You might get an _Execution Policy_ error during the **first installing**. Run the following command to allow scripts execution:
+>
+> ```
+>        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+> ```
 
-- Now execute file _start.ps1_. Omnia Docker images will be downloaded and its containers created;
-- When the development environment setup ends, a new browser tab with local Omnia installation (endpoint below) is opened. Configure the administrator username and password (password is required, since by default SMTP configurations are not set).
+After the development environment setup ends, a new browser tab with local Omnia installation (endpoint below) is opened. Configure the administrator username and password (password is required, since by default SMTP configurations are not set).
 
 ## 3. Environment Credentials
 

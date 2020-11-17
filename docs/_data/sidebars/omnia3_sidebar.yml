@@ -56,7 +56,7 @@ entries:
             url: /omnia3_clisetup.html
             output: web, pdf
 
-          - title: Sever Development
+          - title: Server Development
             url: /omnia3_serverdevelopment.html
             output: web, pdf
 

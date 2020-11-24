@@ -11,6 +11,12 @@ toc: false
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
 
+## [3.4.1](#3.4.1)
+Release Date: 2020-11-24
+
+### Implemented enhancements:
+  - Support HTTP connections for development on local environments
+
 ## [3.4.0](#3.4.0)
 Release Date: 2020-11-16
 

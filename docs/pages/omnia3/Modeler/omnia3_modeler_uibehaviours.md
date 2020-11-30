@@ -46,6 +46,17 @@ If the value of an element is setted using other behaviour (User Interface or no
 
 In a dashboard, the *On Change* behaviours is executed after the list data is retrieved.
 
+### 2.1. JavaScript method naming
+
+| Type                                | Method                                   | Observation   		|
+|-------------------------------------|------------------------------------------|----------------------|
+| Initialize                          | onInitialize                             |               		|
+| Before Change                       | onBeforChange                            | Available in Forms.  |
+| On Change                           | onChange_{ELEMENT NAME}         		 |               		|
+| On Select                           | onSelect_{ELEMENT NAME}       		     |               		|
+| After Change                        | onAfterChange                            | Available in Forms.  |
+| Before Save                         | onBeforeSave                             | Available in Forms.  |
+
 ## 3. Usage
 
 There are many possible usage scenarios for these behaviours, as JavaScript coding will allow you to execute whatever you want. Usage examples are described in our [FAQ](omnia3_modeler_entities.ui.html#6-user-interface-behaviours).
@@ -72,7 +83,7 @@ class EmployeeForm {
 		this._name = '';
 	}
 	
-	initialize(){
+	onInitialize(){
 		console.log("Started work on an Employee entity");
 	}
 	
@@ -82,7 +93,7 @@ class EmployeeForm {
 
 //... more onChanges
 
-	beforeSave(){
+	onBeforeSave(){
 		
 	}
 }

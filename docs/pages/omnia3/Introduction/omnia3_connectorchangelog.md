@@ -10,6 +10,11 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.4.2](#3.4.2)
+Release Date: 2020-11-27
+
+### Bugs:
+  - When installed as a Windows Service, connector fails to start.
 
 ## [3.4.1](#3.4.1)
 Release Date: 2020-11-24

@@ -46,3 +46,20 @@ This will stop every running container from the `OmniaPlatform` project and then
 Actions in Application side of the OMNIA Platform log information in the Development Environment. They're located inside containers, in `/var/log/omnia`.
 
 To access logs in **real time** open the Docker Desktop and expand the _containers_ of the `OMNIA Platform` project. Now click in a container and you'll be automatically redirected to _Logs_.
+
+
+## 5. Configuring multiple users
+
+It's required to configure the SMTP settings of your development environment to create a new user.
+To do that, edit the `docker-compose.override.yml` file and add the SMTP settings to the `identity-server` container.
+
+```
+  identity-server:
+    environment:
+      - OMNIA_SMTP:Host=smtp.myserver.com
+      - OMNIA_SMTP:Port=587
+      - OMNIA_SMTP:EnableSsl=true
+      - OMNIA_SMTP:Username=mail@mail
+      - OMNIA_SMTP:Password=P@ssw0rd
+      - OMNIA_SMTP:OriginEmail=noreplay@mail
+```

@@ -259,6 +259,25 @@ You will be responsible to enable and disable the loader. Example: enable, or di
     this._metadata.elements._description.attributes.isLoading = true;
 ```
 
+### How to block the whole form while loading data?
+
+As a part of the Form metadata, you have an attribute to control an internal loader, and show a context message. This is particularly useful in scenarios where data is being loaded to the UI, and we want to ensure that the user cannot interact with the attributes.
+You will be responsible to enable and disable the loader. 
+
+Example: enable it when a given element changes its value and a HTTP request is made to retrieve additional data. Disable it when the HTTP request is processed and its data applied to the attributes
+
+```JavaScript
+
+    //Enable loader
+    this._metadata.attributes.isLoading = true;
+
+    //Show context message with the loader
+    this._metadata.attributes.loadingMessage = "Loading... Please wait";
+
+    //Disable loader
+    this._metadata.attributes.isLoading = true;
+```
+
 ### **Decimal Attributes**
 
 ### How to change the number of decimal places of the element?

@@ -51,7 +51,7 @@ In a dashboard, the *On Change* behaviours is executed after the list data is re
 | Type                                | Method                                   | Observation          |
 |-------------------------------------|------------------------------------------|----------------------|
 | Initialize                          | onInitialize                             |                      |
-| Before Change                       | onBeforChange                            | Available in Forms.  |
+| Before Change                       | onBeforeChange                           | Available in Forms.  |
 | On Change                           | onChange_{ELEMENT NAME}                  |                      |
 | On Select                           | onSelect_{ELEMENT NAME}                  |                      |
 | After Change                        | onAfterChange                            | Available in Forms.  |

@@ -268,13 +268,13 @@ Example: enable it when a given element changes its value and a HTTP request is 
 
 ```JavaScript
 
-    //Add loader
+    //Enable loader
     this._metadata.attributes.isLoading = true;
 
     //Show context message with the loader
     this._metadata.attributes.loadingMessage = "Loading... Please wait";
 
-    //Remove loader
+    //Disable loader
     this._metadata.attributes.isLoading = true;
 ```
 

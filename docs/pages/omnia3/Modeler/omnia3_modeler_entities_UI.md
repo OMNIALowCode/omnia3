@@ -267,9 +267,15 @@ You will be responsible to enable and disable the loader.
 Example: enable, or disable, it when a given element changes its value and a HTTP request is made to retrieve additional data.
 
 ```JavaScript
+
+    //Add loader
     this._metadata.attributes.isLoading = true;
 
+    //Show context message with the loader
     this._metadata.attributes.loadingMessage = "Loading... Please wait";
+
+    //Remove loader
+    this._metadata.attributes.isLoading = true;
 ```
 
 ### **Decimal Attributes**

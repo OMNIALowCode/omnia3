@@ -10,6 +10,18 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.14](#3.4.14)
+Release Date: 2020-12-09
+
+### Implemented enhancements:
+  - Revised method naming for UI behaviours: Initialize, Before Change, After Change and Before Save
+  - Column resizer on lists
+  - UI Behaviours: New loader that blocks the whole form
+  - UI Behaviours: Removed unnecessary methods for non-root entities
+
+### Bugs:
+  - State Machines: Enumeration attributes are not blocked
+  
 ## [3.4.2](#3.4.2)
 Release Date: 2020-11-16
 

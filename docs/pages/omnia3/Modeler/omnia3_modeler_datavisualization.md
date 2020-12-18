@@ -111,6 +111,11 @@ If you want to validate if the user has one specific role, you can use the _user
 
 You can access a SQL parameter (**@\_userLanguage**) with the active language of the current user.
 
+### Access to created date and updated date
+
+You can access a to the created date using *_created_at* and updated date using *_updated_at*.
+These columns are only available on root entity views.
+
 ### Recommendations
 
 - When joining two views, use the _identifier_ instead of the _\_code_ for performance improvements.

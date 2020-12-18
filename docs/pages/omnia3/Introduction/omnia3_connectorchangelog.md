@@ -10,6 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.4.26](#3.4.6)
+Release Date: 2020-12-18
+
+### Implemented enhancements:
+  - Access to Decision and Comment in Data Behaviours
+  
 ## [3.4.2](#3.4.2)
 Release Date: 2020-11-27
 

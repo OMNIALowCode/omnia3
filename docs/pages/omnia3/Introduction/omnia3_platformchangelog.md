@@ -10,6 +10,20 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.27](#3.4.27)
+Release Date: 2020-12-18
+
+### Implemented enhancements:
+  - Access to Decision and Comment in Data Behaviours
+  - Have access to created date and updated date in advanced queries
+  - Authentication Providers - Users don't need to confirm login using the link provided by email
+
+### Bugs:
+  - Updated Date not being set when the entity changes
+  - Subscription doesn't start after configuring invalid Auth Providers
+  - C# Behaviours: UserIsInRole function is returning true even when the user does not have the role selected
+  - Modeler: When creating an application behaviour if the expression is empty, an error is displayed
+
 ## [3.4.14](#3.4.14)
 Release Date: 2020-12-09
 

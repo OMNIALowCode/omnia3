@@ -87,6 +87,10 @@ entries:
             url: /omnia3_deploymentrequirements.html
             output: web, pdf
 
+          - title: Secret Manager Setup
+            url: /omnia3_secretmanager.html
+            output: web, pdf
+
           - title: FAQ
             url: /omnia3_deploymentfaq.html
             output: web, pdf

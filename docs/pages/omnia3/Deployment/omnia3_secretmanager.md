@@ -9,8 +9,8 @@ folder: omnia3
 
 ## 1. Introduction
 
-OMNIA let's configure a Secret Manager that will help you protect secrets needed to access your services. 
-OMNIA support multiple kinds of Secret Managers:
+OMNIA allows you to configure a Secret Manager that will help you protect secrets needed to access your services. 
+OMNIA supports multiple kinds of Secret Managers:
 
   - Azure Key Vault
   - AWS System Manager Parameter Store
@@ -20,7 +20,7 @@ OMNIA support multiple kinds of Secret Managers:
 
 Any configuration option used by OMNIA (`config/omnia.json`) can be overridden by the configured Secret Manager.
 
-**Example:** to store the PostgreSQL Connection String as a secret, you need can configure a secret and the configuration in the `omnia.json` will be ignored.
+**Example:** to store the PostgreSQL Connection String as a secret, you can configure a secret and the configuration in the `omnia.json` will be ignored.
 
 
 ## 3. Services

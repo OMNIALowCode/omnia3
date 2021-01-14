@@ -10,6 +10,23 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.50](#3.4.50)
+Release Date: 2021-01-14
+
+### Implemented enhancements:
+  - Show a confirmation message to the user when leaving the screen with unsaved changes
+  - Omnia configurations can be hosted in a external vault (Azure Key Vault, AWS Secret Manager and Hashicorp Vault)
+
+### Bugs:
+  - Access to tenant is case-sensitive
+  - UI: Non clear error when trying to access to data of a datasource that does not exist
+  - UI: Calendar is shown blank when date mapping is not defined
+  - When trying to access a tenant that does not exist, loader is shown indefinitely
+  - Cannot create a new tenant with the name of a deleted one
+  - Entity history is not shown when there is a multi-value date attribute
+  - Auth providers: Login with OpenIdConnect not working with Okta
+  - Modeler: Behaviours can be created onChange of calendar attributes
+
 ## [3.4.27](#3.4.27)
 Release Date: 2020-12-18
 

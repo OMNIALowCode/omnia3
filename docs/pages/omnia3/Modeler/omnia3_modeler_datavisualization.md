@@ -203,6 +203,57 @@ Select the option _Add new_ when editing a dashboard, and fill in the following 
 - **Column**: the layout column in which the element will be placed;
 - **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size). Click [here](omnia3_modeler_userinterface.html#lists-and-grid-columns), to know more about elements size and columns;
 
+### How to programmatically change a dashboard list?
+
+The Lists contained within a Dashboard can be programmatically modified in run-time with the use of UI Behaviours.
+
+- The **queryParameters** attribute allows you to set parameters of the Query that is executed by the List:
+```Javascript
+    this._metadata.elements.yourList.attributes.queryParameters = {
+        ageLeftBoundary: 21,
+        ageRightBoundary: 39
+    };
+```
+
+- The **filters** attribute lets you set the List filters (i.e., those that are applied to the data the query returns. This filters are normally set by users on list headers):
+```Javascript
+    this._metadata.elements.yourList.attributes.filters = {
+        _code: {
+            operator: "EqualTo",
+            value: "EMP0125"
+        },
+        _inactive: {
+            operator: "NotEqualTo",
+            value: true
+        }
+    };
+```
+
+- The **sorting** attribute enables the definition of the column sorting order:
+```Javascript
+[
+    {
+        column: "_code",
+        direction: "Ascend"
+    },
+    {
+        column: "_description",
+        direction: "Descend"
+    }
+]
+``` 
+
+- The **disableFilters** attribute can be used to prevent the user from overriding the List Filters:
+```Javascript
+    this._metadata.elements.yourList.attributes.disableFilters = true;
+```
+
+- The **disableSorting** attribute can be used to prevent the user from overriding the List Sorting.
+```Javascript
+    this._metadata.elements.yourList.attributes.disableSorting = true;
+```
+
+
 ## 5. User Interface Behaviours
 
 **_Dashboard / User Interface Behaviours_**

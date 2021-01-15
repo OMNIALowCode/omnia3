@@ -126,6 +126,10 @@ The platform has support for Redis, which is a necessity when deploying **multip
 
 To propertly support scaling out, ASP.NET Core SignalR **requires** the usage of **sticky sessions** in your load balancer. 
 
+### 5.5. Secret Manager
+
+See [this section](omnia3_secretmanager.html).
+
 ## 6. Starting the site
 - Execute `sudo systemctl start omnia`, which will launch the OMNIA services. To obtain logs, you can check the logs folder `/var/log/omnia/`, or use `journalctl`.
 

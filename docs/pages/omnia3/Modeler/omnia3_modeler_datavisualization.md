@@ -190,7 +190,17 @@ Select the option _Add new_ when in the list of Dashboards, and fill in the foll
 
 **Special case:** A dashboard with a code of **Home** will be automatically displayed in the homepage of the application.
 
-### How to edit elements in a dashboard?
+### What elements can be added to dashboards?
+
+Dashboards can have the following elements:
+
+- **List**: a list previously modeled;
+- **Calendar**: a calendar view of the records. Calendars can be mapped to a list or its data can be obtained through behaviours ([see here](omnia3_application_notifications_and_operations.html));
+- **WebComponent**: a webcomponent previously modeled;
+- **Container**: used for organization of other dashboard elements;
+- **Input**: an input of any of the supported types (e.g.: text, date, reference to an entity, ...);
+
+### How to add elements to a dashboard?
 
 Select the option _Add new_ when editing a dashboard, and fill in the following information:
 
@@ -202,6 +212,12 @@ Select the option _Add new_ when editing a dashboard, and fill in the following 
 - **Row**: the layout row in which the element will be placed;
 - **Column**: the layout column in which the element will be placed;
 - **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size). Click [here](omnia3_modeler_userinterface.html#lists-and-grid-columns), to know more about elements size and columns;
+
+Other information might be necessary when adding inputs:
+
+- **Type**: when input represents an Enumeration or Reference, indicate its base type;
+- **Is list of records?**: indicate if the input allows multiple values;
+- **Minimum/Maximum number of records**: indicate the minimum and maximum number of records allowed;
 
 ## 5. User Interface Behaviours
 

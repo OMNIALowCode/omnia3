@@ -10,7 +10,7 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
-## [3.4.26](#3.4.6)
+## [3.4.6](#3.4.6)
 Release Date: 2020-12-18
 
 ### Implemented enhancements:

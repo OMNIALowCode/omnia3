@@ -231,16 +231,16 @@ The Lists contained within a Dashboard can be programmatically modified in run-t
 
 - The **sorting** attribute enables the definition of the column sorting order:
 ```Javascript
-[
-    {
-        column: "_code",
-        direction: "Ascend"
-    },
-    {
-        column: "_description",
-        direction: "Descend"
-    }
-]
+    this._metadata.elements.yourList.attributes.sorting = [
+        {
+            column: "_code",
+            direction: "Ascend"
+        },
+        {
+            column: "_description",
+            direction: "Descend"
+        }
+    ];
 ``` 
 
 - The **disableFilters** attribute can be used to prevent the user from overriding the List Filters:

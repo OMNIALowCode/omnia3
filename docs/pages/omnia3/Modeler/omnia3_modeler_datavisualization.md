@@ -207,6 +207,12 @@ Select the option _Add new_ when editing a dashboard, and fill in the following 
 
 The Lists contained within a Dashboard can be programmatically modified in run-time with the use of UI Behaviours.
 
+- The **disableLoad** attribute can be used to prevent the list from automatically load after the dashboard initialization.
+```Javascript
+    // Inside dashboard onInitialize method
+    this._metadata.elements.yourList.attributes.disableLoad = true;
+```
+
 - The **queryParameters** attribute allows you to set parameters of the Query that is executed by the List:
 ```Javascript
     this._metadata.elements.yourList.attributes.queryParameters = {
@@ -243,6 +249,11 @@ The Lists contained within a Dashboard can be programmatically modified in run-t
     ];
 ``` 
 
+- The **dataSource** attribute allows you to force a Data Source on a List:
+```Javascript
+    this._metadata.elements.yourList.attributes.dataSource = "YourDataSource";
+``` 
+
 - The **disableFilters** attribute can be used to prevent the user from overriding the List Filters:
 ```Javascript
     this._metadata.elements.yourList.attributes.disableFilters = true;
@@ -253,6 +264,17 @@ The Lists contained within a Dashboard can be programmatically modified in run-t
     this._metadata.elements.yourList.attributes.disableSorting = true;
 ```
 
+- The **disableDataSourceSelection** attribute can be used to prevent the user from changing the List Data Source when multiple Data Sources are in use.
+```Javascript
+    this._metadata.elements.yourList.attributes.disableDataSourceSelection = true;
+```
+
+- The **load()** method forces the List to obtain and present the data:
+```Javascript
+    this._metadata.elements.yourList.load();
+```
+
+_Note: The changes you make to the list query parameters, filters, sorting and data sources that you define programmatically (via metadata attributes) are only visible once the list loads and presents the data, therefore you can use the **load()** method to apply the changes._
 
 ## 5. User Interface Behaviours
 

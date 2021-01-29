@@ -190,7 +190,30 @@ Select the option _Add new_ when in the list of Dashboards, and fill in the foll
 
 **Special case:** A dashboard with a code of **Home** will be automatically displayed in the homepage of the application.
 
-### How to edit elements in a dashboard?
+### What elements can be added to dashboards?
+
+Dashboards can have the following elements:
+
+- **List**: a list previously modeled;
+- **Calendar**: a calendar view of the records. Calendars can be mapped to a list or its data can be obtained through behaviours ([see here](omnia3_application_notifications_and_operations.html));
+- **WebComponent**: a webcomponent previously modeled;
+- **Container**: used for organization of other dashboard elements;
+- **Input**: an input of any of the supported types (e.g.: text, date, reference to an entity, ...);
+
+Other information might be necessary when adding inputs:
+
+- **Type**: when input represents an Enumeration or Reference, indicate its base type;
+- **Is list of records?**: indicate if the input allows multiple values;
+- **Minimum/Maximum number of records**: indicate the minimum and maximum number of records allowed;
+- **Uses data source from attribute**: (on Reference inputs of external data source entities) Indicate another dashboard input where the datasource data is set;
+
+    _Note: Data source data can also be set on UI behaviours. Example:_
+
+    ```Javascript
+    this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
+    ```
+
+### How to add elements to a dashboard?
 
 Select the option _Add new_ when editing a dashboard, and fill in the following information:
 

@@ -218,6 +218,13 @@ Other information might be necessary when adding inputs:
 - **Type**: when input represents an Enumeration or Reference, indicate its base type;
 - **Is list of records?**: indicate if the input allows multiple values;
 - **Minimum/Maximum number of records**: indicate the minimum and maximum number of records allowed;
+- **Uses data source from attribute**: (on Reference inputs of external data source entities) Indicate another dashboard input where the datasource data is set;
+
+    Note: Data source data can also be set on UI behaviours. Example:
+
+    ```Javascript
+    this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
+```
 
 ## 5. User Interface Behaviours
 

@@ -200,6 +200,19 @@ Dashboards can have the following elements:
 - **Container**: used for organization of other dashboard elements;
 - **Input**: an input of any of the supported types (e.g.: text, date, reference to an entity, ...);
 
+Other information might be necessary when adding inputs:
+
+- **Type**: when input represents an Enumeration or Reference, indicate its base type;
+- **Is list of records?**: indicate if the input allows multiple values;
+- **Minimum/Maximum number of records**: indicate the minimum and maximum number of records allowed;
+- **Uses data source from attribute**: (on Reference inputs of external data source entities) Indicate another dashboard input where the datasource data is set;
+
+    _Note: Data source data can also be set on UI behaviours. Example:_
+
+    ```Javascript
+    this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
+    ```
+
 ### How to add elements to a dashboard?
 
 Select the option _Add new_ when editing a dashboard, and fill in the following information:
@@ -212,19 +225,6 @@ Select the option _Add new_ when editing a dashboard, and fill in the following 
 - **Row**: the layout row in which the element will be placed;
 - **Column**: the layout column in which the element will be placed;
 - **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size). Click [here](omnia3_modeler_userinterface.html#lists-and-grid-columns), to know more about elements size and columns;
-
-Other information might be necessary when adding inputs:
-
-- **Type**: when input represents an Enumeration or Reference, indicate its base type;
-- **Is list of records?**: indicate if the input allows multiple values;
-- **Minimum/Maximum number of records**: indicate the minimum and maximum number of records allowed;
-- **Uses data source from attribute**: (on Reference inputs of external data source entities) Indicate another dashboard input where the datasource data is set;
-
-    Note: Data source data can also be set on UI behaviours. Example:
-
-    ```Javascript
-    this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
-```
 
 ### How to programmatically change a dashboard list?
 

@@ -226,6 +226,79 @@ Other information might be necessary when adding inputs:
     this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
 ```
 
+### How to programmatically change a dashboard list?
+
+The Lists contained within a Dashboard can be programmatically modified in run-time with the use of UI Behaviours.
+
+- The **disableLoad** attribute can be used to prevent the list from automatically load after the dashboard initialization.
+```Javascript
+    // Inside dashboard onInitialize method
+    this._metadata.elements.yourList.attributes.disableLoad = true;
+```
+
+- The **queryParameters** attribute allows you to set parameters of the Query that is executed by the List:
+```Javascript
+    this._metadata.elements.yourList.attributes.queryParameters = {
+        ageLeftBoundary: 21,
+        ageRightBoundary: 39
+    };
+```
+
+- The **filters** attribute lets you set the List filters (i.e., those that are applied to the data the query returns. This filters are normally set by users on list headers):
+```Javascript
+    this._metadata.elements.yourList.attributes.filters = {
+        _code: {
+            operator: "EqualTo",
+            value: "EMP0125"
+        },
+        _inactive: {
+            operator: "NotEqualTo",
+            value: true
+        }
+    };
+```
+
+- The **sorting** attribute enables the definition of the column sorting order:
+```Javascript
+    this._metadata.elements.yourList.attributes.sorting = [
+        {
+            column: "_code",
+            direction: "Ascend"
+        },
+        {
+            column: "_description",
+            direction: "Descend"
+        }
+    ];
+``` 
+
+- The **dataSource** attribute allows you to force a Data Source on a List:
+```Javascript
+    this._metadata.elements.yourList.attributes.dataSource = "YourDataSource";
+``` 
+
+- The **disableFilters** attribute can be used to prevent the user from overriding the List Filters:
+```Javascript
+    this._metadata.elements.yourList.attributes.disableFilters = true;
+```
+
+- The **disableSorting** attribute can be used to prevent the user from overriding the List Sorting.
+```Javascript
+    this._metadata.elements.yourList.attributes.disableSorting = true;
+```
+
+- The **disableDataSourceSelection** attribute can be used to prevent the user from changing the List Data Source when multiple Data Sources are in use.
+```Javascript
+    this._metadata.elements.yourList.attributes.disableDataSourceSelection = true;
+```
+
+- The **load()** method forces the List to obtain and present the data:
+```Javascript
+    this._metadata.elements.yourList.load();
+```
+
+_Note: The changes you make to the list query parameters, filters, sorting and data sources that you define programmatically (via metadata attributes) are only visible once the list loads and presents the data, therefore you can use the **load()** method to apply the changes._
+
 ## 5. User Interface Behaviours
 
 **_Dashboard / User Interface Behaviours_**

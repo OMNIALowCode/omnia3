@@ -10,6 +10,19 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.80](#3.4.80)
+Release Date: 2021-01-28
+
+### Implemented enhancements:
+  - Dashboard improvements:
+     - Disable list options (sorting, filter and data source selection) on [behaviours](/omnia3_modeler_datavisualization.html#how-to-programmatically-change-a-dashboard-list)
+     - Disable list data load on dashboard render and explicit load on behaviours
+     - Set sorting, filters, data source and query parameters on behaviours
+     - Add inputs of supported data types to dashboards
+  
+### Bugs:
+  - Dashboards: Webcomponents inside containers are not initialized on Initialize UI Behaviour
+
 ## [3.4.50](#3.4.50)
 Release Date: 2021-01-14
 

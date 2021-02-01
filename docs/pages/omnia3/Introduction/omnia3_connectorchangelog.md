@@ -30,6 +30,8 @@ Release Date: 2020-11-24
 
 ## [3.4.0](#3.4.0)
 Release Date: 2020-11-16
+**This version contains breaking changes.**
+**Compatible with OMNIA Platform 3.4.**
 
 ### Implemented enhancements:
   - Data Behaviours - Support async/await
@@ -65,6 +67,8 @@ Release Date: 2020-05-27
   
 ## [3.3.0](#3.3.0)
 Release Date: 2020-05-19
+**This version contains breaking changes.**
+**Compatible with OMNIA Platform 3.3.**
 
 ### Implemented enhancements: 
  - Upgrade to .NET Core 3.1 runtime
@@ -72,10 +76,6 @@ Release Date: 2020-05-19
     This version has stability and performance improvements.
 
     For development/debug using Visual Studio, .NET Core 3.1 SDK must be installed.
-
-
-**This version contains breaking changes.**
-**Compatible with OMNIA Platform 3.3.**
 
 ## [3.2.3](#3.2.3)
 Release Date: 2020-03-04

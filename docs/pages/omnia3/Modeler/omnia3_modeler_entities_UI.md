@@ -433,7 +433,7 @@ In this sample we're enabling only one element named _product_ (which is an inne
 
 ```JavaScript
     this._metadata.elements.collection.attributes.multipleSelection = [
-        {"name": "product"}
+        { name: "product" }
     ];
 ```
 
@@ -441,8 +441,8 @@ To set more elements, simply add then to the multipleSelection list:
 
 ```JavaScript
     this._metadata.elements.collection.attributes.multipleSelection = [
-        {"name": "product"},
-        {"name": "resource"},
+        { name: "product" },
+        { name: "resource" },
         ...
     ];
 ```
@@ -451,8 +451,8 @@ In the sample below, the element _product_ uses the custom Data Source _external
 
 ```JavaScript
     this._metadata.elements.collection.attributes.multipleSelection = [
-        {"name": "product", "dataSource": this.externalDatabase},
-        {"name": "resource"},
+        { name: "product", dataSource: this.externalDatabase },
+        { name: "resource" },
         ...
     ];
 ```
@@ -463,8 +463,8 @@ In this sample the element _database_ (which is **not** an inner element of _col
 
 ```JavaScript
     this._metadata.elements.collection.attributes.multipleSelection = [
-        {"name": "product", "dataSourceAttribute": "database"},
-        {"name": "resource"},
+        { name: "product", dataSourceAttribute: "database" },
+        { name: "resource" },
         ...
     ];
 ```

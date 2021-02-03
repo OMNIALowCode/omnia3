@@ -457,12 +457,12 @@ In the sample below, the element _product_ uses the custom Data Source _external
     ];
 ```
 
-When the Data Source is not static, meaning it can change depending in another element of the Dashboard, it should be identified using the _dataSourceAttribute_ instead of the _dataSource_.
+When the Data Source is not static, meaning it can change depending in another element of the Dashboard, instead of _dataSource_ it should be identified using _dataSourceAttribute_.
 In this sample the element _database_ (which is **not** an inner element of _collection_, but another element of the Dashboard) defines the Data Source of the _product_ element:
 
 ```JavaScript
     this._metadata.elements.collection.attributes.multipleSelection = [
-        {"name": "product", "dataSource": "database"},
+        {"name": "product", "dataSourceAttribute": "database"},
         {"name": "resource"},
         ...
     ];

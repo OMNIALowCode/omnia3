@@ -165,24 +165,6 @@ In this sample a message is removed, and added, to the base element _\_code_:
 
 _Note_: There are only two types of messages available, as shown in the previous sample: **error** and **success**.
 
-### How to manage the state of the add and remove options in an editable list?
-
-In this sample, the options to remove or add records of custom element _collection_ are changed based on a condition:
-
-```JavaScript
-    // Disable options
-    this._metadata.elements.collection.attributes.addEntry = "disabled";
-    this._metadata.elements.collection.attributes.removeEntry = "disabled";
-
-    // Hide options
-    this._metadata.elements.collection.attributes.addEntry = "hidden";
-    this._metadata.elements.collection.attributes.removeEntry = "hidden";
-
-    // Enable and show options
-    this._metadata.elements.collection.attributes.addEntry = "enabled";
-    this._metadata.elements.collection.attributes.removeEntry = "enabled";
-```
-
 ### How to manage the state of the entities default options?
 
 In this sample, the default entity options _Save_, _Show history_, _Delete record_ and _Destroy sensitive data_ are set as hidden:
@@ -207,15 +189,6 @@ In this sample, the default entity options _Save_, _Show history_, _Delete recor
     this._metadata.attributes.saveOption = "hidden";
     // or Disable Save option
     this._metadata.attributes.saveOption = "disabled";
-```
-
-### How to move an element to the details area of a grid?
-
-This feature only applies to the inner elements of a collection element.
-In this sample, the element _notes_ (which is an inner element of _collection_) is placed in the details area:
-
-```JavaScript
-    this._metadata.elements.collection.elements.notes.attributes.isDetails = true;
 ```
 
 ### How to redirect to another application page?
@@ -262,7 +235,7 @@ You will be responsible to enable and disable the loader. Example: enable, or di
 ### How to block the whole form while loading data?
 
 As a part of the Form metadata, you have an attribute to control an internal loader, and show a context message. This is particularly useful in scenarios where data is being loaded to the UI, and we want to ensure that the user cannot interact with the attributes.
-You will be responsible to enable and disable the loader. 
+You will be responsible to enable and disable the loader.
 
 Example: enable it when a given element changes its value and a HTTP request is made to retrieve additional data. Disable it when the HTTP request is processed and its data applied to the attributes
 
@@ -422,3 +395,34 @@ In this sample, a custom function of a Web Component is executed:
 ```JavaScript
     this.myWebComponent.theFunction(parameter1, parameterN);
 ```
+
+### **Grids**
+
+### How to manage the state of the add and remove options in an editable list?
+
+In this sample, the options to remove or add records of custom element _collection_ are changed based on a condition:
+
+```JavaScript
+    // Disable options
+    this._metadata.elements.collection.attributes.addEntry = "disabled";
+    this._metadata.elements.collection.attributes.removeEntry = "disabled";
+
+    // Hide options
+    this._metadata.elements.collection.attributes.addEntry = "hidden";
+    this._metadata.elements.collection.attributes.removeEntry = "hidden";
+
+    // Enable and show options
+    this._metadata.elements.collection.attributes.addEntry = "enabled";
+    this._metadata.elements.collection.attributes.removeEntry = "enabled";
+```
+
+### How to move an element to the details area of a grid?
+
+This feature only applies to the inner elements of a collection element.
+In this sample, the element _notes_ (which is an inner element of _collection_) is placed in the details area:
+
+```JavaScript
+    this._metadata.elements.collection.elements.notes.attributes.isDetails = true;
+```
+
+### How to enable multiple selection of references in a grid?

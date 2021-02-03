@@ -292,6 +292,21 @@ The Lists contained within a Dashboard can be programmatically modified in run-t
     this._metadata.elements.yourList.attributes.disableDataSourceSelection = true;
 ```
 
+- The **disableRefreshButton** attribute can be used to hide the refresh button located on the list footer.
+```Javascript
+    this._metadata.elements.yourList.attributes.disableRefreshButton = true;
+```
+
+- The **disablePaginationButtons** attribute can be used to hide the pagination info and navigation buttons (i.e., first, previous next and last page) located on the list footer.
+```Javascript
+    this._metadata.elements.yourList.attributes.disablePaginationButtons = true;
+```
+
+- The **disableOptionMenu** attribute can be used to hide the options menu (e.g. export as csv) button located on the list footer.
+```Javascript
+    this._metadata.elements.yourList.attributes.disableOptionMenu = true;
+```
+
 - The **load()** method forces the List to obtain and present the data:
 ```Javascript
     this._metadata.elements.yourList.load();
@@ -309,10 +324,23 @@ Click [here](omnia3_modeler_uibehaviours.html), to know more about user interfac
 
 ### How to define the auto refresh interval of the dashboard?
 
-In this sample, the auto refresh interval is setted to 30 seconds:
+In this sample, the auto refresh interval is set to 30 seconds:
 
 ```JavaScript
     this._metadata.attributes.autoRefreshInterval = 30;
 ```
 
 _Note: The unit of measure of autoRefreshInterval property's value is the second._
+
+### How to hide the dashboard "refresh" button?
+
+The **refreshOption** dashboard attribute is used to set the visibility of the dashboard's predefined "refresh" button:
+
+```JavaScript
+    this._metadata.attributes.refreshOption = "hidden";
+```
+
+In order to set the button to visible:
+```JavaScript
+    this._metadata.attributes.refreshOption = "visible";
+```

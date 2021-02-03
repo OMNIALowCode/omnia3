@@ -426,3 +426,44 @@ In this sample, the element _notes_ (which is an inner element of _collection_) 
 ```
 
 ### How to enable multiple selection of references in a grid?
+
+This feature only applies to grids that contain at least one inner element of type reference.
+
+In this sample we're enabling only one element named _product_ (which is an inner reference element of _collection_) for multiple selection:
+
+```JavaScript
+    this._metadata.elements.collection.attributes.multipleSelection = [
+        {"name": "product"}
+    ];
+```
+
+To set more elements, simply add then to the multipleSelection list:
+
+```JavaScript
+    this._metadata.elements.collection.attributes.multipleSelection = [
+        {"name": "product"},
+        {"name": "resource"},
+        ...
+    ];
+```
+
+In the sample below, the element _product_ uses the custom Data Source _externalDatabase_:
+
+```JavaScript
+    this._metadata.elements.collection.attributes.multipleSelection = [
+        {"name": "product", "dataSource": this.externalDatabase},
+        {"name": "resource"},
+        ...
+    ];
+```
+
+When the Data Source is not static, meaning it can change depending in another element of the Dashboard, it should be identified using the _dataSourceAttribute_ instead of the _dataSource_.
+In this sample the element _database_ (which is **not** an inner element of _collection_, but another element of the Dashboard) defines the Data Source of the _product_ element:
+
+```JavaScript
+    this._metadata.elements.collection.attributes.multipleSelection = [
+        {"name": "product", "dataSource": "database"},
+        {"name": "resource"},
+        ...
+    ];
+```

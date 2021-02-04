@@ -398,7 +398,7 @@ In this sample, a custom function of a Web Component is executed:
 
 ### **Grids**
 
-### How to manage the state of the add and remove options in an editable list?
+### How to manage the state of the add and remove options in a grid?
 
 In this sample, the options to remove or add records of custom element _collection_ are changed based on a condition:
 
@@ -457,9 +457,9 @@ In the sample below, the element _product_ uses the custom Data Source _external
     ];
 ```
 
-When the Data Source is not static, meaning it can change depending in another element of the Dashboard, instead of _dataSource_ it should be identified using _dataSourceAttribute_.
+When the Data Source is not static, meaning it can change depending in another element of the Form, instead of _dataSource_ it should be identified using _dataSourceAttribute_.
 
-In this sample the element _database_ (which is **not** an inner element of _collection_, but another element of the Dashboard) defines the Data Source of the _product_ element:
+In this sample the element _database_ (which is **not** an inner element of _collection_, but another element of the Form) defines the Data Source of the _product_ element:
 
 ```JavaScript
     this._metadata.elements.collection.attributes.multipleSelection = [

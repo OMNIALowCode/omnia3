@@ -10,7 +10,7 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
-## [3.4.88](#3.4.88)
+## [3.4.89](#3.4.89)
 Release Date: 2021-02-03
 
 ### Implemented enhancements:

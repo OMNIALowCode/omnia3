@@ -10,12 +10,29 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.88](#3.4.88)
+Release Date: 2021-02-03
+
+### Implemented enhancements:
+  - Dashboard improvements:
+     - [Disable refresh option on behaviours](/omnia3_modeler_datavisualization.html#how-to-hide-the-dashboard-refresh-button)
+     - [Disable list pagination, options and refresh buttons on behaviours](/omnia3_modeler_datavisualization.html#how-to-programmatically-change-a-dashboard-list)
+  - New UI Behaviour type: Before Collection Entry Initialize
+  - UI: Select multiple entries at once on multi-value reference attributes
+  - [UI: Add multiple lines to a collection at once with selected references](omnia3_modeler_entities_ui.html#how-to-enable-multiple-selection-of-references-in-a-grid)
+  
+  
+### Bugs:
+  - Entity Behaviours: Collection properties are identified as changed, even though no changes were made
+  - UI: Enumerator attributes are not removed from UI when the attribute is removed from the entity
+  - UI: Composite element columns are set on different rows instead of different columns
+
 ## [3.4.80](#3.4.80)
 Release Date: 2021-01-28
 
 ### Implemented enhancements:
   - Dashboard improvements:
-     - Disable list options (sorting, filter and data source selection) on [behaviours](/omnia3_modeler_datavisualization.html#how-to-programmatically-change-a-dashboard-list)
+     - [Disable list options (sorting, filter and data source selection) on behaviours](/omnia3_modeler_datavisualization.html#how-to-programmatically-change-a-dashboard-list)
      - Disable list data load on dashboard render and explicit load on behaviours
      - Set sorting, filters, data source and query parameters on behaviours
      - Add inputs of supported data types to dashboards

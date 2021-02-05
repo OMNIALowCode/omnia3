@@ -248,7 +248,7 @@ Example: enable it when a given element changes its value and a HTTP request is 
     this._metadata.attributes.loadingMessage = "Loading... Please wait";
 
     //Disable loader
-    this._metadata.attributes.isLoading = true;
+    this._metadata.attributes.isLoading = false;
 ```
 
 ### **Decimal Attributes**

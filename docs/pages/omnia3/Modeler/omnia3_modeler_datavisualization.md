@@ -226,7 +226,7 @@ Select the option _Add new_ when editing a dashboard, and fill in the following 
 - **Column**: the layout column in which the element will be placed;
 - **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size). Click [here](omnia3_modeler_userinterface.html#lists-and-grid-columns), to know more about elements size and columns;
 
-### How to programmatically change a dashboard list?
+### How to programmatically configure a list inside a dashboard?
 
 The Lists contained within a Dashboard can be programmatically modified in run-time with the use of UI Behaviours.
 

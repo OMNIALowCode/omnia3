@@ -10,6 +10,13 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.94](#3.4.94)
+Release Date: 2021-02-17
+
+### Bugs:
+- UI Before Collection Entry Initialize Behaviours do not wait for async behaviours response
+- Multiple Patch requests are made when second and third level collections have date attributes
+
 ## [3.4.89](#3.4.89)
 Release Date: 2021-02-03
 

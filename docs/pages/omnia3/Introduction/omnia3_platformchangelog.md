@@ -10,6 +10,19 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.99](#3.4.99)
+Release Date: 2021-02-22
+
+### Implemented enhancements:
+- Disable the possibility of automatic translations of OMNIA texts
+- Modeler: Improve text templates accelerator texts
+- Modeler: Added possibility of copying identifiers from lists
+
+### Bugs:
+- Queries: Filters using parameters are case sensitive
+- Roles: Policies of entities that contain "\_" character are not visible on role editing
+- Confirm account link sent on emails not working
+
 ## [3.4.94](#3.4.94)
 Release Date: 2021-02-17
 

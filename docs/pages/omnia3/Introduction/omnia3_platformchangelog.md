@@ -10,6 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.101](#3.4.101)
+Release Date: 2021-02-26
+
+### Bugs:
+- Database setup on new subscriptions not working
+
 ## [3.4.99](#3.4.99)
 Release Date: 2021-02-22
 

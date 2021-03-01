@@ -8,9 +8,9 @@ permalink: index.html
 
 As a productivity tool, the OMNIA Platform was built to fullfil the software needs of all types of businesses. At the core of our development platform lie principles of an economic modeling system called REA (Resources, Events, Agents), that serves as the foundation for all concepts and features you'll find during your development experience.
  
-The REA framework is directed at accounting systems, with a focus on the recording of the several economic, mostly recurring, events that happen within an organization. It assumes that there are a limited number os concepts within all accounting software and that it is possible to easily design adaptable applications without jeaperdising business logic.
+The REA framework is directed at accounting systems, with a focus on the recording of the several economic, mostly recurring, events that happen within an organization. It assumes that there are a limited number of concepts within all accounting software and that it is possible to easily design adaptable applications without jeopardising business logic.
  
-The concepts of this thought framework are: 
+The concepts of this framework are: 
 
  
   - <strong>Economic Resources</strong>;
@@ -21,20 +21,20 @@ The concepts of this thought framework are:
   - <strong>Generic Entities</strong>.
     
 
-With these concepts, REA found, there is an enourmous percentagem of all day-to-day businesses activities that can be easily discribed and, with OMNIA, made into a beatiful and simple web application.
+With these concepts REA found, there is an enourmous percentage of day-to-day businesses activities that can be easily described and, with OMNIA, made into a beatiful and simple web application.
  
 Now for a more detailed information about each concept: 
  
 
-  - <strong>Economic Resources</strong>: System entities that represent goods with comercial value and definable quantities. These goods are posessed by Economic Agents and are exchanged in financial transactions between two different ones. Examples of Economic resources include Products, Money and Services;
+  - <strong>Economic Resources</strong>: System entities that represent goods with comercial value and definable quantities. These goods are controlled by Economic Agents and are exchanged in financial transactions between two different Agents. Examples of Economic resources include Products, Money and Services;
     
-  - <strong>Economic Agents</strong>: System entities that represent individuals, or groups of individuals (i.e. a Company). These entities possess Economic Resources and exchange them via financial trasactions. Examples of Economic Agents include Clients, Companies or Employees;
+  - <strong>Economic Agents</strong>: System entities that represent individuals, or groups of individuals (i.e. a Company). These entities control Economic Resources and exchange them via financial trasactions. Examples of Economic Agents include Clients, Companies or Employees;
     
   - <strong>Economic Commitments</strong>: It represents a commitment between two Economic Agents to exchange Economic Resources. The concept of a Commitment is needed for one key reason: most trasactions are registered in advance but need to happen in the future, not at the time of their registration;
     
-  - <strong>Economic Events</strong>: Represents the actual transaction of Economic Resources between two Economic Agents, one as the receiver and one as the supplier. This way, this trasaction represents an increment for the receiver agent and a decrement for the supplier agent;
+  - <strong>Economic Events</strong>: Represents the actual transaction of Economic Resources between two Economic Agents, one as the receiver and one as the provider. This way, this transaction represents an increment for the receiver agent and a decrement for the provider agent;
  
-  - <strong>Documents</strong>: Being a set of Economic Commitments and rules, a document represents everthing that can happen during the transaction of Economic Resources. (Business) Rules specify what can happen in case certain conditons aren't met during a transaction, allowing for the generation of additional commitments. Example: in the context of a Sale, a document is composed of a set of commitments that represent the exchange of goods for money and that may contain (business) rules that will only apply when/if a payment deadline is missed. This may translate into a new commitment that will represent a debt to the company, automatically.
+  - <strong>Documents</strong>: Being a set of Economic Commitments and rules, a document represents everything that can happen during the transaction of Economic Resources. (Business) Rules specify what can happen in case certain conditions aren't met during a transaction, allowing for the generation of additional commitments. Example: in the context of a Sale, a document is composed of a set of commitments that represent the exchange of goods for money and that may contain (business) rules that will only apply when/if a payment deadline is missed. This may translate into a new commitment that will represent a debt to the company, automatically.
     
  
 In addition to this thought framework, OMNIA also provides the broader terminology of traditional Entity-Relationship models, which we've named Generic Entities. You can build entire applications using these, altough we would recommend prioritizing the usage of the REA elements when they fit your needs as they should, and are built to, accelerate your developments.

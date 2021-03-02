@@ -468,3 +468,46 @@ In this sample the element _database_ (which is **not** an inner element of _col
         ...
     ];
 ```
+
+### **Custom Modals**
+
+### How to open a Dashboard on a Modal?
+
+In order to open an already created `Dashboard` in a modal you must add a new `User Interface (UI) Behaviour` to the entity you wish to open the modal from.
+
+On that `UI Behaviour`, we recommend to first create a **Universally Unique Identifier (UUID)** to differ modals from each other because in the OMNIA Platform you can open multiple modals at once. For that, add the following Javascript code logic:
+
+```JavaScript
+    const id = this._context.createUUID();
+```
+
+That way and depending on the code you wish to add, you will be able to close any modal by it's `id` using this constant.
+
+Now declare the new modal instance with the following properties:
+
+| Value                | Type     | Required | Description                                                                                                                              |
+| -------------------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 'disableCloseButton' | boolean  | no       | Be cautious when declaring this property because the modal might not close if you don't add the necessary code for it (explained below). |
+| 'id'                 | string   | yes      | The unique identifier necessary to close the modal.                                                                                      |
+| 'name'               | string   | yes      | The name of the Dashboard to open inside the modal.                                                                                      |
+| 'onClose'            | function | no       | A callback function the triggers after the modal is closed. You may add parameters to it.                                                |
+| 'parameters'         | object   | no       | Any other information you wish to save inside the modal to use further.                                                                  |
+| 'size'               | string   | no       | There are four possible sizes: `small`, `medium`, `large` and `extra-large`. The default value is `extra-large`.                         |
+| 'title'              | string   | no       | The text that appear in modal's header. The default is the Dashboard's `name`                                                            |
+
+To manually close the modal (for example, after changing a property) add the following code:
+
+```JavaScript
+    // When the onClose function doesn't receive any arguments, simply close the modal using it's id.
+    this._context.closeModal(id);
+
+    // When the onClose function receives arguments, add it after the id
+    this._context.closeModal(id, args);
+```
+
+Finally, to open the modal use the following code:
+
+```JavaScript
+    // The 'modal' argument is the constant you created with the properties above
+    this._context.openModal(modal);
+```

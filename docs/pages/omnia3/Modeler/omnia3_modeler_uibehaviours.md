@@ -36,6 +36,15 @@ There are currently three different execution moments for UI behaviours, which f
 - **Before Save**: Executes when an entity is saved (only applies to forms);
 - **On Select**: Executes when an Menu Entry is selected (only applies to menus);
 
+Other than these, there are one special entity behaviours:
+
+- **Before Collection Entity Initialize**: Executes when a new entity is added to a collection, before its Initialize behaviour (only applies to forms);
+
+	- **_Example of usage_**: Allocate the value of a Parent's _(this)_ property to a collection's Child _(entry)_ property:
+
+		```
+		entry.company = this.name;
+		```
 ![The behaviour execution lifecycle](images\modeler\UIBehaviourLifecycle.png)
 
 **Important** 
@@ -56,6 +65,7 @@ In a dashboard, the *On Change* behaviours is executed after the list data is re
 | On Select                           | onSelect_{ELEMENT NAME}                  |                      |
 | After Change                        | onAfterChange                            | Available in Forms.  |
 | Before Save                         | onBeforeSave                             | Available in Forms.  |
+| Before Collection Entity Initialize | OnBefore{ATTRIBUTE NAME}EntityInitialize | Available in Forms.  |
 
 ## 3. Usage
 

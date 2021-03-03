@@ -10,6 +10,20 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.109](#3.4.109)
+Release Date: 2021-03-03
+
+### Implemented enhancements:
+- Allow the upload of empty files
+- Open Dashboards in modals
+- Modeler: Define minimum and maximum length of text attributes
+- UI: Improved attributes validation
+
+### Bugs:
+- UI: Error when using multi-value enumerator attributes
+- Modeler: When an attribute is set as not being a list of records, changes are not persisted
+- Modeler: When a second level collection is added to the UI, it is added without attributes
+
 ## [3.4.101](#3.4.101)
 Release Date: 2021-02-26
 

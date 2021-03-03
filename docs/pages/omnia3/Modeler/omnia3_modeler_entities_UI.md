@@ -475,25 +475,36 @@ In this sample the element _database_ (which is **not** an inner element of _col
 
 In order to open an already created `Dashboard` in a modal you must add a new `User Interface (UI) Behaviour` to the entity you wish to open the modal from.
 
-On that `UI Behaviour`, we recommend to first create a **Universally Unique Identifier (UUID)** to differ modals from each other because in the OMNIA Platform you can open multiple modals at once. For that, add the following Javascript code logic:
-
-```JavaScript
-    const id = this._context.createUUID();
-```
-
-That way and depending on the code you wish to add, you will be able to close any modal by it's `id` using this constant.
-
 Now declare the new modal instance with the following properties:
 
 | Value                | Type     | Required | Description                                                                                                                              |
 | -------------------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | 'disableCloseButton' | boolean  | no       | Be cautious when declaring this property because the modal might not close if you don't add the necessary code for it (explained below). |
-| 'id'                 | string   | yes      | The unique identifier necessary to close the modal.                                                                                      |
+| 'id'                 | string   | no       | The unique identifier necessary to close the modal.                                                                                      |
 | 'name'               | string   | yes      | The name of the Dashboard to open inside the modal.                                                                                      |
 | 'onClose'            | function | no       | A callback function the triggers after the modal is closed. You may add parameters to it.                                                |
-| 'parameters'         | object   | no       | Any other information you wish to save inside the modal to use further.                                                                  |
+| 'parameters'         | object   | no       | Any other information you wish to save inside the modal to use later.                                                                    |
 | 'size'               | string   | no       | There are four possible sizes: `small`, `medium`, `large` and `extra-large`. The default value is `extra-large`.                         |
 | 'title'              | string   | no       | The text that appear in modal's header. The default is the Dashboard's `name`                                                            |
+
+Finally, to open the modal use the following code:
+
+```JavaScript
+    // The 'modal' argument is the constant you created with the properties above
+    this._context.openModal(modal);
+```
+
+### How to close a Modal using its Identifier
+
+To close a modal on a specific behaviour you first need to declare the modal's `id` **during it's instantiation**. This way you're able to identify which modal you wish to close, because in the OMNIA Platform you can open multiple modals at once.
+
+So, before opening the modal (using the `this._context.openModal(modal)` code line explained above) on a `UI Behaviour`, we recommend to create a **Universally Unique Identifier (UUID)** to differ modals from each other and be _certain_ that identifier isn't used in another instance. For that, use the following Javascript code logic:
+
+```JavaScript
+    const id = this._context.createUUID();
+```
+
+It's important to declare the `id` in a constant so you can re-use it in the future.
 
 To manually close the modal (for example, after changing a property) add the following code:
 
@@ -505,9 +516,45 @@ To manually close the modal (for example, after changing a property) add the fol
     this._context.closeModal(id, args);
 ```
 
-Finally, to open the modal use the following code:
+### Example of Modal parameters usage
+
+In this sample it's explained how you can add functions (with or without parameters) and constants to the modal's parameters field:
 
 ```JavaScript
-    // The 'modal' argument is the constant you created with the properties above
-    this._context.openModal(modal);
+    // The declaration of the modal, before using the 'this._context.openModal(modal)' method (explained above) to open it
+    const modal = {
+        ...
+        parameters: {
+            // In this example we only use one parameter, but you may add as much as you'd like
+            functionWithParameters: (params) => {
+                // You may use the 'params' constant here
+            },
+
+            functionWithoutParameters: () => {
+            },
+
+            constant: "example of a constant"
+        },
+        ...
+    };
+```
+
+In the sample below it's explained how to use the parameters:
+
+```JavaScript
+    // Example on how to call a function with parameters declared inside the modal's parameters
+    this._metadata.parameters.functionWithParameters("example of a parameter");
+
+    this._metadata.parameters.functionWithoutParameters();
+
+    this._metadata.parameters.constant;
+```
+
+### How to check if a Dashboard is a Modal
+
+In this sample, it's verified if a `Dashboard` is a modal or not:
+
+```JavaScript
+    // This property is a boolean
+    this._metadata.isModal;
 ```

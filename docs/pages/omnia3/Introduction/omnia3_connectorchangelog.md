@@ -10,6 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+## [3.4.9](#3.4.9)
+Release Date: 2021-02-19
+
+### Bugs:
+  - External Entities: Date attributes are not parsed correctly when located on nested entities
+
 ## [3.4.6](#3.4.6)
 Release Date: 2020-12-18
 

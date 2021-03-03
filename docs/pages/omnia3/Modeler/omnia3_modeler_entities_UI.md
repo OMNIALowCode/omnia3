@@ -471,21 +471,24 @@ In this sample the element _database_ (which is **not** an inner element of _col
 
 ### **Custom Modals**
 
-### How to open a Dashboard on a Modal?
+### How to open an Entity on a Modal?
 
-In order to open an already created `Dashboard` in a modal you must add a new `User Interface (UI) Behaviour` to the entity you wish to open the modal from.
+In order to open an already created entity in a modal you must add a new `User Interface (UI) Behaviour` to the entity you wish to open the modal from.
 
 Now declare the new modal instance with the following properties:
 
-| Value                | Type     | Required | Description                                                                                                                              |
-| -------------------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| 'disableCloseButton' | boolean  | no       | Be cautious when declaring this property because the modal might not close if you don't add the necessary code for it (explained below). |
-| 'id'                 | string   | no       | The unique identifier necessary to close the modal.                                                                                      |
-| 'name'               | string   | yes      | The name of the Dashboard to open inside the modal.                                                                                      |
-| 'onClose'            | function | no       | A callback function the triggers after the modal is closed. You may add parameters to it.                                                |
-| 'parameters'         | object   | no       | Any other information you wish to save inside the modal to use later.                                                                    |
-| 'size'               | string   | no       | There are four possible sizes: `small`, `medium`, `large` and `extra-large`. The default value is `extra-large`.                         |
-| 'title'              | string   | no       | The text that appear in modal's header. The default is the Dashboard's `name`                                                            |
+| Value                | Type     | Required | Description                                                                                                                                                               |
+| -------------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 'disableCloseButton' | boolean  | no       | Be cautious when declaring this property because the modal might not close if you don't add the necessary code for it (explained below).                                  |
+| 'hideFooter'         | boolean  | no       | Be cautious when declaring this property because the modal will not have the default option to close. You should add the necessary code for closing it (explained below). |
+| 'hideHeader'         | boolean  | no       | Declare it if you intend to hide the title of the modal.                                                                                                                  |
+| 'id'                 | string   | no       | The unique identifier necessary to close the modal.                                                                                                                       |
+| 'name'               | string   | yes      | The name of the Dashboard to open inside the modal.                                                                                                                       |
+| 'onClose'            | function | no       | A callback function the triggers after the modal is closed. You may add parameters to it.                                                                                 |
+| 'parameters'         | object   | no       | Any other information you wish to save inside the modal to use later.                                                                                                     |
+| 'size'               | string   | no       | There are four possible sizes: `small`, `medium`, `large` and `extra-large`. The default value is `extra-large`.                                                          |
+| 'title'              | string   | no       | The text that appear in modal's header. The default is the Dashboard's `name`                                                                                             |
+| 'type'               | string   | yes      | Identify the type of the entity. Currently, there is only one possible type: `Dashboard`.                                                                                 |
 
 Finally, to open the modal use the following code:
 
@@ -542,7 +545,7 @@ In this sample it's explained how you can add functions (with or without paramet
 In the sample below it's explained how to use the parameters:
 
 ```JavaScript
-    // Example on how to call a function with parameters declared inside the modal's parameters
+    // Example on how to call a function with parameters
     this._metadata.parameters.functionWithParameters("example of a parameter");
 
     this._metadata.parameters.functionWithoutParameters();
@@ -550,9 +553,9 @@ In the sample below it's explained how to use the parameters:
     this._metadata.parameters.constant;
 ```
 
-### How to check if a Dashboard is a Modal
+### How to check if an entity is a Modal
 
-In this sample, it's verified if a `Dashboard` is a modal or not:
+In this sample, it's verified if an entity is a modal or not:
 
 ```JavaScript
     // This property is a boolean

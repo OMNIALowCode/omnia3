@@ -33,27 +33,7 @@ In the management section, it is possible to configure Roles and Policies. For m
 
 For users to be able to perform administration operations on a given tenant, they must be in the automatically created Administration[TenantCode] role.
 
-## 4. API Clients
-To allow an external application to consume the API of the OMNIA Platform, it is required to register an **API Client**, to interact with our security mechanism (using OAuth).
-
-By accessing **API Clients**, you will have access to the API Clients management screen.
-
-Here you can **Add new** clients, identifying their Name.
-
-Upon creating a client, the *Client ID* and *Client Secret* are automatically created.
-
-### 4.1. Get the API Client credentials
-After creating a new API Client, the **Client ID** and **Client Secret** will be shown to you. Save these values, mainly the *Client Secret*, since will not be possible to consult it again.
-
-In the **API Clients** list, selecting one of the records will open a new window containing the **Client Username** and the **Client ID**. As said before, the **Client Secret** is only visible right after the API Client's creation.
-
-### 4.2. Regenerate the Client Secret
-If you need to regenerate the Client Secret for some reason (e.g. your private secret got shared publically accidentally), select one of the records in the list and, in the details window, select the option **Regenerate secret**.
-
-This action will generate another Client Secret and, from now on, you will need to use the new Secret.
-
-
-## 5. Connectors
+## 4. Connectors
 To allow to establish a communication between the OMNIA Platform and a system in another machine, it is required to register a **Connector**.
 
 By accessing **Connectors**, you will have access to the Connectors management screen.
@@ -62,8 +42,8 @@ Here you can **Add new** connectors, identifying their Code and Name.
 
 Upon creating a connector, a new API Client and a new User for the connector will be automatically created.
 
-### 5.1. Get the Connector's username
+### 4.1. Get the Connector's username
 In the **Connectors** list, selecting one of the records will open a new window containing the **Client Username**.
 
-### 5.2. Get the API Client credentials
+### 4.2. Get the API Client credentials
 In the **Connectors** list, selecting one of the records will open a new window containing the required credentials to accessing the OMNIA API: the **Client ID** and the **Client Secret**.

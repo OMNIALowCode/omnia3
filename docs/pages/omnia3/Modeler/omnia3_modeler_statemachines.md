@@ -58,10 +58,23 @@ __*State Machine / States / State*__
 
 In the details page of a _State Machine_, selecting one of the existing states is possible to change to whom the _State's_ is assigned, using the property __Assign to (C# expression)__.
 
-In the State's details page, select the option _Edit State_ and change the property _Assign to (C# expression)_.
+In the State's details page, select the option _Edit State_ and change the property _Assign to (C# expression)_. 
 
 Everytime the entity is saved in the _State_, the C# code expression provided in the _Assign to_ property is evaluated and the result is stored in the system attribute ___assigned__.
 
+The C# expression must return a string, as seen on the example below:
+
+
+```c#
+//Assign to role "Administration" is the TotalAmount value is equal or bigger than 1000. Otherwise, assign to role "Approver"
+
+if(this.TotalAmount >= 1000)
+    return "Administration";
+else
+    return "Approver";
+```
+
+The string returned on this behaviour can contain any possible value (a security role, a reference to another entity, ...).
 
 ### How to disable all attributes in a given State?
 __*State Machine / States / State*__

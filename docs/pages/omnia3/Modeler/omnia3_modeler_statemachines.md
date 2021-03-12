@@ -76,6 +76,8 @@ else
 
 The string returned on this behaviour can contain any possible value (a security role, a reference to another entity, ...).
 
+The assignation of the entity to someone does not limit the acess to that entity. The queries of that entity type must be reviewed to control access. 
+
 ### How to disable all attributes in a given State?
 __*State Machine / States / State*__
 

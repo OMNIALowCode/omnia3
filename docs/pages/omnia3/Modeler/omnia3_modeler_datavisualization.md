@@ -344,3 +344,16 @@ In order to set the button to visible:
 ```JavaScript
     this._metadata.attributes.refreshOption = "visible";
 ```
+
+### How to hide the dashboard "Create New" button?
+
+The **addNewOption** dashboard attribute is used to set the visibility of the dashboard's predefined "Create new" button:
+
+```JavaScript
+    this._metadata.attributes.addNewOption = "hidden";
+```
+
+In order to set the button to visible:
+```JavaScript
+    this._metadata.attributes.addNewOption = "visible";
+```

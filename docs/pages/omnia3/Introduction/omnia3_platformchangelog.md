@@ -10,6 +10,13 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.111](#3.4.111)
+Release Date: 2021-03-12
+
+### Bugs:
+- Error when user is added with more than one security role
+- UI: When a new line is added, it is sent to API with value for all properties
+
 ## [3.4.109](#3.4.109)
 Release Date: 2021-03-03
 

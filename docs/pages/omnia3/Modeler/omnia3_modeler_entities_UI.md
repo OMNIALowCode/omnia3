@@ -468,3 +468,127 @@ In this sample the element _database_ (which is **not** an inner element of _col
         ...
     ];
 ```
+
+### **Custom Modals**
+
+### How to open an Entity on a Modal?
+
+In order to open an already created entity in a modal you must add a new `User Interface (UI) Behaviour` to the entity you wish to open the modal from.
+
+Now declare the new modal instance with the following properties:
+
+| Value                | Type     | Required | Description                                                                                                                                                               |
+| -------------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 'disableCloseButton' | boolean  | no       | Be cautious when declaring this property because the modal might not close if you don't add the necessary code for it (explained below).                                  |
+| 'hideFooter'         | boolean  | no       | Be cautious when declaring this property because the modal will not have the default option to close. You should add the necessary code for closing it (explained below). |
+| 'hideHeader'         | boolean  | no       | Declare it if you intend to hide the title of the modal.                                                                                                                  |
+| 'id'                 | string   | no       | The unique identifier necessary to close the modal.                                                                                                                       |
+| 'name'               | string   | yes      | The name of the entity to open inside the modal.                                                                                                                          |
+| 'onClose'            | function | no       | A callback function the triggers after the modal is closed. It receives a `result` (string) value and an `args` (object). The default value of `result` is `Close`.       |
+| 'parameters'         | object   | no       | Any other information you wish to save inside the modal to use later.                                                                                                     |
+| 'size'               | string   | no       | There are four possible sizes: `small`, `medium`, `large` and `extra-large`. The default value is `extra-large`.                                                          |
+| 'title'              | string   | no       | The text that appear in modal's header. The default is the entity's `name`.                                                                                               |
+| 'type'               | string   | yes      | Identify the type of the entity. Currently, there is only one possible type: `Dashboard`.                                                                                 |
+
+In this sample, there's an example on how to declare a modal:
+
+```JavaScript
+    const modal = {
+        name: "TermsOfServiceDashboard",
+        type: "Dashboard"
+    }
+```
+
+Finally, to open the modal use the following code:
+
+```JavaScript
+    // The 'modal' argument is the constant you created with the properties above
+    this._context.openModal(modal);
+```
+
+In this sample, there's an example of the `onClose` callback:
+
+```JavaScript
+    const modal = {
+        ...,
+        onClose: (result, args) => {
+            console.log(`The modal was close after ${result} and received ${args}.`);
+        },
+        ...,
+    };
+```
+
+### How to close a Modal using its Identifier
+
+To close a modal on a specific behaviour you first need to declare the modal's `id` **during it's instantiation**. This way you're able to identify which modal you wish to close, because in the OMNIA Platform you can open multiple modals at once.
+
+So, before opening the modal on a `UI Behaviour`, we recommend to create a **Universally Unique Identifier (UUID)** to differ modals from each other and be _certain_ that identifier isn't used in another instance. For that, use the following Javascript code logic:
+
+```JavaScript
+    const id = this._context.createUUID();
+
+    const modal = {
+        id: id,
+        ...
+    };
+
+    this._context.openModal(modal);
+```
+
+It's important to declare the `id` in a constant so you can re-use it in the future.
+
+To manually close the modal (for example, after changing a property) add the following code:
+
+```JavaScript
+    // When the onClose function doesn't receive any arguments, simply close the modal using it's id.
+    this._context.closeModal(id);
+
+    // When you wish to specify an action that triggered the closing action simply specify it as a string, adding it after the id.
+    this._context.closeModal(id, result);
+
+    // When the onClose function receives arguments, add it after the result
+    this._context.closeModal(id, result, args);
+```
+
+### Example of Modal parameters usage
+
+In this sample it's explained how you can add functions (with or without parameters) and constants to the modal's parameters field:
+
+```JavaScript
+    // The declaration of the modal, before using the 'this._context.openModal(modal)' method (explained above) to open it
+    const modal = {
+        ...
+        parameters: {
+            // In this example we only use one parameter, but you may add as much as you'd like
+            functionWithParameters: (params) => {
+                // You may use the 'params' constant here
+            },
+
+            functionWithoutParameters: () => {
+            },
+
+            constant: "example of a constant"
+        },
+        ...
+    };
+```
+
+In the sample below it's explained how to use the parameters:
+
+```JavaScript
+    // Example on how to call a function with parameters
+    this._metadata.parameters.functionWithParameters("example of a parameter");
+
+    this._metadata.parameters.functionWithoutParameters();
+
+    this._metadata.parameters.constant;
+```
+
+### How to check if an entity is a Modal
+
+In this sample, it's verified if an entity is a modal or not:
+
+```JavaScript
+    // This property is a boolean
+    this._metadata.isModal;
+```

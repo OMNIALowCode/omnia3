@@ -25,7 +25,7 @@ To log in pgAdmin use the following credentials:
 
 You've successfully added the new OMNIA local server to pgAdmin. To check the OMNIA database click in the dropdown next to the new server, then do it again in "`Databases`" and "`omnia`".
 
-That's it! Now you have access to the entire subscription database, allowing you to locally run SQL Queries with _IntelliSense_ that supports entity and platform properties and variables.
+That's it! Now you have access to the entire subscription database, allowing you to locally run SQL Queries with _IntelliSense_ that supports entity and platform properties and variables. You may also **edit** those queries, check [here](#4-how-to-edit-sql-queries) on how to.
 
 ## 2. Find a customized port
 
@@ -45,3 +45,50 @@ To link the OMNIA Platform Database:
 - Set the **default** port _5432_ as _Port_ (check [here](#2-find-a-customized-port) on how to find a **customized** port);
 - Set "`omnia`" as _Username_ and _Password_;
 - Hit _Save_.
+
+## 4. Change SQL Queries and apply changes to Model
+
+With the OMNIA database open in pgAdmin open a "`Query Editor`", you may do so by clicking in the "`Query tool`", the first icon right after the "`Browser`" section.
+
+Now we must choose a query to edit. Select the "`Open File`" option (or press `ALT + O` for a quick access).
+
+The OMNIA Platform subscription's behaviours are located in the _base path_ below. The files are organized by **Tenant**, **environment** and it's **build version**.
+
+| Base path | /home/omnia/tmp/behaviours |
+
+Navigate to the _base path_ and choose the **Tenant** and **environment**. Select the **Application** and **Source** folders and now choose the Tenant's **build version**.
+
+> The latest successful build is always in the `/latest` folder.
+
+You may read about the [structure of the build](omnia3_modeler_developingbehaviours.html#3-structure-of-the-downloaded-build), but for this case it's only important to navigate to `/Database/Queries`.
+
+Finally, you may now select the query you wish to edit.
+
+> Notice the `TEST AREA` in the head of any query, you may _set_ any value to test **only** in pgAdmin. Check [here]() to find out more about this test area.
+
+Now to verify and test your changes, execute the query by clicking in the `"Execute/Refresh"` button in the buttons panel above, or press `F5` for quick access.
+
+Verify the result in the `Data Output` panel below.
+
+When you're satisfied with the result, you can apply the code to the Tenant's model using OMNIA CLI. For that, run the following code line in Powershell:
+
+```
+omnia-cli model apply --subscription [Subscription] --tenant [Tenant] --environment [Environment] --path [Path] --build
+```
+
+Change the Parameters inside "_[ ]_" with:
+
+| Parameter    | Description                                                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------------- |
+| Subscription | (Optional) The name of the configured subscription. Optional if there's only one subscription configured. |
+| Tenant       | The code of the tenant to be downloaded                                                                   |
+| Environment  | (Optional) The tenant environment. If not inserted, PRD is assumed                                        |
+| Path         | (Optional) The path where the model will be downloaded to. If not inserted, the current path is assumed   |
+
+Note the flag `"--build"`, it ensures a new Tenant's Build is created. If you **don't** want a new build, you can execute the code without this flag, but be aware the code you send to the OMNIA Platform will remain in the Tenant's Modeler as "_changed_".
+
+**Example:**
+
+    ```
+        omnia-cli model apply --subscription local --tenant mytenant --environment PRD
+    ```

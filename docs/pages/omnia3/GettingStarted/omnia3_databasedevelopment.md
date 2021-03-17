@@ -21,16 +21,7 @@ To log in pgAdmin use the following credentials:
 | E-mail | omnia@omnia |
 | Password | omnia |
 
-Now, to link the OMNIA Platform database:
-
-- In the "`Browser`" section, right click in "`Servers`";
-- Select "`Create`" and then "`Server...`";
-- Set a _Name_ at your preference;
-- Select the "`Connection`" tab;
-- Set "`omniaplatform_database`" as _Host name/address_;
-- Set the **default** port _5432_ as _Port_ (check [here](#2-find-a-customized-port) on how to find a **customized** port);
-- Set "`omnia`" as _Username_ and _Password_;
-- Hit _Save_.
+> If you're using the OMNIA Platform version 3.X or lower it is necessary to link the OMNIA Platform database. Follow the instructions in [How to link OMNIA Platform Database](#3-how-to-link-omnia-platform-database), below.
 
 You've successfully added the new OMNIA local server to pgAdmin. To check the OMNIA database click in the dropdown next to the new server, then do it again in "`Databases`" and "`omnia`".
 
@@ -41,3 +32,16 @@ That's it! Now you have access to the entire subscription database, allowing you
 Open Docker Desktop and expand the _containers_ of the `OMNIA Platform` project. Now check the "`PORT`" number of a container.
 
 For example, with the **default** configurations, you should find _16543_ as "`omniaplatform_pgadmin`" and _5432_ as "`omniaplatform_database`" ports.
+
+## 3. How to link OMNIA Platform Database
+
+To link the OMNIA Platform Database:
+
+- In the "`Browser`" section, right click in "`Servers`";
+- Select "`Create`" and then "`Server...`";
+- Set a _Name_ at your preference;
+- Select the "`Connection`" tab;
+- Set "`omniaplatform_database`" as _Host name/address_;
+- Set the **default** port _5432_ as _Port_ (check [here](#2-find-a-customized-port) on how to find a **customized** port);
+- Set "`omnia`" as _Username_ and _Password_;
+- Hit _Save_.

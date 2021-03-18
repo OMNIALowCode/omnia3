@@ -113,8 +113,31 @@ You can access a SQL parameter (**@\_userLanguage**) with the active language of
 
 ### Access to created date and updated date
 
-You can access a to the created date using *_created_at* and updated date using *_updated_at*.
+You can access a to the created date using _\_created_at_ and updated date using _\_updated_at_.
 These columns are only available on root entity views.
+
+### Test Area
+
+When developing any OMNIA Platform SQL query in pgAdmin using the [Database Development](omnia3_databasedevelopment.html#1-initializing-database-development) there's a test area to use for debug purposes only.
+
+The **test area** is between two comment dividers, indicating it's begin and end. It comes with the following default values:
+
+```SQL
+/* -------------------------------------     TEST AREA BEGIN     ------------------------------------- */
+/* ----- For PGAdmin debug purposes only. Values set on this area are not used in execution time ----- */
+
+SELECT setSchema('TestTenant', 'PRD');
+
+SET omnia._username = '';
+SET omnia._userRoles = '';
+SET omnia._userLanguage = '';
+
+/* --------------------------------------     TEST AREA END     -------------------------------------- */
+```
+
+You can declare (`SET`) any value you wish to use in your query, as well as using any default one.
+
+To be able to debug OMNIA Platform SQL Queries it's necessary to set the **schema**, using the Tenant's `name` and `environment`.
 
 ### Recommendations
 
@@ -207,11 +230,11 @@ Other information might be necessary when adding inputs:
 - **Minimum/Maximum number of records**: indicate the minimum and maximum number of records allowed;
 - **Uses data source from attribute**: (on Reference inputs of external data source entities) Indicate another dashboard input where the datasource data is set;
 
-    _Note: Data source data can also be set on UI behaviours. Example:_
+  _Note: Data source data can also be set on UI behaviours. Example:_
 
-    ```Javascript
-    this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
-    ```
+  ```Javascript
+  this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
+  ```
 
 ### How to add elements to a dashboard?
 
@@ -231,12 +254,14 @@ Select the option _Add new_ when editing a dashboard, and fill in the following 
 The Lists contained within a Dashboard can be programmatically modified in run-time with the use of UI Behaviours.
 
 - The **disableLoad** attribute can be used to prevent the list from automatically load after the dashboard initialization.
+
 ```Javascript
     // Inside dashboard onInitialize method
     this._metadata.elements.yourList.attributes.disableLoad = true;
 ```
 
 - The **queryParameters** attribute allows you to set parameters of the Query that is executed by the List:
+
 ```Javascript
     this._metadata.elements.yourList.attributes.queryParameters = {
         ageLeftBoundary: 21,
@@ -245,6 +270,7 @@ The Lists contained within a Dashboard can be programmatically modified in run-t
 ```
 
 - The **filters** attribute lets you set the List filters (i.e., those that are applied to the data the query returns. This filters are normally set by users on list headers):
+
 ```Javascript
     this._metadata.elements.yourList.attributes.filters = {
         _code: {
@@ -259,6 +285,7 @@ The Lists contained within a Dashboard can be programmatically modified in run-t
 ```
 
 - The **sorting** attribute enables the definition of the column sorting order:
+
 ```Javascript
     this._metadata.elements.yourList.attributes.sorting = [
         {
@@ -270,44 +297,52 @@ The Lists contained within a Dashboard can be programmatically modified in run-t
             direction: "Descend"
         }
     ];
-``` 
+```
 
 - The **dataSource** attribute allows you to force a Data Source on a List:
+
 ```Javascript
     this._metadata.elements.yourList.attributes.dataSource = "YourDataSource";
-``` 
+```
 
 - The **disableFilters** attribute can be used to prevent the user from overriding the List Filters:
+
 ```Javascript
     this._metadata.elements.yourList.attributes.disableFilters = true;
 ```
 
 - The **disableSorting** attribute can be used to prevent the user from overriding the List Sorting.
+
 ```Javascript
     this._metadata.elements.yourList.attributes.disableSorting = true;
 ```
 
 - The **disableDataSourceSelection** attribute can be used to prevent the user from changing the List Data Source when multiple Data Sources are in use.
+
 ```Javascript
     this._metadata.elements.yourList.attributes.disableDataSourceSelection = true;
 ```
 
 - The **disableRefreshButton** attribute can be used to hide the refresh button located on the list footer.
+
 ```Javascript
     this._metadata.elements.yourList.attributes.disableRefreshButton = true;
 ```
 
 - The **disablePaginationButtons** attribute can be used to hide the pagination info and navigation buttons (i.e., first, previous next and last page) located on the list footer.
+
 ```Javascript
     this._metadata.elements.yourList.attributes.disablePaginationButtons = true;
 ```
 
 - The **disableOptionMenu** attribute can be used to hide the options menu (e.g. export as csv) button located on the list footer.
+
 ```Javascript
     this._metadata.elements.yourList.attributes.disableOptionMenu = true;
 ```
 
 - The **load()** method forces the List to obtain and present the data:
+
 ```Javascript
     this._metadata.elements.yourList.load();
 ```
@@ -341,6 +376,7 @@ The **refreshOption** dashboard attribute is used to set the visibility of the d
 ```
 
 In order to set the button to visible:
+
 ```JavaScript
     this._metadata.attributes.refreshOption = "visible";
 ```
@@ -354,6 +390,7 @@ The **addNewOption** dashboard attribute is used to set the visibility of the da
 ```
 
 In order to set the button to visible:
+
 ```JavaScript
     this._metadata.attributes.addNewOption = "visible";
 ```

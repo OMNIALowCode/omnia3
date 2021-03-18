@@ -64,7 +64,7 @@ You may read about the [structure of the build](omnia3_modeler_developingbehavio
 
 Finally, you may now select the query you wish to edit.
 
-> Notice the `TEST AREA` in the head of any query, you may _set_ any value to test **only** in pgAdmin. Check [here]() to find out more about this test area.
+> Notice the `"TEST AREA"` in the head of any query, you may _set_ any value to test **only** in pgAdmin. Check [here](omnia3_modeler_datavisualization.html#test-area) to find out more about this test area.
 
 Now to verify and test your changes, execute the query by clicking in the `"Execute/Refresh"` button in the buttons panel above, or press `F5` for quick access.
 

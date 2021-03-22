@@ -10,6 +10,15 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.116](#3.4.116)
+Release Date: 2021-03-19
+
+### Bugs:
+- UI: List column size is being ignored
+- UI: Validation messages added on behaviours are not shown
+- UI: If attribute is required and not visible, validation messages on save are not visible
+- Modeling UI: Error when adding a new attribute to a collection
+
 ## [3.4.111](#3.4.111)
 Release Date: 2021-03-12
 

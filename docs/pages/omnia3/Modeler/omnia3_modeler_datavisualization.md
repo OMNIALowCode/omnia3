@@ -199,6 +199,20 @@ Dashboards can have the following elements:
 - **WebComponent**: a webcomponent previously modeled;
 - **Container**: used for organization of other dashboard elements;
 - **Input**: an input of any of the supported types (e.g.: text, date, reference to an entity, ...);
+- **Button**: a button that triggers its OnClick behaviour after a user clicks it.
+
+### How to add elements to a dashboard?
+
+Select the option _Add new_ when editing a dashboard, and fill in the following information:
+
+- **Name**: the name of the element (needs to be unique);
+- **Description**: the textual explanation of the element's purpose (can be used as development documentation);
+- **List**: which list should be displayed in this dashboard element;
+- **Label**: what label should be displayed for the element;
+- **Help Text**: Auxiliary texts that explain the element's purpose to the users.
+- **Row**: the layout row in which the element will be placed;
+- **Column**: the layout column in which the element will be placed;
+- **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size). Click [here](omnia3_modeler_userinterface.html#lists-and-grid-columns), to know more about elements size and columns;
 
 Other information might be necessary when adding inputs:
 
@@ -213,18 +227,17 @@ Other information might be necessary when adding inputs:
     this._metadata.elements.myInput.attributes.dataSource = "YourDataSource";
     ```
 
-### How to add elements to a dashboard?
+When adding a button, the following information can be specified:
 
-Select the option _Add new_ when editing a dashboard, and fill in the following information:
+- **Icon**: Optionally it is possible to add an icon to the button (according to [Font Awesome 4.7](https://fontawesome.com/v4.7.0/icons/));
+- **Color**: The button color according to the theme (e.g.: Primary, Danger, etc.);
+- **Outline**: If the button only has a border instead of a background-color;
+- **Fill Size**: If the button occupies all the allocated horizontal space or if its width is limited to the minimum necessary size.
 
-- **Name**: the name of the element (needs to be unique);
-- **Description**: the textual explanation of the element's purpose (can be used as development documentation);
-- **List**: which list should be displayed in this dashboard element;
-- **Label**: what label should be displayed for the element;
-- **Help Text**: Auxiliary texts that explain the element's purpose to the users.
-- **Row**: the layout row in which the element will be placed;
-- **Column**: the layout column in which the element will be placed;
-- **Size**: the element size on a scale of 1 (the smaller size) to 12 (the bigger size). Click [here](omnia3_modeler_userinterface.html#lists-and-grid-columns), to know more about elements size and columns;
+When adding a button group, you can also specify:
+
+- **Align Content**: Specifies whether to align the buttons inside the group to the left, center or right. This is only visible when all the buttons inside the group are set to not occupy all the allocated space.
+
 
 ### How to programmatically configure a list inside a dashboard?
 

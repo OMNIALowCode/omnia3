@@ -14,6 +14,12 @@ Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest ve
 Release Date: 2021-03-19
 
 ### Bugs:
+- UI: Webcomponents references on grid lines are not valid after a line is removed
+
+## [3.4.116](#3.4.116)
+Release Date: 2021-03-19
+
+### Bugs:
 - UI: List column size is being ignored
 - UI: Validation messages added on behaviours are not shown
 - UI: If attribute is required and not visible, validation messages on save are not visible

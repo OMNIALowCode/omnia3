@@ -11,7 +11,7 @@ toc: false
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
 ## [3.4.116](#3.4.116)
-Release Date: 2021-03-19
+Release Date: 2021-04-05
 
 ### Bugs:
 - UI: Webcomponents references on grid lines are not valid after a line is removed

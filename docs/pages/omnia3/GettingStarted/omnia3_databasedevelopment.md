@@ -16,12 +16,16 @@ To access your subscription Database, you first need to instantiate pgAdmin. For
 
 `16543` is the default port of pgAdmin, but it can be **customized**. Check [here](#2-find-a-customized-port) on how to find a **customized** port.
 
-To log in pgAdmin use the following credentials:
+Since version 3.4.131 of the Development Environment, connection to OMNIA local server is suggested, and the server is automatically listed.
+
+For previous Development Environment versions, execute the following steps:
+
+1. Log in pgAdmin using the following credentials:
 
 | E-mail | omnia@omnia |
 | Password | omnia |
 
-Now, to link the OMNIA Platform database:
+2. Connect to the OMNIA Platform database:
 
 - In the "`Browser`" section, right click in "`Servers`";
 - Select "`Create`" and then "`Server...`";

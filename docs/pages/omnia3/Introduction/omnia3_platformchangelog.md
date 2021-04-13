@@ -10,6 +10,18 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.131](#3.4.131)
+Release Date: 2021-04-13
+
+### Improvements:
+- Modeler: Redirect automatically to new query/list after creation
+- Dev Experience: Default configuration to access database on pgAdmin is now suggested
+
+### Bugs:
+- UI: Errors are not shown on disabled inputs when located on grids
+- UI: If a user clicks twice when changing a language, the page remains faded
+- Modeler: It is not possible to have a OnChange and a BeforeCollectionEntryInitialize on the same attribute
+
 ## [3.4.123](#3.4.123)
 Release Date: 2021-04-05
 

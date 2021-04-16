@@ -10,6 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.132](#3.4.132)
+Release Date: 2021-04-16
+
+### Bugs:
+- Attributes of external datasources are being incorrectly validated on nested collections
+
 ## [3.4.131](#3.4.131)
 Release Date: 2021-04-13
 

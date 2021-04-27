@@ -10,6 +10,17 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.137](#3.4.137)
+Release Date: 2021-04-27
+
+### Improvements:
+- External Authentication: Support request email claim on URL parameter
+
+### Bugs:
+- Modeler: Addition of multi-level collections to UI is not adding nested collections correctly
+- UI: Errors on grids footer are not formatted correctly
+- Development Experience: Missing volumes error on new installations
+
 ## [3.4.132](#3.4.132)
 Release Date: 2021-04-16
 

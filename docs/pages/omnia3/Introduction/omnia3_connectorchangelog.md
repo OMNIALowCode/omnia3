@@ -10,6 +10,13 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#connector) page to get the latest version.
 
+
+## [3.4.10](#3.4.10)
+Release Date: 2021-05-14
+
+### Implemented enhancements:
+  - Log level is now configurable on config.json file
+
 ## [3.4.9](#3.4.9)
 Release Date: 2021-02-19
 

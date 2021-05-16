@@ -10,6 +10,14 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.141](#3.4.141)
+Release Date: 2021-05-14
+
+### Bugs:
+- Dates cannot be formatted on Text Templates
+- Error on Multivalue non-string attributes 
+- State Machines: AssignTo generated code is being duplicated
+
 ## [3.4.137](#3.4.137)
 Release Date: 2021-04-27
 

@@ -345,6 +345,16 @@ In this sample, the view in which the calendar is initialized is setted:
     this._metadata.elements.calendar.attributes.initialView = 'year';
 ```
 
+### How to set the calendar start and finish date?
+
+In this sample, the start and finish date is setted. Dates outside the range are blocked
+
+```JavaScript
+    this._metadata.elements.calendar.attributes.startsAt = '2021-01-01';
+    
+    this._metadata.elements.calendar.attributes.finishesAt = '2021-12-31';
+```
+
 The following views are available:
 
 | Value            | Description                |

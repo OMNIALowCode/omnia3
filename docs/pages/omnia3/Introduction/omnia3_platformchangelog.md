@@ -10,6 +10,12 @@ toc: false
 
 Visit our [Downloads](/omnia3_downloads.html#platform) page to get the latest version.
 
+## [3.4.142](#3.4.142)
+Release Date: 2021-07-14
+
+### Bugs:
+- Error on Javascript code generation when there are multiple nested collections with same attribute name
+
 ## [3.4.141](#3.4.141)
 Release Date: 2021-05-14
 
